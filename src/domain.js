@@ -22,9 +22,12 @@ export function slotPlanSummary(slots) { return {slotCount:slots.length,roleCoun
 export function statusFor(injury) { return !injury?'OK':[injury.injuryDetails,injury.expectedReturn&&`Rientro: ${injury.expectedReturn}`].filter(Boolean).join(' · '); }
 export function availablePlayers(players,state) { return players.filter(p=>(state[p.id]?.marketStatus??'AVAILABLE')==='AVAILABLE'); }
 export function tierDepletion(players,state){const m={};for(const p of players){const k=`${p.rankingCategory}-${p.tier}`;m[k]??={category:p.rankingCategory,tier:p.tier,total:0,available:0};m[k].total++;if((state[p.id]?.marketStatus??'AVAILABLE')==='AVAILABLE')m[k].available++;}return Object.values(m);}
+export function updateForecasts(slots) {
+  return slots.map(slot=>({...slot,currentForecastBudget:slot.playerId?Number(slot.actualPurchasePrice):Number(slot.originalPlannedBudget)}));
+}
 export function updateSlotStrategy(slots,edits) {
   const categories=new Set(CATEGORY_PRIORITY.slice(1));
-  return slots.map(slot=>{
+  const updated=slots.map(slot=>{
     const edit=edits[slot.id];
     if(!edit)return slot;
     const originalBudget=Number(edit.originalPlannedBudget);
@@ -33,4 +36,5 @@ export function updateSlotStrategy(slots,edits) {
     if(!categories.has(edit.category))throw new Error(`Ruolo non valido per ${slot.id}`);
     return {...slot,category:edit.category,originalPlannedBudget:originalBudget};
   });
+  return updateForecasts(updated);
 }
