@@ -12,6 +12,10 @@ function decorateMarket() {
   if (!table || table.dataset.ageEnriched) return;
   const header = table.tHead?.rows[0];
   if (!header) return;
+  if ([...header.cells].some(cell => cell.textContent.trim() === 'Età')) {
+    table.dataset.ageEnriched = 'true';
+    return;
+  }
   const performanceHeader = [...header.cells].find(cell => cell.textContent.trim() === 'PG / MF');
   if (!performanceHeader) return;
 

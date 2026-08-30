@@ -14,6 +14,17 @@ M = "{http://schemas.openxmlformats.org/spreadsheetml/2006/main}"
 R = "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}"
 ROOT = Path(__file__).resolve().parents[1]
 
+# Characters such as ``ø`` and ``ł`` are letters in Unicode, but unlike
+# accented vowels they are not decomposed by NFKD.  The Fantacalcio list uses
+# their plain Italian/ASCII spellings, so transliterate them before stripping
+# combining marks.
+PLAYER_NAME_TRANSLITERATION = str.maketrans({
+    "Ø": "O", "ø": "o", "Ł": "L", "ł": "l", "Đ": "D", "đ": "d",
+    "Ð": "D", "ð": "d", "Þ": "Th", "þ": "th", "Æ": "Ae", "æ": "ae",
+    "Œ": "Oe", "œ": "oe", "ß": "ss", "ẞ": "SS", "Ħ": "H", "ħ": "h",
+    "ı": "i", "Ŧ": "T", "ŧ": "t",
+})
+
 
 def normalize_player_name(value):
     """Return a conservative, reusable key for a player name.
@@ -24,7 +35,8 @@ def normalize_player_name(value):
     """
     if not value:
         return ""
-    value = unicodedata.normalize("NFKD", str(value))
+    value = str(value).translate(PLAYER_NAME_TRANSLITERATION)
+    value = unicodedata.normalize("NFKD", value)
     value = "".join(char for char in value if not unicodedata.combining(char))
     value = value.casefold()
     value = re.sub(r"[\u2010-\u2015\u2212\-]+", " ", value)
@@ -103,6 +115,25 @@ def age_number(value):
     return int(match.group(1)) if match else None
 
 
+def abbreviated_name_matches(short_name, full_name):
+    """Match list names such as ``Martinez Jo.`` to full statistical names.
+
+    The auction workbook mostly uses a surname, optionally followed by a short
+    given-name prefix.  Requiring an exact token as well as matching every
+    remaining token keeps this fallback conservative; team and uniqueness are
+    checked separately by :func:`enrich_player_ages`.
+    """
+    short_tokens = normalize_player_name(short_name).split()
+    full_tokens = normalize_player_name(full_name).split()
+    if not short_tokens or not set(short_tokens).intersection(full_tokens):
+        return False
+    return all(
+        any(token == full_token or (len(token) <= 3 and full_token.startswith(token))
+            for full_token in full_tokens)
+        for token in short_tokens
+    )
+
+
 def enrich_player_ages(players, statistic_rows):
     """Safely enrich players and return serializable matching diagnostics."""
     by_name = defaultdict(list)
@@ -114,10 +145,14 @@ def enrich_player_ages(players, statistic_rows):
     matched_ids = set()
     for row in statistic_rows:
         name = row.get("Player")
+        team = normalize_player_name(row.get("Squad"))
         candidates = by_name.get(normalize_player_name(name), [])
-        if len(candidates) > 1 and row.get("Squad"):
-            team = normalize_player_name(row["Squad"])
-            team_candidates = [p for p in candidates if normalize_player_name(p.get("team")) == team]
+        if len(candidates) != 1:
+            team_candidates = [
+                player for player in players
+                if normalize_player_name(player.get("team")) == team
+                and abbreviated_name_matches(player.get("name"), name)
+            ]
             if len(team_candidates) == 1:
                 candidates = team_candidates
         if len(candidates) == 1:
@@ -126,7 +161,11 @@ def enrich_player_ages(players, statistic_rows):
                 candidates[0]["age"] = age
                 matched_ids.add(candidates[0]["id"])
         elif len(candidates) > 1:
-            ambiguous.append({"name": name, "team": row.get("Squad"), "candidateIds": [p["id"] for p in candidates]})
+            ambiguous.append({
+                "name": name,
+                "team": row.get("Squad"),
+                "candidateIds": [player["id"] for player in candidates],
+            })
         else:
             unmatched.append({"name": name, "team": row.get("Squad")})
 

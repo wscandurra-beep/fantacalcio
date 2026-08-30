@@ -10,7 +10,9 @@ SPEC.loader.exec_module(IMPORTER)
 class NormalizePlayerNameTests(unittest.TestCase):
     def test_common_variants(self):
         pairs = [("Ché Adams", "CHE ADAMS"), ("D’Angelo", "d'angelo"),
-                 ("Jean-Clair", "jean‐clair"), ("  Marco   Rossi ", "marco rossi")]
+                 ("Jean-Clair", "jean‐clair"), ("  Marco   Rossi ", "marco rossi"),
+                 ("Østigård", "Ostigard"), ("Łukasz", "Lukasz"),
+                 ("Đurić", "Duric")]
         for left, right in pairs:
             with self.subTest(left=left):
                 self.assertEqual(IMPORTER.normalize_player_name(left), IMPORTER.normalize_player_name(right))
@@ -31,6 +33,24 @@ class AgeEnrichmentTests(unittest.TestCase):
         quality = IMPORTER.enrich_player_ages(players, [{"Player": "ALEX ROSSI", "Age": "24-100", "Squad": "Milan"}])
         self.assertEqual([p["age"] for p in players], [None, 24])
         self.assertEqual(quality["ageMatched"], 1)
+
+    def test_full_statistical_name_matches_auction_surname(self):
+        players = [self.player("1", "Svilar", "Roma")]
+        quality = IMPORTER.enrich_player_ages(
+            players, [{"Player": "Mile Svilar", "Age": "26-001", "Squad": "Roma"}]
+        )
+        self.assertEqual(players[0]["age"], 26)
+        self.assertEqual(quality["ageMatched"], 1)
+
+    def test_abbreviated_given_name_disambiguates_surname(self):
+        players = [self.player("1", "Martinez Jo.", "Inter")]
+        rows = [
+            {"Player": "Josep Martinez", "Age": "28-100", "Squad": "Inter"},
+            {"Player": "Lautaro Martinez", "Age": "29-100", "Squad": "Inter"},
+        ]
+        quality = IMPORTER.enrich_player_ages(players, rows)
+        self.assertEqual(players[0]["age"], 28)
+        self.assertEqual(quality["ambiguousCount"], 0)
 
     def test_unmatched_player_is_reported(self):
         players = [self.player("1", "Mario Rossi", "Roma")]
