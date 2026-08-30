@@ -1,15 +1,11 @@
 import {playerKey} from './age-domain.js';
 
-const [players, quality] = await Promise.all([
-  fetch('./data/players.json').then(response => response.json()),
-  fetch('./data/import-quality.json').then(response => response.json()),
-]);
-
-const ages = new Map(players.map(player => [playerKey(player.name, player.team), player.age]));
+let ages = new Map();
+let quality = null;
 
 function decorateMarket() {
   const table = document.querySelector('#marketTable table');
-  if (!table || table.dataset.ageEnriched) return;
+  if (!table || table.dataset.ageEnriched || !ages.size) return;
   const header = table.tHead?.rows[0];
   if (!header) return;
   const performanceHeader = [...header.cells].find(cell => cell.textContent.trim() === 'PG / MF');
@@ -42,6 +38,7 @@ function qualityCard(label, value) {
 }
 
 function decorateQuality() {
+  if (!quality) return;
   const heading = [...document.querySelectorAll('#app h1')].find(item => item.textContent.trim() === 'Data quality');
   const grid = heading?.nextElementSibling;
   if (!grid || grid.dataset.ageEnriched) return;
@@ -76,5 +73,27 @@ function decorate() {
   decorateQuality();
 }
 
-new MutationObserver(decorate).observe(document.querySelector('#app'), {childList: true, subtree: true});
-decorate();
+const app = document.querySelector('#app');
+if (app) new MutationObserver(decorate).observe(app, {childList: true, subtree: true});
+
+fetch('./data/players.json')
+  .then(response => {
+    if (!response.ok) throw new Error(`players.json: HTTP ${response.status}`);
+    return response.json();
+  })
+  .then(players => {
+    ages = new Map(players.map(player => [playerKey(player.name, player.team), player.age]));
+    decorateMarket();
+  })
+  .catch(error => console.error('Impossibile caricare le età dei giocatori.', error));
+
+fetch('./data/import-quality.json')
+  .then(response => {
+    if (!response.ok) throw new Error(`import-quality.json: HTTP ${response.status}`);
+    return response.json();
+  })
+  .then(data => {
+    quality = data;
+    decorateQuality();
+  })
+  .catch(error => console.error('Impossibile caricare la diagnostica di importazione.', error));
