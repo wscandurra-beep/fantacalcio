@@ -25,6 +25,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: main
+          fetch-depth: 0
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -67,10 +68,11 @@ jobs:
       - name: Commit scraper results
         shell: bash
         run: |
+          set -euo pipefail
+
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          # Stage first so both modified and newly-created (untracked) output files are detected.
           git add -f data/pro_contro.json data/pro_contro.csv
 
           if git diff --cached --quiet; then
@@ -81,4 +83,14 @@ jobs:
           echo "Changes to commit:"
           git status --short
           git commit -m "Update Fantacalcio PRO/CONTRO data"
+
+          # Main may advance while the scraper is running (PR merges, other Actions, etc.).
+          # Rebase the scraper commit onto the latest remote main instead of force-pushing.
+          git fetch origin main
+          if ! git rebase origin/main; then
+            echo "Rebase conflict: aborting without overwriting remote main."
+            git rebase --abort || true
+            exit 1
+          fi
+
           git push origin HEAD:main
