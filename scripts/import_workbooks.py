@@ -103,6 +103,25 @@ def age_number(value):
     return int(match.group(1)) if match else None
 
 
+def abbreviated_name_matches(short_name, full_name):
+    """Match list names such as ``Martinez Jo.`` to full statistical names.
+
+    The auction workbook mostly uses a surname, optionally followed by a short
+    given-name prefix.  Requiring an exact token as well as matching every
+    remaining token keeps this fallback conservative; team and uniqueness are
+    checked separately by :func:`enrich_player_ages`.
+    """
+    short_tokens = normalize_player_name(short_name).split()
+    full_tokens = normalize_player_name(full_name).split()
+    if not short_tokens or not set(short_tokens).intersection(full_tokens):
+        return False
+    return all(
+        any(token == full_token or (len(token) <= 3 and full_token.startswith(token))
+            for full_token in full_tokens)
+        for token in short_tokens
+    )
+
+
 def enrich_player_ages(players, statistic_rows):
     """Safely enrich players and return serializable matching diagnostics."""
     by_name = defaultdict(list)
@@ -114,10 +133,14 @@ def enrich_player_ages(players, statistic_rows):
     matched_ids = set()
     for row in statistic_rows:
         name = row.get("Player")
+        team = normalize_player_name(row.get("Squad"))
         candidates = by_name.get(normalize_player_name(name), [])
-        if len(candidates) > 1 and row.get("Squad"):
-            team = normalize_player_name(row["Squad"])
-            team_candidates = [p for p in candidates if normalize_player_name(p.get("team")) == team]
+        if len(candidates) != 1:
+            team_candidates = [
+                player for player in players
+                if normalize_player_name(player.get("team")) == team
+                and abbreviated_name_matches(player.get("name"), name)
+            ]
             if len(team_candidates) == 1:
                 candidates = team_candidates
         if len(candidates) == 1:
@@ -126,7 +149,11 @@ def enrich_player_ages(players, statistic_rows):
                 candidates[0]["age"] = age
                 matched_ids.add(candidates[0]["id"])
         elif len(candidates) > 1:
-            ambiguous.append({"name": name, "team": row.get("Squad"), "candidateIds": [p["id"] for p in candidates]})
+            ambiguous.append({
+                "name": name,
+                "team": row.get("Squad"),
+                "candidateIds": [player["id"] for player in candidates],
+            })
         else:
             unmatched.append({"name": name, "team": row.get("Squad")})
 
