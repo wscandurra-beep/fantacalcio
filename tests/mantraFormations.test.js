@@ -1,0 +1,13 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {MANTRA_FORMATIONS,MANTRA_ROLES,getFormation,getFormationIds,getFormationPositions,getFormationRoleDemand,isPlayerCompatibleWithPosition,getCompatiblePositions,validateFormationDefinitions} from '../src/mantraFormations.js';
+
+test('the catalogue contains all 11 official formations',()=>assert.deepEqual(getFormationIds(),['3-4-3','3-4-1-2','3-4-2-1','3-5-2','3-5-1-1','4-3-3','4-3-1-2','4-4-2','4-1-4-1','4-4-1-1','4-2-3-1']));
+test('every formation has 11 positions, ten outfield players and one goalkeeper',()=>{for(const id of getFormationIds()){const positions=getFormationPositions(id);assert.equal(positions.length,11,id);assert.equal(positions.filter(position=>position.line!=='GK').length,10,id);assert.equal(positions.filter(position=>position.acceptedRoles.includes('Por')).length,1,id)}});
+test('roles are valid and alternatives remain arrays',()=>{const allowed=new Set(MANTRA_ROLES);for(const id of getFormationIds())for(const position of getFormationPositions(id)){assert.ok(Array.isArray(position.acceptedRoles));assert.ok(position.acceptedRoles.length);assert.ok(position.acceptedRoles.every(role=>allowed.has(role)));assert.ok(!position.acceptedRoles.some(role=>role.includes('/')))}});
+test('all centralized definitions pass structural validation',()=>assert.equal(validateFormationDefinitions(MANTRA_FORMATIONS),true));
+test('single and multi-role compatibility use Mantra roles',()=>{const leftBack=getFormationPositions('4-3-3').find(position=>position.id==='DEF_LEFT');const centralMid=getFormationPositions('3-4-2-1').find(position=>position.id==='MID_CENTRE_LEFT');assert.equal(isPlayerCompatibleWithPosition('Ds',leftBack),true);assert.equal(isPlayerCompatibleWithPosition('M;C',centralMid),true);assert.equal(isPlayerCompatibleWithPosition('Pc',centralMid),false)});
+test('compatible positions and role demand are derived from slots',()=>{assert.equal(getCompatiblePositions('W;A','3-4-2-1').length,3);assert.deepEqual(getFormationRoleDemand('3-4-2-1').W,['AM_LEFT','AM_RIGHT'])});
+test('saved formation ids still resolve',()=>{for(const id of ['3-4-2-1','3-4-1-2','4-3-1-2'])assert.equal(getFormation(id).id,id);assert.equal(getFormation('unknown'),null)});
+test('strategy selector renders every option from centralized formations',async()=>{const source=await readFile(new URL('../src/app.js',import.meta.url),'utf8');assert.match(source,/getFormationIds\(\)\.map/);assert.match(source,/data-formation/);assert.match(source,/11 moduli/);assert.doesNotMatch(source,/<option>3-4-2-1<\/option>/)});
