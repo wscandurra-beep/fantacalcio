@@ -1,0 +1,18 @@
+{
+  "updatedAt": null,
+  "currentInjuries": 0,
+  "newInjuries": 0,
+  "recovered": 0,
+  "injuryUpdated": 0,
+  "returnUpdated": 0,
+  "unchanged": 0,
+  "matched": 0,
+  "unmatched": 0,
+  "ambiguous": 0,
+  "missingExpectedReturn": 0,
+  "unmatchedRecords": [],
+  "ambiguousRecords": [],
+  "changes": [],
+  "result": "NOT_YET_RUN",
+  "errors": ["Eseguire il primo aggiornamento live: nessun dato storico è stato importato."]
+}

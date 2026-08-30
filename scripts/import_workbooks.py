@@ -4,11 +4,17 @@
 import csv
 import json
 import re
+import sys
 import unicodedata
 from collections import defaultdict
 from pathlib import Path
 from zipfile import ZipFile
 from xml.etree import ElementTree as ET
+
+SCRIPT_DIR = Path(__file__).resolve().parent
+if str(SCRIPT_DIR) not in sys.path:
+    sys.path.insert(0, str(SCRIPT_DIR))
+from infortuni import apply_snapshot
 
 M = "{http://schemas.openxmlformats.org/spreadsheetml/2006/main}"
 R = "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}"
@@ -186,12 +192,10 @@ def import_data(root=ROOT):
     quotations = records(root / "Quotazioni_Fantacalcio_Stagione_2026_27.xlsx", "Tutti", 2)
     statistics = {row["Id"]: row for row in records(root / "Statistiche_Fantacalcio_Stagione_2026_27.xlsx", "Tutti", 2)}
     cups = {row[1]: row[0] for row in sheet_rows(root / "Stat_Figures_2025.xlsx", "Coppe")[1:] if len(row) > 1 and row[1]}
-    injuries = {row[0]: row for row in sheet_rows(root / "Stat_Figures_2025.xlsx", "Infortuni (GPT)")[1:] if row and row[0] != "n/a"}
     pros_cons = {row[0]: row for row in sheet_rows(root / "Stat_Figures_2025.xlsx", "Pro_Contro")[1:] if row and row[0]}
     players = []
     for row in quotations:
         stats = statistics.get(row["Id"], {})
-        injury = injuries.get(row["Id"])
         prose = pros_cons.get(row["Id"])
         auction = numeric(row.get("FVM M")) or numeric(row.get("FVM")) or 0
         quote = numeric(row.get("Qt.A M")) or numeric(row.get("Qt.A")) or 0
@@ -200,9 +204,13 @@ def import_data(root=ROOT):
             "rankingCategory": category(row["RM"]), "auctionValue": auction, "quotation": quote,
             "hypeFactor": round(auction / quote, 2) if quote else None, "cups": cups.get(row["Squadra"], ""),
             "age": None, "avgPg": None, "avgMf": None, "actPg": numeric(stats.get("Pv")), "actMf": numeric(stats.get("Fm")),
-            "status": "OK" if not injury else f"Infortunato · Rientro: {injury[3]}",
+            # This is deliberately reset below from the complete live snapshot.
+            "status": "OK",
             "pro": prose[5] if prose and len(prose) > 5 else None, "contro": prose[6] if prose and len(prose) > 6 else None,
         })
+    snapshot_path = root / "data/infortuni.json"
+    snapshot = json.loads(snapshot_path.read_text(encoding="utf-8")) if snapshot_path.exists() else {"injuries": []}
+    apply_snapshot(players, snapshot.get("injuries", []))
     quality = enrich_player_ages(players, statistics_player_records(root / "Statistiche_Giocatori.xlsx"))
     (root / "data/players.json").write_text(json.dumps(players, ensure_ascii=False, separators=(",", ":")))
     (root / "data/import-quality.json").write_text(json.dumps(quality, ensure_ascii=False, indent=2))
