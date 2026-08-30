@@ -7,3 +7,4 @@
 .strategy-slot-table-wrap .slot-table{border-collapse:separate;border-spacing:0}
 .strategy-slot-table-wrap thead th{position:sticky;top:0;z-index:2;background:#10151b;border-bottom:2px solid var(--line)}
 .strategy-slot-table-wrap tfoot th{position:sticky;bottom:0;z-index:2;background:#182016;border-top:2px solid var(--lime);border-bottom:0}
+.slot-counts{grid-column:1/-1;display:grid;grid-template-columns:repeat(6,minmax(72px,1fr));gap:10px;padding-top:12px;margin-top:2px;border-top:1px solid var(--line)}.slot-counts-head{grid-column:1/-1;display:flex;align-items:baseline;justify-content:space-between;gap:12px}.slot-counts-head b{font-size:13px}.slot-counts input{width:100%}.slot-counts input:disabled{opacity:.6;cursor:not-allowed}.editor #size[readonly]{color:var(--lime);font-weight:700}@media(max-width:900px){.editor{grid-template-columns:1fr 1fr}.slot-counts{grid-template-columns:repeat(3,1fr)}}
