@@ -1,4 +1,5 @@
 export const CATEGORY_PRIORITY = ['POR','DC','E','C','WA','PC'];
+export const DEFAULT_SLOT_COUNTS = Object.freeze({POR:3,DC:8,E:6,C:5,WA:9,PC:3});
 export function normalizeName(value='') { return value.normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[’']/g,' ').replace(/[^a-zA-Z0-9]+/g,' ').trim().toLowerCase(); }
 export function assignRankingCategory(roles='') {
   const set=new Set(String(roles).split(';').map(x=>x.trim().toLowerCase()));
@@ -65,4 +66,51 @@ export function updateSlotStrategy(slots,edits) {
     return {...slot,...budgets,category:edit.category};
   });
   return updateForecasts(updated);
+}
+export function slotCountsFromSlots(slots=[]) {
+  const counts=Object.fromEntries(CATEGORY_PRIORITY.map(category=>[category,0]));
+  for(const slot of slots)if(Object.hasOwn(counts,slot.category))counts[slot.category]++;
+  return counts;
+}
+export function validateSlotCounts(input,maxRosterSize=34) {
+  const counts={};
+  for(const category of CATEGORY_PRIORITY){
+    const value=Number(input?.[category]);
+    if(!Number.isInteger(value)||value<0)throw new Error(`Numero slot non valido per ${category}`);
+    counts[category]=value;
+  }
+  if(counts.POR!==3)throw new Error('I portieri devono essere esattamente 3');
+  const total=CATEGORY_PRIORITY.reduce((sum,category)=>sum+counts[category],0);
+  if(total<3||total>maxRosterSize)throw new Error(`La rosa deve contenere da 3 a ${maxRosterSize} giocatori`);
+  return {counts,total};
+}
+function nextSlotId(slots,category) {
+  const used=new Set(slots.map(slot=>slot.id));
+  let index=1;
+  while(used.has(`${category}${index}`))index++;
+  return `${category}${index}`;
+}
+function priorityForIndex(index) { return index===0?'Key':index<3?'Starter':'Reserve'; }
+export function reconcileSlotCounts(slots,input,maxRosterSize=34) {
+  const {counts}=validateSlotCounts(input,maxRosterSize);
+  let result=[...slots];
+  for(const category of CATEGORY_PRIORITY){
+    const desired=counts[category];
+    let grouped=result.filter(slot=>slot.category===category);
+    const completed=grouped.filter(isCompletedSlot);
+    if(desired<completed.length)throw new Error(`Impossibile ridurre ${category} a ${desired}: ${completed.length} slot sono già acquistati`);
+    if(grouped.length>desired){
+      const toRemove=grouped.length-desired;
+      const removable=new Set([...grouped].reverse().filter(slot=>!isCompletedSlot(slot)).slice(0,toRemove).map(slot=>slot.id));
+      if(removable.size!==toRemove)throw new Error(`Impossibile ridurre ${category}: gli slot da rimuovere contengono acquisti`);
+      result=result.filter(slot=>!removable.has(slot.id));
+    }
+    grouped=result.filter(slot=>slot.category===category);
+    while(grouped.length<desired){
+      const id=nextSlotId(result,category),index=grouped.length;
+      const slot={id,category,priority:priorityForIndex(index),originalPlannedBudget:0,playerId:null,actualPurchasePrice:null};
+      result.push(slot);grouped.push(slot);
+    }
+  }
+  return updateForecasts(result);
 }
