@@ -28,7 +28,7 @@ The importer uses only Python's standard library, reads the OOXML sources direct
 * Dedicated role assignment is centralized and selects the highest eligible priority among `POR, DC, E, C, WA, PC`.
 * Ranking is `Asta € DESC`, then `Quot. DESC`.
 * A category with `S` planned slots is divided into `S` deterministic, balanced supply tiers. Once a SOLD or MY TEAM event starts the auction, stored status changes do not recalculate rank or tier from availability.
-* Baseline, current forecast and actual purchase price are distinct slot values.
+* Baseline and actual purchase price are the slot sources of truth. Forecast is always derived from Actual when present, otherwise from Baseline.
 * Maximum roster size is 34 and the default plan includes exactly three goalkeepers.
 
 See [the workbook implementation analysis](docs/workbook-analysis.md) for the traced dependencies, verified formulas and explicit ambiguities.
