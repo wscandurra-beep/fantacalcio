@@ -1,0 +1,14 @@
+.diagnostics {
+  columns: 2;
+  max-height: 24rem;
+  overflow: auto;
+  color: var(--muted);
+  line-height: 1.6;
+  padding-left: 1.25rem;
+}
+
+@media (max-width: 900px) {
+  .diagnostics {
+    columns: 1;
+  }
+}
