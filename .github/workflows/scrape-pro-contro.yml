@@ -1,0 +1,79 @@
+name: Scrape PRO/CONTRO
+
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Optional number of players to scrape (leave empty for all)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scrape-pro-contro
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Run scraper
+        shell: bash
+        run: |
+          if [ -n "${{ inputs.limit }}" ]; then
+            python3 scripts/scrape_pro_contro.py --limit "${{ inputs.limit }}"
+          else
+            python3 scripts/scrape_pro_contro.py
+          fi
+
+      - name: Show scrape summary
+        if: always()
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path('data/pro_contro.json')
+          if not p.exists():
+              print('No data/pro_contro.json produced')
+              raise SystemExit(0)
+          data = json.loads(p.read_text(encoding='utf-8'))
+          rows = data if isinstance(data, list) else data.get('players', data.get('results', []))
+          if isinstance(rows, dict):
+              rows = list(rows.values())
+          counts = {}
+          for row in rows:
+              status = row.get('status', 'unknown') if isinstance(row, dict) else 'unknown'
+              counts[status] = counts.get(status, 0) + 1
+          print(f'Total rows: {len(rows)}')
+          for key in sorted(counts):
+              print(f'{key}: {counts[key]}')
+          PY
+
+      - name: Commit scraper results
+        shell: bash
+        run: |
+          if git diff --quiet -- data/pro_contro.json data/pro_contro.csv; then
+            echo "No scraper result changes to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/pro_contro.json data/pro_contro.csv
+          git commit -m "Update Fantacalcio PRO/CONTRO data"
+          git push origin HEAD:main
