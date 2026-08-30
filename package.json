@@ -1,1 +1,1 @@
-{"name":"fantacalcio-mantra-cockpit","private":true,"type":"module","scripts":{"dev":"python3 -m http.server 4173","test":"node --test","import:data":"python3 scripts/import_workbooks.py"}}
+{"name":"fantacalcio-mantra-cockpit","private":true,"type":"module","scripts":{"dev":"python3 -m http.server 4173","test":"node --test","import:data":"python3 scripts/import_workbooks.py","scrape:procontro":"python3 scripts/scrape_pro_contro.py"}}
