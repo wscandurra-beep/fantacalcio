@@ -1,0 +1,112 @@
+[
+  {
+    "id": "5841",
+    "name": "Svilar",
+    "team": "Roma",
+    "url": "https://www.fantacalcio.it/serie-a/squadre/roma/svilar/5841",
+    "pro": "Top assoluto nel suo ruolo, probabilmente il migliore del listone, anche e soprattutto in chiave modificatore. Affidabile sotto ogni aspetto.",
+    "contro": "In questo caso ovviamente occhio al prezzo, specialmente dopo la scorsa stagione il costo potrebbe essere davvero altissimo.",
+    "status": "ok",
+    "error": null,
+    "fetchedAt": "2026-08-30T21:31:35.974996+00:00"
+  },
+  {
+    "id": "5116",
+    "name": "Martinez Jo.",
+    "team": "Inter",
+    "url": "https://www.fantacalcio.it/serie-a/squadre/inter/martinez-jo/5116",
+    "pro": "Dovrebbe finalmente arrivare la sua grande occasione. Parte avanti per essere il titolare, portiere affidabile sotto diversi aspetti. Ovviamente stuzzica soprattutto per il rapporto qualità-prezzo: alla prima grande opportunità in una big potrebbe costare meno rispetto ad un top più affermato.",
+    "contro": "Al primo anno da protagonista in una big di questo livello, mentalmente potrebbe anche accusare il colpo. Inoltre occhio a Provedel, la sua concorrenza resta fastidiosa.",
+    "status": "ok",
+    "error": null,
+    "fetchedAt": "2026-08-30T21:31:38.281339+00:00"
+  },
+  {
+    "id": "4431",
+    "name": "Carnesecchi",
+    "team": "Atalanta",
+    "url": "https://www.fantacalcio.it/serie-a/squadre/atalanta/carnesecchi/4431",
+    "pro": "Profilo top per il modificatore, ottimo acquisto per qualità-prezzo. Affidabilissimo per media voto. Titolare indiscusso.",
+    "contro": "Con Sarri si cambierà filosofia e anche assetto, soprattutto la difesa potrebbe risentirne inizialmente concedendo qualche gol in più rispetto al solito. Occhio alla costruzione dal basso, non è proprio il suo forte.",
+    "status": "ok",
+    "error": null,
+    "fetchedAt": "2026-08-30T21:31:40.873489+00:00"
+  },
+  {
+    "id": "6966",
+    "name": "Butez",
+    "team": "Como",
+    "url": "https://www.fantacalcio.it/serie-a/squadre/como/butez/6966",
+    "pro": "Portiere di una big, affidabile sia per titolarità che per MV. Inoltre, rispetto ad altri, garantisce un ottimo rapporto qualità-prezzo. Non ha ballottaggi.",
+    "contro": "Sicuramente un profilo migliore in termini di clean sheet piuttosto che per il modificatore difesa.",
+    "status": "ok",
+    "error": null,
+    "fetchedAt": "2026-08-30T21:31:43.251357+00:00"
+  },
+  {
+    "id": "4964",
+    "name": "Vicario",
+    "team": "Juventus",
+    "url": "https://www.fantacalcio.it/serie-a/squadre/juventus/vicario/4964",
+    "pro": "Portiere di grande livello, molto affidabile. Sia in termini di clean sheet che in chiave modificatore può essere un riferimento.",
+    "contro": "Il prezzo non sarà basso, anzi. State attenti e monitorate sempre l'FVM indicato per non esagerare.",
+    "status": "ok",
+    "error": null,
+    "fetchedAt": "2026-08-30T21:31:45.914769+00:00"
+  },
+  {
+    "id": "4312",
+    "name": "Maignan",
+    "team": "Milan",
+    "url": "https://www.fantacalcio.it/serie-a/squadre/milan/maignan/4312",
+    "pro": "Top di ruolo, anche e soprattutto in chiave modificatore. Pararigori.",
+    "contro": "Il prezzo non sarà basso, meglio seguire l'FVM per evitare di esagerare. Ha dei momenti no, occhio anche a qualche acciacco fisico di troppo.",
+    "status": "ok",
+    "error": null,
+    "fetchedAt": "2026-08-30T21:31:48.035615+00:00"
+  },
+  {
+    "id": "2521",
+    "name": "De Gea",
+    "team": "Fiorentina",
+    "url": "https://www.fantacalcio.it/serie-a/squadre/fiorentina/de-gea/2521",
+    "pro": "Titolare fisso. Buon profilo sia per il modificatore che per i clean sheet, ma ovviamente in base al calendario. Dopo la scorsa stagione il prezzo può essere basso, possibile occasione.",
+    "contro": "L'età avanza, gli errori aumentano, sicuramente più altalenante del solito. Non un top, senza dubbi.",
+    "status": "ok",
+    "error": null,
+    "fetchedAt": "2026-08-30T21:31:49.817766+00:00"
+  },
+  {
+    "id": "572",
+    "name": "Meret",
+    "team": "Napoli",
+    "url": "https://www.fantacalcio.it/serie-a/squadre/napoli/meret/572",
+    "pro": "Garantirà un buon numero di presenze, in vantaggio su Milinkovic Savic. Affidabile sotto diversi aspetti. Inoltre non è mai pagato come un top.",
+    "contro": "La concorrenza di Milinkovic Savic resta parecchio fastidiosa. Incline a qualche problemino fisico di troppo.",
+    "status": "ok",
+    "error": null,
+    "fetchedAt": "2026-08-30T21:31:52.140937+00:00"
+  },
+  {
+    "id": "133",
+    "name": "Skorupski",
+    "team": "Bologna",
+    "url": "https://www.fantacalcio.it/serie-a/squadre/bologna/skorupski/133",
+    "pro": "Profilo sempre affidabile sotto diversi aspetti. Inoltre, il prezzo è ampiamente nella media, un buon portiere da alternare con un altro dello stesso livello.",
+    "contro": "Anche con il nuovo allenatore la filosofia resta offensiva e propositiva. Dunque, i gol subiti potrebbero non mancare, in termini di clean sheet non è proprio uno dei migliori.",
+    "status": "ok",
+    "error": null,
+    "fetchedAt": "2026-08-30T21:31:54.357465+00:00"
+  },
+  {
+    "id": "4360",
+    "name": "Caprile",
+    "team": "Cagliari",
+    "url": "https://www.fantacalcio.it/serie-a/squadre/cagliari/caprile/4360",
+    "pro": "Titolare inamovibile, profilo molto appetibile per chi utilizza il modificatore. Rapporto qualità-prezzo intriga tantissimo.",
+    "contro": "Appetibile per il modificatore, decisamente meno in termini di clean sheet. I gol subiti non mancheranno.",
+    "status": "ok",
+    "error": null,
+    "fetchedAt": "2026-08-30T21:31:56.637753+00:00"
+  }
+]
