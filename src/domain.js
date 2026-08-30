@@ -20,20 +20,12 @@ export function assignTiers(players, slotCount) {
 export function budgetSummary(budget,slots) { const spent=slots.reduce((s,x)=>s+(x.actualPurchasePrice??0),0); const planned=slots.reduce((s,x)=>s+Number(x.originalPlannedBudget||0),0); const forecast=slots.filter(x=>!x.playerId).reduce((s,x)=>s+Number(x.currentForecastBudget||0),0); return {budget,planned,unallocated:budget-planned,spent,remaining:budget-spent,currentPlannedRemaining:forecast,variance:(budget-spent)-forecast}; }
 export function slotPlanSummary(slots) { return {slotCount:slots.length,roleCount:slots.filter(slot=>slot.category).length,planned:slots.reduce((total,slot)=>total+Number(slot.originalPlannedBudget||0),0)}; }
 export function updateForecasts(slots) {
-  const open=slots.filter(slot=>!slot.playerId);
-  const openBaseline=open.reduce((total,slot)=>total+Number(slot.originalPlannedBudget||0),0);
-  const planned=slots.reduce((total,slot)=>total+Number(slot.originalPlannedBudget||0),0);
-  const spent=slots.reduce((total,slot)=>total+Number(slot.actualPurchasePrice||0),0);
-  if(!open.length||openBaseline<=0)return slots;
-  const target=Math.max(0,planned-spent);
-  let assigned=0;
-  return slots.map(slot=>{
-    if(slot.playerId)return slot;
-    const isLast=slot===open.at(-1);
-    const forecast=isLast?target-assigned:Math.round(target*Number(slot.originalPlannedBudget||0)/openBaseline);
-    assigned+=forecast;
-    return {...slot,currentForecastBudget:forecast};
-  });
+  return slots.map(slot=>({
+    ...slot,
+    currentForecastBudget:slot.playerId
+      ? Number(slot.actualPurchasePrice||0)
+      : Number(slot.originalPlannedBudget||0),
+  }));
 }
 export function statusFor(injury) { return !injury?'OK':[injury.injuryDetails,injury.expectedReturn&&`Rientro: ${injury.expectedReturn}`].filter(Boolean).join(' · '); }
 export function availablePlayers(players,state) { return players.filter(p=>(state[p.id]?.marketStatus??'AVAILABLE')==='AVAILABLE'); }
@@ -45,8 +37,9 @@ export function updateSlotStrategy(slots,edits) {
     if(!edit)return slot;
     const originalBudget=Number(edit.originalPlannedBudget);
     if(!Number.isFinite(originalBudget)||originalBudget<0)throw new Error(`Baseline non valida per ${slot.id}`);
-    if(slot.category==='POR')return {...slot,originalPlannedBudget:originalBudget};
+    const currentForecastBudget=slot.playerId?Number(slot.actualPurchasePrice||0):originalBudget;
+    if(slot.category==='POR')return {...slot,originalPlannedBudget:originalBudget,currentForecastBudget};
     if(!categories.has(edit.category))throw new Error(`Ruolo non valido per ${slot.id}`);
-    return {...slot,category:edit.category,originalPlannedBudget:originalBudget};
+    return {...slot,category:edit.category,originalPlannedBudget:originalBudget,currentForecastBudget};
   });
 }
