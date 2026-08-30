@@ -19,6 +19,22 @@ export function assignTiers(players, slotCount) {
 }
 export function budgetSummary(budget,slots) { const spent=slots.reduce((s,x)=>s+(x.actualPurchasePrice??0),0); const planned=slots.reduce((s,x)=>s+Number(x.originalPlannedBudget||0),0); const forecast=slots.filter(x=>!x.playerId).reduce((s,x)=>s+Number(x.currentForecastBudget||0),0); return {budget,planned,unallocated:budget-planned,spent,remaining:budget-spent,currentPlannedRemaining:forecast,variance:(budget-spent)-forecast}; }
 export function slotPlanSummary(slots) { return {slotCount:slots.length,roleCount:slots.filter(slot=>slot.category).length,planned:slots.reduce((total,slot)=>total+Number(slot.originalPlannedBudget||0),0)}; }
+export function updateForecasts(slots) {
+  const open=slots.filter(slot=>!slot.playerId);
+  const openBaseline=open.reduce((total,slot)=>total+Number(slot.originalPlannedBudget||0),0);
+  const planned=slots.reduce((total,slot)=>total+Number(slot.originalPlannedBudget||0),0);
+  const spent=slots.reduce((total,slot)=>total+Number(slot.actualPurchasePrice||0),0);
+  if(!open.length||openBaseline<=0)return slots;
+  const target=Math.max(0,planned-spent);
+  let assigned=0;
+  return slots.map(slot=>{
+    if(slot.playerId)return slot;
+    const isLast=slot===open.at(-1);
+    const forecast=isLast?target-assigned:Math.round(target*Number(slot.originalPlannedBudget||0)/openBaseline);
+    assigned+=forecast;
+    return {...slot,currentForecastBudget:forecast};
+  });
+}
 export function statusFor(injury) { return !injury?'OK':[injury.injuryDetails,injury.expectedReturn&&`Rientro: ${injury.expectedReturn}`].filter(Boolean).join(' · '); }
 export function availablePlayers(players,state) { return players.filter(p=>(state[p.id]?.marketStatus??'AVAILABLE')==='AVAILABLE'); }
 export function tierDepletion(players,state){const m={};for(const p of players){const k=`${p.rankingCategory}-${p.tier}`;m[k]??={category:p.rankingCategory,tier:p.tier,total:0,available:0};m[k].total++;if((state[p.id]?.marketStatus??'AVAILABLE')==='AVAILABLE')m[k].available++;}return Object.values(m);}
