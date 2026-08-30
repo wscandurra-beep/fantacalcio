@@ -13,6 +13,7 @@ from xml.etree import ElementTree as ET
 M = "{http://schemas.openxmlformats.org/spreadsheetml/2006/main}"
 R = "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}"
 ROOT = Path(__file__).resolve().parents[1]
+NAME_TRANSLITERATION = str.maketrans({"ð": "d", "ø": "o", "ı": "i"})
 
 
 def normalize_player_name(value):
@@ -24,9 +25,9 @@ def normalize_player_name(value):
     """
     if not value:
         return ""
-    value = unicodedata.normalize("NFKD", str(value))
+    value = str(value).casefold().translate(NAME_TRANSLITERATION)
+    value = unicodedata.normalize("NFKD", value)
     value = "".join(char for char in value if not unicodedata.combining(char))
-    value = value.casefold()
     value = re.sub(r"[\u2010-\u2015\u2212\-]+", " ", value)
     value = re.sub(r"['\u2018\u2019\u201a\u201b\u2032\u0060\u00b4\"\u201c\u201d\u201e\u201f]+", " ", value)
     value = re.sub(r"[^\w\s]", " ", value, flags=re.UNICODE)
