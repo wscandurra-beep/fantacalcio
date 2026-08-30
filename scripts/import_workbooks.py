@@ -148,6 +148,7 @@ def enrich_player_ages(players, statistic_rows):
             age = age_number(row.get("Age"))
             if age is not None:
                 candidates[0]["age"] = age
+                candidates[0]["ageSource"] = "Statistiche_Giocatori.xlsx"
                 matched_ids.add(candidates[0]["id"])
         elif len(candidates) > 1:
             ambiguous.append({
@@ -168,6 +169,44 @@ def enrich_player_ages(players, statistic_rows):
         "unmatched": unmatched,
         "missingPlayers": [{"name": p["name"], "team": p["team"]} for p in missing],
     }
+
+
+def load_scraped_age_enrichment(root=ROOT):
+    path = root / "data/player_ages.json"
+    if not path.exists():
+        return []
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return []
+    rows = payload.get("players", payload) if isinstance(payload, dict) else payload
+    return rows if isinstance(rows, list) else []
+
+
+def apply_scraped_age_enrichment(players, rows):
+    """Fill only missing ages from deterministic scraper output; never overwrite."""
+    by_id = {str(player.get("id")): player for player in players}
+    recovered = {"fbref": 0, "transfermarkt": 0, "ignored": 0}
+    for row in rows:
+        if not isinstance(row, dict):
+            continue
+        player = by_id.get(str(row.get("id")))
+        age = age_number(row.get("age"))
+        if not player or player.get("age") is not None or age is None or not 15 <= age <= 50:
+            recovered["ignored"] += 1
+            continue
+        if normalize_player_name(player.get("name")) != normalize_player_name(row.get("name")):
+            recovered["ignored"] += 1
+            continue
+        player["age"] = age
+        player["dateOfBirth"] = row.get("dateOfBirth")
+        player["ageSource"] = row.get("source")
+        player["ageSourceUrl"] = row.get("sourceUrl")
+        player["ageMatchedBy"] = row.get("matchedBy")
+        source = row.get("source")
+        if source in recovered:
+            recovered[source] += 1
+    return recovered
 
 
 def category(roles_value):
@@ -205,9 +244,16 @@ def import_data(root=ROOT):
             "pro": prose[5] if prose and len(prose) > 5 else None, "contro": prose[6] if prose and len(prose) > 6 else None,
         })
     quality = enrich_player_ages(players, statistics_player_records(root / "Statistiche_Giocatori.xlsx"))
+    recovered = apply_scraped_age_enrichment(players, load_scraped_age_enrichment(root))
+    quality["ageRecoveredFbref"] = recovered["fbref"]
+    quality["ageRecoveredTransfermarkt"] = recovered["transfermarkt"]
+    quality["ageEnrichmentIgnored"] = recovered["ignored"]
+    quality["ageMissing"] = sum(player.get("age") is None for player in players)
+    quality["ageComplete"] = len(players) - quality["ageMissing"]
+    quality["missingPlayers"] = [{"name": p["name"], "team": p["team"]} for p in players if p.get("age") is None]
     (root / "data/players.json").write_text(json.dumps(players, ensure_ascii=False, separators=(",", ":")))
     (root / "data/import-quality.json").write_text(json.dumps(quality, ensure_ascii=False, indent=2))
-    print(f'Imported {len(players)} players; {quality["ageMatched"]} ages matched; {quality["ageMissing"]} ages missing; {quality["ambiguousCount"]} ambiguous; {quality["unmatchedCount"]} unmatched source rows')
+    print(f'Imported {len(players)} players; {quality["ageMatched"]} workbook ages matched; {quality["ageRecoveredFbref"]} FBref ages; {quality["ageRecoveredTransfermarkt"]} Transfermarkt ages; {quality["ageMissing"]} ages missing')
     return players, quality
 
 
