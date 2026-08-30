@@ -1,0 +1,49 @@
+import importlib.util
+import unittest
+from pathlib import Path
+
+SPEC = importlib.util.spec_from_file_location("import_workbooks", Path(__file__).parents[1] / "scripts/import_workbooks.py")
+IMPORTER = importlib.util.module_from_spec(SPEC)
+SPEC.loader.exec_module(IMPORTER)
+
+
+class NormalizePlayerNameTests(unittest.TestCase):
+    def test_common_variants(self):
+        pairs = [("Ché Adams", "CHE ADAMS"), ("D’Angelo", "d'angelo"),
+                 ("Jean-Clair", "jean‐clair"), ("  Marco   Rossi ", "marco rossi")]
+        for left, right in pairs:
+            with self.subTest(left=left):
+                self.assertEqual(IMPORTER.normalize_player_name(left), IMPORTER.normalize_player_name(right))
+
+
+class AgeEnrichmentTests(unittest.TestCase):
+    def player(self, identifier, name, team):
+        return {"id": identifier, "name": name, "team": team, "age": None}
+
+    def test_ambiguous_name_is_not_assigned(self):
+        players = [self.player("1", "Alex Rossi", "Roma"), self.player("2", "Alex Rossi", "Milan")]
+        quality = IMPORTER.enrich_player_ages(players, [{"Player": "Alex Rossi", "Age": "24-100", "Squad": "Inter"}])
+        self.assertEqual([p["age"] for p in players], [None, None])
+        self.assertEqual(quality["ambiguousCount"], 1)
+
+    def test_team_disambiguates_duplicate_name(self):
+        players = [self.player("1", "Alex Rossi", "Roma"), self.player("2", "Alex Rossi", "Milan")]
+        quality = IMPORTER.enrich_player_ages(players, [{"Player": "ALEX ROSSI", "Age": "24-100", "Squad": "Milan"}])
+        self.assertEqual([p["age"] for p in players], [None, 24])
+        self.assertEqual(quality["ageMatched"], 1)
+
+    def test_unmatched_player_is_reported(self):
+        players = [self.player("1", "Mario Rossi", "Roma")]
+        quality = IMPORTER.enrich_player_ages(players, [{"Player": "Luigi Bianchi", "Age": "21", "Squad": "Roma"}])
+        self.assertIsNone(players[0]["age"])
+        self.assertEqual(quality["unmatchedCount"], 1)
+
+    def test_age_propagates_as_integer(self):
+        players = [self.player("1", "Ché Adams", "Torino")]
+        quality = IMPORTER.enrich_player_ages(players, [{"Player": "Che Adams", "Age": "30-048", "Squad": "Torino"}])
+        self.assertEqual(players[0]["age"], 30)
+        self.assertEqual(quality["ageMissing"], 0)
+
+
+if __name__ == "__main__":
+    unittest.main()

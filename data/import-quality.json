@@ -1,0 +1,3431 @@
+{
+  "ageMatched": 8,
+  "ageMissing": 515,
+  "ambiguousCount": 0,
+  "unmatchedCount": 340,
+  "ambiguous": [],
+  "unmatched": [
+    {
+      "name": "James Abankwah",
+      "team": "Udinese"
+    },
+    {
+      "name": "Zakaria Aboukhlal",
+      "team": "Torino"
+    },
+    {
+      "name": "Akor Adams",
+      "team": "Venezia"
+    },
+    {
+      "name": "Ché Adams",
+      "team": "Torino"
+    },
+    {
+      "name": "Vasilije Adžić",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Manuel Akanji",
+      "team": "Inter"
+    },
+    {
+      "name": "Ebenezer Akinsanmiro",
+      "team": "Monza"
+    },
+    {
+      "name": "Kerim Alajbegović",
+      "team": "Juventus"
+    },
+    {
+      "name": "Pontus Almqvist",
+      "team": "Parma"
+    },
+    {
+      "name": "Mikel Amondarain",
+      "team": "Bologna"
+    },
+    {
+      "name": "Frank Anguissa",
+      "team": "Napoli"
+    },
+    {
+      "name": "Juan Arizala",
+      "team": "Udinese"
+    },
+    {
+      "name": "Arthur Atta",
+      "team": "Fiorentina"
+    },
+    {
+      "name": "Yann Aurel Bisseck",
+      "team": "Inter"
+    },
+    {
+      "name": "Giuseppe Aurelio",
+      "team": "Cagliari"
+    },
+    {
+      "name": "Neil El Aynaoui",
+      "team": "Roma"
+    },
+    {
+      "name": "Oussama El Azzouzi",
+      "team": "Bologna"
+    },
+    {
+      "name": "Darryl Bakola",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Adam Bakoune",
+      "team": "Monza"
+    },
+    {
+      "name": "Tommaso Baldanzi",
+      "team": "Genoa"
+    },
+    {
+      "name": "Nicolò Barella",
+      "team": "Inter"
+    },
+    {
+      "name": "Davide Bartesaghi",
+      "team": "Milan"
+    },
+    {
+      "name": "Toma Bašić",
+      "team": "Venezia"
+    },
+    {
+      "name": "Alessandro Bastoni",
+      "team": "Inter"
+    },
+    {
+      "name": "Martin Baturina",
+      "team": "Como"
+    },
+    {
+      "name": "Vakoun Bayo",
+      "team": "Udinese"
+    },
+    {
+      "name": "Armel Bella Kotchap",
+      "team": "Venezia"
+    },
+    {
+      "name": "Domenico Berardi",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Adrian Bernabe",
+      "team": "Parma"
+    },
+    {
+      "name": "Federico Bernardeschi",
+      "team": "Bologna"
+    },
+    {
+      "name": "Lorenzo Bernasconi",
+      "team": "Atalanta"
+    },
+    {
+      "name": "Nicolò Bertola",
+      "team": "Udinese"
+    },
+    {
+      "name": "Justin Bijlow",
+      "team": "Genoa"
+    },
+    {
+      "name": "El Bilal Touré",
+      "team": "Parma"
+    },
+    {
+      "name": "Samuele Birindelli",
+      "team": "Monza"
+    },
+    {
+      "name": "Daniel Birligea",
+      "team": "Frosinone"
+    },
+    {
+      "name": "Jeremie Boga",
+      "team": "Juventus"
+    },
+    {
+      "name": "Ange-Yoan Bonny",
+      "team": "Inter"
+    },
+    {
+      "name": "Gennaro Borrelli",
+      "team": "Cagliari"
+    },
+    {
+      "name": "Kieron Bowie",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Gabriele Bracaglia",
+      "team": "Frosinone"
+    },
+    {
+      "name": "Gleison Bremer",
+      "team": "Juventus"
+    },
+    {
+      "name": "Marco Brescianini",
+      "team": "Fiorentina"
+    },
+    {
+      "name": "Sascha Britschgi",
+      "team": "Parma"
+    },
+    {
+      "name": "Gianluca Busio",
+      "team": "Venezia"
+    },
+    {
+      "name": "Jean Butez",
+      "team": "Como"
+    },
+    {
+      "name": "Alessio Cacciamani",
+      "team": "Torino"
+    },
+    {
+      "name": "Hakan Çalhanoğlu",
+      "team": "Inter"
+    },
+    {
+      "name": "Giacomo Calò",
+      "team": "Frosinone"
+    },
+    {
+      "name": "Gabriele Calvani",
+      "team": "Frosinone"
+    },
+    {
+      "name": "Nicolò Cambiaghi",
+      "team": "Bologna"
+    },
+    {
+      "name": "Andrea Cambiaso",
+      "team": "Juventus"
+    },
+    {
+      "name": "Matteo Cancellieri",
+      "team": "Lazio"
+    },
+    {
+      "name": "Elia Caprile",
+      "team": "Cagliari"
+    },
+    {
+      "name": "Maxence Caqueret",
+      "team": "Como"
+    },
+    {
+      "name": "Andrea Carboni",
+      "team": "Monza"
+    },
+    {
+      "name": "Marco Carnesecchi",
+      "team": "Atalanta"
+    },
+    {
+      "name": "Cesare Casadei",
+      "team": "Torino"
+    },
+    {
+      "name": "Santiago Castro",
+      "team": "Roma"
+    },
+    {
+      "name": "Zeki Çelik",
+      "team": "Juventus"
+    },
+    {
+      "name": "Trevoh Chalobah",
+      "team": "Como"
+    },
+    {
+      "name": "Matteo Chichella",
+      "team": "Frosinone"
+    },
+    {
+      "name": "Samuel Chukwueze",
+      "team": "Milan"
+    },
+    {
+      "name": "Riccardo Ciervo",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Simone Cinquegrano",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Alphadjo Cissè",
+      "team": "Milan"
+    },
+    {
+      "name": "Giorgio Cittadini",
+      "team": "Frosinone"
+    },
+    {
+      "name": "Saúl Coco",
+      "team": "Torino"
+    },
+    {
+      "name": "Lorenzo Colombo",
+      "team": "Genoa"
+    },
+    {
+      "name": "Andrea Colpani",
+      "team": "Monza"
+    },
+    {
+      "name": "Eray Cömert",
+      "team": "Torino"
+    },
+    {
+      "name": "Pietro Comuzzo",
+      "team": "Torino"
+    },
+    {
+      "name": "Francisco Conceição",
+      "team": "Juventus"
+    },
+    {
+      "name": "Thierry Correia",
+      "team": "Venezia"
+    },
+    {
+      "name": "Edoardo Corvi",
+      "team": "Parma"
+    },
+    {
+      "name": "Lassana Coulibaly",
+      "team": "Lecce"
+    },
+    {
+      "name": "Yan Couto",
+      "team": "Como"
+    },
+    {
+      "name": "Ben Cremaschi",
+      "team": "Parma"
+    },
+    {
+      "name": "Bryan Cristante",
+      "team": "Roma"
+    },
+    {
+      "name": "Patrick Cutrone",
+      "team": "Monza"
+    },
+    {
+      "name": "Lucas Da Cunha",
+      "team": "Como"
+    },
+    {
+      "name": "Matteo Dagasso",
+      "team": "Venezia"
+    },
+    {
+      "name": "Jonathan David",
+      "team": "Juventus"
+    },
+    {
+      "name": "Keinan Davis",
+      "team": "Udinese"
+    },
+    {
+      "name": "Kevin De Bruyne",
+      "team": "Napoli"
+    },
+    {
+      "name": "Charles De Ketelaere",
+      "team": "Atalanta"
+    },
+    {
+      "name": "Koni De Winter",
+      "team": "Milan"
+    },
+    {
+      "name": "Alessandro Deiola",
+      "team": "Cagliari"
+    },
+    {
+      "name": "Fisayo Dele-Bashiru",
+      "team": "Lazio"
+    },
+    {
+      "name": "Filippo Delli Carri",
+      "team": "Monza"
+    },
+    {
+      "name": "Enrico Delprato",
+      "team": "Parma"
+    },
+    {
+      "name": "Giovanni Di Lorenzo",
+      "team": "Napoli"
+    },
+    {
+      "name": "Boulaye Dia",
+      "team": "Lazio"
+    },
+    {
+      "name": "Ousmane Diallo",
+      "team": "Parma"
+    },
+    {
+      "name": "Assane Diao",
+      "team": "Como"
+    },
+    {
+      "name": "Federico Dimarco",
+      "team": "Inter"
+    },
+    {
+      "name": "Andy Diouf",
+      "team": "Inter"
+    },
+    {
+      "name": "Danilho Doekhi",
+      "team": "Lazio"
+    },
+    {
+      "name": "Josh Doig",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Benjamín Domínguez",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Anastasios Douvikas",
+      "team": "Como"
+    },
+    {
+      "name": "Artem Dovbyk",
+      "team": "Bologna"
+    },
+    {
+      "name": "Radu Drăgușin",
+      "team": "Fiorentina"
+    },
+    {
+      "name": "Dominik Drobnič",
+      "team": "Parma"
+    },
+    {
+      "name": "Paulo Dybala",
+      "team": "Roma"
+    },
+    {
+      "name": "Enzo Ebosse",
+      "team": "Udinese"
+    },
+    {
+      "name": "Jurgen Ekkelenkamp",
+      "team": "Udinese"
+    },
+    {
+      "name": "Mikael Ellertsson",
+      "team": "Genoa"
+    },
+    {
+      "name": "Elif Elmas",
+      "team": "Atalanta"
+    },
+    {
+      "name": "Nesta Elphege",
+      "team": "Parma"
+    },
+    {
+      "name": "Francesco Esposito",
+      "team": "Inter"
+    },
+    {
+      "name": "Pervis Estupiñán",
+      "team": "Milan"
+    },
+    {
+      "name": "Nicolò Fagioli",
+      "team": "Fiorentina"
+    },
+    {
+      "name": "Wladimiro Falcone",
+      "team": "Lecce"
+    },
+    {
+      "name": "Jacopo Fazzini",
+      "team": "Cagliari"
+    },
+    {
+      "name": "Mattia Felici",
+      "team": "Cagliari"
+    },
+    {
+      "name": "Lewis Ferguson",
+      "team": "Bologna"
+    },
+    {
+      "name": "Seydou Fini",
+      "team": "Frosinone"
+    },
+    {
+      "name": "Kian Fitz-Jim",
+      "team": "Torino"
+    },
+    {
+      "name": "Romano Floriani",
+      "team": "Lazio"
+    },
+    {
+      "name": "Manga Foe Ondoa",
+      "team": "Monza"
+    },
+    {
+      "name": "Michael Folorunsho",
+      "team": "Monza"
+    },
+    {
+      "name": "Omari Forson",
+      "team": "Monza"
+    },
+    {
+      "name": "Niccolò Fortini",
+      "team": "Torino"
+    },
+    {
+      "name": "Bartol Franjić",
+      "team": "Venezia"
+    },
+    {
+      "name": "Davide Frattesi",
+      "team": "Lazio"
+    },
+    {
+      "name": "Morten Frendrup",
+      "team": "Genoa"
+    },
+    {
+      "name": "Matteo Gabbia",
+      "team": "Milan"
+    },
+    {
+      "name": "Gianluca Gaetano",
+      "team": "Atalanta"
+    },
+    {
+      "name": "Nicolas Galazzi",
+      "team": "Monza"
+    },
+    {
+      "name": "Antonino Gallo",
+      "team": "Lecce"
+    },
+    {
+      "name": "Omri Gandelman",
+      "team": "Lecce"
+    },
+    {
+      "name": "David de Gea",
+      "team": "Fiorentina"
+    },
+    {
+      "name": "Willem Geubbels",
+      "team": "Lecce"
+    },
+    {
+      "name": "Mario Gila",
+      "team": "Milan"
+    },
+    {
+      "name": "Gvidas Gineitis",
+      "team": "Torino"
+    },
+    {
+      "name": "Nicolás González",
+      "team": "Juventus"
+    },
+    {
+      "name": "Olaf Gorter",
+      "team": "Lecce"
+    },
+    {
+      "name": "Florian Grillitsch",
+      "team": "Frosinone"
+    },
+    {
+      "name": "Idrissa Guèye",
+      "team": "Udinese"
+    },
+    {
+      "name": "Albert Guðmundsson",
+      "team": "Fiorentina"
+    },
+    {
+      "name": "Antoine Hainaut",
+      "team": "Venezia"
+    },
+    {
+      "name": "Redouane Halhal",
+      "team": "Venezia"
+    },
+    {
+      "name": "Ridgeciano Haps",
+      "team": "Venezia"
+    },
+    {
+      "name": "Luis Hasa",
+      "team": "Frosinone"
+    },
+    {
+      "name": "Torbjørn Heggem",
+      "team": "Bologna"
+    },
+    {
+      "name": "Eivind Helland",
+      "team": "Bologna"
+    },
+    {
+      "name": "Mario Hermoso",
+      "team": "Roma"
+    },
+    {
+      "name": "Emil Holm",
+      "team": "Bologna"
+    },
+    {
+      "name": "Rasmus Højlund",
+      "team": "Napoli"
+    },
+    {
+      "name": "Jay Idzes",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Emirhan İlkhan",
+      "team": "Torino"
+    },
+    {
+      "name": "Christ Inao Oulaï",
+      "team": "Fiorentina"
+    },
+    {
+      "name": "Gustav Isaksen",
+      "team": "Lazio"
+    },
+    {
+      "name": "Ardian Ismajli",
+      "team": "Torino"
+    },
+    {
+      "name": "Ardon Jashari",
+      "team": "Milan"
+    },
+    {
+      "name": "Álex Jiménez",
+      "team": "Fiorentina"
+    },
+    {
+      "name": "Pierre Kalulu",
+      "team": "Juventus"
+    },
+    {
+      "name": "Hassane Kamara",
+      "team": "Udinese"
+    },
+    {
+      "name": "Jesper Karlström",
+      "team": "Udinese"
+    },
+    {
+      "name": "Moise Kean",
+      "team": "Fiorentina"
+    },
+    {
+      "name": "Mandela Keita",
+      "team": "Parma"
+    },
+    {
+      "name": "Lloyd Kelly",
+      "team": "Juventus"
+    },
+    {
+      "name": "Kialonda",
+      "team": "Lecce"
+    },
+    {
+      "name": "Sead Kolašinac",
+      "team": "Atalanta"
+    },
+    {
+      "name": "Randal Kolo Muani",
+      "team": "Juventus"
+    },
+    {
+      "name": "Abdou-Salam Konaté",
+      "team": "Parma"
+    },
+    {
+      "name": "Manu Koné",
+      "team": "Roma"
+    },
+    {
+      "name": "Teun Koopmeiners",
+      "team": "Juventus"
+    },
+    {
+      "name": "Odilon Kossounou",
+      "team": "Atalanta"
+    },
+    {
+      "name": "Eddy Kouadio",
+      "team": "Monza"
+    },
+    {
+      "name": "Rachid Kouda",
+      "team": "Parma"
+    },
+    {
+      "name": "Konstantinos Koulierakis",
+      "team": "Roma"
+    },
+    {
+      "name": "Nikola Krstović",
+      "team": "Atalanta"
+    },
+    {
+      "name": "Sandro Kulenović",
+      "team": "Torino"
+    },
+    {
+      "name": "Gabriel Kulla",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Giorgi Kvernadze",
+      "team": "Frosinone"
+    },
+    {
+      "name": "Noa Lang",
+      "team": "Napoli"
+    },
+    {
+      "name": "Lion Lauberbach",
+      "team": "Venezia"
+    },
+    {
+      "name": "Armand Lauriente",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Fedde Leysen",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Mattia Liberali",
+      "team": "Como"
+    },
+    {
+      "name": "Luca Lipani",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Stanislav Lobotka",
+      "team": "Napoli"
+    },
+    {
+      "name": "Manuel Locatelli",
+      "team": "Juventus"
+    },
+    {
+      "name": "Ruben Loftus-Cheek",
+      "team": "Milan"
+    },
+    {
+      "name": "Simone Lontani",
+      "team": "Parma"
+    },
+    {
+      "name": "Lorenzo Lucca",
+      "team": "Napoli"
+    },
+    {
+      "name": "Lorenzo Lucchesi",
+      "team": "Monza"
+    },
+    {
+      "name": "Jhon Lucumí",
+      "team": "Juventus"
+    },
+    {
+      "name": "Emanuele Lulli",
+      "team": "Roma"
+    },
+    {
+      "name": "Tommaso Macchioni",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Mike Maignan",
+      "team": "Milan"
+    },
+    {
+      "name": "Daniel Maldini",
+      "team": "Cagliari"
+    },
+    {
+      "name": "Youssef Maleh",
+      "team": "Lecce"
+    },
+    {
+      "name": "Donyell Malen",
+      "team": "Roma"
+    },
+    {
+      "name": "Gianluca Mancini",
+      "team": "Roma"
+    },
+    {
+      "name": "Christos Mandas",
+      "team": "Lazio"
+    },
+    {
+      "name": "Rolando Mandragora",
+      "team": "Fiorentina"
+    },
+    {
+      "name": "Ricardo Mangas",
+      "team": "Monza"
+    },
+    {
+      "name": "Alessandro Marcandalli",
+      "team": "Genoa"
+    },
+    {
+      "name": "Rafa Marín",
+      "team": "Napoli"
+    },
+    {
+      "name": "João Mário Lopes",
+      "team": "Fiorentina"
+    },
+    {
+      "name": "Josep Martinez",
+      "team": "Inter"
+    },
+    {
+      "name": "Lautaro Martínez",
+      "team": "Inter"
+    },
+    {
+      "name": "Adam Marušić",
+      "team": "Lazio"
+    },
+    {
+      "name": "Diego Mascardi",
+      "team": "Torino"
+    },
+    {
+      "name": "Patrizio Masini",
+      "team": "Frosinone"
+    },
+    {
+      "name": "Franco Mastantuono",
+      "team": "Fiorentina"
+    },
+    {
+      "name": "Nemanja Matić",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Weston McKennie",
+      "team": "Juventus"
+    },
+    {
+      "name": "Scott McTominay",
+      "team": "Napoli"
+    },
+    {
+      "name": "Franz-Ethan Meichtry",
+      "team": "Genoa"
+    },
+    {
+      "name": "Paul Mendy",
+      "team": "Cagliari"
+    },
+    {
+      "name": "Alex Meret",
+      "team": "Napoli"
+    },
+    {
+      "name": "Junior Messias",
+      "team": "Genoa"
+    },
+    {
+      "name": "Luis Milla",
+      "team": "Como"
+    },
+    {
+      "name": "Lennon Miller",
+      "team": "Udinese"
+    },
+    {
+      "name": "Juan Miranda",
+      "team": "Bologna"
+    },
+    {
+      "name": "Luka Modrić",
+      "team": "Milan"
+    },
+    {
+      "name": "Ilario Monterisi",
+      "team": "Frosinone"
+    },
+    {
+      "name": "Rodrigo Mora",
+      "team": "Roma"
+    },
+    {
+      "name": "Dany Mota",
+      "team": "Monza"
+    },
+    {
+      "name": "Mathis Mout",
+      "team": "Monza"
+    },
+    {
+      "name": "Arijanet Muric",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Yunus Musah",
+      "team": "Milan"
+    },
+    {
+      "name": "Kingstone Mutandwa",
+      "team": "Cagliari"
+    },
+    {
+      "name": "Obite N'Dicka",
+      "team": "Roma"
+    },
+    {
+      "name": "Konan N'dri",
+      "team": "Lecce"
+    },
+    {
+      "name": "Corrie Ndaba",
+      "team": "Lecce"
+    },
+    {
+      "name": "Michel Ndary Adopo",
+      "team": "Cagliari"
+    },
+    {
+      "name": "Abdoulaye Ndiaye",
+      "team": "Parma"
+    },
+    {
+      "name": "Cher Ndour",
+      "team": "Fiorentina"
+    },
+    {
+      "name": "Oumar Ngom",
+      "team": "Lecce"
+    },
+    {
+      "name": "Oliver Nielsen",
+      "team": "Lazio"
+    },
+    {
+      "name": "Alieu Njie",
+      "team": "Torino"
+    },
+    {
+      "name": "Brooke Norton-Cuffy",
+      "team": "Genoa"
+    },
+    {
+      "name": "Tijjani Noslin",
+      "team": "Lazio"
+    },
+    {
+      "name": "Adam Obert",
+      "team": "Cagliari"
+    },
+    {
+      "name": "Rafel Obrador",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Cas Odenthal",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Jens Odgaard",
+      "team": "Bologna"
+    },
+    {
+      "name": "Maduka Okoye",
+      "team": "Udinese"
+    },
+    {
+      "name": "Mathías Olivera",
+      "team": "Napoli"
+    },
+    {
+      "name": "Christian Ordoñez",
+      "team": "Parma"
+    },
+    {
+      "name": "Riccardo Orsolini",
+      "team": "Bologna"
+    },
+    {
+      "name": "Sebastian Otoa",
+      "team": "Genoa"
+    },
+    {
+      "name": "Anthony Oyono",
+      "team": "Frosinone"
+    },
+    {
+      "name": "Matteo Palma",
+      "team": "Udinese"
+    },
+    {
+      "name": "Lorenzo Palmisani",
+      "team": "Frosinone"
+    },
+    {
+      "name": "Mario Pašalić",
+      "team": "Atalanta"
+    },
+    {
+      "name": "Strahinja Pavlović",
+      "team": "Milan"
+    },
+    {
+      "name": "Nicolás Paz",
+      "team": "Como"
+    },
+    {
+      "name": "Marcus Pedersen",
+      "team": "Torino"
+    },
+    {
+      "name": "Alfonso Pedraza",
+      "team": "Lazio"
+    },
+    {
+      "name": "Zé Pedro Figueiredo",
+      "team": "Cagliari"
+    },
+    {
+      "name": "Mateo Pellegrino",
+      "team": "Fiorentina"
+    },
+    {
+      "name": "Kike Pérez",
+      "team": "Venezia"
+    },
+    {
+      "name": "Mattia Perin",
+      "team": "Juventus"
+    },
+    {
+      "name": "Máximo Perrone",
+      "team": "Como"
+    },
+    {
+      "name": "Roberto Piccoli",
+      "team": "Bologna"
+    },
+    {
+      "name": "Santiago Pierotti",
+      "team": "Lecce"
+    },
+    {
+      "name": "Jakub Piotrowski",
+      "team": "Udinese"
+    },
+    {
+      "name": "Niccolò Pisilli",
+      "team": "Roma"
+    },
+    {
+      "name": "Semuel Pizzignacco",
+      "team": "Monza"
+    },
+    {
+      "name": "Matteo Politano",
+      "team": "Napoli"
+    },
+    {
+      "name": "Marin Pongračić",
+      "team": "Fiorentina"
+    },
+    {
+      "name": "Adrien Rabiot",
+      "team": "Milan"
+    },
+    {
+      "name": "Antonio Raimondo",
+      "team": "Frosinone"
+    },
+    {
+      "name": "Jacobo Ramón",
+      "team": "Como"
+    },
+    {
+      "name": "Gonçalo Ramos",
+      "team": "Milan"
+    },
+    {
+      "name": "Luca Ranieri",
+      "team": "Fiorentina"
+    },
+    {
+      "name": "Giacomo Raspadori",
+      "team": "Atalanta"
+    },
+    {
+      "name": "Jay Robinson",
+      "team": "Monza"
+    },
+    {
+      "name": "Jesus Rodríguez",
+      "team": "Como"
+    },
+    {
+      "name": "Juan Rodríguez",
+      "team": "Cagliari"
+    },
+    {
+      "name": "Alessandro Romano",
+      "team": "Cagliari"
+    },
+    {
+      "name": "José Romero",
+      "team": "Parma"
+    },
+    {
+      "name": "Nicolò Rovella",
+      "team": "Lazio"
+    },
+    {
+      "name": "Jonathan Rowe",
+      "team": "Bologna"
+    },
+    {
+      "name": "Albion Rrahmani",
+      "team": "Venezia"
+    },
+    {
+      "name": "Amir Rrahmani",
+      "team": "Napoli"
+    },
+    {
+      "name": "Alexis Saelemaekers",
+      "team": "Milan"
+    },
+    {
+      "name": "Richie Sagrado",
+      "team": "Venezia"
+    },
+    {
+      "name": "Lazar Samardzic",
+      "team": "Atalanta"
+    },
+    {
+      "name": "Alisson Santos",
+      "team": "Napoli"
+    },
+    {
+      "name": "Giorgio Scalvini",
+      "team": "Atalanta"
+    },
+    {
+      "name": "Gianluca Scamacca",
+      "team": "Atalanta"
+    },
+    {
+      "name": "Joël Schingtienne",
+      "team": "Venezia"
+    },
+    {
+      "name": "Romano Schmid",
+      "team": "Frosinone"
+    },
+    {
+      "name": "Jamil Siebert",
+      "team": "Lecce"
+    },
+    {
+      "name": "Éderson Silva",
+      "team": "Atalanta"
+    },
+    {
+      "name": "Giovanni Simeone",
+      "team": "Torino"
+    },
+    {
+      "name": "Łukasz Skorupski",
+      "team": "Bologna"
+    },
+    {
+      "name": "Ivan Smolčić",
+      "team": "Como"
+    },
+    {
+      "name": "Simon Sohm",
+      "team": "Venezia"
+    },
+    {
+      "name": "Oumar Solet",
+      "team": "Udinese"
+    },
+    {
+      "name": "Matìas Soulé",
+      "team": "Roma"
+    },
+    {
+      "name": "Djibril Sow",
+      "team": "Genoa"
+    },
+    {
+      "name": "Leonardo Spinazzola",
+      "team": "Napoli"
+    },
+    {
+      "name": "Aleksandar Stanković",
+      "team": "Inter"
+    },
+    {
+      "name": "Filip Stankovic",
+      "team": "Venezia"
+    },
+    {
+      "name": "John Stones",
+      "team": "Inter"
+    },
+    {
+      "name": "Nikola Štulić",
+      "team": "Lecce"
+    },
+    {
+      "name": "Petar Sučić",
+      "team": "Inter"
+    },
+    {
+      "name": "Mile Svilar",
+      "team": "Roma"
+    },
+    {
+      "name": "Nuno Tavares",
+      "team": "Lazio"
+    },
+    {
+      "name": "Kenneth Taylor",
+      "team": "Lazio"
+    },
+    {
+      "name": "Aleksa Terzić",
+      "team": "Frosinone"
+    },
+    {
+      "name": "Demba Thiam",
+      "team": "Monza"
+    },
+    {
+      "name": "Kristian Thorstvedt",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Mariano Troilo",
+      "team": "Parma"
+    },
+    {
+      "name": "Victor Valdepeñas",
+      "team": "Fiorentina"
+    },
+    {
+      "name": "Emanuele Valeri",
+      "team": "Parma"
+    },
+    {
+      "name": "Álex Valle",
+      "team": "Como"
+    },
+    {
+      "name": "Gustavo Varela",
+      "team": "Monza"
+    },
+    {
+      "name": "Johan Vásquez",
+      "team": "Genoa"
+    },
+    {
+      "name": "Danilo Veiga",
+      "team": "Lecce"
+    },
+    {
+      "name": "Antonio Vergara",
+      "team": "Napoli"
+    },
+    {
+      "name": "Guglielmo Vicario",
+      "team": "Juventus"
+    },
+    {
+      "name": "Vitinha",
+      "team": "Genoa"
+    },
+    {
+      "name": "Nikola Vlašić",
+      "team": "Torino"
+    },
+    {
+      "name": "Mërgim Vojvoda",
+      "team": "Udinese"
+    },
+    {
+      "name": "Cristian Volpato",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Harry Winks",
+      "team": "Cagliari"
+    },
+    {
+      "name": "John Yeboah",
+      "team": "Venezia"
+    },
+    {
+      "name": "Kenan Yıldız",
+      "team": "Juventus"
+    },
+    {
+      "name": "Mattia Zaccagni",
+      "team": "Lazio"
+    },
+    {
+      "name": "Nicola Zalewski",
+      "team": "Atalanta"
+    },
+    {
+      "name": "Nicolò Zaniolo",
+      "team": "Udinese"
+    },
+    {
+      "name": "Duván Zapata",
+      "team": "Torino"
+    },
+    {
+      "name": "Gabriele Zappa",
+      "team": "Cagliari"
+    },
+    {
+      "name": "Davide Zappacosta",
+      "team": "Atalanta"
+    },
+    {
+      "name": "Oier Zarraga",
+      "team": "Udinese"
+    },
+    {
+      "name": "Alessio Zerbin",
+      "team": "Frosinone"
+    },
+    {
+      "name": "Edon Zhegrova",
+      "team": "Juventus"
+    },
+    {
+      "name": "Piotr Zieliński",
+      "team": "Inter"
+    },
+    {
+      "name": "Nadir Zortea",
+      "team": "Bologna"
+    },
+    {
+      "name": "Adam Zulevic",
+      "team": "Genoa"
+    },
+    {
+      "name": "Leo Østigård",
+      "team": "Genoa"
+    }
+  ],
+  "missingPlayers": [
+    {
+      "name": "Svilar",
+      "team": "Roma"
+    },
+    {
+      "name": "Martinez Jo.",
+      "team": "Inter"
+    },
+    {
+      "name": "Carnesecchi",
+      "team": "Atalanta"
+    },
+    {
+      "name": "Butez",
+      "team": "Como"
+    },
+    {
+      "name": "Vicario",
+      "team": "Juventus"
+    },
+    {
+      "name": "Maignan",
+      "team": "Milan"
+    },
+    {
+      "name": "De Gea",
+      "team": "Fiorentina"
+    },
+    {
+      "name": "Meret",
+      "team": "Napoli"
+    },
+    {
+      "name": "Skorupski",
+      "team": "Bologna"
+    },
+    {
+      "name": "Caprile",
+      "team": "Cagliari"
+    },
+    {
+      "name": "Mandas",
+      "team": "Lazio"
+    },
+    {
+      "name": "Falcone",
+      "team": "Lecce"
+    },
+    {
+      "name": "Okoye",
+      "team": "Udinese"
+    },
+    {
+      "name": "Perri",
+      "team": "Torino"
+    },
+    {
+      "name": "Bijlow",
+      "team": "Genoa"
+    },
+    {
+      "name": "Daffara",
+      "team": "Parma"
+    },
+    {
+      "name": "Muric",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Stankovic F.",
+      "team": "Venezia"
+    },
+    {
+      "name": "Palmisani",
+      "team": "Frosinone"
+    },
+    {
+      "name": "Thiam",
+      "team": "Monza"
+    },
+    {
+      "name": "Milinkovic-Savic V.",
+      "team": "Napoli"
+    },
+    {
+      "name": "Desplanches",
+      "team": "Frosinone"
+    },
+    {
+      "name": "Provedel",
+      "team": "Inter"
+    },
+    {
+      "name": "Sportiello",
+      "team": "Atalanta"
+    },
+    {
+      "name": "Happonen",
+      "team": "Bologna"
+    },
+    {
+      "name": "Pessina Mas.",
+      "team": "Bologna"
+    },
+    {
+      "name": "Sherri",
+      "team": "Cagliari"
+    },
+    {
+      "name": "Tornqvist",
+      "team": "Como"
+    },
+    {
+      "name": "Vigorito",
+      "team": "Como"
+    },
+    {
+      "name": "Christensen O.",
+      "team": "Fiorentina"
+    },
+    {
+      "name": "Lezzerini",
+      "team": "Fiorentina"
+    },
+    {
+      "name": "Lolic",
+      "team": "Frosinone"
+    },
+    {
+      "name": "Sommariva",
+      "team": "Genoa"
+    },
+    {
+      "name": "Stolz",
+      "team": "Genoa"
+    },
+    {
+      "name": "Di Gennaro",
+      "team": "Inter"
+    },
+    {
+      "name": "Pinsoglio",
+      "team": "Juventus"
+    },
+    {
+      "name": "Motta",
+      "team": "Lazio"
+    },
+    {
+      "name": "Renzetti",
+      "team": "Lazio"
+    },
+    {
+      "name": "Terracciano",
+      "team": "Milan"
+    },
+    {
+      "name": "Torriani",
+      "team": "Milan"
+    },
+    {
+      "name": "Strajnar",
+      "team": "Monza"
+    },
+    {
+      "name": "Contini",
+      "team": "Napoli"
+    },
+    {
+      "name": "Corvi",
+      "team": "Parma"
+    },
+    {
+      "name": "De Marzi",
+      "team": "Roma"
+    },
+    {
+      "name": "Gollini",
+      "team": "Roma"
+    },
+    {
+      "name": "Russo A.",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Turati",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Mascardi",
+      "team": "Torino"
+    },
+    {
+      "name": "Paleari",
+      "team": "Torino"
+    },
+    {
+      "name": "Siviero",
+      "team": "Torino"
+    },
+    {
+      "name": "Padelli",
+      "team": "Udinese"
+    },
+    {
+      "name": "Piana",
+      "team": "Udinese"
+    },
+    {
+      "name": "Grandi",
+      "team": "Venezia"
+    },
+    {
+      "name": "Pozzi",
+      "team": "Venezia"
+    },
+    {
+      "name": "Vismara",
+      "team": "Atalanta"
+    },
+    {
+      "name": "Satalino",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Penev",
+      "team": "Lecce"
+    },
+    {
+      "name": "Pisseri",
+      "team": "Frosinone"
+    },
+    {
+      "name": "Radunovic",
+      "team": "Cagliari"
+    },
+    {
+      "name": "Montipò",
+      "team": "Venezia"
+    },
+    {
+      "name": "Bleve",
+      "team": "Lecce"
+    },
+    {
+      "name": "Grabara",
+      "team": "Juventus"
+    },
+    {
+      "name": "Mrozek",
+      "team": "Udinese"
+    },
+    {
+      "name": "Dimarco",
+      "team": "Inter"
+    },
+    {
+      "name": "Molina N.",
+      "team": "Roma"
+    },
+    {
+      "name": "Akanji",
+      "team": "Inter"
+    },
+    {
+      "name": "Bremer",
+      "team": "Juventus"
+    },
+    {
+      "name": "Mancini",
+      "team": "Roma"
+    },
+    {
+      "name": "Bastoni",
+      "team": "Inter"
+    },
+    {
+      "name": "Pavlovic",
+      "team": "Milan"
+    },
+    {
+      "name": "Rrahmani",
+      "team": "Napoli"
+    },
+    {
+      "name": "Kalulu",
+      "team": "Juventus"
+    },
+    {
+      "name": "N'Dicka",
+      "team": "Roma"
+    },
+    {
+      "name": "Solet",
+      "team": "Udinese"
+    },
+    {
+      "name": "Bisseck",
+      "team": "Inter"
+    },
+    {
+      "name": "Stones",
+      "team": "Inter"
+    },
+    {
+      "name": "Gila",
+      "team": "Milan"
+    },
+    {
+      "name": "Di Lorenzo",
+      "team": "Napoli"
+    },
+    {
+      "name": "Spence",
+      "team": "Inter"
+    },
+    {
+      "name": "Ostigard",
+      "team": "Genoa"
+    },
+    {
+      "name": "Scalvini",
+      "team": "Atalanta"
+    },
+    {
+      "name": "Ramon",
+      "team": "Como"
+    },
+    {
+      "name": "Hermoso",
+      "team": "Roma"
+    },
+    {
+      "name": "Vasquez",
+      "team": "Genoa"
+    },
+    {
+      "name": "Cambiaso",
+      "team": "Juventus"
+    },
+    {
+      "name": "Chalobah T.",
+      "team": "Como"
+    },
+    {
+      "name": "Hien",
+      "team": "Atalanta"
+    },
+    {
+      "name": "Zappacosta",
+      "team": "Atalanta"
+    },
+    {
+      "name": "Lucumì",
+      "team": "Juventus"
+    },
+    {
+      "name": "Miranda J.",
+      "team": "Bologna"
+    },
+    {
+      "name": "Mina",
+      "team": "Cagliari"
+    },
+    {
+      "name": "Jimenez A.",
+      "team": "Fiorentina"
+    },
+    {
+      "name": "Norton-Cuffy",
+      "team": "Genoa"
+    },
+    {
+      "name": "Celik",
+      "team": "Juventus"
+    },
+    {
+      "name": "Doekhi",
+      "team": "Lazio"
+    },
+    {
+      "name": "Bartesaghi",
+      "team": "Milan"
+    },
+    {
+      "name": "Spinazzola",
+      "team": "Napoli"
+    },
+    {
+      "name": "Delprato",
+      "team": "Parma"
+    },
+    {
+      "name": "Valeri",
+      "team": "Parma"
+    },
+    {
+      "name": "Koulierakis",
+      "team": "Roma"
+    },
+    {
+      "name": "Vojvoda",
+      "team": "Udinese"
+    },
+    {
+      "name": "Kamara H.",
+      "team": "Udinese"
+    },
+    {
+      "name": "Couto",
+      "team": "Como"
+    },
+    {
+      "name": "Theate",
+      "team": "Bologna"
+    },
+    {
+      "name": "Obert",
+      "team": "Cagliari"
+    },
+    {
+      "name": "Kaiki",
+      "team": "Como"
+    },
+    {
+      "name": "Dragusin",
+      "team": "Fiorentina"
+    },
+    {
+      "name": "Carlos Augusto",
+      "team": "Inter"
+    },
+    {
+      "name": "Romagnoli",
+      "team": "Lazio"
+    },
+    {
+      "name": "Gabbia",
+      "team": "Milan"
+    },
+    {
+      "name": "Tomori",
+      "team": "Milan"
+    },
+    {
+      "name": "Buongiorno",
+      "team": "Napoli"
+    },
+    {
+      "name": "Idzes",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Coco",
+      "team": "Torino"
+    },
+    {
+      "name": "Ismajli",
+      "team": "Torino"
+    },
+    {
+      "name": "Kristensen T.",
+      "team": "Atalanta"
+    },
+    {
+      "name": "Badiashile",
+      "team": "Napoli"
+    },
+    {
+      "name": "Sutalo J.",
+      "team": "Lazio"
+    },
+    {
+      "name": "Ahanor",
+      "team": "Atalanta"
+    },
+    {
+      "name": "Bellanova",
+      "team": "Atalanta"
+    },
+    {
+      "name": "Bernasconi",
+      "team": "Atalanta"
+    },
+    {
+      "name": "Heggem",
+      "team": "Bologna"
+    },
+    {
+      "name": "Zortea",
+      "team": "Bologna"
+    },
+    {
+      "name": "Valle",
+      "team": "Como"
+    },
+    {
+      "name": "Valdepenas",
+      "team": "Fiorentina"
+    },
+    {
+      "name": "Monterisi",
+      "team": "Frosinone"
+    },
+    {
+      "name": "Marcandalli",
+      "team": "Genoa"
+    },
+    {
+      "name": "Pavard",
+      "team": "Inter"
+    },
+    {
+      "name": "Tavares N.",
+      "team": "Lazio"
+    },
+    {
+      "name": "Marusic",
+      "team": "Lazio"
+    },
+    {
+      "name": "Gaspar K.",
+      "team": "Lecce"
+    },
+    {
+      "name": "Veiga D.",
+      "team": "Lecce"
+    },
+    {
+      "name": "Gallo",
+      "team": "Lecce"
+    },
+    {
+      "name": "Mangas",
+      "team": "Monza"
+    },
+    {
+      "name": "Beukema",
+      "team": "Napoli"
+    },
+    {
+      "name": "Comuzzo",
+      "team": "Torino"
+    },
+    {
+      "name": "Bella-Kotchap",
+      "team": "Venezia"
+    },
+    {
+      "name": "Obrador",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Balerdi",
+      "team": "Roma"
+    },
+    {
+      "name": "Kolasinac",
+      "team": "Atalanta"
+    },
+    {
+      "name": "Vitik",
+      "team": "Bologna"
+    },
+    {
+      "name": "Holm",
+      "team": "Bologna"
+    },
+    {
+      "name": "Kofler",
+      "team": "Cagliari"
+    },
+    {
+      "name": "Zè Pedro",
+      "team": "Cagliari"
+    },
+    {
+      "name": "Kempf",
+      "team": "Como"
+    },
+    {
+      "name": "Parisi",
+      "team": "Fiorentina"
+    },
+    {
+      "name": "Bracaglia",
+      "team": "Frosinone"
+    },
+    {
+      "name": "Oyono A.",
+      "team": "Frosinone"
+    },
+    {
+      "name": "Martin",
+      "team": "Genoa"
+    },
+    {
+      "name": "Kelly L.",
+      "team": "Juventus"
+    },
+    {
+      "name": "Pedraza",
+      "team": "Lazio"
+    },
+    {
+      "name": "Siebert",
+      "team": "Lecce"
+    },
+    {
+      "name": "Olivera",
+      "team": "Napoli"
+    },
+    {
+      "name": "Rensch",
+      "team": "Roma"
+    },
+    {
+      "name": "Moreno M.",
+      "team": "Venezia"
+    },
+    {
+      "name": "Correia T.",
+      "team": "Venezia"
+    },
+    {
+      "name": "Haps",
+      "team": "Venezia"
+    },
+    {
+      "name": "Fortini",
+      "team": "Torino"
+    },
+    {
+      "name": "Leysen F.",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Rodriguez Ju.",
+      "team": "Cagliari"
+    },
+    {
+      "name": "Smolcic I.",
+      "team": "Como"
+    },
+    {
+      "name": "Pongracic",
+      "team": "Fiorentina"
+    },
+    {
+      "name": "Calvani",
+      "team": "Frosinone"
+    },
+    {
+      "name": "Mitaj",
+      "team": "Genoa"
+    },
+    {
+      "name": "Gatti",
+      "team": "Juventus"
+    },
+    {
+      "name": "De Winter",
+      "team": "Milan"
+    },
+    {
+      "name": "Estupinan",
+      "team": "Milan"
+    },
+    {
+      "name": "Delli Carri",
+      "team": "Monza"
+    },
+    {
+      "name": "Lucchesi",
+      "team": "Monza"
+    },
+    {
+      "name": "Birindelli",
+      "team": "Monza"
+    },
+    {
+      "name": "Troilo",
+      "team": "Parma"
+    },
+    {
+      "name": "Valenti",
+      "team": "Parma"
+    },
+    {
+      "name": "Ghilardi",
+      "team": "Roma"
+    },
+    {
+      "name": "Walukiewicz",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Doig",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Comert",
+      "team": "Torino"
+    },
+    {
+      "name": "Kabasele",
+      "team": "Udinese"
+    },
+    {
+      "name": "Bertola",
+      "team": "Udinese"
+    },
+    {
+      "name": "Zanoli",
+      "team": "Udinese"
+    },
+    {
+      "name": "Arizala",
+      "team": "Udinese"
+    },
+    {
+      "name": "Halhal",
+      "team": "Venezia"
+    },
+    {
+      "name": "Terzic",
+      "team": "Frosinone"
+    },
+    {
+      "name": "Favasuli",
+      "team": "Napoli"
+    },
+    {
+      "name": "Kossounou",
+      "team": "Atalanta"
+    },
+    {
+      "name": "Casale",
+      "team": "Bologna"
+    },
+    {
+      "name": "Helland",
+      "team": "Bologna"
+    },
+    {
+      "name": "Idrissi R.",
+      "team": "Cagliari"
+    },
+    {
+      "name": "Ranieri L.",
+      "team": "Fiorentina"
+    },
+    {
+      "name": "Joao Mario",
+      "team": "Fiorentina"
+    },
+    {
+      "name": "Akpoguma",
+      "team": "Frosinone"
+    },
+    {
+      "name": "Cittadini",
+      "team": "Frosinone"
+    },
+    {
+      "name": "Provstgaard",
+      "team": "Lazio"
+    },
+    {
+      "name": "Floriani Mussolini",
+      "team": "Lazio"
+    },
+    {
+      "name": "Kouadio",
+      "team": "Monza"
+    },
+    {
+      "name": "Carboni A.",
+      "team": "Monza"
+    },
+    {
+      "name": "Britschgi",
+      "team": "Parma"
+    },
+    {
+      "name": "Candè",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Palma",
+      "team": "Udinese"
+    },
+    {
+      "name": "Ebosse",
+      "team": "Udinese"
+    },
+    {
+      "name": "Schingtienne",
+      "team": "Venezia"
+    },
+    {
+      "name": "Sverko",
+      "team": "Venezia"
+    },
+    {
+      "name": "Hainaut",
+      "team": "Venezia"
+    },
+    {
+      "name": "Odenthal",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Tchato",
+      "team": "Frosinone"
+    },
+    {
+      "name": "Kambwala",
+      "team": "Como"
+    },
+    {
+      "name": "Alhassane",
+      "team": "Bologna"
+    },
+    {
+      "name": "Van Der Brempt",
+      "team": "Como"
+    },
+    {
+      "name": "Otoa",
+      "team": "Genoa"
+    },
+    {
+      "name": "Puczka",
+      "team": "Genoa"
+    },
+    {
+      "name": "Sabelli",
+      "team": "Genoa"
+    },
+    {
+      "name": "Lazzari",
+      "team": "Lazio"
+    },
+    {
+      "name": "Pellegrini Lu.",
+      "team": "Lazio"
+    },
+    {
+      "name": "Jean",
+      "team": "Lecce"
+    },
+    {
+      "name": "Ndaba",
+      "team": "Lecce"
+    },
+    {
+      "name": "Diawara S.",
+      "team": "Milan"
+    },
+    {
+      "name": "Bakoune",
+      "team": "Monza"
+    },
+    {
+      "name": "Marin R.",
+      "team": "Napoli"
+    },
+    {
+      "name": "Ndiaye",
+      "team": "Parma"
+    },
+    {
+      "name": "Biraghi",
+      "team": "Torino"
+    },
+    {
+      "name": "Abankwah",
+      "team": "Udinese"
+    },
+    {
+      "name": "Franjic",
+      "team": "Venezia"
+    },
+    {
+      "name": "Sagrado",
+      "team": "Venezia"
+    },
+    {
+      "name": "Aurelio",
+      "team": "Cagliari"
+    },
+    {
+      "name": "Cinquegrano",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Terracciano F.",
+      "team": "Milan"
+    },
+    {
+      "name": "De Silvestri",
+      "team": "Bologna"
+    },
+    {
+      "name": "Goldaniga",
+      "team": "Como"
+    },
+    {
+      "name": "Amey",
+      "team": "Frosinone"
+    },
+    {
+      "name": "Rugani",
+      "team": "Juventus"
+    },
+    {
+      "name": "Cabal",
+      "team": "Juventus"
+    },
+    {
+      "name": "Patric",
+      "team": "Lazio"
+    },
+    {
+      "name": "Antov",
+      "team": "Monza"
+    },
+    {
+      "name": "Marianucci",
+      "team": "Napoli"
+    },
+    {
+      "name": "Mazzocchi",
+      "team": "Napoli"
+    },
+    {
+      "name": "Carboni F.",
+      "team": "Parma"
+    },
+    {
+      "name": "Ziolkowski",
+      "team": "Roma"
+    },
+    {
+      "name": "Missori",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Pieragnolo",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Mlacic",
+      "team": "Udinese"
+    },
+    {
+      "name": "Gomes",
+      "team": "Venezia"
+    },
+    {
+      "name": "Omar Fayed",
+      "team": "Frosinone"
+    },
+    {
+      "name": "Macchioni",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Lulli",
+      "team": "Roma"
+    },
+    {
+      "name": "Maye",
+      "team": "Monza"
+    },
+    {
+      "name": "Drobnic",
+      "team": "Parma"
+    },
+    {
+      "name": "Paz N.",
+      "team": "Como"
+    },
+    {
+      "name": "Calhanoglu",
+      "team": "Inter"
+    },
+    {
+      "name": "McTominay",
+      "team": "Napoli"
+    },
+    {
+      "name": "Orsolini",
+      "team": "Bologna"
+    },
+    {
+      "name": "Pulisic",
+      "team": "Milan"
+    },
+    {
+      "name": "Rabiot",
+      "team": "Milan"
+    },
+    {
+      "name": "Baturina",
+      "team": "Como"
+    },
+    {
+      "name": "Mora",
+      "team": "Roma"
+    },
+    {
+      "name": "Da Cunha",
+      "team": "Como"
+    },
+    {
+      "name": "Zaniolo",
+      "team": "Udinese"
+    },
+    {
+      "name": "Barella",
+      "team": "Inter"
+    },
+    {
+      "name": "McKennie",
+      "team": "Juventus"
+    },
+    {
+      "name": "Atta",
+      "team": "Fiorentina"
+    },
+    {
+      "name": "Zaccagni",
+      "team": "Lazio"
+    },
+    {
+      "name": "De Bruyne",
+      "team": "Napoli"
+    },
+    {
+      "name": "Gudmundsson A.",
+      "team": "Fiorentina"
+    },
+    {
+      "name": "Taylor K.",
+      "team": "Lazio"
+    },
+    {
+      "name": "Vlasic",
+      "team": "Torino"
+    },
+    {
+      "name": "Ederson D.S.",
+      "team": "Atalanta"
+    },
+    {
+      "name": "Samardzic",
+      "team": "Atalanta"
+    },
+    {
+      "name": "Rodriguez Je.",
+      "team": "Como"
+    },
+    {
+      "name": "Alajbegovic",
+      "team": "Juventus"
+    },
+    {
+      "name": "Conceicao",
+      "team": "Juventus"
+    },
+    {
+      "name": "Modric",
+      "team": "Milan"
+    },
+    {
+      "name": "Mastantuono",
+      "team": "Fiorentina"
+    },
+    {
+      "name": "Moreira",
+      "team": "Milan"
+    },
+    {
+      "name": "Jones C.",
+      "team": "Inter"
+    },
+    {
+      "name": "Kessiè",
+      "team": "Atalanta"
+    },
+    {
+      "name": "Rowe",
+      "team": "Bologna"
+    },
+    {
+      "name": "Baldanzi",
+      "team": "Genoa"
+    },
+    {
+      "name": "Zielinski",
+      "team": "Inter"
+    },
+    {
+      "name": "Zambo Anguissa",
+      "team": "Napoli"
+    },
+    {
+      "name": "Ekkelenkamp",
+      "team": "Udinese"
+    },
+    {
+      "name": "Gonzalez N.",
+      "team": "Juventus"
+    },
+    {
+      "name": "Perrone",
+      "team": "Como"
+    },
+    {
+      "name": "Thuram K.",
+      "team": "Juventus"
+    },
+    {
+      "name": "Saelemaekers",
+      "team": "Milan"
+    },
+    {
+      "name": "Politano",
+      "team": "Napoli"
+    },
+    {
+      "name": "Vergara",
+      "team": "Napoli"
+    },
+    {
+      "name": "Konè M.",
+      "team": "Roma"
+    },
+    {
+      "name": "Thorstvedt",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Casadei",
+      "team": "Torino"
+    },
+    {
+      "name": "Pellegrini Lo.",
+      "team": "Roma"
+    },
+    {
+      "name": "Pasalic",
+      "team": "Atalanta"
+    },
+    {
+      "name": "Bernardeschi",
+      "team": "Bologna"
+    },
+    {
+      "name": "Mandragora",
+      "team": "Fiorentina"
+    },
+    {
+      "name": "Diouf",
+      "team": "Inter"
+    },
+    {
+      "name": "Frattesi",
+      "team": "Lazio"
+    },
+    {
+      "name": "Cancellieri",
+      "team": "Lazio"
+    },
+    {
+      "name": "Isaksen",
+      "team": "Lazio"
+    },
+    {
+      "name": "Konè I.",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Gaetano",
+      "team": "Atalanta"
+    },
+    {
+      "name": "Odgaard",
+      "team": "Bologna"
+    },
+    {
+      "name": "Cambiaghi",
+      "team": "Bologna"
+    },
+    {
+      "name": "Fagioli",
+      "team": "Fiorentina"
+    },
+    {
+      "name": "Ndour",
+      "team": "Fiorentina"
+    },
+    {
+      "name": "Sucic P.",
+      "team": "Inter"
+    },
+    {
+      "name": "Locatelli",
+      "team": "Juventus"
+    },
+    {
+      "name": "Colpani",
+      "team": "Monza"
+    },
+    {
+      "name": "Lobotka",
+      "team": "Napoli"
+    },
+    {
+      "name": "Cristante",
+      "team": "Roma"
+    },
+    {
+      "name": "Volpato",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Schmid",
+      "team": "Frosinone"
+    },
+    {
+      "name": "Ferguson",
+      "team": "Bologna"
+    },
+    {
+      "name": "Adopo",
+      "team": "Cagliari"
+    },
+    {
+      "name": "Romano",
+      "team": "Cagliari"
+    },
+    {
+      "name": "Fazzini",
+      "team": "Cagliari"
+    },
+    {
+      "name": "Calò",
+      "team": "Frosinone"
+    },
+    {
+      "name": "Frendrup",
+      "team": "Genoa"
+    },
+    {
+      "name": "Rovella",
+      "team": "Lazio"
+    },
+    {
+      "name": "Coulibaly L.",
+      "team": "Lecce"
+    },
+    {
+      "name": "Chukwueze",
+      "team": "Milan"
+    },
+    {
+      "name": "Pessina",
+      "team": "Monza"
+    },
+    {
+      "name": "Bernabè",
+      "team": "Parma"
+    },
+    {
+      "name": "Pisilli",
+      "team": "Roma"
+    },
+    {
+      "name": "Oristanio",
+      "team": "Torino"
+    },
+    {
+      "name": "Karlstrom",
+      "team": "Udinese"
+    },
+    {
+      "name": "Sow",
+      "team": "Genoa"
+    },
+    {
+      "name": "Elmas",
+      "team": "Atalanta"
+    },
+    {
+      "name": "Zalewski",
+      "team": "Atalanta"
+    },
+    {
+      "name": "Pobega",
+      "team": "Bologna"
+    },
+    {
+      "name": "Winks",
+      "team": "Cagliari"
+    },
+    {
+      "name": "Milla",
+      "team": "Como"
+    },
+    {
+      "name": "Caqueret",
+      "team": "Como"
+    },
+    {
+      "name": "Liberali",
+      "team": "Como"
+    },
+    {
+      "name": "Oulai",
+      "team": "Fiorentina"
+    },
+    {
+      "name": "Ellertsson",
+      "team": "Genoa"
+    },
+    {
+      "name": "Zhegrova",
+      "team": "Juventus"
+    },
+    {
+      "name": "Pierotti",
+      "team": "Lecce"
+    },
+    {
+      "name": "Akinsanmiro",
+      "team": "Monza"
+    },
+    {
+      "name": "Nicolussi Caviglia",
+      "team": "Parma"
+    },
+    {
+      "name": "Matic",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Gineitis",
+      "team": "Torino"
+    },
+    {
+      "name": "Basic",
+      "team": "Venezia"
+    },
+    {
+      "name": "Tourè I.",
+      "team": "Monza"
+    },
+    {
+      "name": "Amondarain",
+      "team": "Bologna"
+    },
+    {
+      "name": "Felici",
+      "team": "Cagliari"
+    },
+    {
+      "name": "Addai",
+      "team": "Como"
+    },
+    {
+      "name": "Zerbin",
+      "team": "Frosinone"
+    },
+    {
+      "name": "Meichtry",
+      "team": "Genoa"
+    },
+    {
+      "name": "Traorè Hj.",
+      "team": "Genoa"
+    },
+    {
+      "name": "Mkhitaryan",
+      "team": "Inter"
+    },
+    {
+      "name": "Koopmeiners",
+      "team": "Juventus"
+    },
+    {
+      "name": "Dele-Bashiru",
+      "team": "Lazio"
+    },
+    {
+      "name": "Berisha M.",
+      "team": "Lecce"
+    },
+    {
+      "name": "Gandelman",
+      "team": "Lecce"
+    },
+    {
+      "name": "Fofana Y.",
+      "team": "Milan"
+    },
+    {
+      "name": "Jashari",
+      "team": "Milan"
+    },
+    {
+      "name": "Keita M.",
+      "team": "Parma"
+    },
+    {
+      "name": "Adzic",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Bakola",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Cacciamani",
+      "team": "Torino"
+    },
+    {
+      "name": "Njie",
+      "team": "Torino"
+    },
+    {
+      "name": "Piotrowski",
+      "team": "Udinese"
+    },
+    {
+      "name": "Busio",
+      "team": "Venezia"
+    },
+    {
+      "name": "Sohm",
+      "team": "Venezia"
+    },
+    {
+      "name": "Perez K.",
+      "team": "Venezia"
+    },
+    {
+      "name": "Grillitsch",
+      "team": "Frosinone"
+    },
+    {
+      "name": "Cissè A.",
+      "team": "Milan"
+    },
+    {
+      "name": "De Roon",
+      "team": "Atalanta"
+    },
+    {
+      "name": "Moro N.",
+      "team": "Bologna"
+    },
+    {
+      "name": "Dominguez B.",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Deiola",
+      "team": "Cagliari"
+    },
+    {
+      "name": "Fabbian",
+      "team": "Parma"
+    },
+    {
+      "name": "Cichella",
+      "team": "Frosinone"
+    },
+    {
+      "name": "Koutsoupias",
+      "team": "Frosinone"
+    },
+    {
+      "name": "Fini ",
+      "team": "Frosinone"
+    },
+    {
+      "name": "Messias",
+      "team": "Genoa"
+    },
+    {
+      "name": "Cataldi",
+      "team": "Lazio"
+    },
+    {
+      "name": "Ngom",
+      "team": "Lecce"
+    },
+    {
+      "name": "Ricci S.",
+      "team": "Como"
+    },
+    {
+      "name": "Loftus-Cheek",
+      "team": "Milan"
+    },
+    {
+      "name": "Folorunsho",
+      "team": "Monza"
+    },
+    {
+      "name": "Almqvist",
+      "team": "Parma"
+    },
+    {
+      "name": "Diallo O.",
+      "team": "Parma"
+    },
+    {
+      "name": "El Aynaoui",
+      "team": "Roma"
+    },
+    {
+      "name": "Fitz-Jim",
+      "team": "Torino"
+    },
+    {
+      "name": "Ilkhan",
+      "team": "Torino"
+    },
+    {
+      "name": "Miller L.",
+      "team": "Udinese"
+    },
+    {
+      "name": "Sulemana I.",
+      "team": "Atalanta"
+    },
+    {
+      "name": "Brescianini",
+      "team": "Fiorentina"
+    },
+    {
+      "name": "Gelli F.",
+      "team": "Frosinone"
+    },
+    {
+      "name": "Hasa",
+      "team": "Frosinone"
+    },
+    {
+      "name": "Masini",
+      "team": "Frosinone"
+    },
+    {
+      "name": "Stankovic A.",
+      "team": "Inter"
+    },
+    {
+      "name": "Gorter",
+      "team": "Lecce"
+    },
+    {
+      "name": "Maleh",
+      "team": "Lecce"
+    },
+    {
+      "name": "Musah",
+      "team": "Milan"
+    },
+    {
+      "name": "Colombo L.",
+      "team": "Monza"
+    },
+    {
+      "name": "Gilmour",
+      "team": "Napoli"
+    },
+    {
+      "name": "Ordonez C.",
+      "team": "Parma"
+    },
+    {
+      "name": "Sorensen O.",
+      "team": "Parma"
+    },
+    {
+      "name": "Aboukhlal",
+      "team": "Torino"
+    },
+    {
+      "name": "Helgason",
+      "team": "Venezia"
+    },
+    {
+      "name": "El Azzouzi O.",
+      "team": "Bologna"
+    },
+    {
+      "name": "Fadera",
+      "team": "Cagliari"
+    },
+    {
+      "name": "Venturino",
+      "team": "Genoa"
+    },
+    {
+      "name": "Ciurria",
+      "team": "Monza"
+    },
+    {
+      "name": "Boloca",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Lipani",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Chakvetadze",
+      "team": "Udinese"
+    },
+    {
+      "name": "Duncan",
+      "team": "Venezia"
+    },
+    {
+      "name": "Forson O.",
+      "team": "Monza"
+    },
+    {
+      "name": "Liteta",
+      "team": "Cagliari"
+    },
+    {
+      "name": "Lahdo",
+      "team": "Como"
+    },
+    {
+      "name": "El Azzouzi A.",
+      "team": "Frosinone"
+    },
+    {
+      "name": "Kone B.",
+      "team": "Frosinone"
+    },
+    {
+      "name": "Belahyane",
+      "team": "Lazio"
+    },
+    {
+      "name": "Przyborek",
+      "team": "Lazio"
+    },
+    {
+      "name": "Kaba",
+      "team": "Lecce"
+    },
+    {
+      "name": "Fofana Sa.",
+      "team": "Lecce"
+    },
+    {
+      "name": "Cremaschi",
+      "team": "Parma"
+    },
+    {
+      "name": "Iannoni",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Ilic",
+      "team": "Lecce"
+    },
+    {
+      "name": "Anjorin",
+      "team": "Torino"
+    },
+    {
+      "name": "Zarraga",
+      "team": "Udinese"
+    },
+    {
+      "name": "Dagasso",
+      "team": "Venezia"
+    },
+    {
+      "name": "Laerke",
+      "team": "Lecce"
+    },
+    {
+      "name": "Comotto",
+      "team": "Milan"
+    },
+    {
+      "name": "Foe Ondoa",
+      "team": "Monza"
+    },
+    {
+      "name": "Mout",
+      "team": "Monza"
+    },
+    {
+      "name": "Ciervo",
+      "team": "Cagliari"
+    },
+    {
+      "name": "Malen",
+      "team": "Roma"
+    },
+    {
+      "name": "Martinez L.",
+      "team": "Inter"
+    },
+    {
+      "name": "Thuram",
+      "team": "Inter"
+    },
+    {
+      "name": "Ramos G.",
+      "team": "Milan"
+    },
+    {
+      "name": "Hojlund",
+      "team": "Napoli"
+    },
+    {
+      "name": "Kean",
+      "team": "Fiorentina"
+    },
+    {
+      "name": "Kolo Muani",
+      "team": "Juventus"
+    },
+    {
+      "name": "Yildiz",
+      "team": "Juventus"
+    },
+    {
+      "name": "Douvikas",
+      "team": "Como"
+    },
+    {
+      "name": "Krstovic",
+      "team": "Atalanta"
+    },
+    {
+      "name": "Scamacca",
+      "team": "Atalanta"
+    },
+    {
+      "name": "Davis K.",
+      "team": "Udinese"
+    },
+    {
+      "name": "Berardi",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "De Ketelaere",
+      "team": "Atalanta"
+    },
+    {
+      "name": "Esposito F.P.",
+      "team": "Inter"
+    },
+    {
+      "name": "Dovbyk",
+      "team": "Bologna"
+    },
+    {
+      "name": "Dybala",
+      "team": "Roma"
+    },
+    {
+      "name": "Laurientè",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Simeone",
+      "team": "Torino"
+    },
+    {
+      "name": "Raspadori",
+      "team": "Atalanta"
+    },
+    {
+      "name": "Santos A.",
+      "team": "Napoli"
+    },
+    {
+      "name": "Pellegrino M.",
+      "team": "Fiorentina"
+    },
+    {
+      "name": "Castro S.",
+      "team": "Roma"
+    },
+    {
+      "name": "Esposito Se.",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Pinamonti",
+      "team": "Lazio"
+    },
+    {
+      "name": "Kevin Carlos",
+      "team": "Cagliari"
+    },
+    {
+      "name": "Soulè",
+      "team": "Roma"
+    },
+    {
+      "name": "Adams A.",
+      "team": "Venezia"
+    },
+    {
+      "name": "Diao",
+      "team": "Como"
+    },
+    {
+      "name": "Colombo",
+      "team": "Genoa"
+    },
+    {
+      "name": "Tourè E.",
+      "team": "Parma"
+    },
+    {
+      "name": "Dia",
+      "team": "Lazio"
+    },
+    {
+      "name": "Ratkov",
+      "team": "Lazio"
+    },
+    {
+      "name": "Bowie",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Adams C.",
+      "team": "Torino"
+    },
+    {
+      "name": "Romero D.",
+      "team": "Parma"
+    },
+    {
+      "name": "Ghedjemis",
+      "team": "Frosinone"
+    },
+    {
+      "name": "David",
+      "team": "Juventus"
+    },
+    {
+      "name": "Geubbels",
+      "team": "Lecce"
+    },
+    {
+      "name": "Cutrone",
+      "team": "Monza"
+    },
+    {
+      "name": "Bobcek",
+      "team": "Frosinone"
+    },
+    {
+      "name": "Piccoli",
+      "team": "Bologna"
+    },
+    {
+      "name": "Vitinha O.",
+      "team": "Genoa"
+    },
+    {
+      "name": "Yeboah J.",
+      "team": "Venezia"
+    },
+    {
+      "name": "Rrahmani Al.",
+      "team": "Venezia"
+    },
+    {
+      "name": "Osmajic",
+      "team": "Genoa"
+    },
+    {
+      "name": "Raimondo",
+      "team": "Frosinone"
+    },
+    {
+      "name": "Bonny",
+      "team": "Inter"
+    },
+    {
+      "name": "Stulic",
+      "team": "Lecce"
+    },
+    {
+      "name": "Zapata D.",
+      "team": "Torino"
+    },
+    {
+      "name": "Sulemana K.",
+      "team": "Atalanta"
+    },
+    {
+      "name": "Mutandwa",
+      "team": "Cagliari"
+    },
+    {
+      "name": "Boga",
+      "team": "Juventus"
+    },
+    {
+      "name": "Noslin",
+      "team": "Lazio"
+    },
+    {
+      "name": "Gimenez",
+      "team": "Milan"
+    },
+    {
+      "name": "Neres",
+      "team": "Napoli"
+    },
+    {
+      "name": "Maldini",
+      "team": "Cagliari"
+    },
+    {
+      "name": "Camarda",
+      "team": "Milan"
+    },
+    {
+      "name": "Mota",
+      "team": "Monza"
+    },
+    {
+      "name": "Varela G.",
+      "team": "Monza"
+    },
+    {
+      "name": "Frigan",
+      "team": "Parma"
+    },
+    {
+      "name": "Adorante",
+      "team": "Venezia"
+    },
+    {
+      "name": "Milik",
+      "team": "Juventus"
+    },
+    {
+      "name": "Birligea",
+      "team": "Frosinone"
+    },
+    {
+      "name": "Ngonge",
+      "team": "Monza"
+    },
+    {
+      "name": "Borrelli",
+      "team": "Cagliari"
+    },
+    {
+      "name": "Mendy P.",
+      "team": "Cagliari"
+    },
+    {
+      "name": "Kvernadze",
+      "team": "Frosinone"
+    },
+    {
+      "name": "Havel",
+      "team": "Genoa"
+    },
+    {
+      "name": "Giovane",
+      "team": "Napoli"
+    },
+    {
+      "name": "Lang",
+      "team": "Napoli"
+    },
+    {
+      "name": "Lucca",
+      "team": "Napoli"
+    },
+    {
+      "name": "Kulenovic",
+      "team": "Torino"
+    },
+    {
+      "name": "Gueye",
+      "team": "Udinese"
+    },
+    {
+      "name": "Robinson J.",
+      "team": "Monza"
+    },
+    {
+      "name": "Fatah",
+      "team": "Lecce"
+    },
+    {
+      "name": "Kuhn",
+      "team": "Como"
+    },
+    {
+      "name": "Ekhator",
+      "team": "Juventus"
+    },
+    {
+      "name": "N'Dri",
+      "team": "Lecce"
+    },
+    {
+      "name": "Elphege",
+      "team": "Parma"
+    },
+    {
+      "name": "Lontani",
+      "team": "Parma"
+    },
+    {
+      "name": "Trepy",
+      "team": "Cagliari"
+    },
+    {
+      "name": "Azon",
+      "team": "Como"
+    },
+    {
+      "name": "Vaz",
+      "team": "Roma"
+    },
+    {
+      "name": "Bayo V.",
+      "team": "Udinese"
+    },
+    {
+      "name": "Lisman",
+      "team": "Venezia"
+    },
+    {
+      "name": "Lauberbach",
+      "team": "Venezia"
+    },
+    {
+      "name": "De Martis",
+      "team": "Parma"
+    }
+  ]
+}
