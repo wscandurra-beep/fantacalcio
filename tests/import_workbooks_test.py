@@ -12,7 +12,8 @@ class NormalizePlayerNameTests(unittest.TestCase):
         pairs = [("Ché Adams", "CHE ADAMS"), ("D’Angelo", "d'angelo"),
                  ("Jean-Clair", "jean‐clair"), ("  Marco   Rossi ", "marco rossi"),
                  ("Guðmundsson", "Gudmundsson"), ("Højlund", "Hojlund"),
-                 ("Yıldız", "Yildiz"), ("Østigård", "Ostigard")]
+                 ("Yıldız", "Yildiz"), ("Østigård", "Ostigard"),
+                 ("Łukasz", "Lukasz"), ("Đurić", "Duric")]
         for left, right in pairs:
             with self.subTest(left=left):
                 self.assertEqual(IMPORTER.normalize_player_name(left), IMPORTER.normalize_player_name(right))
