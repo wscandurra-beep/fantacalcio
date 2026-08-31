@@ -34,6 +34,31 @@ minuti. `unmatched` e `ambiguous` sono visibili solo nei dettagli. Il workflow
 infortuni contiene esclusivamente `workflow_dispatch`: non aggiungere `schedule`
 o cron.
 
+### HTTP 403 durante lo sviluppo
+
+Un errore come `CONNECT tunnel failed, response 403` proviene dal proxy della
+rete di sviluppo **prima** che la richiesta raggiunga Fantacalcio: non è una
+risposta HTTP della pagina e non si risolve cambiando User-Agent, usando `curl`
+come fallback o aggiungendo un browser headless. In quella rete la destinazione
+deve essere autorizzata dall'amministratore del proxy; in alternativa eseguire
+il download dal workflow GitHub Actions, che è anche l'ambiente usato dal
+pulsante **Aggiorna infortuni**.
+
+Per distinguere un blocco di rete da un errore del parser:
+
+```bash
+# Verifica il percorso di rete. Un 403 riferito a CONNECT identifica il proxy.
+curl -I https://www.fantacalcio.it/infortunati-serie-a
+
+# Esegue soltanto parsing, validazione e matching su HTML già scaricato.
+# Il file deve comunque provenire dalla fonte Fantacalcio indicata sopra.
+python3 scripts/scrape_infortuni.py --input /percorso/infortunati-serie-a.html
+```
+
+Non disabilitare la validazione e non introdurre mirror/API alternative per
+aggirare il blocco: in caso di download fallito lo scraper termina prima delle
+scritture e conserva l'ultimo snapshot valido.
+
 ## Seasonal import
 
 1. Add the new quotation and statistics `.xlsx` files without deleting historical sources.
