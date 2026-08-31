@@ -21,7 +21,8 @@ const [raw,injuryUpdate]=await Promise.all([
     fetchJson('./data/infortuni_update.json',{},'Aggiornamento infortuni')
   ]).then(([,update])=>update)
 ]);
-const refreshEndpoint=document.querySelector('meta[name="injury-refresh-endpoint"]')?.content?.trim()||'';
+const configuredRefreshEndpoint=document.querySelector('meta[name="injury-refresh-endpoint"]')?.content?.trim()||'';
+const refreshEndpoint=configuredRefreshEndpoint.startsWith('__')?'':configuredRefreshEndpoint;
 const defaults={budget:1000,rosterSize:34,formation:'3-4-2-1',started:false,slots:[],slotCounts:{...DEFAULT_SLOT_COUNTS},market:{}};
 let persisted={};
 try{persisted=JSON.parse(localStorage.getItem('mantra-auction')||'{}')}catch(error){loadIssues.push('Configurazione salvata non valida: sono stati ripristinati i valori iniziali')}

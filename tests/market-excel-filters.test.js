@@ -28,3 +28,14 @@ test('toolbar and column team filters share the same market control',async()=>{
   assert.match(app,/#team'\)\.oninput=.*marketControls\.columns\.team/);
   assert.doesNotMatch(app,/marketControls\.team/);
 });
+
+test('combined head keeps both the market stylesheet and injury endpoint',async()=>{
+  const [html,app]=await Promise.all([
+    readFile(new URL('../index.html',import.meta.url),'utf8'),
+    readFile(new URL('../src/app.js',import.meta.url),'utf8')
+  ]);
+
+  assert.match(html,/meta name="injury-refresh-endpoint" content="__INJURY_TRIGGER_ENDPOINT__"/);
+  assert.match(html,/href="src\/market-filters\.css"/);
+  assert.match(app,/configuredRefreshEndpoint\.startsWith\('__'\)\?'':configuredRefreshEndpoint/);
+});
