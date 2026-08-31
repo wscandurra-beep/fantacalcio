@@ -1,0 +1,45 @@
+name: Aggiorna infortuni Fantacalcio
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scrape-infortuni
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Scrape, validate, match and generate datasets
+        run: python3 scripts/scrape_infortuni.py
+      - name: Test
+        run: |
+          npm test
+          python3 -m unittest discover -s tests -p '*_test.py'
+      - name: Commit and push without overwriting concurrent changes
+        shell: bash
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add data/infortuni.json data/infortuni_update.json data/players.json
+          if git diff --cached --quiet; then echo "Nessuna variazione"; exit 0; fi
+          git commit -m "Update live injury snapshot"
+          git fetch origin main
+          if ! git rebase origin/main; then
+            git rebase --abort || true
+            echo "Conflitto reale durante il rebase; nessuna modifica è stata pubblicata" >&2
+            exit 1
+          fi
+          git push origin HEAD:main
