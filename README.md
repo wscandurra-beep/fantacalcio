@@ -13,6 +13,27 @@ npm run dev
 
 The MVP is a static application and stores auction strategy/state in browser `localStorage`. Use a separate browser profile per auction. Removing site data resets the auction.
 
+## Aggiornamento manuale infortuni
+
+L'aggiornamento non ha trigger temporali: il solo flusso ordinario è **Aggiorna
+infortuni → Worker → `workflow_dispatch` → scraper → commit → deploy Pages**. Il
+Worker mantiene il token GitHub fuori dal browser e accetta richieste soltanto
+dall'origine configurata.
+
+1. Pubblicare `worker/` con Cloudflare Workers (`npx wrangler deploy`) e impostare
+   `ALLOWED_ORIGIN` (l'URL esatto di Pages) e `GITHUB_REPOSITORY` (`owner/repo`).
+2. Creare un fine-grained GitHub token limitato a questo repository, con
+   **Actions: write**, quindi salvarlo solo come secret Worker con
+   `npx wrangler secret put GITHUB_TOKEN`.
+3. Impostare la variabile GitHub Actions `INJURY_TRIGGER_ENDPOINT` all'URL del
+   Worker, senza slash finale, e rieseguire il deploy Pages.
+
+Il frontend interroga lo stato del run, attende la pubblicazione del nuovo
+`updatedAt`, ricarica in memoria giocatori e riepilogo e applica un timeout di 15
+minuti. `unmatched` e `ambiguous` sono visibili solo nei dettagli. Il workflow
+infortuni contiene esclusivamente `workflow_dispatch`: non aggiungere `schedule`
+o cron.
+
 ## Seasonal import
 
 1. Add the new quotation and statistics `.xlsx` files without deleting historical sources.

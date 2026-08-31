@@ -1,0 +1,6 @@
+name = "fantacalcio-injury-trigger"
+main = "injury-trigger.js"
+compatibility_date = "2026-08-31"
+
+# Configure ALLOWED_ORIGIN and GITHUB_REPOSITORY as Worker variables.
+# Store GITHUB_TOKEN only with `wrangler secret put GITHUB_TOKEN`.
