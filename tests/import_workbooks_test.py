@@ -10,7 +10,9 @@ SPEC.loader.exec_module(IMPORTER)
 class NormalizePlayerNameTests(unittest.TestCase):
     def test_common_variants(self):
         pairs = [("Ché Adams", "CHE ADAMS"), ("D’Angelo", "d'angelo"),
-                 ("Jean-Clair", "jean‐clair"), ("  Marco   Rossi ", "marco rossi")]
+                 ("Jean-Clair", "jean‐clair"), ("  Marco   Rossi ", "marco rossi"),
+                 ("Guðmundsson", "Gudmundsson"), ("Højlund", "Hojlund"),
+                 ("Yıldız", "Yildiz"), ("Østigård", "Ostigard")]
         for left, right in pairs:
             with self.subTest(left=left):
                 self.assertEqual(IMPORTER.normalize_player_name(left), IMPORTER.normalize_player_name(right))

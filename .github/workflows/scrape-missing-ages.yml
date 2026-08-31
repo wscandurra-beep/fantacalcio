@@ -1,0 +1,101 @@
+name: Scrape missing player ages
+
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Optional number of missing players to process (leave empty for all)"
+        required: false
+        default: ""
+      sleep:
+        description: "Delay in seconds between source requests"
+        required: false
+        default: "1.0"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scrape-missing-ages
+  cancel-in-progress: false
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+
+    steps:
+      - name: Checkout latest main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Test scraper and importer
+        run: python3 -m unittest discover -s tests -p '*_test.py'
+
+      - name: Run missing-age scraper
+        shell: bash
+        run: |
+          set -euo pipefail
+          args=(--sleep "${{ inputs.sleep }}")
+          if [ -n "${{ inputs.limit }}" ]; then
+            args+=(--limit "${{ inputs.limit }}")
+          fi
+          python3 scripts/scrape_missing_ages.py "${args[@]}"
+
+      - name: Regenerate players dataset
+        run: python3 scripts/import_workbooks.py
+
+      - name: Run application tests
+        run: npm test
+
+      - name: Validate age enrichment
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          players = json.loads(Path('data/players.json').read_text(encoding='utf-8'))
+          bad = [p for p in players if p.get('age') is not None and not (15 <= int(p['age']) <= 50)]
+          if bad:
+              raise SystemExit(f'Invalid ages: {bad[:5]}')
+          enrichment_path = Path('data/player_ages.json')
+          if enrichment_path.exists():
+              payload = json.loads(enrichment_path.read_text(encoding='utf-8'))
+              rows = payload.get('players', [])
+              ids = [str(row.get('id')) for row in rows]
+              if len(ids) != len(set(ids)):
+                  raise SystemExit('Duplicate player IDs in data/player_ages.json')
+              print('Age enrichment:', payload.get('counts', {}))
+              print('Diagnostics:', {k: len(v) for k, v in payload.get('diagnostics', {}).items()})
+          print('Remaining missing ages:', sum(p.get('age') is None for p in players))
+          PY
+
+      - name: Commit enrichment results safely
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -f data/player_ages.json data/players.json data/import-quality.json
+          if git diff --cached --quiet; then
+            echo "No age-enrichment changes to commit."
+            exit 0
+          fi
+
+          git commit -m "Update player age enrichment"
+          git fetch origin main
+          if ! git rebase origin/main; then
+            echo "Rebase conflict: aborting without overwriting main."
+            git rebase --abort || true
+            exit 1
+          fi
+          git push origin HEAD:main
