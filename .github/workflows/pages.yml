@@ -40,7 +40,13 @@ jobs:
           mkdir -p _site/src _site/data
           cp index.html _site/
           cp src/*.js src/*.css _site/src/
-          cp data/players.json _site/data/
+          cp data/players.json data/infortuni.json data/infortuni_update.json _site/data/
+          python3 - <<'PY'
+          from pathlib import Path
+          endpoint = "${{ vars.INJURY_TRIGGER_ENDPOINT }}"
+          page = Path("_site/index.html")
+          page.write_text(page.read_text().replace("__INJURY_TRIGGER_ENDPOINT__", endpoint), encoding="utf-8")
+          PY
           touch _site/.nojekyll
 
       - name: Upload Pages artifact
