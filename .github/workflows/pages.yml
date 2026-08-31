@@ -42,10 +42,20 @@ jobs:
           cp src/*.js src/*.css _site/src/
           cp data/players.json data/infortuni.json data/infortuni_update.json _site/data/
           python3 - <<'PY'
+          import json
           from pathlib import Path
           endpoint = "${{ vars.INJURY_TRIGGER_ENDPOINT }}"
           page = Path("_site/index.html")
           page.write_text(page.read_text().replace("__INJURY_TRIGGER_ENDPOINT__", endpoint), encoding="utf-8")
+
+          snapshot = json.loads(Path("_site/data/infortuni.json").read_text(encoding="utf-8"))
+          update = json.loads(Path("_site/data/infortuni_update.json").read_text(encoding="utf-8"))
+          if update.get("currentInjuries") != len(snapshot.get("injuries", [])):
+              raise SystemExit("Injury metadata and snapshot counts differ; refusing stale Pages deploy")
+          if not update.get("updatedAt") or update["updatedAt"] != snapshot.get("fetchedAt"):
+              raise SystemExit("Injury metadata and snapshot timestamps differ; refusing stale Pages deploy")
+          if "__INJURY_TRIGGER_ENDPOINT__" in page.read_text(encoding="utf-8"):
+              raise SystemExit("Unresolved injury trigger placeholder")
           PY
           touch _site/.nojekyll
 
