@@ -1,8 +1,19 @@
 import {playerKey} from './age-domain.js';
 
+async function loadJson(path, fallback) {
+  try {
+    const response = await fetch(path, {cache: 'no-store'});
+    const contentType = response.headers.get('content-type') || '';
+    if (!response.ok || !contentType.includes('application/json')) return fallback;
+    return await response.json();
+  } catch {
+    return fallback;
+  }
+}
+
 const [players, quality] = await Promise.all([
-  fetch('./data/players.json').then(response => response.json()),
-  fetch('./data/import-quality.json').then(response => response.json()),
+  loadJson('./data/players.json', []),
+  loadJson('./data/import-quality.json', {ageMatched: 0, ambiguousCount: 0, unmatchedCount: 0, ambiguous: [], unmatched: []}),
 ]);
 
 const ages = new Map(players.map(player => [playerKey(player.name, player.team), player.age]));
