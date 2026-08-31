@@ -1,13 +1,32 @@
 import {CATEGORY_PRIORITY,DEFAULT_SLOT_COUNTS,rankPlayers,assignTiers,budgetSummary,slotPlanSummary,tierDepletion,updateForecasts,updateSlotStrategy,getForecast,percentageOfBudget,formatPercentage,areaVariance,slotCountsFromSlots,reconcileSlotCounts} from './domain.js';
 import {getFormation,getFormationIds} from './mantraFormations.js';
 const cacheKey=Date.now();
+const loadIssues=[];
+async function fetchJson(path,fallback,label){
+  try{
+    const response=await fetch(`${path}?v=${cacheKey}`,{cache:'no-store'});
+    if(!response.ok)throw new Error(`HTTP ${response.status}`);
+    return await response.json();
+  }catch(error){
+    loadIssues.push(`${label}: ${error.message}`);
+    return fallback;
+  }
+}
 const [raw,injuryUpdate]=await Promise.all([
-  fetch(`./data/players.json?v=${cacheKey}`,{cache:'no-store'}).then(r=>r.json()),
-  Promise.all([fetch(`./data/infortuni.json?v=${cacheKey}`,{cache:'no-store'}),fetch(`./data/infortuni_update.json?v=${cacheKey}`,{cache:'no-store'})]).then(async ([snapshot,update])=>{if(!snapshot.ok||!update.ok)throw new Error('Dataset infortuni non disponibile');await snapshot.json();return update.json()})
+  fetchJson('./data/players.json',[],'Elenco giocatori'),
+  Promise.all([
+    fetchJson('./data/infortuni.json',{},'Snapshot infortuni'),
+    fetchJson('./data/infortuni_update.json',{},'Aggiornamento infortuni')
+  ]).then(([,update])=>update)
 ]);
 const refreshEndpoint=document.querySelector('meta[name="injury-refresh-endpoint"]')?.content?.trim()||'';
 const defaults={budget:1000,rosterSize:34,formation:'3-4-2-1',started:false,slots:[],slotCounts:{...DEFAULT_SLOT_COUNTS},market:{}};
-let state=Object.assign({},defaults,JSON.parse(localStorage.getItem('mantra-auction')||'{}'));
+let persisted={};
+try{persisted=JSON.parse(localStorage.getItem('mantra-auction')||'{}')}catch(error){loadIssues.push('Configurazione salvata non valida: sono stati ripristinati i valori iniziali')}
+if(!persisted||typeof persisted!=='object'||Array.isArray(persisted))persisted={};
+let state=Object.assign({},defaults,persisted);
+if(!Array.isArray(state.slots))state.slots=[];
+if(!state.market||typeof state.market!=='object'||Array.isArray(state.market))state.market={};
 const counts={...DEFAULT_SLOT_COUNTS};
 if(!state.slots.length) state.slots=Object.entries(counts).flatMap(([c,n])=>Array.from({length:n},(_,i)=>({id:`${c}${i+1}`,category:c,priority:i===0?'Key':i<3?'Starter':'Reserve',originalPlannedBudget:[45,30,20,12,8,5,3,1][i]??1,playerId:null,actualPurchasePrice:null})));
 state.slots=updateForecasts(state.slots);
@@ -89,5 +108,5 @@ function initBaselineEditor(){
     document.querySelectorAll('.fill-preview').forEach(cell=>cell.classList.remove('fill-preview'));
   };
 }
-function render(){document.querySelector('header i').textContent=state.started?'ASTA LIVE':'STRATEGIA';document.querySelector('#app').innerHTML=({cockpit,market,strategy,quality})[view]();if(view==='quality'&&refreshEndpoint)document.querySelector('#refreshInjuries').onclick=refreshInjuries;if(view==='strategy'){document.querySelector('#formation').onchange=event=>document.querySelector('#formationSummary').innerHTML=formationSummary(event.target.value);initBaselineEditor()}if(view==='market'){const filter=()=>{let p=players(),q=document.querySelector('#q').value.toLowerCase(),c=document.querySelector('#cat').value,m=document.querySelector('#ms').value;p=p.filter(x=>(x.name+' '+x.team).toLowerCase().includes(q)&&(!c||x.rankingCategory===c)&&(!m||(state.market[x.id]?.marketStatus||'AVAILABLE')===m));document.querySelector('#marketTable').innerHTML=playerTable(p)};['q','cat','ms'].forEach(id=>document.querySelector('#'+id).oninput=filter)}}
+function render(){document.querySelector('header i').textContent=state.started?'ASTA LIVE':'STRATEGIA';const warning=loadIssues.length?`<div class="notice load-warning" role="alert"><b>Dati caricati solo in parte.</b> ${loadIssues.join(' · ')}. Puoi comunque aprire l’app e riprovare aggiornando la pagina.</div>`:'';document.querySelector('#app').innerHTML=warning+({cockpit,market,strategy,quality})[view]();if(view==='quality'&&refreshEndpoint)document.querySelector('#refreshInjuries').onclick=refreshInjuries;if(view==='strategy'){document.querySelector('#formation').onchange=event=>document.querySelector('#formationSummary').innerHTML=formationSummary(event.target.value);initBaselineEditor()}if(view==='market'){const filter=()=>{let p=players(),q=document.querySelector('#q').value.toLowerCase(),c=document.querySelector('#cat').value,m=document.querySelector('#ms').value;p=p.filter(x=>(x.name+' '+x.team).toLowerCase().includes(q)&&(!c||x.rankingCategory===c)&&(!m||(state.market[x.id]?.marketStatus||'AVAILABLE')===m));document.querySelector('#marketTable').innerHTML=playerTable(p)};['q','cat','ms'].forEach(id=>document.querySelector('#'+id).oninput=filter)}}
 window.goMarket=()=>{view='market';render()};window.sold=id=>{state.started=true;state.market[id]={marketStatus:'SOLD'};save()};window.buy=id=>{const p=raw.find(x=>x.id===id),open=state.slots.filter(s=>!s.playerId&&s.category===p.rankingCategory);if(!open.length)return alert('Nessuno slot compatibile aperto');const price=Number(prompt(`Prezzo per ${p.name}?`,p.auctionValue));if(!Number.isFinite(price)||price<1)return;const slot=open[0];slot.playerId=id;slot.actualPurchasePrice=price;state.market[id]={marketStatus:'MY TEAM'};state.started=true;save()};window.configure=()=>{const budget=Number(document.querySelector('#budget').value);const requestedCounts=Object.fromEntries(CATEGORY_PRIORITY.map(category=>[category,Number(document.querySelector(`[data-slot-count="${category}"]`).value)]));const edits=Object.fromEntries([...document.querySelectorAll('[data-slot-id]')].map(row=>{const slot=state.slots.find(item=>item.id===row.dataset.slotId);return [row.dataset.slotId,{category:row.querySelector('[data-slot-role]')?.value??slot.category,originalPlannedBudget:row.querySelector('[data-slot-baseline]').value}]}));try{let updatedSlots=updateSlotStrategy(state.slots,edits);const countsChanged=CATEGORY_PRIORITY.some(category=>requestedCounts[category]!==state.slotCounts[category]);if(countsChanged){updatedSlots=reconcileSlotCounts(updatedSlots,requestedCounts,34);state.slotCounts={...requestedCounts}}else state.slotCounts=slotCountsFromSlots(updatedSlots);state.slots=updatedSlots}catch(error){alert(error.message);render();return}state.budget=budget;state.rosterSize=state.slots.length;state.formation=document.querySelector('#formation').value;save()};window.resetAll=()=>{if(!confirm('Vuoi davvero resettare tutte le impostazioni? Configurazione, acquisti e stati del mercato verranno cancellati.'))return;localStorage.removeItem('mantra-auction');location.reload()};render();
