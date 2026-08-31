@@ -13,6 +13,15 @@ def normalize_name(value):
     return re.sub(r"\s+", " ", re.sub(r"[^\w\s]", " ", value)).strip()
 
 
+def abbreviated_name_matches(scraped_name, db_name):
+    """Match Fantacalcio initials (for example ``Sulemana K.``) safely."""
+    scraped, db = normalize_name(scraped_name).split(), normalize_name(db_name).split()
+    return len(scraped) == len(db) and all(
+        left == right or (len(left) == 1 and right.startswith(left))
+        for left, right in zip(scraped, db)
+    )
+
+
 def match_injuries(injuries, players):
     by_id = {str(p["id"]): p for p in players}
     by_name, by_name_team = defaultdict(list), defaultdict(list)
@@ -29,19 +38,33 @@ def match_injuries(injuries, players):
             key = (normalize_name(row.get("name")), normalize_name(row.get("team")))
             candidates = by_name_team.get(key, [])
             method = "NAME_TEAM"
+        if not candidates and row.get("team"):
+            team = normalize_name(row["team"])
+            candidates = [p for p in players if normalize_name(p.get("team")) == team
+                          and abbreviated_name_matches(row.get("name"), p.get("name"))]
+            method = "ABBREVIATED_NAME_TEAM"
         if not candidates:
             candidates = by_name.get(normalize_name(row.get("name")), [])
             method = "NAME"
         if len(candidates) == 1:
-            row.update({"matchStatus": "MATCHED", "matchedPlayerId": str(candidates[0]["id"]), "matchMethod": method})
+            player_id = str(candidates[0]["id"])
+            row.update({"matchStatus": "MATCHED", "matchedPlayerId": player_id,
+                        "playerId": player_id, "matched": True, "matchMethod": method})
             diagnostics["matched"] += 1
         elif len(candidates) > 1:
-            row.update({"matchStatus": "AMBIGUOUS", "matchedPlayerId": None, "matchMethod": None})
-            item = {"name": row.get("name"), "team": row.get("team"), "candidateIds": [str(p["id"]) for p in candidates]}
+            row.update({"matchStatus": "AMBIGUOUS", "matchedPlayerId": None,
+                        "playerId": None, "matched": False, "matchMethod": None})
+            item = {"name": row.get("name"), "team": row.get("team"), "candidateIds": [str(p["id"]) for p in candidates],
+                    "candidateNames": [p.get("name") for p in candidates]}
             diagnostics["ambiguous"].append(item)
         else:
-            row.update({"matchStatus": "UNMATCHED", "matchedPlayerId": None, "matchMethod": None})
-            diagnostics["unmatched"].append({"name": row.get("name"), "team": row.get("team"), "sourceUrl": row.get("sourceUrl")})
+            row.update({"matchStatus": "UNMATCHED", "matchedPlayerId": None,
+                        "playerId": None, "matched": False, "matchMethod": None})
+            team_players = [p for p in players if normalize_name(p.get("team")) == normalize_name(row.get("team"))]
+            surname = normalize_name(row.get("name")).split()[:1]
+            likely = [p.get("name") for p in team_players if surname and normalize_name(p.get("name")).split()[:1] == surname]
+            diagnostics["unmatched"].append({"name": row.get("name"), "team": row.get("team"),
+                                               "candidateNames": likely, "sourceUrl": row.get("sourceUrl")})
     return diagnostics
 
 

@@ -48,7 +48,26 @@ export function slotPlanSummary(slots,budget=0) {
 }
 export function statusFor(injury) { return !injury?'OK':[injury.injuryDetails,injury.expectedReturn&&`Rientro: ${injury.expectedReturn}`].filter(Boolean).join(' · '); }
 export function availablePlayers(players,state) { return players.filter(p=>(state[p.id]?.marketStatus??'AVAILABLE')==='AVAILABLE'); }
-export function tierDepletion(players,state){const m={};for(const p of players){const k=`${p.rankingCategory}-${p.tier}`;m[k]??={category:p.rankingCategory,tier:p.tier,total:0,available:0};m[k].total++;if((state[p.id]?.marketStatus??'AVAILABLE')==='AVAILABLE')m[k].available++;}return Object.values(m);}
+export function tierDepletion(players,state){const m={};for(const p of players){const k=`${p.rankingCategory}-${p.tier}`;m[k]??={category:p.rankingCategory,tier:p.tier,total:0,available:0,players:[]};const group=m[k];group.total++;group.players.push(p);if((state[p.id]?.marketStatus??'AVAILABLE')==='AVAILABLE')group.available++;}return Object.values(m);}
+export function normalizeMantraRoles(roles='') {
+  return String(roles).split(/[;,|/]+/).map(role=>role.trim()).filter(Boolean).map(role=>{
+    const lower=role.toLocaleLowerCase('it');
+    return lower==='por'?'Por':lower.charAt(0).toLocaleUpperCase('it')+lower.slice(1);
+  }).join(';');
+}
+export function mantraRoleDepletion(players,state={}) {
+  const groups=new Map();
+  for(const player of players){
+    const roles=normalizeMantraRoles(player.roles);
+    if(!roles)continue;
+    const group=groups.get(roles)??{roles,total:0,available:0,players:[]};
+    group.total++;
+    group.players.push(player);
+    if((state[player.id]?.marketStatus??'AVAILABLE')==='AVAILABLE')group.available++;
+    groups.set(roles,group);
+  }
+  return [...groups.values()].sort((a,b)=>b.total-a.total||a.roles.localeCompare(b.roles,'it',{sensitivity:'base'}));
+}
 export function updateForecasts(slots) {
   return slots.map(({currentForecastBudget,...slot})=>slot);
 }

@@ -2,12 +2,11 @@
 """Atomically refresh injuries from Fantacalcio's aggregate Serie A page."""
 from __future__ import annotations
 
-import argparse, html, json, re, subprocess, sys, time
+import argparse, json, re, sys, time
 from datetime import datetime, timezone
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.error import HTTPError, URLError
-from urllib.parse import urljoin
 from urllib.request import Request, urlopen
 
 from infortuni import apply_snapshot, compare_snapshots, match_injuries
@@ -18,66 +17,85 @@ USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTM
 
 
 class InjuryParser(HTMLParser):
-    """Parse cards using semantic data attributes, with common class-name aliases."""
+    """Parse the team header and its following ``ul.unstyled`` directly."""
     def __init__(self):
-        super().__init__(convert_charrefs=True); self.rows=[]; self.current=None; self.field=None; self.depth=0
+        super().__init__(convert_charrefs=True)
+        self.rows, self.teams = [], []
+        self.item_names = 0
+        self.team = None
+        self.capture_team = False
+        self.team_parts = []
+        self.ul_depth = 0
+        self.li_depth = 0
+        self.current = None
+        self.field = None
+
     def handle_starttag(self, tag, attrs):
-        attrs=dict(attrs); classes=set(attrs.get("class", "").lower().split())
-        if attrs.get("data-injury-player") is not None or classes & {"injury-player", "infortunato", "player-injury"}:
-            self.current={"id": attrs.get("data-player-id"), "name":"", "team":"", "injury":"", "expectedReturn":None,
-                          "sourceUrl":urljoin(URL, attrs.get("href", "")) or URL}; self.depth=1
-        elif self.current:
-            self.depth += 1
-            marker = attrs.get("data-field", "").lower()
-            if marker in {"name","team","injury","expectedreturn"}: self.field=marker
-            elif classes & {"player-name","nome"}: self.field="name"
-            elif classes & {"player-team","squadra"}: self.field="team"
-            elif classes & {"injury-detail","infortunio","descrizione"}: self.field="injury"
-            elif classes & {"expected-return","rientro"}: self.field="expectedreturn"
-            if tag == "a" and attrs.get("href"):
-                self.current["sourceUrl"] = urljoin(URL, attrs["href"])
-                match=re.search(r"/(\d+)(?:[/?#]|$)", attrs["href"])
-                if match: self.current["id"] = match.group(1)
+        classes = set(dict(attrs).get("class", "").split())
+        if tag == "span" and "team-name" in classes:
+            self.capture_team, self.team_parts = True, []
+        if tag == "ul" and "unstyled" in classes:
+            self.ul_depth = 1
+        elif self.ul_depth:
+            self.ul_depth += 1
+        if tag == "li" and self.ul_depth and not self.li_depth:
+            self.li_depth = 1
+            self.current = {"team": self.team, "name": "", "description": "",
+                            "injury": "", "expectedReturn": None, "sourceUrl": URL}
+        elif self.li_depth and tag != "li":
+            self.li_depth += 1
+        if self.current and tag == "strong" and "item-name" in classes:
+            self.field = "name"
+            self.item_names += 1
+        elif self.current and tag == "div" and "item-description" in classes:
+            self.field = "description"
+
     def handle_data(self, data):
+        if self.capture_team:
+            self.team_parts.append(data)
         if self.current and self.field:
-            key="expectedReturn" if self.field=="expectedreturn" else self.field
-            self.current[key]=re.sub(r"\s+", " ", f"{self.current.get(key) or ''} {data}").strip() or None
+            self.current[self.field] += " " + data
+
     def handle_endtag(self, tag):
-        if self.current:
-            self.depth -= 1
-            if self.depth == 0:
-                if self.current.get("name") and self.current.get("injury"): self.rows.append(self.current)
-                self.current=None
+        if tag == "span" and self.capture_team:
+            self.team = normalize_whitespace("".join(self.team_parts))
+            if self.team:
+                self.teams.append(self.team)
+            self.capture_team = False
+        if self.li_depth:
+            self.li_depth -= 1
+            if self.li_depth == 0:
+                self.current["name"] = normalize_whitespace(self.current["name"])
+                self.current["description"] = normalize_whitespace(self.current["description"])
+                self.current["injury"] = self.current["description"]
+                if self.current["team"] and self.current["name"] and self.current["description"]:
+                    self.rows.append(self.current)
+                self.current = None
             self.field=None
+        if self.ul_depth:
+            self.ul_depth -= 1
+
+
+def normalize_whitespace(value):
+    return re.sub(r"\s+", " ", value or "").strip()
 
 
 def parse_page(raw):
-    decoded=html.unescape(raw).replace(r"\u003c", "<").replace(r"\u003e", ">").replace(r'\"', '"').replace(r"\/", "/")
-    parser=InjuryParser(); parser.feed(decoded)
-    if parser.rows: return parser.rows
-    # Next/JSON payload fallback: accept only explicit injury objects.
-    rows=[]
-    pattern=re.compile(r'\{[^{}]{0,2000}"(?:name|nome)"\s*:\s*"[^"}]+"[^{}]{0,2000}\}', re.I)
-    for blob in pattern.findall(decoded):
-        try: obj=json.loads(blob)
-        except ValueError: continue
-        lower={str(k).lower():v for k,v in obj.items()}
-        injury=lower.get("injury") or lower.get("infortunio") or lower.get("description")
-        name=lower.get("name") or lower.get("nome")
-        if name and injury:
-            rows.append({"id":lower.get("playerid") or lower.get("id"), "name":name, "team":lower.get("team") or lower.get("squadra"),
-                         "injury":injury, "expectedReturn":lower.get("expectedreturn") or lower.get("rientro"), "sourceUrl":lower.get("url") or URL})
-    return rows
+    parser=InjuryParser(); parser.feed(raw)
+    return parser.rows
 
 
 def validate_page(raw, rows):
-    text=html.unescape(re.sub(r"<[^>]+>", " ", raw)).lower()
     if not raw.strip(): raise ValueError("pagina vuota")
-    if any(x in text for x in ("captcha", "access denied", "cloudflare ray id", "verify you are human")): raise ValueError("risposta anti-bot")
-    if "fantacalcio" not in text and "fantacalcio" not in raw.lower(): raise ValueError("pagina inattesa: marker Fantacalcio assente")
+    parser=InjuryParser(); parser.feed(raw)
+    if not parser.teams: raise ValueError("nessun span.team-name trovato")
+    if not parser.item_names: raise ValueError("nessun strong.item-name trovato")
     if not rows: raise ValueError("0 giocatori estratti: struttura infortuni non trovata")
+    team_count=len(set(parser.teams))
+    if not 18 <= team_count <= 22: raise ValueError(f"numero squadre incompatibile con la Serie A: {team_count}")
     incomplete=sum(not r.get("name") or not r.get("injury") for r in rows)
     if incomplete or len({(r.get('name'),r.get('team')) for r in rows}) != len(rows): raise ValueError("parsing incompleto o duplicato")
+    return team_count
 
 
 def fetch(timeout, retries):
@@ -85,25 +103,26 @@ def fetch(timeout, retries):
     last=None
     for attempt in range(retries+1):
         try:
-            with urlopen(Request(URL,headers=headers),timeout=timeout) as response: return response.read().decode(response.headers.get_content_charset() or "utf-8", "replace")
+            with urlopen(Request(URL,headers=headers),timeout=timeout) as response:
+                if response.status != 200: raise RuntimeError(f"HTTP status inatteso: {response.status}")
+                return response.read().decode(response.headers.get_content_charset() or "utf-8", "replace")
         except (HTTPError,URLError,TimeoutError) as exc:
             last=exc
-            proc=subprocess.run(["curl","-L","--fail","--silent","--show-error","--max-time",str(timeout),"-A",USER_AGENT,URL],capture_output=True,text=True)
-            if proc.returncode == 0: return proc.stdout
             if attempt<retries: time.sleep(1.5*2**attempt)
     raise RuntimeError(f"download fallito: {last}")
 
 
 def refresh(raw, root=ROOT, fetched_at=None):
     fetched_at=fetched_at or datetime.now(timezone.utc).isoformat()
-    rows=parse_page(raw); validate_page(raw,rows)
+    rows=parse_page(raw); team_count=validate_page(raw,rows)
     players_path=root/"data/players.json"; snapshot_path=root/"data/infortuni.json"; update_path=root/"data/infortuni_update.json"
     players=json.loads(players_path.read_text(encoding="utf-8"))
     old_doc=json.loads(snapshot_path.read_text(encoding="utf-8")) if snapshot_path.exists() else {"injuries":[]}
     diagnostics=match_injuries(rows,players)
     for row in rows: row.update({"status":"ok","fetchedAt":fetched_at})
     summary=compare_snapshots(old_doc.get("injuries",[]),rows,fetched_at)
-    summary.update({"matched":diagnostics["matched"],"unmatched":len(diagnostics["unmatched"]),"ambiguous":len(diagnostics["ambiguous"]),
+    summary.update({"teamsFound":team_count,"playersScraped":len(rows),
+                    "matched":diagnostics["matched"],"unmatched":len(diagnostics["unmatched"]),"ambiguous":len(diagnostics["ambiguous"]),
                     "missingExpectedReturn":sum(r.get("expectedReturn") is None for r in rows),"unmatchedRecords":diagnostics["unmatched"],
                     "ambiguousRecords":diagnostics["ambiguous"],"result":"SUCCESS","errors":[]})
     snapshot={"source":URL,"fetchedAt":fetched_at,"injuries":rows}
@@ -119,6 +138,12 @@ def main():
     args=ap.parse_args()
     try: raw=Path(args.input).read_text(encoding="utf-8") if args.input else fetch(args.timeout,args.retries); snapshot,summary=refresh(raw)
     except Exception as exc: print(f"ERRORE: snapshot preservato: {exc}",file=sys.stderr); return 1
-    print(f"Aggiornati {len(snapshot['injuries'])} infortunati; matched={summary['matched']} unmatched={summary['unmatched']} ambiguous={summary['ambiguous']}"); return 0
+    print(f"Teams found: {summary['teamsFound']}")
+    print(f"Injured players scraped: {len(snapshot['injuries'])}")
+    print(f"Matched: {summary['matched']}\nUnmatched: {summary['unmatched']}\nAmbiguous: {summary['ambiguous']}")
+    for kind in ("unmatchedRecords", "ambiguousRecords"):
+        for item in summary[kind]:
+            print(f"{item.get('team')} | {item.get('name')} | {', '.join(item.get('candidateNames', [])) or '-'}")
+    return 0
 
 if __name__ == "__main__": raise SystemExit(main())
