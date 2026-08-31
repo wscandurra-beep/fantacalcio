@@ -21,4 +21,5 @@ test('market controls do not retain removed column filter state',()=>{
   assert.doesNotMatch(app,/^(<<<<<<<|=======|>>>>>>>)/m);
   assert.doesNotMatch(app,/emptyColumnFilters|marketControls\.columns|columns:emptyColumnFilters/);
   assert.match(app,/marketControls=\{query:'',category:'',availability:'AVAILABLE',team:'',sort:null\}/);
+  assert.match(app,/pressurePage='tier';\s*let pressureGroups=\[\];/);
 });
