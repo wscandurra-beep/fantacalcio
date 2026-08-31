@@ -16,3 +16,8 @@ test('player table renders one sortable header row directly before its body',()=
 test('column filter layout styles have been removed',()=>{
   assert.doesNotMatch(css,/\.column-filters|\.range-filter|\.metric-ranges/);
 });
+
+test('market controls do not retain removed column filter state',()=>{
+  assert.doesNotMatch(app,/emptyColumnFilters|marketControls\.columns|columns:emptyColumnFilters/);
+  assert.match(app,/marketControls=\{query:'',category:'',availability:'AVAILABLE',team:'',sort:null\}/);
+});
