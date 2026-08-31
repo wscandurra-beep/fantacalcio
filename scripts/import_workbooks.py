@@ -19,7 +19,7 @@ from infortuni import apply_snapshot
 M = "{http://schemas.openxmlformats.org/spreadsheetml/2006/main}"
 R = "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}"
 ROOT = Path(__file__).resolve().parents[1]
-NAME_TRANSLITERATION = str.maketrans({"ð": "d", "ø": "o", "ı": "i"})
+NAME_TRANSLITERATION = str.maketrans({"ð": "d", "ø": "o", "ı": "i", "ł": "l", "đ": "d"})
 
 
 def normalize_player_name(value):
