@@ -1,5 +1,7 @@
 import {CATEGORY_PRIORITY,DEFAULT_SLOT_COUNTS,rankPlayers,assignTiers,budgetSummary,slotPlanSummary,tierDepletion,updateForecasts,updateSlotStrategy,getForecast,percentageOfBudget,formatPercentage,areaVariance,slotCountsFromSlots,reconcileSlotCounts} from './domain.js';
 import {getFormation,getFormationIds} from './mantraFormations.js';
+import {MARKET_COLUMNS,createMarketControls} from './market-filters.js';
+let marketControls=createMarketControls();
 const cacheKey=Date.now();
 const loadIssues=[];
 async function fetchJson(path,fallback,label){
@@ -34,8 +36,6 @@ state.slotCounts=slotCountsFromSlots(state.slots);
 state.rosterSize=state.slots.length;
 function players(){return CATEGORY_PRIORITY.flatMap(cat=>assignTiers(rankPlayers(raw.filter(p=>p.rankingCategory===cat)),state.slots.filter(s=>s.category===cat).length));}
 const save=()=>{localStorage.setItem('mantra-auction',JSON.stringify(state));render()};let view='cockpit';
-const MARKET_COLUMNS={name:{label:'Giocatore',value:p=>p.name},team:{label:'Squadra',value:p=>p.team},role:{label:'Ruolo',value:p=>p.rankingCategory},tier:{label:'Tier',value:p=>p.tier,numeric:true},auction:{label:'Asta €',value:p=>p.auctionValue,numeric:true},quotation:{label:'Quot.',value:p=>p.quotation,numeric:true},hype:{label:'Hype',value:p=>p.hypeFactor,numeric:true},age:{label:'Età',value:p=>p.age,numeric:true},pg:{label:'PG / MF',value:p=>p.actPg,numeric:true},status:{label:'Status',value:p=>p.status}};
-let marketControls={query:'',category:'',availability:'AVAILABLE',columns:{},sort:null,openMenu:null};
 document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>{view=b.dataset.view;document.querySelectorAll('nav button').forEach(x=>x.classList.toggle('active',x===b));render()});
 function cockpit(){const b=budgetSummary(state.budget,state.slots),ps=players(),dep=tierDepletion(ps,state.market);return `<div class=eyebrow>Live strategy</div><h1>Buonasera, Mister.</h1><div class=grid>${[['Budget iniziale',b.budget],['Speso',b.spent],['Rimanente',b.remaining],['Varianza',b.variance]].map((x,i)=>`<div class="card metric"><label>${x[0]}</label><strong class=${i===2?'lime':''}>${x[1]} <small>cr</small></strong></div>`).join('')}<div class="card wide"><div class=section-head><h2>Rosa</h2><span class=pill>${state.slots.filter(s=>s.playerId).length} / ${state.slots.length}</span></div><p class=muted>${state.slots.filter(s=>!s.playerId).length} slot aperti · ${state.formation}</p></div><div class="card wide"><div class=section-head><h2>Pressione mercato</h2><span class=muted>Disponibili / originali</span></div><div class=pressure>${dep.slice(0,12).map(x=>`<div class=tier><span class=muted>${x.category} · Tier ${x.tier}</span><b>${x.available} / ${x.total}</b><div class=bar><i style="width:${100*x.available/x.total}%"></i></div></div>`).join('')}</div></div></div><div class=section><div class=section-head><h2>Slot prioritari</h2><button class=action onclick="goMarket()">Apri mercato</button></div>${slotTable(state.slots.slice(0,10))}</div>`}
 function signed(value){return value>0?`+${value}`:`${value}`}

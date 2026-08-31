@@ -3,16 +3,19 @@ import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 
 test('market uses Excel-style header menus instead of a permanent filter row',async()=>{
-  const [app,css]=await Promise.all([
+  const [app,marketModule,marketCss,css]=await Promise.all([
     readFile(new URL('../src/app.js',import.meta.url),'utf8'),
+    readFile(new URL('../src/market-filters.js',import.meta.url),'utf8'),
+    readFile(new URL('../src/market-filters.css',import.meta.url),'utf8'),
     readFile(new URL('../src/style.css',import.meta.url),'utf8')
   ]);
 
-  assert.match(app,/const MARKET_COLUMNS=/);
+  assert.match(marketModule,/export const MARKET_COLUMNS=/);
+  assert.match(app,/import \{MARKET_COLUMNS,createMarketControls\}/);
   assert.match(app,/class="excel-filter-trigger/);
   assert.match(app,/class=excel-filter-menu/);
   assert.doesNotMatch(app,/emptyColumnFilters|class=column-filters/);
-  assert.doesNotMatch(css,/\.column-filters|\.range-filter|\.sort-button/);
+  assert.doesNotMatch(marketCss,/\.column-filters|\.range-filter|\.sort-button/);
   // The conflict's main branch also added these injury panel refinements.
   assert.match(css,/\.injury-refresh\{padding:18px 20px\}/);
   assert.match(css,/\.injury-refresh \.refresh-status\{/);
