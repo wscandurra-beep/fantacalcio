@@ -13,6 +13,9 @@ test('market uses Excel-style header menus instead of a permanent filter row',as
   assert.match(app,/class=excel-filter-menu/);
   assert.doesNotMatch(app,/emptyColumnFilters|class=column-filters/);
   assert.doesNotMatch(css,/\.column-filters|\.range-filter|\.sort-button/);
+  // The conflict's main branch also added these injury panel refinements.
+  assert.match(css,/\.injury-refresh\{padding:18px 20px\}/);
+  assert.match(css,/\.injury-refresh \.refresh-status\{/);
 });
 
 test('toolbar and column team filters share the same market control',async()=>{
@@ -22,4 +25,3 @@ test('toolbar and column team filters share the same market control',async()=>{
   assert.match(app,/#team'\)\.oninput=.*marketControls\.columns\.team/);
   assert.doesNotMatch(app,/marketControls\.team/);
 });
-
