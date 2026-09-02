@@ -20,6 +20,28 @@ M = "{http://schemas.openxmlformats.org/spreadsheetml/2006/main}"
 R = "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}"
 ROOT = Path(__file__).resolve().parents[1]
 NAME_TRANSLITERATION = str.maketrans({"ð": "d", "ø": "o", "ı": "i", "ł": "l", "đ": "d"})
+HIERARCHIES = {
+    "Atalanta": (("Scamacca", "Krstovic", "Samardzic"), ("De Ketelaere", "Samardzic", "Gaetano")),
+    "Bologna": (("Orsolini", "Bernardeschi", "Dovbyk"), ("Orsolini", "Bernardeschi", "Miranda J.")),
+    "Cagliari": (("Nzola", "Kevin Carlos", "Mina"), ("Fazzini", "Maldini", "Romano")),
+    "Como": (("Da Cunha", "Kean", "Douvikas"), ("Paz N.", "Baturina", "Milla")),
+    "Fiorentina": (("Beto", "Pellegrino M.", "Goncalves P."), ("Mastantuono", "Atta", "Goncalves P.")),
+    "Frosinone": (("Calò", "Schmid", "Bobcek"), ("Calò", "Schmid", "Ghedjemis")),
+    "Genoa": (("Colombo", "Ostigard", "Vitinha O."), ("Baldanzi", "Vitinha O.", "Messias")),
+    "Inter": (("Calhanoglu", "Zielinski", "Martinez L."), ("Calhanoglu", "Dimarco", "Zielinski")),
+    "Juventus": (("Kolo Muani", "Woltemade", "Gonzalez N."), ("Yildiz", "Locatelli", "Douglas Luiz")),
+    "Lazio": (("Zaccagni", "Pinamonti", "Gudmundsson A."), ("Rovella", "Zaccagni", "Gudmundsson A.")),
+    "Lecce": (("Geubbels", "Stulic", "Berisha M."), ("Pierotti", "Berisha M.", "Gandelman")),
+    "Milan": (("Ramos G.", "Pulisic", "Modric"), ("Modric", "Pulisic", "Saelemaekers")),
+    "Monza": (("Cutrone", "Varela G.", "Ngonge"), ("Ngonge", "Folorunsho", "Pessina")),
+    "Napoli": (("De Bruyne", "Hojlund", "Politano"), ("De Bruyne", "Politano", "Neres")),
+    "Parma": (("Tourè E.", "Valeri", "Bernabè"), ("Bernabè", "Nicolussi Caviglia", "Valeri")),
+    "Roma": (("Malen", "Dybala", "Castro S."), ("Dybala", "Malen", "Pellegrini Lo.")),
+    "Sassuolo": (("Berardi", "Esposito Se.", "Laurientè"), ("Berardi", "Laurientè", "Adzic")),
+    "Torino": (("Vlasic", "Simeone", "Mandragora"), ("Vlasic", "Mandragora", "Gineitis")),
+    "Udinese": (("Davis K.", "Solet", "Zaniolo"), ("Zaniolo", "Ekkelenkamp", "Unai Gomez")),
+    "Venezia": (("Busio", "Adams A.", "Adorante"), ("Busio", "Yeboah J.", "Perez K.")),
+}
 
 
 def normalize_player_name(value):
@@ -129,6 +151,53 @@ def abbreviated_name_matches(short_name, full_name):
     )
 
 
+def match_source(players, rows, source, diagnostics):
+    """Match a statistical source by stable id, then conservative name/team."""
+    by_id = {str(player["id"]): player for player in players}
+    by_name = defaultdict(list)
+    for player in players:
+        by_name[normalize_player_name(player["name"])].append(player)
+    matched, ambiguous, unused = {}, [], []
+    for row in rows:
+        player = by_id.get(str(row.get("Id"))) if row.get("Id") else None
+        if not player:
+            candidates = by_name.get(normalize_player_name(row.get("Nome")), [])
+            team = normalize_player_name(row.get("Squadra"))
+            candidates = [p for p in candidates if normalize_player_name(p["team"]) == team]
+            if len(candidates) == 1:
+                player = candidates[0]
+            elif len(candidates) > 1:
+                ambiguous.append({"name": row.get("Nome"), "team": row.get("Squadra"),
+                                  "candidateIds": [p["id"] for p in candidates]})
+        if player:
+            matched[player["id"]] = row
+        else:
+            unused.append({"name": row.get("Nome"), "team": row.get("Squadra")})
+    diagnostics[source] = {"matched": len(matched), "unmatchedMaster": len(players) - len(matched),
+                           "unusedSourceRows": len(unused), "ambiguous": ambiguous}
+    return matched
+
+
+def apply_hierarchies(players):
+    report = {"R": {"matched": 0, "unmatched": []}, "P": {"matched": 0, "unmatched": []}, "ambiguous": []}
+    for player in players:
+        player["R"] = player["P"] = 0
+    for team, lists in HIERARCHIES.items():
+        team_players = [p for p in players if normalize_player_name(p["team"]) == normalize_player_name(team)]
+        for field, names in zip(("R", "P"), lists):
+            for rank, listed_name in enumerate(names, 1):
+                candidates = [p for p in team_players if abbreviated_name_matches(listed_name, p["name"])]
+                if len(candidates) == 1:
+                    candidates[0][field] = rank
+                    report[field]["matched"] += 1
+                elif len(candidates) > 1:
+                    report["ambiguous"].append({"field": field, "name": listed_name, "team": team,
+                                                "candidateIds": [p["id"] for p in candidates]})
+                else:
+                    report[field]["unmatched"].append({"name": listed_name, "team": team})
+    return report
+
+
 def enrich_player_ages(players, statistic_rows):
     """Safely enrich players and return serializable matching diagnostics."""
     by_name = defaultdict(list)
@@ -230,12 +299,13 @@ def category(roles_value):
 
 def import_data(root=ROOT):
     quotations = records(root / "Quotazioni_Fantacalcio_Stagione_2026_27.xlsx", "Tutti", 2)
-    statistics = {row["Id"]: row for row in records(root / "Statistiche_Fantacalcio_Stagione_2026_27.xlsx", "Tutti", 2)}
+    current_rows = records(root / "Statistiche_Fantacalcio_Stagione_2026_27.xlsx", "Tutti", 2)
+    last_rows = records(root / "Statistiche_Fantacalcio_Stagione_2025_26.xlsx", "Tutti", 2)
+    archive_rows = records(root / "Stat_Figures_2025.xlsx", "Stats", 1)
     cups = {row[1]: row[0] for row in sheet_rows(root / "Stat_Figures_2025.xlsx", "Coppe")[1:] if len(row) > 1 and row[1]}
     pros_cons = {row[0]: row for row in sheet_rows(root / "Stat_Figures_2025.xlsx", "Pro_Contro")[1:] if row and row[0]}
     players = []
     for row in quotations:
-        stats = statistics.get(row["Id"], {})
         prose = pros_cons.get(row["Id"])
         auction = numeric(row.get("FVM M")) or numeric(row.get("FVM")) or 0
         quote = numeric(row.get("Qt.A M")) or numeric(row.get("Qt.A")) or 0
@@ -243,14 +313,48 @@ def import_data(root=ROOT):
             "id": row["Id"], "name": row["Nome"], "team": row["Squadra"], "roles": row["RM"],
             "rankingCategory": category(row["RM"]), "auctionValue": auction, "quotation": quote,
             "hypeFactor": round(auction / quote, 2) if quote else None, "cups": cups.get(row["Squadra"], ""),
-            "age": None, "avgPg": None, "avgMf": None, "actPg": numeric(stats.get("Pv")), "actMf": numeric(stats.get("Fm")),
+            "age": None,
             "status": "OK",
             "pro": prose[5] if prose and len(prose) > 5 else None, "contro": prose[6] if prose and len(prose) > 6 else None,
         })
+    source_quality = {}
+    current = match_source(players, current_rows, "2026/27", source_quality)
+    last = match_source(players, last_rows, "2025/26", source_quality)
+    history = {}
+    for year, label in (("2024", "2024/25"), ("2023", "2023/24")):
+        history[label] = match_source(players, [r for r in archive_rows if r.get("Year") == year], label, source_quality)
+    history["2025/26"] = last
+    season_counts = {metric: {str(count): 0 for count in (3, 2, 1, 0)} for metric in ("AvgPG", "AvgMF")}
+    pg_spot_checks = {}
+    for player in players:
+        current_row, last_row = current.get(player["id"], {}), last.get(player["id"], {})
+        player.update({"PG": numeric(current_row.get("Pv")) or 0, "MF": numeric(current_row.get("Fm")) or 0,
+                       "GoLY": numeric(last_row.get("Gf")) or 0, "AssLY": numeric(last_row.get("Ass")) or 0,
+                       "Amm": numeric(last_row.get("Amm")) or 0, "Esp": numeric(last_row.get("Esp")) or 0})
+        for output, column_name in (("AvgPG", "Pv"), ("AvgMF", "Fm")):
+            values = []
+            for season, rows_by_player in history.items():
+                row = rows_by_player.get(player["id"], {})
+                source_column = column_name if season == "2025/26" else ("Pg" if output == "AvgPG" else "Mf")
+                value = numeric(row.get(source_column))
+                if value is not None:
+                    values.append(value)
+            player[output] = round(sum(values) / len(values), 2) if values else 0
+            season_counts[output][str(len(values))] += 1
+            if output == "AvgPG" and str(len(values)) not in pg_spot_checks:
+                pg_spot_checks[str(len(values))] = {
+                    "player": player["name"], "id": player["id"],
+                    "PGSeasons": values, "AvgPG": player[output],
+                }
+    hierarchy_quality = apply_hierarchies(players)
     snapshot_path = root / "data/infortuni.json"
     snapshot = json.loads(snapshot_path.read_text(encoding="utf-8")) if snapshot_path.exists() else {"injuries": []}
     apply_snapshot(players, snapshot.get("injuries", []))
     quality = enrich_player_ages(players, statistics_player_records(root / "Statistiche_Giocatori.xlsx"))
+    quality.update({"totalMasterPlayers": len(players), "statisticsSources": source_quality,
+                    "historicalSeasonCounts": season_counts, "hierarchies": hierarchy_quality,
+                    "duplicates": [{"id": key, "count": count} for key, count in __import__('collections').Counter(p['id'] for p in players).items() if count > 1],
+                    "unmappedFields": [], "spotChecks": pg_spot_checks})
     recovered = apply_scraped_age_enrichment(players, load_scraped_age_enrichment(root))
     quality["ageRecoveredFbref"] = recovered["fbref"]
     quality["ageRecoveredTransfermarkt"] = recovered["transfermarkt"]
@@ -258,7 +362,9 @@ def import_data(root=ROOT):
     quality["ageMissing"] = sum(player.get("age") is None for player in players)
     quality["ageComplete"] = len(players) - quality["ageMissing"]
     quality["missingPlayers"] = [{"name": p["name"], "team": p["team"]} for p in players if p.get("age") is None]
-    (root / "data/players.json").write_text(json.dumps(players, ensure_ascii=False, separators=(",", ":")))
+    # Keep this generated artifact reviewable. Minification saves little at this
+    # data size and makes source-control diffs needlessly opaque.
+    (root / "data/players.json").write_text(json.dumps(players, ensure_ascii=False, indent=2) + "\n")
     (root / "data/import-quality.json").write_text(json.dumps(quality, ensure_ascii=False, indent=2))
     print(f'Imported {len(players)} players; {quality["ageMatched"]} workbook ages matched; {quality["ageRecoveredFbref"]} FBref ages; {quality["ageRecoveredTransfermarkt"]} Transfermarkt ages; {quality["ageMissing"]} ages missing')
     return players, quality
