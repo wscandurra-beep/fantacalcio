@@ -16,10 +16,12 @@ The current quotation workbook has `Tutti` plus positional projections with colu
 | Quot. | current quotations `Qt.A M` | direct current Mantra quotation | `Id` |
 | Hype Factor | ranking sheets | `Asta € / Quot.` | derived |
 | Age | `SOURCE` FBref age/birth data; old master cached birth year | workbook result is current year minus birth year | explicit mapping/name+team; no safe current ID bridge exists |
-| AvgPG | historical `Stats.Pg` | ranking output shows arithmetic mean of seasonal appearances, including represented zero/missing seasons according to pivots | `Id` |
-| AvgMf | historical `Stats.Mf` | ranking output shows arithmetic mean of seasonal fantasy averages (not weighted by appearances) | `Id` |
-| ACT PG | current statistics `Pv` (`Stats.Pg` in reference) | direct current-season appearances | `Id` |
-| ACT MF | current statistics `Fm` (`Stats.Mf` in reference) | direct current-season fantasy average | `Id` |
+| AvgPG | 2025/26 `Pv`; historical `Stats.Pg` for 2024/25 and 2023/24 | mean of the available seasons only; a missing season is excluded | `Id` |
+| AvgMF | 2025/26 `Fm`; historical `Stats.Mf` for 2024/25 and 2023/24 | mean of the available seasons only; a missing season is excluded | `Id` |
+| PG | current statistics `Pv` | direct current-season appearances | `Id` |
+| MF | current statistics `Fm` | direct current-season fantasy average | `Id` |
+| GoLY / AssLY / Amm / Esp | 2025/26 `Gf / Ass / Amm / Esp` | direct last-season totals; zero when absent | `Id` |
+| R / P | supplied penalty and set-piece hierarchies | ranks 1–3, team-constrained conservative name matching; zero when unlisted | normalized name + team |
 | Status | `Infortuni (GPT)` | absent → `OK`; present → injury marker plus `Periodo_rientro` | `Id`, otherwise reviewed name/team |
 | Pro, Contro | `Pro_Contro.PRO/CONTRO` | direct cached text; mojibake remains a source-quality concern | `Id` |
 
@@ -46,7 +48,7 @@ Season/source manifest → player (`fantacalcio_id`) → raw season statistics �
 ## I. Ambiguities and safe omissions
 
 * Current 2026/27 files appear future/synthetic relative to the reference and contain no birth dates. The old FBref `SOURCE` cannot be safely joined to all current players, so current age is left null pending an explicit map/current FBref import.
-* Exact pivot cache settings behind historical `AvgPG`/`AvgMf` (especially blank/zero behavior and season eligibility) are not fully recoverable from visible formulas. The app does not fabricate them.
+* The repository does not contain a standalone `Statistiche_Fantacalcio_Stagione_2024_25.xlsx`. The inspected `Stats` sheet in `Stat_Figures_2025.xlsx` contains the 2024/25 and 2023/24 rows used by the importer. `data/import-quality.json` records source coverage, independent PG/MF season counts, hierarchy resolution, duplicate detection, and spot checks. No ambiguous statistical or hierarchy match is silently accepted.
 * Current injury, Cup and Pro/Contro sheets are reference-season snapshots. ID matches are imported, but staleness is surfaced by missing values; no live scraping is implied.
 * One current player has no dedicated category. It remains preserved for manual review.
 * The reference has broken external links and `#REF!` team counters; these are not reproduced.

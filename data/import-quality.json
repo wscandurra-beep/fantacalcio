@@ -1,13 +1,17 @@
 {
-  "ageMatched": 329,
-  "ageMissing": 194,
+  "ageMatched": 317,
+  "ageMissing": 214,
   "ambiguousCount": 0,
-  "unmatchedCount": 19,
+  "unmatchedCount": 31,
   "ambiguous": [],
   "unmatched": [
     {
       "name": "Frank Anguissa",
       "team": "Napoli"
+    },
+    {
+      "name": "Neil El Aynaoui",
+      "team": "Roma"
     },
     {
       "name": "Matteo Chichella",
@@ -16,6 +20,18 @@
     {
       "name": "Riccardo Ciervo",
       "team": "Sassuolo"
+    },
+    {
+      "name": "Jonathan David",
+      "team": "Juventus"
+    },
+    {
+      "name": "Filippo Delli Carri",
+      "team": "Monza"
+    },
+    {
+      "name": "Boulaye Dia",
+      "team": "Lazio"
     },
     {
       "name": "Francesco Esposito",
@@ -28,6 +44,14 @@
     {
       "name": "Nicolas Galazzi",
       "team": "Monza"
+    },
+    {
+      "name": "Albert Guðmundsson",
+      "team": "Fiorentina"
+    },
+    {
+      "name": "Moise Kean",
+      "team": "Fiorentina"
     },
     {
       "name": "Kialonda",
@@ -46,8 +70,28 @@
       "team": "Sassuolo"
     },
     {
+      "name": "Tommaso Macchioni",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Rolando Mandragora",
+      "team": "Fiorentina"
+    },
+    {
+      "name": "Kingstone Mutandwa",
+      "team": "Cagliari"
+    },
+    {
       "name": "Oliver Nielsen",
       "team": "Lazio"
+    },
+    {
+      "name": "Alieu Njie",
+      "team": "Torino"
+    },
+    {
+      "name": "Brooke Norton-Cuffy",
+      "team": "Genoa"
     },
     {
       "name": "Marcus Pedersen",
@@ -64,6 +108,10 @@
     {
       "name": "José Romero",
       "team": "Parma"
+    },
+    {
+      "name": "Jonathan Rowe",
+      "team": "Bologna"
     },
     {
       "name": "Éderson Silva",
@@ -86,6 +134,10 @@
     {
       "name": "Perri",
       "team": "Torino"
+    },
+    {
+      "name": "Sanchez Ro.",
+      "team": "Como"
     },
     {
       "name": "Daffara",
@@ -121,7 +173,7 @@
     },
     {
       "name": "Tornqvist",
-      "team": "Como"
+      "team": "Monza"
     },
     {
       "name": "Vigorito",
@@ -220,10 +272,6 @@
       "team": "Venezia"
     },
     {
-      "name": "Vismara",
-      "team": "Atalanta"
-    },
-    {
       "name": "Satalino",
       "team": "Sassuolo"
     },
@@ -256,12 +304,28 @@
       "team": "Udinese"
     },
     {
+      "name": "Ghidotti",
+      "team": "Parma"
+    },
+    {
+      "name": "Pompei",
+      "team": "Atalanta"
+    },
+    {
       "name": "Molina N.",
       "team": "Roma"
     },
     {
       "name": "Spence",
       "team": "Inter"
+    },
+    {
+      "name": "Theate",
+      "team": "Bologna"
+    },
+    {
+      "name": "Diego Carlos",
+      "team": "Parma"
     },
     {
       "name": "Hien",
@@ -272,12 +336,28 @@
       "team": "Cagliari"
     },
     {
-      "name": "Theate",
-      "team": "Bologna"
+      "name": "Badiashile",
+      "team": "Napoli"
+    },
+    {
+      "name": "Sutalo J.",
+      "team": "Lazio"
+    },
+    {
+      "name": "Belghali",
+      "team": "Torino"
+    },
+    {
+      "name": "Bellanova",
+      "team": "Atalanta"
     },
     {
       "name": "Kaiki",
       "team": "Como"
+    },
+    {
+      "name": "Pavard",
+      "team": "Inter"
     },
     {
       "name": "Carlos Augusto",
@@ -292,6 +372,10 @@
       "team": "Milan"
     },
     {
+      "name": "Beukema",
+      "team": "Napoli"
+    },
+    {
       "name": "Buongiorno",
       "team": "Napoli"
     },
@@ -300,40 +384,16 @@
       "team": "Atalanta"
     },
     {
-      "name": "Badiashile",
-      "team": "Napoli"
-    },
-    {
-      "name": "Sutalo J.",
-      "team": "Lazio"
-    },
-    {
-      "name": "Ahanor",
-      "team": "Atalanta"
-    },
-    {
-      "name": "Bellanova",
-      "team": "Atalanta"
-    },
-    {
-      "name": "Pavard",
-      "team": "Inter"
-    },
-    {
-      "name": "Gaspar K.",
-      "team": "Lecce"
-    },
-    {
-      "name": "Beukema",
-      "team": "Napoli"
-    },
-    {
       "name": "Balerdi",
       "team": "Roma"
     },
     {
-      "name": "Vitik",
-      "team": "Bologna"
+      "name": "Caleta-Car",
+      "team": "Sassuolo"
+    },
+    {
+      "name": "Sugawara",
+      "team": "Cagliari"
     },
     {
       "name": "Kofler",
@@ -344,20 +404,24 @@
       "team": "Como"
     },
     {
-      "name": "Parisi",
-      "team": "Fiorentina"
+      "name": "Gaspar K.",
+      "team": "Lecce"
     },
     {
-      "name": "Martin",
-      "team": "Genoa"
-    },
-    {
-      "name": "Rensch",
+      "name": "Ghilardi",
       "team": "Roma"
     },
     {
-      "name": "Moreno M.",
-      "team": "Venezia"
+      "name": "Patterson",
+      "team": "Torino"
+    },
+    {
+      "name": "Vitik",
+      "team": "Bologna"
+    },
+    {
+      "name": "Parisi",
+      "team": "Fiorentina"
     },
     {
       "name": "Mitaj",
@@ -368,11 +432,19 @@
       "team": "Juventus"
     },
     {
+      "name": "Provstgaard",
+      "team": "Lazio"
+    },
+    {
+      "name": "Floriani Mussolini",
+      "team": "Lazio"
+    },
+    {
       "name": "Valenti",
       "team": "Parma"
     },
     {
-      "name": "Ghilardi",
+      "name": "Rensch",
       "team": "Roma"
     },
     {
@@ -388,8 +460,16 @@
       "team": "Udinese"
     },
     {
+      "name": "Moreno M.",
+      "team": "Venezia"
+    },
+    {
       "name": "Favasuli",
       "team": "Napoli"
+    },
+    {
+      "name": "Juan Jesus",
+      "team": "Venezia"
     },
     {
       "name": "Casale",
@@ -402,14 +482,6 @@
     {
       "name": "Akpoguma",
       "team": "Frosinone"
-    },
-    {
-      "name": "Provstgaard",
-      "team": "Lazio"
-    },
-    {
-      "name": "Floriani Mussolini",
-      "team": "Lazio"
     },
     {
       "name": "Candè",
@@ -428,12 +500,16 @@
       "team": "Como"
     },
     {
+      "name": "Drameh",
+      "team": "Genoa"
+    },
+    {
       "name": "Alhassane",
       "team": "Bologna"
     },
     {
       "name": "Van Der Brempt",
-      "team": "Como"
+      "team": "Sassuolo"
     },
     {
       "name": "Puczka",
@@ -462,6 +538,10 @@
     {
       "name": "Biraghi",
       "team": "Torino"
+    },
+    {
+      "name": "Goglichidze",
+      "team": "Monza"
     },
     {
       "name": "Terracciano F.",
@@ -501,7 +581,7 @@
     },
     {
       "name": "Mazzocchi",
-      "team": "Napoli"
+      "team": "Venezia"
     },
     {
       "name": "Carboni F.",
@@ -509,19 +589,11 @@
     },
     {
       "name": "Ziolkowski",
-      "team": "Roma"
-    },
-    {
-      "name": "Missori",
-      "team": "Sassuolo"
+      "team": "Monza"
     },
     {
       "name": "Pieragnolo",
       "team": "Sassuolo"
-    },
-    {
-      "name": "Mlacic",
-      "team": "Udinese"
     },
     {
       "name": "Gomes",
@@ -536,6 +608,10 @@
       "team": "Monza"
     },
     {
+      "name": "Dembelè A.",
+      "team": "Lecce"
+    },
+    {
       "name": "Pulisic",
       "team": "Milan"
     },
@@ -544,8 +620,8 @@
       "team": "Atalanta"
     },
     {
-      "name": "Moreira",
-      "team": "Milan"
+      "name": "Gudmundsson A.",
+      "team": "Lazio"
     },
     {
       "name": "Jones C.",
@@ -553,6 +629,18 @@
     },
     {
       "name": "Kessiè",
+      "team": "Atalanta"
+    },
+    {
+      "name": "Goncalves P.",
+      "team": "Fiorentina"
+    },
+    {
+      "name": "Moreira",
+      "team": "Milan"
+    },
+    {
+      "name": "Rowe",
       "team": "Atalanta"
     },
     {
@@ -568,56 +656,64 @@
       "team": "Roma"
     },
     {
+      "name": "Mandragora",
+      "team": "Torino"
+    },
+    {
       "name": "Konè I.",
       "team": "Sassuolo"
     },
     {
-      "name": "Pessina",
-      "team": "Monza"
+      "name": "Hutchinson",
+      "team": "Milan"
     },
     {
-      "name": "Oristanio",
-      "team": "Torino"
+      "name": "Mbangula",
+      "team": "Bologna"
+    },
+    {
+      "name": "Monteiro J.",
+      "team": "Lecce"
+    },
+    {
+      "name": "Sarr P.",
+      "team": "Juventus"
     },
     {
       "name": "Pobega",
       "team": "Bologna"
     },
     {
+      "name": "Pessina",
+      "team": "Monza"
+    },
+    {
       "name": "Nicolussi Caviglia",
       "team": "Parma"
+    },
+    {
+      "name": "Oristanio",
+      "team": "Torino"
     },
     {
       "name": "Tourè I.",
       "team": "Monza"
     },
     {
-      "name": "Addai",
-      "team": "Como"
-    },
-    {
-      "name": "Traorè Hj.",
-      "team": "Genoa"
-    },
-    {
-      "name": "Mkhitaryan",
-      "team": "Inter"
-    },
-    {
-      "name": "Berisha M.",
-      "team": "Lecce"
-    },
-    {
-      "name": "Fofana Y.",
-      "team": "Milan"
+      "name": "Braganca",
+      "team": "Torino"
     },
     {
       "name": "De Roon",
-      "team": "Atalanta"
+      "team": "Roma"
     },
     {
       "name": "Moro N.",
       "team": "Bologna"
+    },
+    {
+      "name": "Addai",
+      "team": "Como"
     },
     {
       "name": "Fabbian",
@@ -632,16 +728,36 @@
       "team": "Frosinone"
     },
     {
+      "name": "Traorè Hj.",
+      "team": "Genoa"
+    },
+    {
+      "name": "Mkhitaryan",
+      "team": "Inter"
+    },
+    {
       "name": "Cataldi",
       "team": "Lazio"
+    },
+    {
+      "name": "Berisha M.",
+      "team": "Lecce"
     },
     {
       "name": "Ricci S.",
       "team": "Como"
     },
     {
+      "name": "Njie",
+      "team": "Fiorentina"
+    },
+    {
+      "name": "Massolin",
+      "team": "Cagliari"
+    },
+    {
       "name": "Sulemana I.",
-      "team": "Atalanta"
+      "team": "Sassuolo"
     },
     {
       "name": "Gelli F.",
@@ -656,11 +772,15 @@
       "team": "Napoli"
     },
     {
-      "name": "Sorensen O.",
-      "team": "Parma"
+      "name": "Helgason",
+      "team": "Venezia"
     },
     {
-      "name": "Helgason",
+      "name": "Gagliardini",
+      "team": "Cagliari"
+    },
+    {
+      "name": "Fernandez T.",
       "team": "Venezia"
     },
     {
@@ -670,6 +790,10 @@
     {
       "name": "Venturino",
       "team": "Genoa"
+    },
+    {
+      "name": "Belahyane",
+      "team": "Lazio"
     },
     {
       "name": "Ciurria",
@@ -688,6 +812,10 @@
       "team": "Venezia"
     },
     {
+      "name": "Jovanovic",
+      "team": "Udinese"
+    },
+    {
       "name": "Liteta",
       "team": "Cagliari"
     },
@@ -704,10 +832,6 @@
       "team": "Frosinone"
     },
     {
-      "name": "Belahyane",
-      "team": "Lazio"
-    },
-    {
       "name": "Przyborek",
       "team": "Lazio"
     },
@@ -718,10 +842,6 @@
     {
       "name": "Fofana Sa.",
       "team": "Lecce"
-    },
-    {
-      "name": "Iannoni",
-      "team": "Sassuolo"
     },
     {
       "name": "Ilic",
@@ -748,8 +868,20 @@
       "team": "Inter"
     },
     {
+      "name": "Kean",
+      "team": "Como"
+    },
+    {
+      "name": "Woltemade",
+      "team": "Juventus"
+    },
+    {
       "name": "Esposito F.P.",
       "team": "Inter"
+    },
+    {
+      "name": "Beto",
+      "team": "Fiorentina"
     },
     {
       "name": "Esposito Se.",
@@ -764,19 +896,15 @@
       "team": "Cagliari"
     },
     {
-      "name": "Ratkov",
-      "team": "Lazio"
-    },
-    {
       "name": "Romero D.",
       "team": "Parma"
     },
     {
-      "name": "Ghedjemis",
+      "name": "Bobcek",
       "team": "Frosinone"
     },
     {
-      "name": "Bobcek",
+      "name": "Ghedjemis",
       "team": "Frosinone"
     },
     {
@@ -788,20 +916,36 @@
       "team": "Genoa"
     },
     {
-      "name": "Sulemana K.",
-      "team": "Atalanta"
+      "name": "Gnonto",
+      "team": "Fiorentina"
     },
     {
-      "name": "Gimenez",
-      "team": "Milan"
+      "name": "Sulemana K.",
+      "team": "Atalanta"
     },
     {
       "name": "Neres",
       "team": "Napoli"
     },
     {
+      "name": "Zeballos",
+      "team": "Monza"
+    },
+    {
+      "name": "Ngonge",
+      "team": "Monza"
+    },
+    {
+      "name": "Havel",
+      "team": "Genoa"
+    },
+    {
       "name": "Camarda",
       "team": "Milan"
+    },
+    {
+      "name": "Giovane",
+      "team": "Napoli"
     },
     {
       "name": "Frigan",
@@ -816,24 +960,12 @@
       "team": "Juventus"
     },
     {
-      "name": "Ngonge",
-      "team": "Monza"
-    },
-    {
-      "name": "Havel",
-      "team": "Genoa"
-    },
-    {
-      "name": "Giovane",
-      "team": "Napoli"
-    },
-    {
       "name": "Fatah",
       "team": "Lecce"
     },
     {
-      "name": "Kuhn",
-      "team": "Como"
+      "name": "Nzola",
+      "team": "Cagliari"
     },
     {
       "name": "Ekhator",
@@ -844,20 +976,109 @@
       "team": "Cagliari"
     },
     {
-      "name": "Azon",
-      "team": "Como"
-    },
-    {
-      "name": "Vaz",
-      "team": "Roma"
-    },
-    {
       "name": "Lisman",
       "team": "Venezia"
     },
     {
       "name": "De Martis",
       "team": "Parma"
+    },
+    {
+      "name": "Robinho Junior",
+      "team": "Genoa"
     }
-  ]
+  ],
+  "totalMasterPlayers": 531,
+  "statisticsSources": {
+    "2026/27": {
+      "matched": 531,
+      "unmatchedMaster": 0,
+      "unusedSourceRows": 57,
+      "ambiguous": []
+    },
+    "2025/26": {
+      "matched": 364,
+      "unmatchedMaster": 167,
+      "unusedSourceRows": 299,
+      "ambiguous": []
+    },
+    "2024/25": {
+      "matched": 294,
+      "unmatchedMaster": 237,
+      "unusedSourceRows": 385,
+      "ambiguous": []
+    },
+    "2023/24": {
+      "matched": 226,
+      "unmatchedMaster": 305,
+      "unusedSourceRows": 438,
+      "ambiguous": []
+    }
+  },
+  "historicalSeasonCounts": {
+    "AvgPG": {
+      "3": 187,
+      "2": 102,
+      "1": 119,
+      "0": 123
+    },
+    "AvgMF": {
+      "3": 187,
+      "2": 102,
+      "1": 119,
+      "0": 123
+    }
+  },
+  "hierarchies": {
+    "R": {
+      "matched": 60,
+      "unmatched": []
+    },
+    "P": {
+      "matched": 60,
+      "unmatched": []
+    },
+    "ambiguous": []
+  },
+  "duplicates": [],
+  "unmappedFields": [],
+  "spotChecks": {
+    "3": {
+      "player": "Svilar",
+      "id": "5841",
+      "PGSeasons": [
+        38.0,
+        15.0,
+        38.0
+      ],
+      "AvgPG": 30.33
+    },
+    "0": {
+      "player": "Vicario",
+      "id": "4964",
+      "PGSeasons": [],
+      "AvgPG": 0
+    },
+    "2": {
+      "player": "Butez",
+      "id": "6966",
+      "PGSeasons": [
+        18.0,
+        38.0
+      ],
+      "AvgPG": 28.0
+    },
+    "1": {
+      "player": "Bijlow",
+      "id": "7332",
+      "PGSeasons": [
+        16.0
+      ],
+      "AvgPG": 16.0
+    }
+  },
+  "ageRecoveredFbref": 0,
+  "ageRecoveredTransfermarkt": 0,
+  "ageEnrichmentIgnored": 0,
+  "ageComplete": 317
 }

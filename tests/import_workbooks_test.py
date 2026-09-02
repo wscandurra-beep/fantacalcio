@@ -66,5 +66,26 @@ class AgeEnrichmentTests(unittest.TestCase):
         self.assertEqual(quality["ageMissing"], 0)
 
 
+class StatisticsEnrichmentTests(unittest.TestCase):
+    def test_hierarchy_uses_team_and_does_not_accept_ambiguity(self):
+        players = [
+            {"id": "1", "name": "Scamacca", "team": "Atalanta"},
+            {"id": "2", "name": "Scamacca", "team": "Roma"},
+        ]
+        report = IMPORTER.apply_hierarchies(players)
+        self.assertEqual(players[0]["R"], 1)
+        self.assertEqual(players[1]["R"], 0)
+        self.assertEqual(report["R"]["matched"], 1)
+
+    def test_source_matching_prefers_stable_id(self):
+        players = [{"id": "42", "name": "Nome Nuovo", "team": "Roma"}]
+        diagnostics = {}
+        matched = IMPORTER.match_source(
+            players, [{"Id": "42", "Nome": "Nome Vecchio", "Squadra": "Milan"}], "test", diagnostics
+        )
+        self.assertEqual(matched["42"]["Nome"], "Nome Vecchio")
+        self.assertEqual(diagnostics["test"]["matched"], 1)
+
+
 if __name__ == "__main__":
     unittest.main()

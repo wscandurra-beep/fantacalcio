@@ -11,6 +11,12 @@ test('player table renders one sortable header row directly before its body',()=
   assert.doesNotMatch(table,/column-filters|data-column|aria-label="Filtra/);
   assert.match(table,/sortHeader\('name','Giocatore'\)/);
   assert.match(table,/sortHeader\('status','Status'\)/);
+  for(const field of ['PG','MF','AvgPG','AvgMF','GoLY','AssLY','Amm','Esp','R','P']) assert.match(table,new RegExp(`'${field}'`));
+});
+
+test('player table forbids horizontal scrolling and keeps vertical scrolling',()=>{
+  assert.match(css,/\.market-table-wrap\{overflow-x:hidden;overflow-y:auto/);
+  assert.doesNotMatch(css,/\.market-table\{min-width:/);
 });
 
 test('column filter layout styles have been removed',()=>{
