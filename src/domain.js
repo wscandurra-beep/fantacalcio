@@ -1,5 +1,6 @@
 export const CATEGORY_PRIORITY = ['POR','DC','E','C','WA','PC'];
 export const DEFAULT_SLOT_COUNTS = Object.freeze({POR:3,DC:8,E:6,C:5,WA:9,PC:3});
+export function slotCategoryLabel(category) { return category==='WA'?'W/A':category; }
 export function normalizeName(value='') { return value.normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[’']/g,' ').replace(/[^a-zA-Z0-9]+/g,' ').trim().toLowerCase(); }
 export function assignRankingCategory(roles='') {
   const set=new Set(String(roles).split(';').map(x=>x.trim().toLowerCase()));
