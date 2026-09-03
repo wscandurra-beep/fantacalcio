@@ -31,3 +31,12 @@ test('an override to a removed strategy slot falls back to the current tier layo
   const rows=buildAuctionRows(players,slots.slice(0,1),{placements:{a:'DC2'},orders:{}});
   assert.deepEqual(rows[0].players.map(player=>player.id),['b','a','d']);
 });
+
+
+test('OUT is the optional final single row and stores manual overrides',()=>{
+  const initial=buildAuctionRows(players,slots,{},true);
+  assert.equal(initial.at(-1).slot.id,'OUT');
+  const view=moveAuctionPlayer({},'a','OUT',0,initial),moved=buildAuctionRows(players,slots,view,true);
+  assert.deepEqual(moved.at(-1).players.map(player=>player.id),['a']);
+  assert.equal(moved[0].players.some(player=>player.id==='a'),false);
+});
