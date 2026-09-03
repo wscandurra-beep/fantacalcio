@@ -1,0 +1,27 @@
+{
+  "runs": [
+    {
+      "runTimestamp": "2026-09-03T07:26:06.050229+00:00",
+      "runId": "local-1788420366",
+      "status": "analysis",
+      "sourcePlayers": 531,
+      "playersDiscovered": 531,
+      "playersProcessed": 0,
+      "requestsSuccessful": 0,
+      "requestsFailed": 0,
+      "scrapedRecords": 500,
+      "withPro": 500,
+      "withContro": 500,
+      "withBoth": 500,
+      "withoutBoth": 31,
+      "matched": 500,
+      "unmatched": 0,
+      "ambiguous": 0,
+      "duplicates": 0,
+      "coveragePct": 94.16,
+      "errors": [],
+      "unmatchedRecords": [],
+      "ambiguousRecords": []
+    }
+  ]
+}

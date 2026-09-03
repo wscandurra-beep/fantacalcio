@@ -33,13 +33,18 @@ jobs:
           python-version: "3.13"
 
       - name: Run scraper
+        id: scraper
         shell: bash
         run: |
+          set +e
           if [ -n "${{ inputs.limit }}" ]; then
-            python3 scripts/scrape_pro_contro.py --limit "${{ inputs.limit }}"
+            python3 scripts/scrape_pro_contro.py --force --limit "${{ inputs.limit }}"
           else
-            python3 scripts/scrape_pro_contro.py
+            python3 scripts/scrape_pro_contro.py --force
           fi
+          code=$?
+          echo "exit_code=$code" >> "$GITHUB_OUTPUT"
+          exit 0
 
       - name: Show scrape summary
         if: always()
@@ -73,7 +78,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add -f data/pro_contro.json data/pro_contro.csv
+          git add -f data/pro_contro.json data/pro_contro.csv data/pro_contro_runs.json
 
           if git diff --cached --quiet; then
             echo "No scraper result changes to commit."
@@ -94,3 +99,13 @@ jobs:
           fi
 
           git push origin HEAD:main
+
+      - name: Enforce scraper validation
+        if: always()
+        shell: bash
+        run: |
+          code="${{ steps.scraper.outputs.exit_code }}"
+          if [ "${code:-1}" -ne 0 ]; then
+            echo "Scraping failed hard validation; the previous dataset was preserved. See data/pro_contro_runs.json." >&2
+            exit "${code:-1}"
+          fi
