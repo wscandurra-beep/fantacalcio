@@ -1,6 +1,11 @@
-export const CATEGORY_PRIORITY = ['POR','DC','E','C','WA','PC'];
-export const DEFAULT_SLOT_COUNTS = Object.freeze({POR:3,DC:8,E:6,C:5,WA:9,PC:3});
+export const CATEGORY_PRIORITY = Object.freeze(['POR','D','E','C','W','A','PC','OUT']);
+export const DEFAULT_SLOT_COUNTS = Object.freeze({POR:3,D:8,E:6,C:6,W:4,A:4,PC:3,OUT:0});
 export const OUT_ALIAS = 'OUT';
+export const DEFAULT_ROLE_ALIAS = Object.freeze({
+  Por:'POR','E;W':'E',E:'E',Dc:'D','Dd;Dc':'D','Dd;E':'E','Ds;Dc':'D','Dd;Ds;E':'D','Ds;E':'E',
+  'B;Dd;E':'D','B;Ds;E':'D','Dd;Ds;Dc':'D','B;Dd;Ds':'D','T;A':'A','M;C':'C','C;T':'C',
+  'W;A':'W',T:'OUT',C:'C','W;T':'W',W:'W','E;C':'E','E;M':'E','C;W':'C',Pc:'PC',A:'A'
+});
 export function normalizeName(value='') { return value.normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[’']/g,' ').replace(/[^a-zA-Z0-9]+/g,' ').trim().toLowerCase(); }
 export function assignRankingCategory(roles='') {
   const set=new Set(String(roles).split(';').map(x=>x.trim().toLowerCase()));
@@ -22,7 +27,8 @@ export function defaultAliasConfiguration(players=[]) {
   return CATEGORY_PRIORITY.map(alias=>({
     alias,
     slotCount:DEFAULT_SLOT_COUNTS[alias],
-    mantraRoles:alias==='POR'?['Por']:roles.filter(role=>assignRankingCategory(role)===alias)
+    mantraRoles:Object.entries(DEFAULT_ROLE_ALIAS).filter(([,mapped])=>mapped===alias).map(([role])=>role)
+      .filter(role=>roles.includes(role)||Object.hasOwn(DEFAULT_ROLE_ALIAS,role))
   }));
 }
 export function validateAliasConfiguration(configuration=[],availableRoles=[],maxRosterSize=34) {
@@ -31,7 +37,7 @@ export function validateAliasConfiguration(configuration=[],availableRoles=[],ma
   const normalized=configuration.map((item,index)=>{
     const alias=String(item?.alias??'').trim().toUpperCase();
     if(!alias)throw new Error(`Nome Alias mancante alla riga ${index+1}`);
-    if(alias==='OUT')throw new Error('OUT è un Alias riservato');
+    if(!CATEGORY_PRIORITY.includes(alias))throw new Error(`Alias non valido: ${alias}`);
     if(aliases.has(alias))throw new Error(`Alias duplicato: ${alias}`);
     aliases.add(alias);
     const slotCount=Number(item.slotCount);
@@ -46,7 +52,9 @@ export function validateAliasConfiguration(configuration=[],availableRoles=[],ma
   });
   const por=normalized.find(item=>item.alias==='POR');
   if(!por||por.slotCount!==3||por.mantraRoles.length!==1||por.mantraRoles[0]!=='Por')throw new Error('POR deve essere fisso a 3 slot e ruolo Por');
-  const total=normalized.reduce((sum,item)=>sum+item.slotCount,0);
+  const out=normalized.find(item=>item.alias==='OUT');
+  if(out&&out.slotCount!==0)throw new Error('OUT non genera slot pianificati');
+  const total=normalized.reduce((sum,item)=>sum+(item.alias==='OUT'?0:item.slotCount),0);
   if(total<3||total>maxRosterSize)throw new Error(`La rosa deve contenere da 3 a ${maxRosterSize} giocatori`);
   return {configuration:normalized,total};
 }
@@ -144,7 +152,7 @@ export function groupSlotsByCategory(slots=[],includeEmpty=false,categoryOrder=C
 export function validateSlotCounts(input,maxRosterSize=34) {
   const counts={};
   for(const category of CATEGORY_PRIORITY){
-    const value=Number(input?.[category]);
+    const value=input?.[category]==null?0:Number(input[category]);
     if(!Number.isInteger(value)||value<0)throw new Error(`Numero slot non valido per ${category}`);
     counts[category]=value;
   }
@@ -184,14 +192,15 @@ export function reconcileSlotCounts(slots,input,maxRosterSize=34) {
   return updateForecasts(result);
 }
 export function reconcileAliasSlots(slots,configuration,maxRosterSize=34) {
-  const total=configuration.reduce((sum,item)=>sum+Number(item.slotCount),0);
+  const planned=configuration.filter(item=>item.alias!==OUT_ALIAS);
+  const total=planned.reduce((sum,item)=>sum+Number(item.slotCount),0);
   if(total>maxRosterSize)throw new Error(`La rosa deve contenere da 3 a ${maxRosterSize} giocatori`);
   let result=[...slots];
-  const valid=new Set(configuration.map(item=>item.alias));
+  const valid=new Set(planned.map(item=>item.alias));
   const stranded=result.filter(slot=>!valid.has(slot.category)&&isCompletedSlot(slot));
   if(stranded.length)throw new Error(`Impossibile rimuovere l'Alias ${stranded[0].category}: contiene acquisti`);
   result=result.filter(slot=>valid.has(slot.category));
-  for(const {alias,slotCount} of configuration){
+  for(const {alias,slotCount} of planned){
     let grouped=result.filter(slot=>slot.category===alias);
     const completed=grouped.filter(isCompletedSlot);
     if(slotCount<completed.length)throw new Error(`Impossibile ridurre ${alias} a ${slotCount}: ${completed.length} slot sono già acquistati`);
