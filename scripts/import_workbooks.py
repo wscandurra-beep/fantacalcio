@@ -119,6 +119,33 @@ def statistics_player_records(path):
     return [dict(zip(headers, row)) for row in parsed[2:] if len(row) > 1 and row[1]]
 
 
+def player_age_records(path):
+    """Load and validate the canonical, application-owned player age table."""
+    with path.open(encoding="utf-8-sig", newline="") as source:
+        reader = csv.DictReader(source)
+        expected = ["Squadra", "Nome", "Età"]
+        if reader.fieldnames != expected:
+            raise ValueError(f"{path.name}: expected columns {expected}, found {reader.fieldnames}")
+        rows = list(reader)
+
+    seen = set()
+    duplicates = []
+    invalid = []
+    valid = []
+    for line, row in enumerate(rows, 2):
+        key = (normalize_player_name(row["Squadra"]), normalize_player_name(row["Nome"]))
+        age = age_number(row["Età"])
+        if not all(key) or age is None or not 15 <= age <= 50:
+            invalid.append({"line": line, **row})
+            continue
+        if key in seen:
+            duplicates.append({"line": line, "Squadra": row["Squadra"], "Nome": row["Nome"]})
+            continue
+        seen.add(key)
+        valid.append({"Squad": row["Squadra"], "Player": row["Nome"], "Age": age})
+    return valid, {"records": len(rows), "valid": len(valid), "duplicates": duplicates, "invalid": invalid}
+
+
 def numeric(value):
     try:
         return float(value)
@@ -350,8 +377,10 @@ def import_data(root=ROOT):
     snapshot_path = root / "data/infortuni.json"
     snapshot = json.loads(snapshot_path.read_text(encoding="utf-8")) if snapshot_path.exists() else {"injuries": []}
     apply_snapshot(players, snapshot.get("injuries", []))
-    quality = enrich_player_ages(players, statistics_player_records(root / "Statistiche_Giocatori.xlsx"))
+    age_rows, age_import = player_age_records(root / "data/player-ages.csv")
+    quality = enrich_player_ages(players, age_rows)
     quality.update({"totalMasterPlayers": len(players), "statisticsSources": source_quality,
+                    "ageImport": age_import,
                     "historicalSeasonCounts": season_counts, "hierarchies": hierarchy_quality,
                     "duplicates": [{"id": key, "count": count} for key, count in __import__('collections').Counter(p['id'] for p in players).items() if count > 1],
                     "unmappedFields": [], "spotChecks": pg_spot_checks})
@@ -366,7 +395,7 @@ def import_data(root=ROOT):
     # data size and makes source-control diffs needlessly opaque.
     (root / "data/players.json").write_text(json.dumps(players, ensure_ascii=False, indent=2) + "\n")
     (root / "data/import-quality.json").write_text(json.dumps(quality, ensure_ascii=False, indent=2))
-    print(f'Imported {len(players)} players; {quality["ageMatched"]} workbook ages matched; {quality["ageRecoveredFbref"]} FBref ages; {quality["ageRecoveredTransfermarkt"]} Transfermarkt ages; {quality["ageMissing"]} ages missing')
+    print(f'Imported {len(players)} players; {quality["ageMatched"]} canonical ages matched; {quality["ageRecoveredFbref"]} FBref ages; {quality["ageRecoveredTransfermarkt"]} Transfermarkt ages; {quality["ageMissing"]} ages missing')
     return players, quality
 
 

@@ -1,4 +1,5 @@
 import importlib.util
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -64,6 +65,34 @@ class AgeEnrichmentTests(unittest.TestCase):
         quality = IMPORTER.enrich_player_ages(players, [{"Player": "Che Adams", "Age": "30-048", "Squad": "Torino"}])
         self.assertEqual(players[0]["age"], 30)
         self.assertEqual(quality["ageMissing"], 0)
+
+
+class PlayerAgeRecordsTests(unittest.TestCase):
+    def write_csv(self, contents):
+        directory = tempfile.TemporaryDirectory()
+        path = Path(directory.name) / "ages.csv"
+        path.write_text(contents, encoding="utf-8")
+        self.addCleanup(directory.cleanup)
+        return path
+
+    def test_loads_unicode_three_column_source(self):
+        rows, report = IMPORTER.player_age_records(self.write_csv(
+            "Squadra,Nome,Età\nVenezia,Þórir Jóhann Helgason,25\n"
+        ))
+        self.assertEqual(rows, [{"Squad": "Venezia", "Player": "Þórir Jóhann Helgason", "Age": 25}])
+        self.assertEqual(report, {"records": 1, "valid": 1, "duplicates": [], "invalid": []})
+
+    def test_reports_duplicate_and_invalid_rows(self):
+        rows, report = IMPORTER.player_age_records(self.write_csv(
+            "Squadra,Nome,Età\nRoma,Paulo Dybala,32\nroma,PAULO DYBALA,33\nInter,Nicolò Barella,no\n"
+        ))
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(len(report["duplicates"]), 1)
+        self.assertEqual(len(report["invalid"]), 1)
+
+    def test_rejects_unexpected_columns(self):
+        with self.assertRaises(ValueError):
+            IMPORTER.player_age_records(self.write_csv("Squadra,Nome,Età,Altro\nRoma,Dybala,32,x\n"))
 
 
 class StatisticsEnrichmentTests(unittest.TestCase):

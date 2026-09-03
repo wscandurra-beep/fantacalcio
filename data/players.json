@@ -449,7 +449,7 @@
     "quotation": 6.0,
     "hypeFactor": 1.17,
     "cups": "",
-    "age": null,
+    "age": 21,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -462,7 +462,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "6248",
@@ -526,7 +527,7 @@
     "quotation": 5.0,
     "hypeFactor": 1.0,
     "cups": "Champions",
-    "age": null,
+    "age": 29,
     "status": "OK",
     "pro": "Portiere molto affidabile, anche in chiave modificatore. PuÃ² essere un affare in rapporto qualitÃ -prezzo. Pararigori. ",
     "contro": "Parte dietro nelle gerarchie rispetto a Meret. Prenderlo in coppia con quest'ultimo Ã¨ praticamente obbligatorio e non vi costerÃ  poco.",
@@ -539,7 +540,8 @@
     "AvgPG": 33.33,
     "AvgMF": 5.45,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "4485",
@@ -577,7 +579,7 @@
     "quotation": 2.0,
     "hypeFactor": 0.5,
     "cups": "",
-    "age": null,
+    "age": 23,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -590,7 +592,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "2814",
@@ -602,7 +605,7 @@
     "quotation": 2.0,
     "hypeFactor": 2.5,
     "cups": "Champions",
-    "age": null,
+    "age": 32,
     "status": "OK",
     "pro": "Portiere affidabile ad un prezzo moderato, Sarri punta su di lui. Profilo equilibrato, parte leggermente avanti nelle gerarchie ",
     "contro": "Obbligatoria la coppia con Mandas visto il ballottaggio serrato. Andranno entrambi sicuramente oltre il prezzo minimo.",
@@ -615,7 +618,8 @@
     "AvgPG": 28.67,
     "AvgMF": 5.0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "6662",
@@ -653,7 +657,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "Champions",
-    "age": null,
+    "age": 34,
     "status": "OK",
     "pro": "Secondo portiere affidabile. AndrÃ  via quasi sicuramente al prezzo minimo. ",
     "contro": "Parte dietro nelle gerarchie, potrebbe anche terminare il proprio campionato con 0 presenze all'attivo.",
@@ -666,7 +670,8 @@
     "AvgPG": 3.33,
     "AvgMF": 4.69,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7533",
@@ -678,7 +683,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "Europa L.",
-    "age": null,
+    "age": 19,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -691,7 +696,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7172",
@@ -703,7 +709,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "Europa L.",
-    "age": null,
+    "age": 18,
     "status": "OK",
     "pro": "Acquistabile al prezzo minimo. ",
     "contro": "Dovrebbe essere il terzo portiere, rischia seriamente di chiudere la propria stagione con 0 presenze all'attivo.",
@@ -716,7 +722,8 @@
     "AvgPG": 4.0,
     "AvgMF": 5.62,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "6650",
@@ -728,7 +735,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "",
-    "age": null,
+    "age": 28,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -741,7 +748,8 @@
     "AvgPG": 3.5,
     "AvgMF": 2.15,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7301",
@@ -778,7 +786,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "",
-    "age": null,
+    "age": 36,
     "status": "OK",
     "pro": "Acquistabile al prezzo minimo per completare il pacchetto di portieri del Como. ",
     "contro": "Terzo portiere. Rischia di chiudere la propria stagione con 0 presenze all'attivo.",
@@ -791,7 +799,8 @@
     "AvgPG": 0.0,
     "AvgMF": 0.0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "6403",
@@ -803,7 +812,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "Conference",
-    "age": null,
+    "age": 27,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -816,7 +825,8 @@
     "AvgPG": 1.67,
     "AvgMF": 3.25,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "158",
@@ -828,7 +838,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "Conference",
-    "age": null,
+    "age": 31,
     "status": "OK",
     "pro": "Acquistabile al prezzo minimo per completare il pacchetto di estremi difensori viola. ",
     "contro": "Portiere di riserva, rischia di chiudere la propria stagione con 0 presenze all'attivo.",
@@ -841,7 +851,8 @@
     "AvgPG": 0.0,
     "AvgMF": 0.0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7466",
@@ -878,7 +889,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "",
-    "age": null,
+    "age": 29,
     "status": "OK",
     "pro": "Acquistabile al prezzo minimo. ",
     "contro": "Portiere di riserva, potrebbe anche chiudere la stagione con 0 presenze all'attivo.",
@@ -891,7 +902,8 @@
     "AvgPG": 1.0,
     "AvgMF": 3.25,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "6569",
@@ -903,7 +915,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "",
-    "age": null,
+    "age": 25,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -916,7 +928,8 @@
     "AvgPG": 0.0,
     "AvgMF": 0.0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "1926",
@@ -928,7 +941,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "Champions",
-    "age": null,
+    "age": 32,
     "status": "OK",
     "pro": "Lo acquisterete al prezzo minimo per chiudere il pacchetto di portieri dell'Inter. ",
     "contro": "Parliamo del terzo portiere, potrebbe serenamente chiudere il campionato con 0 presenze all'attivo.",
@@ -941,7 +954,8 @@
     "AvgPG": 0.67,
     "AvgMF": 3.83,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "1930",
@@ -953,7 +967,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "Champions",
-    "age": null,
+    "age": 36,
     "status": "OK",
     "pro": "Lo acquisterete al prezzo minimo. ",
     "contro": "Potrebbe chiudere tranquillamente la sua stagione con 0 presenze all'attivo.",
@@ -966,7 +980,8 @@
     "AvgPG": 0.33,
     "AvgMF": 2.17,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7337",
@@ -978,7 +993,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "",
-    "age": null,
+    "age": 21,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -991,7 +1006,8 @@
     "AvgPG": 9.0,
     "AvgMF": 5.17,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7534",
@@ -1003,7 +1019,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "",
-    "age": null,
+    "age": 20,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -1016,7 +1032,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "2815",
@@ -1028,7 +1045,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "",
-    "age": null,
+    "age": 36,
     "status": "OK",
     "pro": "Secondo portiere affidabile sotto vari aspetti, anche per il modificatore. ",
     "contro": "Obbligatoria la coppia con Maignan. Cifra piÃ¹ costosa di quella solita spesa per un secondo portiere.",
@@ -1041,7 +1058,8 @@
     "AvgPG": 12.67,
     "AvgMF": 5.48,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "6813",
@@ -1053,7 +1071,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "",
-    "age": null,
+    "age": 21,
     "status": "OK",
     "pro": "Lo acquisterete al prezzo minimo per completare il pacchetto di portieri del Milan. ",
     "contro": "Rischia seriamente di chiudere la propria stagione con 0 presenze all'attivo.",
@@ -1066,7 +1084,8 @@
     "AvgPG": 0.0,
     "AvgMF": 0.0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7475",
@@ -1078,7 +1097,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "",
-    "age": null,
+    "age": 19,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -1091,7 +1110,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "2845",
@@ -1103,7 +1123,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "Champions",
-    "age": null,
+    "age": 30,
     "status": "OK",
     "pro": "Prezzo minimo per chiudere il pacchetto di estremi difensori del Napoli. ",
     "contro": "Potrebbe serenamente chiudere il proprio campionato con 0 presenze all'attivo.",
@@ -1116,7 +1136,8 @@
     "AvgPG": 0.33,
     "AvgMF": 2.0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7048",
@@ -1128,7 +1149,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "Europa L.",
-    "age": null,
+    "age": 19,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -1141,7 +1162,8 @@
     "AvgPG": 0.0,
     "AvgMF": 0.0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "610",
@@ -1153,7 +1175,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "Europa L.",
-    "age": null,
+    "age": 31,
     "status": "OK",
     "pro": "Acquistabile al prezzo minimo. ",
     "contro": "Qualora rimanesse alla Roma, chiuderÃ  la propria stagione con 0 presenze all'attivo.",
@@ -1166,7 +1188,8 @@
     "AvgPG": 4.67,
     "AvgMF": 2.98,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "4518",
@@ -1203,7 +1226,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "",
-    "age": null,
+    "age": 24,
     "status": "OK",
     "pro": "Classico profilo low cost molto intrigante soprattutto per chi utilizza il modificatore difesa. Prezzo bassissimo per un portiere, sulla carta, titolare. ",
     "contro": "Milita in una squadra che potrebbe subire diversi gol. Non proprio una garanzia in termini di clean sheet. Occhio al ballottaggio serrato con Muric.",
@@ -1216,7 +1239,8 @@
     "AvgPG": 22.33,
     "AvgMF": 4.72,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7457",
@@ -1254,7 +1278,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "",
-    "age": null,
+    "age": 34,
     "status": "OK",
     "pro": "Potrete acquistarlo al prezzo minimo. ",
     "contro": "Dovrebbe essere il secondo portiere, da prendere solo in coppia con Israel. Rischia concretamente di chiudere la sua stagione con 0 presenze all'attivo.",
@@ -1267,7 +1291,8 @@
     "AvgPG": 15.0,
     "AvgMF": 4.01,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7363",
@@ -1279,7 +1304,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "",
-    "age": null,
+    "age": 19,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -1292,7 +1317,8 @@
     "AvgPG": 0.0,
     "AvgMF": 0.0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "543",
@@ -1304,7 +1330,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "",
-    "age": null,
+    "age": 40,
     "status": "OK",
     "pro": "Acquistabile al prezzo minimo. ",
     "contro": "Terzo estremo difensore dell'Udinese, rischia di non giocare praticamente mai.",
@@ -1317,7 +1343,8 @@
     "AvgPG": 1.0,
     "AvgMF": 3.92,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "5707",
@@ -1329,7 +1356,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "",
-    "age": null,
+    "age": 22,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -1342,7 +1369,8 @@
     "AvgPG": 0.0,
     "AvgMF": 0.0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "6671",
@@ -1354,7 +1382,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "",
-    "age": null,
+    "age": 33,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -1367,7 +1395,8 @@
     "AvgPG": 0.0,
     "AvgMF": 0.0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7531",
@@ -1404,7 +1433,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "",
-    "age": null,
+    "age": 27,
     "status": "OK",
     "pro": "Lo acquisterete quasi sicuramente al prezzo minimo. ",
     "contro": "Portiere di riserva. Potrebbe comunque chiudere la propria stagione con 0 presenze.",
@@ -1417,7 +1446,8 @@
     "AvgPG": 0.0,
     "AvgMF": 0.0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7557",
@@ -1429,7 +1459,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "",
-    "age": null,
+    "age": 18,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -1442,7 +1472,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7560",
@@ -1454,7 +1485,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "",
-    "age": null,
+    "age": 34,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -1467,7 +1498,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "3",
@@ -1479,7 +1511,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "",
-    "age": null,
+    "age": 30,
     "status": "OK",
     "pro": "Acquistabile al prezzo minimo. Secondo portiere abbastanza affidabile. ",
     "contro": "Nettamente dietro nelle gerarchie rispetto a Caprile. Potrebbe giocare davvero raramente.",
@@ -1492,7 +1524,8 @@
     "AvgPG": 2.33,
     "AvgMF": 1.33,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "4957",
@@ -1504,7 +1537,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "",
-    "age": null,
+    "age": 30,
     "status": "OK",
     "pro": "Titolare indiscusso per il ruolo di primo portiere. Buon profilo per il modificatore difesa. Prezzo bassissimo per un estremo difensore titolare. ",
     "contro": "Il Verona subisce diversi gol, dunque non proprio una garanzia in termini di clean sheet. Al massimo un'alternativa al vostro titolare di riferimento in porta.",
@@ -1517,7 +1550,8 @@
     "AvgPG": 36.0,
     "AvgMF": 4.79,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "4468",
@@ -1529,7 +1563,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "",
-    "age": null,
+    "age": 30,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -1542,7 +1576,8 @@
     "AvgPG": 0.0,
     "AvgMF": 0.0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7603",
@@ -1554,7 +1589,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "Champions",
-    "age": null,
+    "age": 27,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -1567,7 +1602,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7611",
@@ -1579,7 +1615,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "",
-    "age": null,
+    "age": 26,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -1592,7 +1628,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "2874",
@@ -1706,7 +1743,7 @@
     "quotation": 18.0,
     "hypeFactor": 4.33,
     "cups": "Europa L.",
-    "age": null,
+    "age": 28,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -1719,7 +1756,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "2788",
@@ -2666,7 +2704,7 @@
     "quotation": 9.0,
     "hypeFactor": 2.44,
     "cups": "Europa L.",
-    "age": null,
+    "age": 26,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -2679,7 +2717,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "4137",
@@ -2793,7 +2832,7 @@
     "quotation": 7.0,
     "hypeFactor": 2.86,
     "cups": "",
-    "age": null,
+    "age": 31,
     "status": "Stop del colombiano nella rifinitura per un affaticamento muscolare al polpaccio. Out contro l'Inter per domenica, da valutare convocazione in vista della 3a di A.",
     "pro": "Titolare inamovibile, in alcune occasioni potrebbe anche calciare i rigori. Ottimo profilo per il modificatore, molto bravo nel gioco aereo. Buon rapporto qualitÃ -prezzo. ",
     "contro": "Incline sia ai cartellini che ai problemi fisici, per questo sarÃ  fondamentale prenderlo ad un buon prezzo. Seguite l'FVM.",
@@ -2806,7 +2845,8 @@
     "AvgPG": 24.0,
     "AvgMF": 6.17,
     "R": 3,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "5701",
@@ -3103,7 +3143,7 @@
     "quotation": 7.0,
     "hypeFactor": 2.71,
     "cups": "",
-    "age": null,
+    "age": 26,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -3116,7 +3156,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7220",
@@ -3179,7 +3220,7 @@
     "quotation": 6.0,
     "hypeFactor": 2.83,
     "cups": "Champions",
-    "age": null,
+    "age": 26,
     "status": "OK",
     "pro": "Con Juric ha vissuto una delle migliori stagioni della sua carriera. Di stampo offensivo, particolarmente incline al bonus. Titolarissimo. ",
     "contro": "Occhio al prezzo, potrebbe essere parecchio elevato. Il consiglio Ã¨ di seguire l'FVM sopra indicato per evitare di esagerare. Leggermente discontinuo, non proprio da modificatore.",
@@ -3192,7 +3233,8 @@
     "AvgPG": 31.0,
     "AvgMF": 6.14,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7219",
@@ -3282,7 +3324,7 @@
     "quotation": 6.0,
     "hypeFactor": 2.17,
     "cups": "",
-    "age": null,
+    "age": 23,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -3295,7 +3337,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "6867",
@@ -3437,7 +3480,7 @@
     "quotation": 7.0,
     "hypeFactor": 2.29,
     "cups": "Champions",
-    "age": null,
+    "age": 30,
     "status": "OK",
     "pro": "Parte avanti nelle gerarchie, garantirÃ  un ottimo bottino di presenze. Profilo molto affidabile per il modificatore. Pulito, da pochi bonus. Prezzo moderato. ",
     "contro": "Concorrenza viva e fastidiosa di Bisseck. Poco incline ai bonus, sia gol che assist. Titolare per completare, non un top, dunque occhio a non strapagarlo.",
@@ -3450,7 +3493,8 @@
     "AvgPG": 14.67,
     "AvgMF": 6.25,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "5877",
@@ -3462,7 +3506,7 @@
     "quotation": 7.0,
     "hypeFactor": 3.14,
     "cups": "Champions",
-    "age": null,
+    "age": 27,
     "status": "OK",
     "pro": "Una certezza al prezzo di una scommessa. Affidabile, incline al bonus e soprattutto duttile. PuÃ² giocare sia come braccetto che come esterno e in entrambe le posizioni Ã¨ sempre molto propositivo. Al Mantra Ã¨ ancor piÃ¹ prezioso, da prendere. ",
     "contro": "Ovviamente non esagerate con il costo, non andate troppo oltre l'FVM indicato, sulla carta parliamo pur sempre di un non titolare.",
@@ -3475,7 +3519,8 @@
     "AvgPG": 30.33,
     "AvgMF": 6.33,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "460",
@@ -3487,7 +3532,7 @@
     "quotation": 6.0,
     "hypeFactor": 3.33,
     "cups": "",
-    "age": null,
+    "age": 31,
     "status": "OK",
     "pro": "Titolare inamovibile. Vizio del gol. Costante. Affidabile per MV, il tutto ad un prezzo contenuto. ",
     "contro": "Con la filosofia di gioco proposta da Sarri potrebbe incappare in piÃ¹ di un errore senza palla. Da schierare anche in base al calendario.",
@@ -3500,7 +3545,8 @@
     "AvgPG": 30.67,
     "AvgMF": 5.88,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "4817",
@@ -3641,7 +3687,7 @@
     "quotation": 6.0,
     "hypeFactor": 2.0,
     "cups": "Champions",
-    "age": null,
+    "age": 27,
     "status": "OK",
     "pro": "Centrale molto affidabile, soprattutto in chiave modificatore difesa. PuÃ² garantire un ottimo numero di presenze ad un prezzo molto contenuto. ",
     "contro": "Parte inizialmente dietro nelle gerarchie, non Ã¨ piÃ¹ un inamovibile come a Bologna.",
@@ -3654,7 +3700,8 @@
     "AvgPG": 28.67,
     "AvgMF": 6.04,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "2724",
@@ -3794,7 +3841,7 @@
     "quotation": 6.0,
     "hypeFactor": 1.83,
     "cups": "Europa L.",
-    "age": null,
+    "age": 27,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -3807,7 +3854,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "4147",
@@ -3869,7 +3917,7 @@
     "quotation": 5.0,
     "hypeFactor": 1.6,
     "cups": "",
-    "age": null,
+    "age": 21,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -3882,7 +3930,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7274",
@@ -3920,7 +3969,7 @@
     "quotation": 5.0,
     "hypeFactor": 2.6,
     "cups": "",
-    "age": null,
+    "age": 31,
     "status": "OK",
     "pro": "Titolare affidabile e costante. Ottimo profilo per completare il modificatore. Rapporto qualitÃ -prezzo conveniente. ",
     "contro": "Anche in questo caso occhio alla concorrenza, potrebbe saltare anche lui piÃ¹ di una partita. Poco incline al bonus.",
@@ -3933,7 +3982,8 @@
     "AvgPG": 30.0,
     "AvgMF": 6.14,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7294",
@@ -4100,7 +4150,7 @@
     "quotation": 5.0,
     "hypeFactor": 2.0,
     "cups": "Europa L.",
-    "age": null,
+    "age": 23,
     "status": "OK",
     "pro": "Calciatore molto affidabile e costante nonostante la giovane etÃ . PuÃ² essere un'ottima risorsa per Gasperini. GiocherÃ  moltissimo. Rapporto qualitÃ  prezzo molto intrigante. ",
     "contro": "Difficile pensare che sarÃ  un inamovibile come al Verona. Potrebbero essere diverse le panchine nel suo primo anno in un top club. Coppie impossibili da fare in questo caso.",
@@ -4113,7 +4163,8 @@
     "AvgPG": 22.5,
     "AvgMF": 5.75,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "5851",
@@ -4280,7 +4331,7 @@
     "quotation": 4.0,
     "hypeFactor": 2.5,
     "cups": "Europa L.",
-    "age": null,
+    "age": 23,
     "status": "OK",
     "pro": "Per rapporto qualitÃ -prezzo puÃ² essere super interessante. Profilo da modificatore. Fortissimo di testa, incline al gol. Stabilmente nelle rotazioni difensive, andrÃ  molto spesso a voto. ",
     "contro": "Al primo anno in Serie A, potrebbe essere leggermente discontinuo. Italiano alterna tutti tanto, non Ã¨ detto che sia un inamovibile.",
@@ -4293,7 +4344,8 @@
     "AvgPG": 18.0,
     "AvgMF": 5.86,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7268",
@@ -4434,7 +4486,7 @@
     "quotation": 4.0,
     "hypeFactor": 2.5,
     "cups": "",
-    "age": null,
+    "age": 23,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -4447,7 +4499,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "5831",
@@ -4459,7 +4512,7 @@
     "quotation": 4.0,
     "hypeFactor": 2.5,
     "cups": "Champions",
-    "age": null,
+    "age": 28,
     "status": "OK",
     "pro": "Prezzo molto basso. Stabilmente nelle rotazioni difensive, andrÃ  spessissimo a voto. ",
     "contro": "Incline ai cartellini e ai problemi fisici. Discontinuo in termini di rendimento. Non un inamovibile.",
@@ -4472,7 +4525,8 @@
     "AvgPG": 25.33,
     "AvgMF": 6.18,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7012",
@@ -4586,7 +4640,7 @@
     "quotation": 4.0,
     "hypeFactor": 2.5,
     "cups": "",
-    "age": null,
+    "age": 27,
     "status": "OK",
     "pro": "RientrerÃ  stabilmente nelle rotazioni difensive, sia da centrale che da braccetto. Prezzo bassissimo. ",
     "contro": "Non un inamovibile, si alternerÃ  tanto. Discontinuo in termini di rendimento.",
@@ -4599,7 +4653,8 @@
     "AvgPG": 23.5,
     "AvgMF": 5.84,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "6986",
@@ -4866,7 +4921,7 @@
     "quotation": 4.0,
     "hypeFactor": 3.25,
     "cups": "Champions",
-    "age": null,
+    "age": 22,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -4879,7 +4934,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "256",
@@ -4916,7 +4972,7 @@
     "quotation": 3.0,
     "hypeFactor": 1.67,
     "cups": "Europa L.",
-    "age": null,
+    "age": 28,
     "status": "OK",
     "pro": "Affidabile e probabilmente acquistabile al prezzo minimo. RientrerÃ  nelle rotazioni. ",
     "contro": "Parte dietro nelle gerarchie, non si puÃ² considerare un titolare. Non proprio da modificatore. Gli SV potrebbero essere piÃ¹ delle partite a voto.",
@@ -4929,7 +4985,8 @@
     "AvgPG": 14.67,
     "AvgMF": 5.58,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7326",
@@ -5044,7 +5101,7 @@
     "quotation": 3.0,
     "hypeFactor": 2.0,
     "cups": "",
-    "age": null,
+    "age": 31,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -5057,7 +5114,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "5273",
@@ -5431,7 +5489,7 @@
     "quotation": 3.0,
     "hypeFactor": 2.67,
     "cups": "",
-    "age": null,
+    "age": 23,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -5444,7 +5502,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "6601",
@@ -5456,7 +5515,7 @@
     "quotation": 4.0,
     "hypeFactor": 2.25,
     "cups": "",
-    "age": null,
+    "age": 22,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -5469,7 +5528,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "5742",
@@ -5582,7 +5642,7 @@
     "quotation": 2.0,
     "hypeFactor": 1.5,
     "cups": "",
-    "age": null,
+    "age": 21,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -5595,7 +5655,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "791",
@@ -5607,7 +5668,7 @@
     "quotation": 2.0,
     "hypeFactor": 2.5,
     "cups": "",
-    "age": null,
+    "age": 33,
     "status": "OK",
     "pro": "Sempre molto affidabile in fase difensiva. Costante, copertura low cost. Al Mantra Ã¨ un jolly duttile e prezioso. ",
     "contro": "Porta davvero pochi bonus. La concorrenza di Norton-Cuffy potrebbe creargli diversi problemi.",
@@ -5620,7 +5681,8 @@
     "AvgPG": 24.67,
     "AvgMF": 5.81,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "2263",
@@ -5632,7 +5694,7 @@
     "quotation": 2.0,
     "hypeFactor": 2.5,
     "cups": "",
-    "age": null,
+    "age": 32,
     "status": "OK",
     "pro": "Terzino molto propositivo. AndrÃ  spesso a voto, utilizzabile anche piÃ¹ avanzato. Prezzo molto contenuto. ",
     "contro": "Sembrerebbe partire dietro nelle gerarchie rispetto a Marusic. Molto discontinuo.",
@@ -5645,7 +5707,8 @@
     "AvgPG": 21.0,
     "AvgMF": 5.83,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "2728",
@@ -5733,7 +5796,7 @@
     "quotation": 2.0,
     "hypeFactor": 2.0,
     "cups": "",
-    "age": null,
+    "age": 20,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -5746,7 +5809,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7476",
@@ -5836,7 +5900,7 @@
     "quotation": 2.0,
     "hypeFactor": 3.0,
     "cups": "",
-    "age": null,
+    "age": 34,
     "status": "OK",
     "pro": "Molto propositivo, abile crossatore, incline all'assist. Pericoloso anche sui piazzati. Molto interessante per rapporto qualitÃ -prezzo. ",
     "contro": "Discontinuo, non proprio un profilo ideale per chi utilizza il modificatore difesa.",
@@ -5849,7 +5913,8 @@
     "AvgPG": 20.0,
     "AvgMF": 5.85,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "6021",
@@ -6067,7 +6132,7 @@
     "quotation": 1.0,
     "hypeFactor": 4.0,
     "cups": "Europa L.",
-    "age": null,
+    "age": 38,
     "status": "OK",
     "pro": "Potrebbe collezionare diversi bonus, prezzo abbastanza basso. Buona copertura, propenso al bonus. Costante e affidabile in termini di rendimento. ",
     "contro": "Incline ai problemi fisici, potrebbe saltare diverse partite per infortunio. Parte dietro nelle gerarchie rispetto a Zortea e Holm.",
@@ -6080,7 +6145,8 @@
     "AvgPG": 12.67,
     "AvgMF": 6.23,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "418",
@@ -6092,7 +6158,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "",
-    "age": null,
+    "age": 32,
     "status": "OK",
     "pro": "Quasi sicuramente andrÃ  via al prezzo base. PuÃ² racimolare comunque un bottino sufficiente di presenze. ",
     "contro": "Incline ai cartellini, ha perso parecchio terreno nelle gerarchie. Rischia di giocare molto meno rispetto alla scorsa stagione.",
@@ -6105,7 +6171,8 @@
     "AvgPG": 14.33,
     "AvgMF": 3.76,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "5424",
@@ -6117,7 +6184,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "",
-    "age": null,
+    "age": 21,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -6130,7 +6197,8 @@
     "AvgPG": 0.0,
     "AvgMF": 0.0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "294",
@@ -6142,7 +6210,7 @@
     "quotation": 1.0,
     "hypeFactor": 3.0,
     "cups": "Champions",
-    "age": null,
+    "age": 32,
     "status": "OK",
     "pro": "Lo acquisterete al prezzo minimo. Quando chiamato in causa, affidabile per media voto. Porta pochi malus. ",
     "contro": "Parte nettamente dietro nelle gerarchie, potrebbe vedere raramente il campo. Rischio di tanti SV davvero altissimo.",
@@ -6155,7 +6223,8 @@
     "AvgPG": 7.33,
     "AvgMF": 4.01,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "6039",
@@ -6167,7 +6236,7 @@
     "quotation": 1.0,
     "hypeFactor": 4.0,
     "cups": "Champions",
-    "age": null,
+    "age": 25,
     "status": "OK",
     "pro": "Prezzo basso, jolly molto duttile e interessante al Mantra. Tra turnover ed un Kelly non sempre convincente, potrebbe essergli concesso un minutaggio sufficiente per definirlo una buona copertura low cost. ",
     "contro": "Reduce da un grave infortunio, parte anche dietro nelle gerarchie. Potrebbe non avere tantissima continuitÃ . Non proprio un difensore da modificatore.",
@@ -6180,7 +6249,8 @@
     "AvgPG": 11.33,
     "AvgMF": 6.16,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "327",
@@ -6217,7 +6287,7 @@
     "quotation": 1.0,
     "hypeFactor": 2.0,
     "cups": "",
-    "age": null,
+    "age": 25,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -6230,7 +6300,8 @@
     "AvgPG": 0.0,
     "AvgMF": 0.0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "6809",
@@ -6292,7 +6363,7 @@
     "quotation": 1.0,
     "hypeFactor": 3.0,
     "cups": "",
-    "age": null,
+    "age": 23,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -6305,7 +6376,8 @@
     "AvgPG": 2.33,
     "AvgMF": 3.9,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7260",
@@ -6367,7 +6439,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "",
-    "age": null,
+    "age": 18,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -6380,7 +6452,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7553",
@@ -6392,7 +6465,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "",
-    "age": null,
+    "age": 23,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -6405,7 +6478,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7604",
@@ -6417,7 +6491,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "",
-    "age": null,
+    "age": 20,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -6430,7 +6504,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "6826",
@@ -6442,7 +6517,7 @@
     "quotation": 1.0,
     "hypeFactor": 2.0,
     "cups": "",
-    "age": null,
+    "age": 22,
     "status": "OK",
     "pro": "AndrÃ  probabilmente via al prezzo minimo. Potrebbe racimolare diverse presenze anche da subentrato. ",
     "contro": "Parte nettamente dietro nelle gerarchie. Potrebbero collezionare piÃ¹ SV che partite a voto. Abbastanza discontinuo.",
@@ -6455,7 +6530,8 @@
     "AvgPG": 5.0,
     "AvgMF": 5.45,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "6875",
@@ -6571,7 +6647,7 @@
     "quotation": 22.0,
     "hypeFactor": 6.82,
     "cups": "",
-    "age": null,
+    "age": 27,
     "status": "OK",
     "pro": "Sicuramente uno dei top di lista, pronto a garantire un bel bottino di bonus totali. Affidabilissimo sia per MV che in termini di minutaggio. Rigorista, con praticamente una partita a settimana, si candida per essere un fattore determinante in chiave Fantacalcio. ",
     "contro": "Occhio al prezzo, potrebbe essere davvero altissimo. Inoltre, con Allegri in panchina potrebbe esserci qualche compito difensivo in piÃ¹ per lui. Dunque, il consiglio Ã¨ di non andare troppo oltre l'FVM indicato per lui.",
@@ -6584,7 +6660,8 @@
     "AvgPG": 32.33,
     "AvgMF": 7.35,
     "R": 2,
-    "P": 2
+    "P": 2,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "2379",
@@ -7088,7 +7165,7 @@
     "quotation": 12.0,
     "hypeFactor": 3.92,
     "cups": "Champions",
-    "age": null,
+    "age": 25,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -7101,7 +7178,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "4179",
@@ -7319,7 +7397,7 @@
     "quotation": 11.0,
     "hypeFactor": 4.09,
     "cups": "",
-    "age": null,
+    "age": 22,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -7332,7 +7410,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "184",
@@ -7628,7 +7707,7 @@
     "quotation": 9.0,
     "hypeFactor": 2.78,
     "cups": "Champions",
-    "age": null,
+    "age": 25,
     "status": "il centrocampista condizionato da una sindrome femoro-rotulea e non convocato per sabato sera contro il Parma. Da valutare in vista della 3a giornata di A.",
     "pro": "Centrocampista totale, titolare inamovibile. Propenso al bonus, Ã¨ una M top, tra le migliori in circolazione. Versione assistman al Mondiale per Club, puÃ² essere un valore aggiunto anche in chiave Fantacalcio. Rapporto qualitÃ -prezzo interessante. ",
     "contro": "Al Classic ovviamente non Ã¨ un top di ruolo per una serie di motivi e dunque bisogna capire quando fermarsi in sede d'asta. Non andate troppo oltre il nostro Fvm.",
@@ -7641,7 +7720,8 @@
     "AvgPG": 33.5,
     "AvgMF": 6.57,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "5500",
@@ -8660,7 +8740,7 @@
     "quotation": 7.0,
     "hypeFactor": 2.14,
     "cups": "Europa L.",
-    "age": null,
+    "age": 27,
     "status": "OK",
     "pro": "Duttilissimo, profilo super interessante soprattutto al Mantra. Stabilmente nelle rotazioni, quasi sempre a voto. Incline al bonus, prezzo contenuto. ",
     "contro": "Non un inamovibile, sarÃ  soggetto a tanto turnover come quasi tutti del resto. Occhio ai cartellini.",
@@ -8673,7 +8753,8 @@
     "AvgPG": 16.67,
     "AvgMF": 6.12,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "4260",
@@ -9099,7 +9180,7 @@
     "quotation": 6.0,
     "hypeFactor": 2.33,
     "cups": "",
-    "age": null,
+    "age": 23,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -9112,7 +9193,8 @@
     "AvgPG": 26.33,
     "AvgMF": 6.21,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7198",
@@ -9564,7 +9646,7 @@
     "quotation": 4.0,
     "hypeFactor": 3.25,
     "cups": "Europa L.",
-    "age": null,
+    "age": 35,
     "status": "OK",
     "pro": "Titolare inamovibile, anche con Juric. Costante e regolare sotto diversi aspetti, soprattutto per MV e minutaggio. Ancor piÃ¹ prezioso al Mantra, quasi un top in questo caso. ",
     "contro": "Con Juric potrebbero diminuire i suoi bonus e aumentare i malus, non Ã¨ un profilo particolarmente offensivo.",
@@ -9577,7 +9659,8 @@
     "AvgPG": 33.33,
     "AvgMF": 6.17,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "6054",
@@ -9589,7 +9672,7 @@
     "quotation": 4.0,
     "hypeFactor": 4.25,
     "cups": "Europa L.",
-    "age": null,
+    "age": 28,
     "status": "OK",
     "pro": "Prezzo molto basso, rientrerÃ  sicuramente nelle rotazioni di Italiano. Spesso a voto, affidabile. ",
     "contro": "Non propriamente un profilo da bonus. Inoltre, parliamo di uno che parte dietro nelle gerarchie in mediana.",
@@ -9602,7 +9685,8 @@
     "AvgPG": 20.33,
     "AvgMF": 6.12,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "6895",
@@ -9665,7 +9749,7 @@
     "quotation": 4.0,
     "hypeFactor": 2.0,
     "cups": "",
-    "age": null,
+    "age": 23,
     "status": "OK",
     "pro": "Feeling del gol spiccatissimo per essere un centrocampista. Dopo la scorsa stagione non entusiasmante, il prezzo sarÃ  piÃ¹ basso. Bravo di testa. ",
     "contro": "Tutt'altro che un inamovibile, non mancheranno gli sv. Scommessina per completare il reparto, ma di certo non un vostro titolare principale.",
@@ -9678,7 +9762,8 @@
     "AvgPG": 22.0,
     "AvgMF": 6.46,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7473",
@@ -9690,7 +9775,7 @@
     "quotation": 4.0,
     "hypeFactor": 3.75,
     "cups": "",
-    "age": null,
+    "age": 20,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -9703,7 +9788,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7474",
@@ -9715,7 +9801,7 @@
     "quotation": 4.0,
     "hypeFactor": 2.75,
     "cups": "",
-    "age": null,
+    "age": 25,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -9728,7 +9814,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "6506",
@@ -9843,7 +9930,7 @@
     "quotation": 4.0,
     "hypeFactor": 2.25,
     "cups": "Champions",
-    "age": null,
+    "age": 37,
     "status": "OK",
     "pro": "Con Chivu potrebbe avanzare il proprio raggio d'azione e tornare ad agire sulla trequarti. Ci aspettiamo qualche bonus in piÃ¹ ad un prezzo comunque moderato. MV positiva. ",
     "contro": "L'etÃ  avanza e la concorrenza non manca, anzi. Potrebbe ruotare di piÃ¹ rispetto alle ultime stagioni con Inzaghi, rischia di non essere piÃ¹ un inamovibile.",
@@ -9856,7 +9943,8 @@
     "AvgPG": 32.0,
     "AvgMF": 6.51,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "4911",
@@ -9945,7 +10033,7 @@
     "quotation": 4.0,
     "hypeFactor": 3.0,
     "cups": "",
-    "age": null,
+    "age": 22,
     "status": "OK",
     "pro": "Calciatore molto duttile, potrebbe collezionare diverse partite a voto grazie a questa caratteristica. Grande qualitÃ , ottimo tiro dalla distanza. Prezzo bassissimo. ",
     "contro": "RientrerÃ  nelle rotazioni, ma non si puÃ² certo definire un inamovibile. Tanta concorrenza, lui parte leggermente dietro nelle gerarchie. Discontinuo.",
@@ -9958,7 +10046,8 @@
     "AvgPG": 13.0,
     "AvgMF": 6.44,
     "R": 3,
-    "P": 2
+    "P": 2,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7318",
@@ -9996,7 +10085,7 @@
     "quotation": 4.0,
     "hypeFactor": 3.75,
     "cups": "",
-    "age": null,
+    "age": 25,
     "status": "OK",
     "pro": "RientrerÃ  stabilmente nelle rotazioni, andrÃ  praticamente sempre a voto. Costante e super affidabile per MV, prezioso al Mantra. Prezzo bassissimo. ",
     "contro": "Non sarÃ  un titolare inamovibile come al Torino, anzi. Offre pochissimi bonus.",
@@ -10009,7 +10098,8 @@
     "AvgPG": 30.67,
     "AvgMF": 6.03,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "4199",
@@ -10459,7 +10549,7 @@
     "quotation": 3.0,
     "hypeFactor": 1.67,
     "cups": "",
-    "age": null,
+    "age": 21,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -10472,7 +10562,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "5131",
@@ -10484,7 +10575,7 @@
     "quotation": 3.0,
     "hypeFactor": 3.33,
     "cups": "Champions",
-    "age": null,
+    "age": 25,
     "status": "OK",
     "pro": "AndrÃ  via ad un prezzo molto basso, sicuramente piÃ¹ prezioso al Mantra. Quando chiamato in causa, offre sempre ottimi voti. PuÃ² garantire un numero accettabile di presenze. ",
     "contro": "Il rischio che giochi poche partite da titolare Ã¨ concreto vista la concorrenza e la duttilitÃ  tattica del Napoli. Porta pochissimi bonus.",
@@ -10497,7 +10588,8 @@
     "AvgPG": 15.0,
     "AvgMF": 6.16,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7138",
@@ -10587,7 +10679,7 @@
     "quotation": 3.0,
     "hypeFactor": 1.0,
     "cups": "",
-    "age": null,
+    "age": 25,
     "status": "OK",
     "pro": "Uno dei piÃ¹ talentuosi in casa Lecce, Di Francesco potrebbe valorizzarlo tanto. Incline al bonus, praticamente sempre a voto. Interessantissimo per rapporto qualitÃ -prezzo. ",
     "contro": "Ancora leggermente discontinuo. Inoltre, la concorrenza in mediana in casa Lecce Ã¨ foltissima, non sarÃ  esentato da rotazioni.",
@@ -10600,7 +10692,8 @@
     "AvgPG": 7.0,
     "AvgMF": 3.96,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "801",
@@ -10688,7 +10781,7 @@
     "quotation": 2.0,
     "hypeFactor": 5.0,
     "cups": "",
-    "age": null,
+    "age": 24,
     "status": "OK",
     "pro": "Al Sassuolo avrÃ  sicuramente piÃ¹ spazio. Calciatore che puÃ² incidere anche da subentrato, di stampo offensivo. Spesso a voto. Prezzo molto basso. ",
     "contro": "Parecchio discontinuo, di certo non possiamo considerarlo un titolare inamovibile. Una scommessa, nulla di piÃ¹. Almeno in partenza.",
@@ -10701,7 +10794,8 @@
     "AvgPG": 24.0,
     "AvgMF": 6.17,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "6903",
@@ -10764,7 +10858,7 @@
     "quotation": 2.0,
     "hypeFactor": 1.5,
     "cups": "",
-    "age": null,
+    "age": 22,
     "status": "OK",
     "pro": "Calciatore fantasioso e costante, ha caratteristiche interessanti per la filosofia di Sarri. Potrebbe avere un buon minutaggio. ",
     "contro": "Parte nettamente dietro Rovella nelle gerarchie. Le presenze da titolare potrebbero essere pochissime. Specialmente al Mantra, Ã¨ quasi obbligatorio prenderlo in coppia con il titolare.",
@@ -10777,7 +10871,8 @@
     "AvgPG": 13.0,
     "AvgMF": 5.92,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "5880",
@@ -11044,7 +11139,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "",
-    "age": null,
+    "age": 20,
     "status": "OK",
     "pro": "Centrocampista costante in termini di MV. Scommessa interessante in chiave Mantra. Prezzo molto basso. Potrebbe racimolare un discreto bottino di presenze. ",
     "contro": "Di stampo marcatamente difensivo, offre pochi bonus. Parte dietro nelle gerarchie, molte presenze potrebbero arrivare da subentrato.",
@@ -11057,7 +11152,8 @@
     "AvgPG": 4.0,
     "AvgMF": 5.75,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7357",
@@ -11069,7 +11165,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "",
-    "age": null,
+    "age": 18,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -11082,7 +11178,8 @@
     "AvgPG": 0.0,
     "AvgMF": 0.0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7456",
@@ -11094,7 +11191,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "",
-    "age": null,
+    "age": 25,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -11107,7 +11204,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "5725",
@@ -11144,7 +11242,7 @@
     "quotation": 1.0,
     "hypeFactor": 5.0,
     "cups": "",
-    "age": null,
+    "age": 19,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -11157,7 +11255,8 @@
     "AvgPG": 0.0,
     "AvgMF": 0.0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "6410",
@@ -11194,7 +11293,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "",
-    "age": null,
+    "age": 23,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -11207,7 +11306,8 @@
     "AvgPG": 2.0,
     "AvgMF": 5.5,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "5007",
@@ -11219,7 +11319,7 @@
     "quotation": 1.0,
     "hypeFactor": 13.0,
     "cups": "",
-    "age": null,
+    "age": 25,
     "status": "OK",
     "pro": "Potrebbe sicuramente trovare maggiore continuitÃ  con Baroni, anche a gara in corso. Prezzo molto contenuto. ",
     "contro": "Potrebbe avere piÃ¹ compiti di regia e a quel punto ne risentirebbero i bonus. Inoltre, la concorrenza in mediana Ã¨ folta e lui parte leggermente dietro nelle gerarchie.",
@@ -11232,7 +11332,8 @@
     "AvgPG": 17.33,
     "AvgMF": 6.08,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "6889",
@@ -11244,7 +11345,7 @@
     "quotation": 1.0,
     "hypeFactor": 4.0,
     "cups": "",
-    "age": null,
+    "age": 24,
     "status": "OK",
     "pro": "Centrocampista duttile, puÃ² svariare tanto e collezionare tantissime presenze. Incline al bonus, sia gol che assist. Molto interessante per rapporto qualitÃ -prezzo. ",
     "contro": "Parecchio incline ai problemi fisici, situazione da monitorare. Concorrenza folta in mediana, difficile considerarlo un titolare inamovibile.",
@@ -11257,7 +11358,8 @@
     "AvgPG": 15.5,
     "AvgMF": 6.18,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7481",
@@ -11320,7 +11422,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "",
-    "age": null,
+    "age": 18,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -11333,7 +11435,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7575",
@@ -11371,7 +11474,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "",
-    "age": null,
+    "age": 24,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -11384,7 +11487,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "5585",
@@ -11448,7 +11552,7 @@
     "quotation": 28.0,
     "hypeFactor": 8.89,
     "cups": "Champions",
-    "age": null,
+    "age": 29,
     "status": "OK",
     "pro": "Parte avanti nelle gerarchie, ma Ã¨ uno che puÃ² incidere anche da subentrato. Incline al bonus, sia gol che assist. E' sicuramente un calciatore di riferimento. ",
     "contro": "Nella seconda parte della scorsa stagione Ã¨ calato tantissimo, le sue condizioni fisiche non sempre perfette potrebbero influenzare il suo rendimento. La concorrenza Ã¨ aumentata, occhio al turnover. Poco costante in termini di distribuzione di bonus. Il nostro consiglio? Si puÃ² prendere naturalmente, ma pagandolo il giusto, non andate oltre l'FVM.",
@@ -11461,7 +11565,8 @@
     "AvgPG": 32.0,
     "AvgMF": 7.84,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "6052",
@@ -12118,7 +12223,7 @@
     "quotation": 11.0,
     "hypeFactor": 4.55,
     "cups": "",
-    "age": null,
+    "age": 27,
     "status": "OK",
     "pro": "Titolare di riferimento nel ruolo di centravanti. In una squadra come il Sassuolo puÃ² trovarsi a meraviglia con i suoi vecchi compagni. Finalizzatore e garanzia da almeno 10 gol in una stagione. Il tutto ad un prezzo comunque contenuto. ",
     "contro": "Ha perso i rigori tornando al Sassuolo. Non proprio costante. Occhio al prezzo, esagerare sarebbe controproducente.",
@@ -12131,7 +12236,8 @@
     "AvgPG": 35.67,
     "AvgMF": 6.67,
     "R": 2,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7547",
@@ -12143,7 +12249,7 @@
     "quotation": 11.0,
     "hypeFactor": 3.0,
     "cups": "",
-    "age": null,
+    "age": 25,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -12156,7 +12262,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 2,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "4923",
@@ -12528,7 +12635,7 @@
     "quotation": 7.0,
     "hypeFactor": 3.57,
     "cups": "",
-    "age": null,
+    "age": 27,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -12541,7 +12648,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "6669",
@@ -12785,7 +12893,7 @@
     "quotation": 6.0,
     "hypeFactor": 3.33,
     "cups": "Champions",
-    "age": null,
+    "age": 29,
     "status": "OK",
     "pro": "Centrocampista di stampo offensivo che ha le qualitÃ  per incidere anche da subentrato. Alternativa di lusso ai vostri titolari principali, da ruotare costantemente. ",
     "contro": "Non una macchina da bonus e non un titolare inamovibile. Se lo acquistate, la sua gestione fantacalcistica in sede di formazione potrebbe non essere semplicissima. Incline a problemi fisici, potrebbe saltare piÃ¹ di una partita anche in questa stagione.",
@@ -12798,7 +12906,8 @@
     "AvgPG": 20.5,
     "AvgMF": 6.78,
     "R": 0,
-    "P": 3
+    "P": 3,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "608",
@@ -12990,7 +13099,7 @@
     "quotation": 3.0,
     "hypeFactor": 1.67,
     "cups": "",
-    "age": null,
+    "age": 23,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -13003,7 +13112,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7001",
@@ -13041,7 +13151,7 @@
     "quotation": 4.0,
     "hypeFactor": 4.25,
     "cups": "",
-    "age": null,
+    "age": 18,
     "status": "OK",
     "pro": "Gioiellino con il senso innato del gol. TroverÃ  tanto spazio, puÃ² incidere concretamente anche da subentrato. Ottima scommessa low cost per chiudere il reparto offensivo. ",
     "contro": "E' una scommessa, dunque va trattata come tale in sede d'asta. PuÃ² giocare tanto, ma non possiamo considerarlo un inamovibile.",
@@ -13054,7 +13164,8 @@
     "AvgPG": 8.0,
     "AvgMF": 3.85,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "5882",
@@ -13092,7 +13203,7 @@
     "quotation": 4.0,
     "hypeFactor": 1.75,
     "cups": "Champions",
-    "age": null,
+    "age": 22,
     "status": "OK",
     "pro": "Calciatore molto talentuoso e parecchio incline al bonus. Potrebbe trovare tanto spazio, sia da titolare che a gara in corso. Intriga per rapporto qualitÃ  prezzo. ",
     "contro": "Al primo anno in Serie A, potrebbe peccare di continuitÃ  in termini di rendimento. La concorrenza non manca, ruoterÃ .",
@@ -13105,7 +13216,8 @@
     "AvgPG": 31.0,
     "AvgMF": 6.45,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7120",
@@ -13169,7 +13281,7 @@
     "quotation": 4.0,
     "hypeFactor": 1.5,
     "cups": "",
-    "age": null,
+    "age": 23,
     "status": "OK",
     "pro": "AndrÃ  via al prezzo minimo. ",
     "contro": "Rottura del crociato, stagione compromessa.",
@@ -13182,7 +13294,8 @@
     "AvgPG": 0.0,
     "AvgMF": 0.0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7349",
@@ -13297,7 +13410,7 @@
     "quotation": 4.0,
     "hypeFactor": 2.5,
     "cups": "Champions",
-    "age": null,
+    "age": 32,
     "status": "OK",
     "pro": "Lo acquisterete al prezzo minimo. Se in buona condizione, puÃ² essere una risorsa interessante. ",
     "contro": "Si trascina diversi problemi fisici, non in forma, rischia seriamente di giocare un'altra stagione a singhiozzo. Inoltre, la concorrenza Ã¨ davvero serrata, potrebbe trovare pochissimo spazio anche a prescindere dalle sue condizioni fisiche.",
@@ -13310,7 +13423,8 @@
     "AvgPG": 8.67,
     "AvgMF": 4.15,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7602",
@@ -13372,7 +13486,7 @@
     "quotation": 3.0,
     "hypeFactor": 3.33,
     "cups": "Champions",
-    "age": null,
+    "age": 19,
     "status": "OK",
     "pro": "Acquistabile al prezzo minimo. ",
     "contro": "Parte nettamente dietro nelle gerarchie. Per essere un attaccante, non porta tantissimi bonus. Potrebbe collezionare davvero poche presenze.",
@@ -13385,7 +13499,8 @@
     "AvgPG": 20.0,
     "AvgMF": 6.19,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7342",
@@ -13500,7 +13615,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "",
-    "age": null,
+    "age": 20,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -13513,7 +13628,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7482",
@@ -13551,7 +13667,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "",
-    "age": null,
+    "age": 18,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -13564,7 +13680,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7622",
