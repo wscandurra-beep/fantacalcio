@@ -9,13 +9,15 @@ export function sortAuctionPlayers(players=[]){
   }).map(item=>item.player);
 }
 
-export function buildAuctionRows(players,slots,viewState={}){
+export function buildAuctionRows(players,slots,viewState={},includeOut=false){
   const placements=viewState.placements||{},orders=viewState.orders||{};
-  const rows=slots.map(slot=>({slot,players:[]})),byId=new Map(rows.map(row=>[row.slot.id,row]));
+  const rows=slots.map(slot=>({slot,players:[]}));
+  if(includeOut)rows.push({slot:{id:'OUT',category:'OUT',priority:'Override'},players:[]});
+  const byId=new Map(rows.map(row=>[row.slot.id,row]));
   const categorySlots=new Map();
   for(const row of rows){const grouped=categorySlots.get(row.slot.category)||[];grouped.push(row.slot.id);categorySlots.set(row.slot.category,grouped);}
   for(const player of players){
-    const automatic=categorySlots.get(player.rankingCategory)?.[Number(player.tier)-1];
+    const automatic=categorySlots.get(player.strategicAlias??player.rankingCategory)?.[Number(player.tier)-1];
     const target=byId.has(placements[player.id])?placements[player.id]:automatic;
     if(target&&byId.has(target))byId.get(target).players.push(player);
   }

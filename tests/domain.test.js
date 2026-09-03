@@ -1,4 +1,4 @@
-import test from 'node:test';import assert from 'node:assert/strict';import {assignRankingCategory,rankPlayers,assignTiers,budgetSummary,slotPlanSummary,statusFor,availablePlayers,getForecast,updateForecasts,updateSlotStrategy,percentageOfBudget,formatPercentage,areaVariance,totalCompletedVariance,slotCountsFromSlots,validateSlotCounts,reconcileSlotCounts,normalizeMantraRoles,mantraRoleDepletion,tierDepletion,groupSlotsByCategory} from '../src/domain.js';
+import test from 'node:test';import assert from 'node:assert/strict';import {assignRankingCategory,rankPlayers,assignTiers,budgetSummary,slotPlanSummary,statusFor,availablePlayers,getForecast,updateForecasts,updateSlotStrategy,percentageOfBudget,formatPercentage,areaVariance,totalCompletedVariance,slotCountsFromSlots,validateSlotCounts,reconcileSlotCounts,normalizeMantraRoles,mantraRoleDepletion,tierDepletion,groupSlotsByCategory,availableMantraRoles,defaultAliasConfiguration,validateAliasConfiguration,aliasForMantraRole,classifyPlayersByAliases,reconcileAliasSlots} from '../src/domain.js';
 test('role category priority',()=>{assert.equal(assignRankingCategory('Ds;Dc'),'DC');assert.equal(assignRankingCategory('Dd;Dc'),'DC');assert.equal(assignRankingCategory('Dc;E'),'E');assert.equal(assignRankingCategory('W;A'),'WA');assert.equal(assignRankingCategory('Por'),'POR')});
 test('slot groups follow strategy order and retain configured extra categories',()=>{const groups=groupSlotsByCategory([{id:'1',category:'PC'},{id:'2',category:'DC'},{id:'3',category:'M'},{id:'4',category:'DC'}]);assert.deepEqual(groups.map(group=>[group.category,group.slots.map(slot=>slot.id)]),[['DC',['2','4']],['PC',['1']],['M',['3']]])});
 test('ranking uses auction value then quotation',()=>{const r=rankPlayers([{id:'a',name:'a',auctionValue:20,quotation:4},{id:'b',name:'b',auctionValue:20,quotation:7},{id:'c',name:'c',auctionValue:30,quotation:1}]);assert.deepEqual(r.map(x=>x.id),['c','b','a'])});
@@ -115,4 +115,24 @@ test('slot count roundtrip remains compatible with totals and derived forecast',
   const updated=JSON.parse(JSON.stringify(reconcileSlotCounts(slots,{POR:3,DC:2,E:0,C:0,WA:0,PC:0})));
   assert.deepEqual(slotCountsFromSlots(updated),{POR:3,DC:2,E:0,C:0,WA:0,PC:0});
   assert.deepEqual(slotPlanSummary(updated,100),{slotCount:5,roleCount:5,planned:36,forecast:46,actual:30,completedVariance:10,baselinePct:36,forecastPct:46});
+});
+
+test('Alias configuration derives exact Mantra combinations and preserves legacy defaults',()=>{
+  const players=[{roles:'Por'},{roles:'Dc'},{roles:'Dd;Dc'},{roles:'W;A'},{roles:'Pc'}],configuration=defaultAliasConfiguration(players);
+  assert.deepEqual(availableMantraRoles(players),['Dc','Dd;Dc','Pc','Por','W;A']);
+  assert.deepEqual(configuration.find(item=>item.alias==='DC').mantraRoles,['Dc','Dd;Dc']);
+  assert.equal(aliasForMantraRole('W;A',configuration),'WA');
+  assert.equal(classifyPlayersByAliases(players,configuration)[2].strategicAlias,'DC');
+});
+test('Alias validation keeps POR fixed, rejects ambiguity and caps the roster',()=>{
+  const valid=[{alias:'POR',slotCount:3,mantraRoles:['Por']},{alias:'D',slotCount:8,mantraRoles:['Dc','Dd;Dc']}];
+  assert.equal(validateAliasConfiguration(valid,['Por','Dc','Dd;Dc']).total,11);
+  assert.throws(()=>validateAliasConfiguration([{alias:'POR',slotCount:2,mantraRoles:['Por']}],['Por']),/POR deve essere fisso/);
+  assert.throws(()=>validateAliasConfiguration([...valid,{alias:'X',slotCount:1,mantraRoles:['Dc']}],['Por','Dc','Dd;Dc']),/già assegnato a D/);
+  assert.throws(()=>validateAliasConfiguration([{alias:'POR',slotCount:3,mantraRoles:['Por']},{alias:'D',slotCount:32,mantraRoles:['Dc']}],['Por','Dc']),/da 3 a 34/);
+});
+test('Alias slots use configurable names and protect completed purchases',()=>{
+  const configuration=[{alias:'POR',slotCount:3},{alias:'D',slotCount:2}],slots=reconcileAliasSlots([],configuration);
+  assert.deepEqual(slots.map(slot=>slot.id),['POR1','POR2','POR3','D1','D2']);
+  assert.throws(()=>reconcileAliasSlots([{id:'D1',category:'D',playerId:'x',actualPurchasePrice:2}],[{alias:'POR',slotCount:3},{alias:'D',slotCount:0}]),/già acquistati/);
 });
