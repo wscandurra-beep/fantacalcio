@@ -91,6 +91,11 @@ export function slotCountsFromSlots(slots=[]) {
   for(const slot of slots)if(Object.hasOwn(counts,slot.category))counts[slot.category]++;
   return counts;
 }
+export function groupSlotsByCategory(slots=[],includeEmpty=false) {
+  const configured=[...CATEGORY_PRIORITY];
+  for(const slot of slots)if(slot.category&&!configured.includes(slot.category))configured.push(slot.category);
+  return configured.map(category=>({category,slots:slots.filter(slot=>slot.category===category)})).filter(group=>includeEmpty||group.slots.length);
+}
 export function validateSlotCounts(input,maxRosterSize=34) {
   const counts={};
   for(const category of CATEGORY_PRIORITY){
