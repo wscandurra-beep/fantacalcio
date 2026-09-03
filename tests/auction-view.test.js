@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {buildAuctionRows,moveAuctionPlayer,sortAuctionPlayers} from '../src/auction-view.js';
+import {auctionInjuryStatus,buildAuctionRows,moveAuctionPlayer,sortAuctionPlayers} from '../src/auction-view.js';
 
 const players=[
   {id:'a',rankingCategory:'DC',tier:1,auctionValue:12},
@@ -39,4 +39,10 @@ test('OUT is the optional final single row and stores manual overrides',()=>{
   const view=moveAuctionPlayer({},'a','OUT',0,initial),moved=buildAuctionRows(players,slots,view,true);
   assert.deepEqual(moved.at(-1).players.map(player=>player.id),['a']);
   assert.equal(moved[0].players.some(player=>player.id==='a'),false);
+});
+
+test('auction injury status only exposes details for unavailable players',()=>{
+  assert.deepEqual(auctionInjuryStatus('OK'),{label:'OK',interactive:false,detail:null});
+  assert.deepEqual(auctionInjuryStatus('Lesione muscolare'),{label:'NOT OK',interactive:true,detail:'Lesione muscolare'});
+  assert.equal(auctionInjuryStatus(null).detail,'Dettaglio infortunio non disponibile');
 });

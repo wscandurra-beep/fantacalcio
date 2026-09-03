@@ -1,5 +1,10 @@
 const emptyAuctionValue=value=>value==null||value===''||Number(value)===0||!Number.isFinite(Number(value));
 
+export function auctionInjuryStatus(status){
+  if(status==='OK')return {label:'OK',interactive:false,detail:null};
+  return {label:'NOT OK',interactive:true,detail:status?String(status):'Dettaglio infortunio non disponibile'};
+}
+
 export function sortAuctionPlayers(players=[]){
   return players.map((player,index)=>({player,index})).sort((left,right)=>{
     const leftEmpty=emptyAuctionValue(left.player.auctionValue),rightEmpty=emptyAuctionValue(right.player.auctionValue);
