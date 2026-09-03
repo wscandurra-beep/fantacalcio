@@ -2,6 +2,7 @@ import {CATEGORY_PRIORITY,DEFAULT_SLOT_COUNTS,rankPlayers,assignTiers,budgetSumm
 import {getFormation,getFormationIds} from './mantraFormations.js';
 import {applyInjurySnapshot,formatItalianDate,normalizeInjuryUpdate} from './injury-data.js';
 import {applyProContro,normalizeProControRuns} from './pro-contro-data.js';
+import {buildAuctionRows,moveAuctionPlayer} from './auction-view.js';
 const loadIssues=[];
 async function fetchJson(path,fallback,label){
   try{
@@ -27,13 +28,14 @@ raw=applyInjurySnapshot(raw,injurySnapshot);
 injuryUpdate=normalizeInjuryUpdate(injuryUpdate,injurySnapshot);
 const configuredEndpoint=document.querySelector('meta[name="injury-refresh-endpoint"]')?.content?.trim()||'';
 const refreshEndpoint=configuredEndpoint.startsWith('http')?configuredEndpoint.replace(/\/$/,''):'';
-const defaults={budget:1000,rosterSize:34,formation:'3-4-2-1',started:false,slots:[],slotCounts:{...DEFAULT_SLOT_COUNTS},market:{}};
+const defaults={budget:1000,rosterSize:34,formation:'3-4-2-1',started:false,slots:[],slotCounts:{...DEFAULT_SLOT_COUNTS},market:{},auctionView:{placements:{},orders:{}}};
 let persisted={};
 try{persisted=JSON.parse(localStorage.getItem('mantra-auction')||'{}')}catch(error){loadIssues.push('Configurazione salvata non valida: sono stati ripristinati i valori iniziali')}
 if(!persisted||typeof persisted!=='object'||Array.isArray(persisted))persisted={};
 let state=Object.assign({},defaults,persisted);
 if(!Array.isArray(state.slots))state.slots=[];
 if(!state.market||typeof state.market!=='object'||Array.isArray(state.market))state.market={};
+if(!state.auctionView||typeof state.auctionView!=='object'||Array.isArray(state.auctionView))state.auctionView={placements:{},orders:{}};
 const counts={...DEFAULT_SLOT_COUNTS};
 if(!state.slots.length) state.slots=Object.entries(counts).flatMap(([c,n])=>Array.from({length:n},(_,i)=>({id:`${c}${i+1}`,category:c,priority:i===0?'Key':i<3?'Starter':'Reserve',originalPlannedBudget:[45,30,20,12,8,5,3,1][i]??1,playerId:null,actualPurchasePrice:null})));
 state.slots=updateForecasts(state.slots);
@@ -71,6 +73,17 @@ function slotTable(slots,editable=false,priority=false){
 }
 const selected=(value,current)=>`${value===current?' selected':''}`;
 function market(){const teams=[...new Set(raw.map(p=>p.team).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'it'));return `<div class=eyebrow>Selezione giocatori</div><h1>Mercato live</h1><div class=filters><input id=q value="${marketControls.query}" placeholder="Cerca giocatore o squadra…"><select id=cat><option value="">Tutti i ruoli</option>${CATEGORY_PRIORITY.map(x=>`<option${selected(x,marketControls.category)}>${x}</option>`).join('')}</select><select id=ms><option value="AVAILABLE"${selected('AVAILABLE',marketControls.availability)}>Disponibili</option><option value=""${selected('',marketControls.availability)}>Tutti gli stati</option><option${selected('SOLD',marketControls.availability)}>SOLD</option><option${selected('MY TEAM',marketControls.availability)}>MY TEAM</option></select><select id=team><option value="">Tutte le squadre</option>${teams.map(x=>`<option${selected(x,marketControls.team)}>${x}</option>`).join('')}</select></div><div id=marketTable>${playerTable(applyMarketPipeline(players()))}</div>`}
+const auctionField=(label,value,important=false)=>`<div class="auction-field${important?' important':''}"><span>${label}</span><b>${escapeHtml(value??'—')}</b></div>`;
+function auctionCard(player,index){
+  const marketStatus=state.market[player.id]?.marketStatus||'AVAILABLE';
+  const fields=[['Coppe',player.cups],['Asta €',player.auctionValue,true],['Quot.',player.quotation],['Hype Factor',player.hypeFactor],['Age',player.age],['AvgPG',player.AvgPG],['AvgMf',player.AvgMF],['Gol LY',player.GoLY],['Ass LY',player.AssLY],['ACT PG',player.PG],['ACT MF',player.MF],['Status',player.status],['Mantra R',player.roles],['Rigori',player.R],['Calci P',player.P]];
+  const actions=marketStatus==='AVAILABLE'?`<button class="action secondary" onclick="sold('${player.id}')">Sold</button><button class=action onclick="buy('${player.id}')">+ Mia</button>`:`<strong class="auction-market-status">${escapeHtml(marketStatus)}</strong>`;
+  return `<article class="auction-player-card category-${escapeHtml(player.rankingCategory)}${marketStatus==='AVAILABLE'?'':' sold'}" draggable=true data-player-id="${player.id}" data-index="${index}"><div class=auction-player-head><h3>${escapeHtml(player.name)}</h3><p>${escapeHtml(player.team||'—')}</p></div><div class=auction-card-fields>${fields.map(field=>auctionField(...field)).join('')}</div><details class=auction-pro-contro><summary>PRO / CONTRO</summary><b>PRO</b><p>${escapeHtml(player.pro||'Non disponibile')}</p><b>CONTRO</b><p>${escapeHtml(player.contro||'Non disponibile')}</p></details><div class=auction-actions>${actions}</div></article>`;
+}
+function auction(){
+  const rows=buildAuctionRows(players(),state.slots,state.auctionView);
+  return `<div class=eyebrow>Live auction board</div><h1>Asta</h1><p class="muted auction-intro">Slot e Tier seguono la Strategia d'Asta. Trascina una card per creare un ordine o un'assegnazione manuale solo in questa vista.</p><div class=auction-board>${rows.map(({slot,players:items})=>`<section class=auction-slot-row data-slot-id="${slot.id}"><header class=auction-slot-head><h2>${escapeHtml(slot.id)}</h2><span>${escapeHtml(slot.category)} · Tier ${state.slots.filter(item=>item.category===slot.category).indexOf(slot)+1} · ${items.length} giocatori</span></header><div class=auction-slot-track>${items.map(auctionCard).join('')}<div class=auction-empty>${items.length?'Trascina qui per aggiungere in coda':'Trascina qui un giocatore'}</div></div></section>`).join('')}</div>`;
+}
 const sortIndicator=key=>marketControls.sort?.key===key?(marketControls.sort.direction==='asc'?'↑':'↓'):'↕';
 const sortHeader=(key,label)=>`<button type=button class=sort-button data-sort="${key}">${label} <span aria-hidden=true>${sortIndicator(key)}</span></button>`;
 function playerTable(ps){const metrics=[['pg','PG','PG'],['mf','MF','MF'],['avgPg','AvgPG','AvgPG'],['avgMf','AvgMF','AvgMF'],['goLy','GoLY','GoLY'],['assLy','AssLY','AssLY'],['amm','Amm','Amm'],['esp','Esp','Esp'],['penalties','R','R'],['freeKicks','P','P']];return `<div class=market-table-wrap><table class=market-table><thead><tr><th>#</th><th>${sortHeader('name','Giocatore')}</th><th>${sortHeader('role','Ruolo')}</th><th>${sortHeader('tier','Tier')}</th><th>${sortHeader('auction','Asta €')}</th><th>${sortHeader('quotation','Quot.')}</th><th>${sortHeader('hype','Hype')}</th><th>${sortHeader('age','Età')}</th>${metrics.map(([key,label])=>`<th>${sortHeader(key,label)}</th>`).join('')}<th>${sortHeader('status','Status')}</th><th>Azioni</th></tr></thead><tbody>${ps.slice(0,180).map(p=>{let st=state.market[p.id]?.marketStatus||'AVAILABLE';return `<tr class=${st==='AVAILABLE'?'':'sold'}><td>${p.rankingPosition}</td><td><b>${p.name}</b><br><span class=muted>${p.team} ${p.cups?'· '+p.cups:''}</span></td><td>${p.roles}<br><span class=pill>${p.rankingCategory}</span></td><td>${p.tier??'—'}</td><td><b>${p.auctionValue}</b></td><td>${p.quotation}</td><td>${p.hypeFactor??'—'}</td><td>${p.age??'—'}</td>${metrics.map(([, ,field])=>`<td>${p[field]??0}</td>`).join('')}<td title="${escapeHtml(p.status)}">${p.status}</td><td><button class="action secondary" onclick="showProContro('${p.id}')">PRO/CONTRO</button>${st==='AVAILABLE'?`<button class="action secondary" onclick="sold('${p.id}')">SOLD</button><button class=action onclick="buy('${p.id}')">+MIA</button>`:st}</td></tr>`}).join('')}</tbody></table></div>`}
@@ -147,7 +160,26 @@ function initMarketFilters(){
   }
   bindTableControls();
 }
-function render(){document.querySelector('header i').textContent=state.started?'ASTA LIVE':'STRATEGIA';const warning=loadIssues.length?`<div class="notice load-warning" role="alert"><b>Dati caricati solo in parte.</b> ${loadIssues.join(' · ')}. Puoi comunque aprire l’app e riprovare aggiornando la pagina.</div>`:'';document.querySelector('#app').innerHTML=warning+({cockpit,market,strategy,quality})[view]();if(view==='quality')document.querySelector('#refreshInjuries').onclick=refreshInjuries;if(view==='strategy'){document.querySelector('#formation').onchange=event=>document.querySelector('#formationSummary').innerHTML=formationSummary(event.target.value);initBaselineEditor()}if(view==='market')initMarketFilters()}
+function initAuctionDragAndDrop(){
+  let draggedId='';
+  document.querySelectorAll('.auction-player-card').forEach(card=>{
+    card.addEventListener('dragstart',event=>{draggedId=card.dataset.playerId;card.classList.add('dragging');event.dataTransfer.effectAllowed='move';event.dataTransfer.setData('text/plain',draggedId)});
+    card.addEventListener('dragend',()=>{draggedId='';document.querySelectorAll('.dragging,.drop-target').forEach(item=>item.classList.remove('dragging','drop-target'))});
+  });
+  document.querySelectorAll('.auction-slot-track').forEach(track=>{
+    track.addEventListener('dragover',event=>{event.preventDefault();event.dataTransfer.dropEffect='move';document.querySelectorAll('.drop-target').forEach(item=>item.classList.remove('drop-target'));const target=event.target.closest('.auction-player-card');(target||track).classList.add('drop-target')});
+    track.addEventListener('dragleave',event=>{if(!track.contains(event.relatedTarget))track.classList.remove('drop-target')});
+    track.addEventListener('drop',event=>{
+      event.preventDefault();const playerId=draggedId||event.dataTransfer.getData('text/plain'),slotId=track.closest('[data-slot-id]').dataset.slotId;
+      const target=event.target.closest('.auction-player-card');let index=target?Number(target.dataset.index):track.querySelectorAll('.auction-player-card').length;
+      if(target&&event.clientX>target.getBoundingClientRect().left+target.getBoundingClientRect().width/2)index++;
+      const rows=buildAuctionRows(players(),state.slots,state.auctionView),source=rows.find(row=>row.players.some(player=>player.id===playerId));
+      const oldIndex=source?.players.findIndex(player=>player.id===playerId)??-1;if(source?.slot.id===slotId&&oldIndex<index)index--;
+      state.auctionView=moveAuctionPlayer(state.auctionView,playerId,slotId,index,rows);save();
+    });
+  });
+}
+function render(){document.querySelector('header i').textContent=state.started?'ASTA LIVE':'STRATEGIA';const warning=loadIssues.length?`<div class="notice load-warning" role="alert"><b>Dati caricati solo in parte.</b> ${loadIssues.join(' · ')}. Puoi comunque aprire l’app e riprovare aggiornando la pagina.</div>`:'';document.querySelector('#app').innerHTML=warning+({cockpit,auction,market,strategy,quality})[view]();if(view==='quality')document.querySelector('#refreshInjuries').onclick=refreshInjuries;if(view==='strategy'){document.querySelector('#formation').onchange=event=>document.querySelector('#formationSummary').innerHTML=formationSummary(event.target.value);initBaselineEditor()}if(view==='market')initMarketFilters();if(view==='auction')initAuctionDragAndDrop()}
 window.showProContro=id=>{const p=raw.find(x=>x.id===id);if(!p)return;const modal=document.createElement('div');modal.className='modal';modal.onclick=e=>{if(e.target===modal)modal.remove()};modal.innerHTML=`<section class=card><div class=section-head><h2>${escapeHtml(p.name)} · ${escapeHtml(p.team)}</h2><button class="action secondary" aria-label=Chiudi>×</button></div><h3>PRO</h3><p>${escapeHtml(p.pro||'Non disponibile')}</p><h3>CONTRO</h3><p>${escapeHtml(p.contro||'Non disponibile')}</p></section>`;modal.querySelector('button').onclick=()=>modal.remove();document.body.append(modal)};
 window.openPressureDetail=index=>{
   const group=pressureGroups[index],panel=document.querySelector('.pressure-detail');
