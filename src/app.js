@@ -42,7 +42,20 @@ if(!state.slots.length) state.slots=Object.entries(counts).filter(([c])=>c!=='OU
 state.slots=updateForecasts(state.slots);
 if(!Array.isArray(state.aliasConfiguration)||!CATEGORY_PRIORITY.every(alias=>state.aliasConfiguration.some(item=>item.alias===alias)))state.aliasConfiguration=defaultAliasConfiguration(raw);
 try{state.aliasConfiguration=validateAliasConfiguration(state.aliasConfiguration,mantraRoleOptions).configuration}catch{state.aliasConfiguration=defaultAliasConfiguration(raw)}
-state.slots=reconcileAliasSlots(state.slots,state.aliasConfiguration);
+// Alias names changed from the legacy DC/WA model to D/W/A.  A saved roster can
+// therefore contain completed slots whose old category no longer exists.  Never
+// let that client-side migration prevent the whole application from rendering.
+try{state.slots=reconcileAliasSlots(state.slots,state.aliasConfiguration)}catch(error){
+  const legacyAliases={DC:'D',WA:'W'};
+  state.slots=state.slots.map(slot=>{
+    if(CATEGORY_PRIORITY.includes(slot.category))return slot;
+    const player=raw.find(item=>item.id===slot.playerId);
+    const resolved=player?classifyPlayersByAliases([player],state.aliasConfiguration)[0]?.strategicAlias:null;
+    return {...slot,category:resolved&&resolved!=='OUT'?resolved:(legacyAliases[slot.category]??'W')};
+  });
+  state.slots=reconcileAliasSlots(state.slots,state.aliasConfiguration);
+  loadIssues.push('Configurazione precedente aggiornata ai nuovi Alias');
+}
 state.rosterSize=state.slots.length;
 function players(){const classified=classifyPlayersByAliases(raw,state.aliasConfiguration);return state.aliasConfiguration.flatMap(({alias})=>{const ranked=rankPlayers(classified.filter(player=>player.strategicAlias===alias));return alias==='OUT'?ranked.map(player=>({...player,tier:1})):assignTiers(ranked,state.slots.filter(slot=>slot.category===alias).length)});}
 const save=()=>{localStorage.setItem('mantra-auction',JSON.stringify(state));render()};let view='cockpit';
