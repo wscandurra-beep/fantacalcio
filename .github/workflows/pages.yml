@@ -40,7 +40,7 @@ jobs:
           mkdir -p _site/src _site/data
           cp index.html _site/
           cp src/*.js src/*.css _site/src/
-          cp data/players.json data/infortuni.json data/infortuni_update.json _site/data/
+          cp data/players.json data/infortuni.json data/infortuni_update.json data/pro_contro.json data/pro_contro_runs.json _site/data/
           python3 - <<'PY'
           import json
           from pathlib import Path

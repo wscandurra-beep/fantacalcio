@@ -21,6 +21,7 @@ ROOT = Path(__file__).resolve().parents[1]
 PLAYERS_PATH = ROOT / "data" / "players.json"
 JSON_OUT = ROOT / "data" / "pro_contro.json"
 CSV_OUT = ROOT / "data" / "pro_contro.csv"
+REPORT_OUT = ROOT / "data" / "pro_contro_runs.json"
 BASE = "https://www.fantacalcio.it/serie-a/squadre/{team}/{player}/{id}"
 USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -206,6 +207,66 @@ def write_outputs(rows: list[dict]) -> None:
         writer.writerows({k: row.get(k) for k in fields} for row in rows)
 
 
+def normalize_name(value: str) -> str:
+    """Build a conservative Unicode/punctuation-insensitive identity key."""
+    value = unicodedata.normalize("NFKD", value or "")
+    value = "".join(c for c in value if not unicodedata.combining(c)).casefold()
+    return " ".join(re.findall(r"[a-z0-9]+", value))
+
+
+def match_rows(rows: list[dict], players: list[dict]) -> tuple[list[dict], list[dict], list[dict]]:
+    by_id = {str(player["id"]): player for player in players}
+    by_identity: dict[tuple[str, str], list[dict]] = {}
+    for player in players:
+        key = (normalize_name(player.get("name", "")), normalize_name(player.get("team", "")))
+        by_identity.setdefault(key, []).append(player)
+    matched, unmatched, ambiguous = [], [], []
+    for row in rows:
+        if not (row.get("pro") or row.get("contro")):
+            continue
+        pid = str(row.get("id"))
+        candidates = [by_id[pid]] if pid in by_id else by_identity.get(
+            (normalize_name(row.get("name", "")), normalize_name(row.get("team", ""))), [])
+        item = {"id": row.get("id"), "name": row.get("name"), "team": row.get("team")}
+        if len(candidates) == 1:
+            matched.append({**item, "playerId": candidates[0]["id"]})
+        elif not candidates:
+            unmatched.append(item)
+        else:
+            ambiguous.append({**item, "candidateIds": [candidate["id"] for candidate in candidates]})
+    return matched, unmatched, ambiguous
+
+
+def make_report(rows: list[dict], players: list[dict], *, timestamp: str, run_id: str,
+                processed: int, successful: int, failed: int, errors: list[dict], status: str) -> dict:
+    matched, unmatched, ambiguous = match_rows(rows, players)
+    ids = [str(row.get("id")) for row in rows if row.get("id") is not None]
+    both = sum(bool(row.get("pro")) and bool(row.get("contro")) for row in rows)
+    source_players = len(players)
+    return {
+        "runTimestamp": timestamp, "runId": run_id, "status": status,
+        "sourcePlayers": source_players, "playersDiscovered": source_players,
+        "playersProcessed": processed, "requestsSuccessful": successful,
+        "requestsFailed": failed, "scrapedRecords": both,
+        "withPro": sum(bool(row.get("pro")) for row in rows),
+        "withContro": sum(bool(row.get("contro")) for row in rows), "withBoth": both,
+        "withoutBoth": sum(not row.get("pro") and not row.get("contro") for row in rows),
+        "matched": len(matched), "unmatched": len(unmatched), "ambiguous": len(ambiguous),
+        "duplicates": len(ids) - len(set(ids)),
+        "coveragePct": round(100 * both / source_players, 2) if source_players else 0,
+        "errors": errors[:100], "unmatchedRecords": unmatched, "ambiguousRecords": ambiguous,
+    }
+
+
+def append_report(report: dict) -> None:
+    try:
+        payload = json.loads(REPORT_OUT.read_text(encoding="utf-8")) if REPORT_OUT.exists() else {"runs": []}
+    except (OSError, ValueError):
+        payload = {"runs": []}
+    runs = payload.get("runs", []) if isinstance(payload, dict) else []
+    REPORT_OUT.write_text(json.dumps({"runs": [report, *runs][:50]}, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--delay", type=float, default=1.25)
@@ -214,6 +275,9 @@ def main() -> int:
     ap.add_argument("--retries", type=int, default=2)
     ap.add_argument("--limit", type=int, default=0, help="0 = all players")
     ap.add_argument("--force", action="store_true")
+    ap.add_argument("--min-records", type=int, default=450)
+    ap.add_argument("--min-coverage", type=float, default=85.0)
+    ap.add_argument("--analyze-existing", action="store_true")
     args = ap.parse_args()
 
     players = json.loads(PLAYERS_PATH.read_text(encoding="utf-8"))
@@ -221,8 +285,19 @@ def main() -> int:
         players = players[: args.limit]
 
     existing = load_existing()
+    started = datetime.now(timezone.utc).isoformat()
+    run_id = __import__("os").environ.get("GITHUB_RUN_ID", f"local-{int(time.time())}")
+    if args.analyze_existing:
+        ordered = [existing[str(p["id"])] for p in players if str(p["id"]) in existing]
+        report = make_report(ordered, players, timestamp=started, run_id=run_id, processed=0,
+                             successful=0, failed=0, errors=[], status="analysis")
+        append_report(report)
+        print(json.dumps(report, ensure_ascii=False, indent=2))
+        return 0
     results: dict[str, dict] = existing.copy()
     total = len(players)
+    processed = successful = failed = 0
+    errors_detail: list[dict] = []
 
     for idx, player in enumerate(players, 1):
         pid = str(player["id"])
@@ -232,6 +307,7 @@ def main() -> int:
             continue
 
         url = player_url(player)
+        processed += 1
         row = {
             "id": player["id"], "name": player.get("name"), "team": player.get("team"),
             "url": url, "pro": None, "contro": None, "status": "error", "error": None,
@@ -239,6 +315,7 @@ def main() -> int:
         }
         try:
             raw = fetch(url, args.timeout, args.retries)
+            successful += 1
             pro, contro = extract_pro_contro(raw, player.get("team", ""))
             row["pro"], row["contro"] = pro, contro
             if pro and contro:
@@ -249,22 +326,35 @@ def main() -> int:
                 row["error"] = "PRO/CONTRO not found; " + diagnostic(raw)
                 print(f"[{idx}/{total}] {player['name']}: MISSING · {diagnostic(raw)}")
         except Exception as exc:
+            failed += 1
             row["error"] = str(exc)
             print(f"[{idx}/{total}] {player['name']}: ERROR {exc}")
 
         results[pid] = row
-        ordered = [results[str(p["id"])] for p in players if str(p["id"]) in results]
-        write_outputs(ordered)
+        if row.get("error"):
+            errors_detail.append({"id": row["id"], "name": row["name"], "url": url, "error": row["error"]})
         if idx < total:
             time.sleep(max(0.0, args.delay) + random.uniform(0, max(0.0, args.jitter)))
 
     ordered = [results[str(p["id"])] for p in players if str(p["id"]) in results]
-    write_outputs(ordered)
     ok = sum(r.get("status") == "ok" for r in ordered)
     missing = sum(r.get("status") == "missing" for r in ordered)
     errors = sum(r.get("status") == "error" for r in ordered)
-    print(f"Done: {ok} OK, {missing} missing, {errors} errors, {len(ordered)} total")
-    return 0 if errors == 0 else 1
+    report = make_report(ordered, players, timestamp=started, run_id=run_id, processed=processed,
+                         successful=successful, failed=failed, errors=errors_detail, status="success")
+    incomplete = report["scrapedRecords"] < args.min_records or report["coveragePct"] < args.min_coverage
+    if incomplete or errors:
+        report["status"] = "failed_validation"
+        reason = (f"Sanity check failed: {report['scrapedRecords']} records, {report['coveragePct']}% coverage; "
+                  f"required >= {args.min_records} and >= {args.min_coverage}%")
+        report["errors"].insert(0, {"error": reason})
+        append_report(report)
+        print(f"FAILED: refusing to replace valid dataset ({reason})")
+        return 1
+    write_outputs(ordered)
+    append_report(report)
+    print(f"Done: {ok} OK, {missing} missing, {errors} errors, {len(ordered)} total; coverage {report['coveragePct']}%")
+    return 0
 
 
 if __name__ == "__main__":
