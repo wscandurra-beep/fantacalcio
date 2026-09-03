@@ -1,6 +1,6 @@
 import test from 'node:test';import assert from 'node:assert/strict';import {assignRankingCategory,rankPlayers,assignTiers,budgetSummary,slotPlanSummary,statusFor,availablePlayers,getForecast,updateForecasts,updateSlotStrategy,percentageOfBudget,formatPercentage,areaVariance,totalCompletedVariance,slotCountsFromSlots,validateSlotCounts,reconcileSlotCounts,normalizeMantraRoles,mantraRoleDepletion,tierDepletion,groupSlotsByCategory,availableMantraRoles,defaultAliasConfiguration,validateAliasConfiguration,aliasForMantraRole,classifyPlayersByAliases,reconcileAliasSlots} from '../src/domain.js';
 test('role category priority',()=>{assert.equal(assignRankingCategory('Ds;Dc'),'DC');assert.equal(assignRankingCategory('Dd;Dc'),'DC');assert.equal(assignRankingCategory('Dc;E'),'E');assert.equal(assignRankingCategory('W;A'),'WA');assert.equal(assignRankingCategory('Por'),'POR')});
-test('slot groups follow strategy order and retain configured extra categories',()=>{const groups=groupSlotsByCategory([{id:'1',category:'PC'},{id:'2',category:'DC'},{id:'3',category:'M'},{id:'4',category:'DC'}]);assert.deepEqual(groups.map(group=>[group.category,group.slots.map(slot=>slot.id)]),[['DC',['2','4']],['PC',['1']],['M',['3']]])});
+test('slot groups follow strategy order and retain configured extra categories',()=>{const groups=groupSlotsByCategory([{id:'1',category:'PC'},{id:'2',category:'DC'},{id:'3',category:'M'},{id:'4',category:'DC'}]);assert.deepEqual(groups.map(group=>[group.category,group.slots.map(slot=>slot.id)]),[['PC',['1']],['DC',['2','4']],['M',['3']]])});
 test('ranking uses auction value then quotation',()=>{const r=rankPlayers([{id:'a',name:'a',auctionValue:20,quotation:4},{id:'b',name:'b',auctionValue:20,quotation:7},{id:'c',name:'c',auctionValue:30,quotation:1}]);assert.deepEqual(r.map(x=>x.id),['c','b','a'])});
 test('tiers assign all and balance remainder',()=>{assert.deepEqual(assignTiers(Array.from({length:250},(_,i)=>({id:i})),10).reduce((a,p)=>(a[p.tier]=(a[p.tier]||0)+1,a),{}),Object.fromEntries(Array.from({length:10},(_,i)=>[i+1,25])));const r=assignTiers(Array.from({length:253},(_,i)=>({id:i})),10);assert.equal(r.length,253);assert.deepEqual([...new Set(r.map(x=>x.tier))].map(t=>r.filter(x=>x.tier===t).length),[26,26,26,25,25,25,25,25,25,25])});
 test('budget purchase',()=>assert.equal(budgetSummary(1000,[{actualPurchasePrice:220,currentForecastBudget:220,playerId:'1'}]).remaining,780));
@@ -74,61 +74,61 @@ test('total forecast mixes Actual for completed slots and Baseline for open slot
 });
 
 test('slot counts derive from persisted strategy and validate league constraints',()=>{
-  const slots=[{category:'POR'},{category:'POR'},{category:'POR'},{category:'DC'},{category:'WA'}];
-  assert.deepEqual(slotCountsFromSlots(slots),{POR:3,DC:1,E:0,C:0,WA:1,PC:0});
-  assert.deepEqual(validateSlotCounts({POR:3,DC:8,E:6,C:5,WA:9,PC:3}),{counts:{POR:3,DC:8,E:6,C:5,WA:9,PC:3},total:34});
-  assert.throws(()=>validateSlotCounts({POR:2,DC:8,E:6,C:5,WA:9,PC:3}),/esattamente 3/);
-  assert.throws(()=>validateSlotCounts({POR:3,DC:9,E:6,C:5,WA:9,PC:3}),/da 3 a 34/);
-  assert.throws(()=>validateSlotCounts({POR:3,DC:1.5,E:0,C:0,WA:0,PC:0}),/non valido/);
+  const slots=[{category:'POR'},{category:'POR'},{category:'POR'},{category:'D'},{category:'W'}];
+  assert.deepEqual(slotCountsFromSlots(slots),{POR:3,D:1,E:0,C:0,W:1,A:0,PC:0,OUT:0});
+  assert.deepEqual(validateSlotCounts({POR:3,D:8,E:6,C:5,W:9,PC:3}),{counts:{POR:3,D:8,E:6,C:5,W:9,A:0,PC:3,OUT:0},total:34});
+  assert.throws(()=>validateSlotCounts({POR:2,D:8,E:6,C:5,W:9,PC:3}),/esattamente 3/);
+  assert.throws(()=>validateSlotCounts({POR:3,D:9,E:6,C:5,W:9,PC:3}),/da 3 a 34/);
+  assert.throws(()=>validateSlotCounts({POR:3,D:1.5,E:0,C:0,W:0,PC:0}),/non valido/);
 });
 
 test('slot count increase creates deterministic empty zero-baseline slots',()=>{
   const slots=[
     {id:'POR1',category:'POR',originalPlannedBudget:10},{id:'POR2',category:'POR',originalPlannedBudget:5},{id:'POR3',category:'POR',originalPlannedBudget:1},
-    {id:'DC1',category:'DC',originalPlannedBudget:20}
+    {id:'D1',category:'D',originalPlannedBudget:20}
   ];
-  const updated=reconcileSlotCounts(slots,{POR:3,DC:3,E:0,C:0,WA:0,PC:0});
+  const updated=reconcileSlotCounts(slots,{POR:3,D:3,E:0,C:0,W:0,PC:0});
   assert.equal(updated.length,6);
-  assert.deepEqual(updated.filter(x=>x.category==='DC').map(x=>[x.id,x.originalPlannedBudget,x.playerId,x.actualPurchasePrice]),[
-    ['DC1',20,undefined,undefined],['DC2',0,null,null],['DC3',0,null,null]
+  assert.deepEqual(updated.filter(x=>x.category==='D').map(x=>[x.id,x.originalPlannedBudget,x.playerId,x.actualPurchasePrice]),[
+    ['D1',20,undefined,undefined],['D2',0,null,null],['D3',0,null,null]
   ]);
 });
 
 test('slot count decrease removes only open slots and preserves completed purchases',()=>{
   const slots=[
     {id:'POR1',category:'POR'},{id:'POR2',category:'POR'},{id:'POR3',category:'POR'},
-    {id:'DC1',category:'DC',playerId:'p1',actualPurchasePrice:30,originalPlannedBudget:20},
-    {id:'DC2',category:'DC',playerId:null,actualPurchasePrice:null,originalPlannedBudget:10},
-    {id:'DC3',category:'DC',playerId:null,actualPurchasePrice:null,originalPlannedBudget:5}
+    {id:'D1',category:'D',playerId:'p1',actualPurchasePrice:30,originalPlannedBudget:20},
+    {id:'D2',category:'D',playerId:null,actualPurchasePrice:null,originalPlannedBudget:10},
+    {id:'D3',category:'D',playerId:null,actualPurchasePrice:null,originalPlannedBudget:5}
   ];
-  const updated=reconcileSlotCounts(slots,{POR:3,DC:2,E:0,C:0,WA:0,PC:0});
-  assert.deepEqual(updated.filter(x=>x.category==='DC').map(x=>x.id),['DC1','DC2']);
-  assert.equal(updated.find(x=>x.id==='DC1').playerId,'p1');
-  assert.throws(()=>reconcileSlotCounts(slots,{POR:3,DC:0,E:0,C:0,WA:0,PC:0}),/già acquistati/);
+  const updated=reconcileSlotCounts(slots,{POR:3,D:2,E:0,C:0,W:0,A:0,PC:0,OUT:0});
+  assert.deepEqual(updated.filter(x=>x.category==='D').map(x=>x.id),['D1','D2']);
+  assert.equal(updated.find(x=>x.id==='D1').playerId,'p1');
+  assert.throws(()=>reconcileSlotCounts(slots,{POR:3,D:0,E:0,C:0,W:0,PC:0}),/già acquistati/);
 });
 
 test('slot count roundtrip remains compatible with totals and derived forecast',()=>{
   const slots=[
     {id:'POR1',category:'POR',originalPlannedBudget:10},{id:'POR2',category:'POR',originalPlannedBudget:5},{id:'POR3',category:'POR',originalPlannedBudget:1},
-    {id:'DC1',category:'DC',originalPlannedBudget:20,playerId:'p1',actualPurchasePrice:30}
+    {id:'D1',category:'D',originalPlannedBudget:20,playerId:'p1',actualPurchasePrice:30}
   ];
-  const updated=JSON.parse(JSON.stringify(reconcileSlotCounts(slots,{POR:3,DC:2,E:0,C:0,WA:0,PC:0})));
-  assert.deepEqual(slotCountsFromSlots(updated),{POR:3,DC:2,E:0,C:0,WA:0,PC:0});
+  const updated=JSON.parse(JSON.stringify(reconcileSlotCounts(slots,{POR:3,D:2,E:0,C:0,W:0,A:0,PC:0,OUT:0})));
+  assert.deepEqual(slotCountsFromSlots(updated),{POR:3,D:2,E:0,C:0,W:0,A:0,PC:0,OUT:0});
   assert.deepEqual(slotPlanSummary(updated,100),{slotCount:5,roleCount:5,planned:36,forecast:46,actual:30,completedVariance:10,baselinePct:36,forecastPct:46});
 });
 
-test('Alias configuration derives exact Mantra combinations and preserves legacy defaults',()=>{
+test('Alias configuration provides the exact strategic board defaults',()=>{
   const players=[{roles:'Por'},{roles:'Dc'},{roles:'Dd;Dc'},{roles:'W;A'},{roles:'Pc'}],configuration=defaultAliasConfiguration(players);
   assert.deepEqual(availableMantraRoles(players),['Dc','Dd;Dc','Pc','Por','W;A']);
-  assert.deepEqual(configuration.find(item=>item.alias==='DC').mantraRoles,['Dc','Dd;Dc']);
-  assert.equal(aliasForMantraRole('W;A',configuration),'WA');
-  assert.equal(classifyPlayersByAliases(players,configuration)[2].strategicAlias,'DC');
+  assert.deepEqual(configuration.find(item=>item.alias==='D').mantraRoles.includes('Dd;Dc'),true);
+  assert.equal(aliasForMantraRole('W;A',configuration),'W');
+  assert.equal(classifyPlayersByAliases(players,configuration)[2].strategicAlias,'D');
 });
 test('Alias validation keeps POR fixed, rejects ambiguity and caps the roster',()=>{
   const valid=[{alias:'POR',slotCount:3,mantraRoles:['Por']},{alias:'D',slotCount:8,mantraRoles:['Dc','Dd;Dc']}];
   assert.equal(validateAliasConfiguration(valid,['Por','Dc','Dd;Dc']).total,11);
   assert.throws(()=>validateAliasConfiguration([{alias:'POR',slotCount:2,mantraRoles:['Por']}],['Por']),/POR deve essere fisso/);
-  assert.throws(()=>validateAliasConfiguration([...valid,{alias:'X',slotCount:1,mantraRoles:['Dc']}],['Por','Dc','Dd;Dc']),/già assegnato a D/);
+  assert.throws(()=>validateAliasConfiguration([...valid,{alias:'E',slotCount:1,mantraRoles:['Dc']}],['Por','Dc','Dd;Dc']),/già assegnato a D/);
   assert.throws(()=>validateAliasConfiguration([{alias:'POR',slotCount:3,mantraRoles:['Por']},{alias:'D',slotCount:32,mantraRoles:['Dc']}],['Por','Dc']),/da 3 a 34/);
 });
 test('Alias slots use configurable names and protect completed purchases',()=>{
