@@ -1,6 +1,216 @@
 {
   "runs": [
     {
+      "runTimestamp": "2026-09-03T23:46:27.864524+00:00",
+      "runId": "33819022246",
+      "status": "success",
+      "sourcePlayers": 531,
+      "playersDiscovered": 531,
+      "playersProcessed": 531,
+      "requestsSuccessful": 531,
+      "requestsFailed": 0,
+      "scrapedRecords": 500,
+      "withPro": 500,
+      "withContro": 500,
+      "withBoth": 500,
+      "withoutBoth": 31,
+      "matched": 500,
+      "unmatched": 0,
+      "ambiguous": 0,
+      "duplicates": 0,
+      "coveragePct": 94.16,
+      "errors": [
+        {
+          "id": "6534",
+          "name": "Perri",
+          "url": "https://www.fantacalcio.it/serie-a/squadre/torino/perri/6534",
+          "error": "PRO/CONTRO not found; bytes=53854 title='Lucas Perri - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False"
+        },
+        {
+          "id": "6344",
+          "name": "Sanchez Ro.",
+          "url": "https://www.fantacalcio.it/serie-a/squadre/como/sanchez-ro/6344",
+          "error": "PRO/CONTRO not found; bytes=53953 title='Robert Sanchez - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False"
+        },
+        {
+          "id": "2874",
+          "name": "Ghidotti",
+          "url": "https://www.fantacalcio.it/serie-a/squadre/parma/ghidotti/2874",
+          "error": "PRO/CONTRO not found; bytes=53565 title='Simone Ghidotti - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False"
+        },
+        {
+          "id": "7626",
+          "name": "Pompei",
+          "url": "https://www.fantacalcio.it/serie-a/squadre/atalanta/pompei/7626",
+          "error": "PRO/CONTRO not found; bytes=53585 title='Thomas Pompei - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False"
+        },
+        {
+          "id": "5675",
+          "name": "Theate",
+          "url": "https://www.fantacalcio.it/serie-a/squadre/bologna/theate/5675",
+          "error": "PRO/CONTRO not found; bytes=54041 title='Arthur Theate - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False"
+        },
+        {
+          "id": "4137",
+          "name": "Diego Carlos",
+          "url": "https://www.fantacalcio.it/serie-a/squadre/parma/diego-carlos/4137",
+          "error": "PRO/CONTRO not found; bytes=228048 title='Diego Carlos - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False"
+        },
+        {
+          "id": "7220",
+          "name": "Belghali",
+          "url": "https://www.fantacalcio.it/serie-a/squadre/torino/belghali/7220",
+          "error": "PRO/CONTRO not found; bytes=231194 title='Rafik Belghali - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False"
+        },
+        {
+          "id": "4147",
+          "name": "Caleta-Car",
+          "url": "https://www.fantacalcio.it/serie-a/squadre/sassuolo/caleta-car/4147",
+          "error": "PRO/CONTRO not found; bytes=53956 title='Caleta-Car Duje - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False"
+        },
+        {
+          "id": "7621",
+          "name": "Sugawara",
+          "url": "https://www.fantacalcio.it/serie-a/squadre/cagliari/sugawara/7621",
+          "error": "PRO/CONTRO not found; bytes=54073 title='Yukinari Sugawara - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False"
+        },
+        {
+          "id": "5751",
+          "name": "Patterson",
+          "url": "https://www.fantacalcio.it/serie-a/squadre/torino/patterson/5751",
+          "error": "PRO/CONTRO not found; bytes=54013 title='Nathan Patterson - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False"
+        },
+        {
+          "id": "256",
+          "name": "Juan Jesus",
+          "url": "https://www.fantacalcio.it/serie-a/squadre/venezia/juan-jesus/256",
+          "error": "PRO/CONTRO not found; bytes=226764 title='Juan Jesus - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False"
+        },
+        {
+          "id": "5742",
+          "name": "Drameh",
+          "url": "https://www.fantacalcio.it/serie-a/squadre/genoa/drameh/5742",
+          "error": "PRO/CONTRO not found; bytes=54066 title='Cody Drameh - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False"
+        },
+        {
+          "id": "6537",
+          "name": "Goglichidze",
+          "url": "https://www.fantacalcio.it/serie-a/squadre/monza/goglichidze/6537",
+          "error": "PRO/CONTRO not found; bytes=224416 title='Saba Goglichidze - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False"
+        },
+        {
+          "id": "6826",
+          "name": "Dembelè A.",
+          "url": "https://www.fantacalcio.it/serie-a/squadre/lecce/dembele-a/6826",
+          "error": "PRO/CONTRO not found; bytes=221773 title='Ali Dembelè - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False"
+        },
+        {
+          "id": "1850",
+          "name": "Kessiè",
+          "url": "https://www.fantacalcio.it/serie-a/squadre/atalanta/kessie/1850",
+          "error": "PRO/CONTRO not found; bytes=54069 title='Franck Kessiè - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False"
+        },
+        {
+          "id": "7625",
+          "name": "Goncalves P.",
+          "url": "https://www.fantacalcio.it/serie-a/squadre/fiorentina/goncalves-p/7625",
+          "error": "PRO/CONTRO not found; bytes=53883 title='Goncalves \"Pote\" Pedro - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False"
+        },
+        {
+          "id": "7618",
+          "name": "Hutchinson",
+          "url": "https://www.fantacalcio.it/serie-a/squadre/milan/hutchinson/7618",
+          "error": "PRO/CONTRO not found; bytes=54081 title='Omari Hutchinson - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False"
+        },
+        {
+          "id": "6833",
+          "name": "Mbangula",
+          "url": "https://www.fantacalcio.it/serie-a/squadre/bologna/mbangula/6833",
+          "error": "PRO/CONTRO not found; bytes=54248 title='Samuel Mbangula - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False"
+        },
+        {
+          "id": "7619",
+          "name": "Monteiro J.",
+          "url": "https://www.fantacalcio.it/serie-a/squadre/lecce/monteiro-j/7619",
+          "error": "PRO/CONTRO not found; bytes=54045 title='Joel Monteiro - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False"
+        },
+        {
+          "id": "5680",
+          "name": "Sarr P.",
+          "url": "https://www.fantacalcio.it/serie-a/squadre/juventus/sarr-p/5680",
+          "error": "PRO/CONTRO not found; bytes=54079 title='Pape Matar Sarr - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False"
+        },
+        {
+          "id": "7624",
+          "name": "Braganca",
+          "url": "https://www.fantacalcio.it/serie-a/squadre/torino/braganca/7624",
+          "error": "PRO/CONTRO not found; bytes=53999 title='Daniel Braganca - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False"
+        },
+        {
+          "id": "7579",
+          "name": "Massolin",
+          "url": "https://www.fantacalcio.it/serie-a/squadre/cagliari/massolin/7579",
+          "error": "PRO/CONTRO not found; bytes=54060 title='Yanis Massolin - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False"
+        },
+        {
+          "id": "801",
+          "name": "Gagliardini",
+          "url": "https://www.fantacalcio.it/serie-a/squadre/cagliari/gagliardini/801",
+          "error": "PRO/CONTRO not found; bytes=230148 title='Roberto Gagliardini - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False"
+        },
+        {
+          "id": "7232",
+          "name": "Fernandez T.",
+          "url": "https://www.fantacalcio.it/serie-a/squadre/venezia/fernandez-t/7232",
+          "error": "PRO/CONTRO not found; bytes=54081 title='Toni Fernandez - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False"
+        },
+        {
+          "id": "7092",
+          "name": "Jovanovic",
+          "url": "https://www.fantacalcio.it/serie-a/squadre/udinese/jovanovic/7092",
+          "error": "PRO/CONTRO not found; bytes=54028 title='Lazar Jovanovic - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False"
+        },
+        {
+          "id": "6752",
+          "name": "Woltemade",
+          "url": "https://www.fantacalcio.it/serie-a/squadre/juventus/woltemade/6752",
+          "error": "PRO/CONTRO not found; bytes=54010 title='Nick Woltemade - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False"
+        },
+        {
+          "id": "5694",
+          "name": "Beto",
+          "url": "https://www.fantacalcio.it/serie-a/squadre/fiorentina/beto/5694",
+          "error": "PRO/CONTRO not found; bytes=54285 title='Beto - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False"
+        },
+        {
+          "id": "7623",
+          "name": "Gnonto",
+          "url": "https://www.fantacalcio.it/serie-a/squadre/fiorentina/gnonto/7623",
+          "error": "PRO/CONTRO not found; bytes=54178 title='Wilfried Gnonto - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False"
+        },
+        {
+          "id": "7620",
+          "name": "Zeballos",
+          "url": "https://www.fantacalcio.it/serie-a/squadre/monza/zeballos/7620",
+          "error": "PRO/CONTRO not found; bytes=53968 title='Exequiel Zeballos - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False"
+        },
+        {
+          "id": "5336",
+          "name": "Nzola",
+          "url": "https://www.fantacalcio.it/serie-a/squadre/cagliari/nzola/5336",
+          "error": "PRO/CONTRO not found; bytes=233675 title=\"M'Bala Nzola - Profilo calciatore 2025/26 | Fantacalcio\" hasDescrizione=False"
+        },
+        {
+          "id": "7622",
+          "name": "Robinho Junior",
+          "url": "https://www.fantacalcio.it/serie-a/squadre/genoa/robinho-junior/7622",
+          "error": "PRO/CONTRO not found; bytes=53963 title='Robinho Junior - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False"
+        }
+      ],
+      "unmatchedRecords": [],
+      "ambiguousRecords": []
+    },
+    {
       "runTimestamp": "2026-09-03T07:26:06.050229+00:00",
       "runId": "local-1788420366",
       "status": "analysis",

@@ -8,7 +8,7 @@
     "contro": "In questo caso ovviamente occhio al prezzo, specialmente dopo la scorsa stagione il costo potrebbe essere davvero altissimo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T21:31:35.974996+00:00"
+    "fetchedAt": "2026-09-03T23:46:27.868786+00:00"
   },
   {
     "id": "4431",
@@ -19,7 +19,7 @@
     "contro": "Con Sarri si cambierà filosofia e anche assetto, soprattutto la difesa potrebbe risentirne inizialmente concedendo qualche gol in più rispetto al solito. Occhio alla costruzione dal basso, non è proprio il suo forte.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T21:31:40.873489+00:00"
+    "fetchedAt": "2026-09-03T23:46:30.219301+00:00"
   },
   {
     "id": "5116",
@@ -30,7 +30,7 @@
     "contro": "Al primo anno da protagonista in una big di questo livello, mentalmente potrebbe anche accusare il colpo. Inoltre occhio a Provedel, la sua concorrenza resta fastidiosa.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T21:31:38.281339+00:00"
+    "fetchedAt": "2026-09-03T23:46:32.267016+00:00"
   },
   {
     "id": "4964",
@@ -41,7 +41,7 @@
     "contro": "Il prezzo non sarà basso, anzi. State attenti e monitorate sempre l'FVM indicato per non esagerare.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T21:31:45.914769+00:00"
+    "fetchedAt": "2026-09-03T23:46:34.318316+00:00"
   },
   {
     "id": "6966",
@@ -49,10 +49,10 @@
     "team": "Como",
     "url": "https://www.fantacalcio.it/serie-a/squadre/como/butez/6966",
     "pro": "Portiere di una big, affidabile sia per titolarità che per MV. Inoltre, rispetto ad altri, garantisce un ottimo rapporto qualità-prezzo. Non ha ballottaggi.",
-    "contro": "Sicuramente un profilo migliore in termini di clean sheet piuttosto che per il modificatore difesa.",
+    "contro": "Sicuramente un profilo migliore in termini di clean sheet piuttosto che per il modificatore difesa. Occhio alla concorrenza di Sanchez.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T21:31:43.251357+00:00"
+    "fetchedAt": "2026-09-03T23:46:36.616745+00:00"
   },
   {
     "id": "4312",
@@ -63,7 +63,7 @@
     "contro": "Il prezzo non sarà basso, meglio seguire l'FVM per evitare di esagerare. Ha dei momenti no, occhio anche a qualche acciacco fisico di troppo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T21:31:48.035615+00:00"
+    "fetchedAt": "2026-09-03T23:46:38.392347+00:00"
   },
   {
     "id": "2521",
@@ -74,7 +74,7 @@
     "contro": "L'età avanza, gli errori aumentano, sicuramente più altalenante del solito. Non un top, senza dubbi.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T21:31:49.817766+00:00"
+    "fetchedAt": "2026-09-03T23:46:39.977811+00:00"
   },
   {
     "id": "572",
@@ -85,7 +85,7 @@
     "contro": "La concorrenza di Milinkovic Savic resta parecchio fastidiosa. Incline a qualche problemino fisico di troppo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T21:31:52.140937+00:00"
+    "fetchedAt": "2026-09-03T23:46:42.483432+00:00"
   },
   {
     "id": "133",
@@ -96,7 +96,7 @@
     "contro": "Anche con il nuovo allenatore la filosofia resta offensiva e propositiva. Dunque, i gol subiti potrebbero non mancare, in termini di clean sheet non è proprio uno dei migliori.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T21:31:54.357465+00:00"
+    "fetchedAt": "2026-09-03T23:46:44.463299+00:00"
   },
   {
     "id": "4360",
@@ -107,7 +107,7 @@
     "contro": "Appetibile per il modificatore, decisamente meno in termini di clean sheet. I gol subiti non mancheranno.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T21:31:56.637753+00:00"
+    "fetchedAt": "2026-09-03T23:46:46.518823+00:00"
   },
   {
     "id": "6482",
@@ -118,7 +118,7 @@
     "contro": "Avanti si, ma ovviamente il ballottaggio con Motta resta fastidioso. La coppia sembra quasi obbligatoria e nel complesso potrebbe non costare tantissimo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:06:36.672162+00:00"
+    "fetchedAt": "2026-09-03T23:46:48.137446+00:00"
   },
   {
     "id": "6462",
@@ -129,7 +129,7 @@
     "contro": "Altalenante, sia in chiave modificatore che in termini di clean sheet.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:06:42.928965+00:00"
+    "fetchedAt": "2026-09-03T23:46:50.160998+00:00"
   },
   {
     "id": "6534",
@@ -139,8 +139,8 @@
     "pro": null,
     "contro": null,
     "status": "missing",
-    "error": "PRO/CONTRO not found; bytes=53852 title='Lucas Perri - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False",
-    "fetchedAt": "2026-09-02T22:19:47.424794+00:00"
+    "error": "PRO/CONTRO not found; bytes=53854 title='Lucas Perri - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False",
+    "fetchedAt": "2026-09-03T23:46:52.429507+00:00"
   },
   {
     "id": "7332",
@@ -151,7 +151,7 @@
     "contro": "Non offre grandissime garanzie sia in termini di clean sheet che per il modificatore. Sarà sempre da alternare in base al calendario.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:06:47.812830+00:00"
+    "fetchedAt": "2026-09-03T23:46:54.139287+00:00"
   },
   {
     "id": "2134",
@@ -162,7 +162,7 @@
     "contro": "Se in chiave modificatore è uno dei migliori, il discorso cambia se utilizzate solo il clean sheet, in tal caso il valore cala di parecchio. I gol subiti non saranno pochi.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:06:39.661651+00:00"
+    "fetchedAt": "2026-09-03T23:46:55.894871+00:00"
   },
   {
     "id": "6344",
@@ -173,7 +173,7 @@
     "contro": null,
     "status": "missing",
     "error": "PRO/CONTRO not found; bytes=53953 title='Robert Sanchez - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False",
-    "fetchedAt": "2026-09-02T22:19:49.879271+00:00"
+    "fetchedAt": "2026-09-03T23:46:57.510056+00:00"
   },
   {
     "id": "4236",
@@ -184,7 +184,7 @@
     "contro": "Sempre occhio alle sirene di mercato e alla concorrenza di Turati.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:06:51.968738+00:00"
+    "fetchedAt": "2026-09-03T23:46:59.471042+00:00"
   },
   {
     "id": "7411",
@@ -195,7 +195,7 @@
     "contro": "La concorrenza non manca, al primo anno da protagonista in Serie A va incontro comunque a possibili diverse difficoltà.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:06:50.260789+00:00"
+    "fetchedAt": "2026-09-03T23:47:01.220715+00:00"
   },
   {
     "id": "6248",
@@ -206,7 +206,7 @@
     "contro": "Non una sicurezza in termini di clean sheet, sarà da alternare sempre e comunque in base al calendario e agli avversari.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:06:53.752060+00:00"
+    "fetchedAt": "2026-09-03T23:47:03.517483+00:00"
   },
   {
     "id": "6415",
@@ -217,7 +217,7 @@
     "contro": "Con l’arrivo di Desplanches la titolarità è tutt’altro che certa, anzi. E’ praticamente obbligatorio prenderli in coppia.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:06:55.966419+00:00"
+    "fetchedAt": "2026-09-03T23:47:05.032831+00:00"
   },
   {
     "id": "2170",
@@ -228,18 +228,18 @@
     "contro": "Sembrerebbe dietro nelle gerarchie rispetto a Meret. Abbastanza discontinuo, non proprio un top da modificatore.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:07:02.176932+00:00"
+    "fetchedAt": "2026-09-03T23:47:07.339438+00:00"
   },
   {
     "id": "4485",
     "name": "Thiam",
     "team": "Monza",
     "url": "https://www.fantacalcio.it/serie-a/squadre/monza/thiam/4485",
-    "pro": "Titolare di una squadra difensiva e rognosa, per qualità-prezzo potrebbe essere un acquisto interessante, soprattutto in chiave clean sheet. Ovviamente da alternare in base al calendario.",
-    "contro": "Scommessa si, ma non di più. Un’alternativa al vostro primo titolare, ma non un punto di riferimento nella vostra rosa.",
+    "pro": "Andrà quasi sicuramente al prezzo minimo.",
+    "contro": "Con l'arrivo di Tornqvist rischia di diventare il secondo portiere. Inaffidabile sotto diversi aspetti.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:06:58.919286+00:00"
+    "fetchedAt": "2026-09-03T23:47:09.097045+00:00"
   },
   {
     "id": "7463",
@@ -250,7 +250,7 @@
     "contro": "Abbastanza altalenante, inoltre non è scontato che sia titolare. Il ballottaggio con Palmisani sarà serrato.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:07:04.792636+00:00"
+    "fetchedAt": "2026-09-03T23:47:10.781585+00:00"
   },
   {
     "id": "2814",
@@ -261,7 +261,7 @@
     "contro": "Dovrebbe partire dietro nelle gerarchie rispetto a Martinez, sulla carta è il secondo portiere dei nerazzurri. Va preso obbligatoriamente in coppia con l'altro estremo difensore nerazzurro.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:07:07.006991+00:00"
+    "fetchedAt": "2026-09-03T23:47:12.449442+00:00"
   },
   {
     "id": "6662",
@@ -272,7 +272,7 @@
     "contro": "Ballottaggio con Dafara abbastanza serrato, non è scontato che sia un titolare inamovibile.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:07:55.158983+00:00"
+    "fetchedAt": "2026-09-03T23:47:14.100459+00:00"
   },
   {
     "id": "4",
@@ -283,7 +283,7 @@
     "contro": "Nettamente dietro nelle gerarchie rispetto a Carnesecchi, potrebbe anche chiudere il proprio campionato con 0 presenze.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:07:10.258655+00:00"
+    "fetchedAt": "2026-09-03T23:47:15.870333+00:00"
   },
   {
     "id": "7533",
@@ -294,7 +294,7 @@
     "contro": "Portiere di riserva, rischia di non andare praticamente mai a voto.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:07:12.879428+00:00"
+    "fetchedAt": "2026-09-03T23:47:17.899815+00:00"
   },
   {
     "id": "7172",
@@ -305,7 +305,7 @@
     "contro": "Parliamo del terzo portiere, il rischio che chiuda con 0 presenze è concreto.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:07:15.604644+00:00"
+    "fetchedAt": "2026-09-03T23:47:19.689889+00:00"
   },
   {
     "id": "6650",
@@ -316,18 +316,18 @@
     "contro": "Rischia seriamente di concludere la propria stagione con zero presenze all'attivo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:07:18.579625+00:00"
+    "fetchedAt": "2026-09-03T23:47:21.746334+00:00"
   },
   {
     "id": "7301",
     "name": "Tornqvist",
-    "team": "Como",
-    "url": "https://www.fantacalcio.it/serie-a/squadre/como/tornqvist/7301",
-    "pro": "Secondo portiere di una big che andrà via sicuramente al prezzo minimo.",
-    "contro": "Parte nettamente dietro nelle gerarchie in porta, potrebbe chiudere la propria stagione con 0 presenze all'attivo.",
+    "team": "Monza",
+    "url": "https://www.fantacalcio.it/serie-a/squadre/monza/tornqvist/7301",
+    "pro": "Affidabile, può essere un profilo intrigante anche in chiave clean sheet. Qualità-prezzo interessante.",
+    "contro": "Ovviamente occhio sempre alla concorrenza di Thiam. Milita in una squadra di bassa classifica, i gol subiti potrebbero non essere pochi.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:07:21.268872+00:00"
+    "fetchedAt": "2026-09-03T23:47:23.710811+00:00"
   },
   {
     "id": "2809",
@@ -338,7 +338,7 @@
     "contro": "Portiere di riserva, rischia di non andare praticamente mai a voto.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:07:23.438555+00:00"
+    "fetchedAt": "2026-09-03T23:47:25.224909+00:00"
   },
   {
     "id": "6403",
@@ -349,7 +349,7 @@
     "contro": "Nettamente dietro nelle gerarchie rispetto a De Gea, rischia di chiudere il proprio campionato con 0 presenze all'attivo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:07:25.160100+00:00"
+    "fetchedAt": "2026-09-03T23:47:26.965143+00:00"
   },
   {
     "id": "158",
@@ -360,7 +360,7 @@
     "contro": "Terzo portiere, rischia concretamente di chiudere la propria stagione con 0 presenze all'attivo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:07:27.185554+00:00"
+    "fetchedAt": "2026-09-03T23:47:28.879518+00:00"
   },
   {
     "id": "7466",
@@ -371,7 +371,7 @@
     "contro": "Portiere di riserva, rischia di chiudere la propria stagione con 0 presenze all’attivo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:07:29.003220+00:00"
+    "fetchedAt": "2026-09-03T23:47:30.988051+00:00"
   },
   {
     "id": "219",
@@ -382,7 +382,7 @@
     "contro": "Portiere di riserva, rischia di chiudere la propria stagione con 0 presenze all'attivo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:07:31.615690+00:00"
+    "fetchedAt": "2026-09-03T23:47:32.892231+00:00"
   },
   {
     "id": "6569",
@@ -393,7 +393,7 @@
     "contro": "Portiere di riserva, rischia di non andare praticamente mai a voto.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:07:33.415711+00:00"
+    "fetchedAt": "2026-09-03T23:47:34.487019+00:00"
   },
   {
     "id": "1926",
@@ -404,7 +404,7 @@
     "contro": "Terzo portiere, rischia di chiudere la propria stagione con 0 presenze all'attivo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:07:36.599323+00:00"
+    "fetchedAt": "2026-09-03T23:47:36.460605+00:00"
   },
   {
     "id": "1930",
@@ -415,7 +415,7 @@
     "contro": "Terzo portiere, rischia di chiudere la propria stagione con zero presenze all'attivo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:07:39.393691+00:00"
+    "fetchedAt": "2026-09-03T23:47:38.133408+00:00"
   },
   {
     "id": "7337",
@@ -426,7 +426,7 @@
     "contro": "Parte dietro nei confronti di Mandas, la coppia sembrerebbe obbligatoria e non costerà pochissimo nel complesso.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:07:41.800711+00:00"
+    "fetchedAt": "2026-09-03T23:47:40.147372+00:00"
   },
   {
     "id": "7534",
@@ -437,7 +437,7 @@
     "contro": "Portiere di riserva, rischia di non andare praticamente mai a voto.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:07:43.613159+00:00"
+    "fetchedAt": "2026-09-03T23:47:42.176947+00:00"
   },
   {
     "id": "2815",
@@ -448,7 +448,7 @@
     "contro": "Nettamente dietro nelle gerarchie rispetto a Maignan. Potrebbe chiudere la propria stagione a 0 presenze.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:07:46.003157+00:00"
+    "fetchedAt": "2026-09-03T23:47:44.189555+00:00"
   },
   {
     "id": "6813",
@@ -459,7 +459,7 @@
     "contro": "Terzo portiere, rischia seriamente di non andare mai a voto.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:07:47.736261+00:00"
+    "fetchedAt": "2026-09-03T23:47:46.038872+00:00"
   },
   {
     "id": "7475",
@@ -470,7 +470,7 @@
     "contro": "Quasi sicuramente terzo portiere, chiuderà quasi sicuramente la propria stagione senza alcuna presenza.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:07:50.164366+00:00"
+    "fetchedAt": "2026-09-03T23:47:47.983570+00:00"
   },
   {
     "id": "2845",
@@ -481,7 +481,7 @@
     "contro": "Terzo portiere, rischia tranquillamente di chiudere la propria stagione con 0 presenze.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:07:52.603876+00:00"
+    "fetchedAt": "2026-09-03T23:47:49.677772+00:00"
   },
   {
     "id": "7048",
@@ -492,7 +492,7 @@
     "contro": "Portiere di riserva, rischia di non andare praticamente mai a voto.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:07:57.609989+00:00"
+    "fetchedAt": "2026-09-03T23:47:51.354555+00:00"
   },
   {
     "id": "610",
@@ -503,7 +503,7 @@
     "contro": "Nettamente dietro nelle gerarchie, potrebbe chiudere la propria stagione anche con 0 minuti.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:08:00.073666+00:00"
+    "fetchedAt": "2026-09-03T23:47:53.106940+00:00"
   },
   {
     "id": "4518",
@@ -514,7 +514,7 @@
     "contro": "Portiere di riserva, rischia di non andare praticamente mai a voto.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:08:02.697582+00:00"
+    "fetchedAt": "2026-09-03T23:47:54.882305+00:00"
   },
   {
     "id": "4867",
@@ -525,7 +525,7 @@
     "contro": "Arriva da una brutta stagione, parte inoltre nettamente dietro nelle gerarchie rispetto a Muric.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:08:04.907352+00:00"
+    "fetchedAt": "2026-09-03T23:47:56.510906+00:00"
   },
   {
     "id": "7457",
@@ -536,7 +536,7 @@
     "contro": "Riserva, rischia comunque di non andare praticamente mai a voto.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:08:07.433113+00:00"
+    "fetchedAt": "2026-09-03T23:47:58.732800+00:00"
   },
   {
     "id": "5320",
@@ -547,7 +547,7 @@
     "contro": "Occhio, con Mascardi rischia di esser diventato addirittura il terzo portiere.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:08:10.384503+00:00"
+    "fetchedAt": "2026-09-03T23:48:00.924691+00:00"
   },
   {
     "id": "7363",
@@ -558,7 +558,7 @@
     "contro": "Terzo portiere, rischia seriamente di chiudere la propria stagione con 0 presenze.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:08:13.324206+00:00"
+    "fetchedAt": "2026-09-03T23:48:02.910642+00:00"
   },
   {
     "id": "543",
@@ -569,7 +569,7 @@
     "contro": "Terzo portiere, potrebbe chiudere la propria stagione anche con 0 presenze.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:08:15.550800+00:00"
+    "fetchedAt": "2026-09-03T23:48:05.281297+00:00"
   },
   {
     "id": "5707",
@@ -580,7 +580,7 @@
     "contro": "Portiere di riserva, rischia di non andare praticamente mai a voto.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:08:17.417692+00:00"
+    "fetchedAt": "2026-09-03T23:48:07.073430+00:00"
   },
   {
     "id": "6671",
@@ -591,7 +591,7 @@
     "contro": "Dovrebbe essere il terzo portiere, rischia dunque di chiudere serenamente la propria stagione con 0 presenze all’attivo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:08:20.509832+00:00"
+    "fetchedAt": "2026-09-03T23:48:09.386779+00:00"
   },
   {
     "id": "7531",
@@ -602,7 +602,7 @@
     "contro": "Portiere di riserva, rischia di non andare praticamente mai a voto.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:08:22.910943+00:00"
+    "fetchedAt": "2026-09-03T23:48:11.499525+00:00"
   },
   {
     "id": "2127",
@@ -613,7 +613,7 @@
     "contro": "Portiere di riserva, rischia di non andare praticamente mai a voto.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:08:26.371135+00:00"
+    "fetchedAt": "2026-09-03T23:48:13.226905+00:00"
   },
   {
     "id": "7557",
@@ -624,7 +624,7 @@
     "contro": "Parliamo del terzo portiere, rischia di chiudere la propria stagione con 0 presenze.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:08:28.201055+00:00"
+    "fetchedAt": "2026-09-03T23:48:15.522317+00:00"
   },
   {
     "id": "7560",
@@ -635,7 +635,7 @@
     "contro": "Portiere di riserva, rischia di chiudere la propria stagione con 0 presenze all’attivo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:08:29.850374+00:00"
+    "fetchedAt": "2026-09-03T23:48:17.508853+00:00"
   },
   {
     "id": "3",
@@ -646,7 +646,7 @@
     "contro": "Il rischio di restare in panchina per tutta la stagione è parecchio concreto.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:08:33.035922+00:00"
+    "fetchedAt": "2026-09-03T23:48:19.386680+00:00"
   },
   {
     "id": "4957",
@@ -657,7 +657,7 @@
     "contro": "E' il secondo portiere del Venezia, rischia di collezionare pochissime presenze.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:08:35.547612+00:00"
+    "fetchedAt": "2026-09-03T23:48:21.235584+00:00"
   },
   {
     "id": "4468",
@@ -668,7 +668,7 @@
     "contro": "Portiere di riserva del Lecce.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:08:38.577909+00:00"
+    "fetchedAt": "2026-09-03T23:48:22.751190+00:00"
   },
   {
     "id": "7603",
@@ -679,7 +679,7 @@
     "contro": "Chiuso da Vicario, sarà il secondo portiere della Juventus.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:08:41.085229+00:00"
+    "fetchedAt": "2026-09-03T23:48:25.077501+00:00"
   },
   {
     "id": "7611",
@@ -690,7 +690,7 @@
     "contro": "Secondo portiere, potrebbe chiudere la propria stagione anche con 0 presenze.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:08:44.061864+00:00"
+    "fetchedAt": "2026-09-03T23:48:26.765105+00:00"
   },
   {
     "id": "2874",
@@ -701,7 +701,7 @@
     "contro": null,
     "status": "missing",
     "error": "PRO/CONTRO not found; bytes=53565 title='Simone Ghidotti - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False",
-    "fetchedAt": "2026-09-02T22:19:51.640325+00:00"
+    "fetchedAt": "2026-09-03T23:48:28.364234+00:00"
   },
   {
     "id": "7626",
@@ -712,7 +712,7 @@
     "contro": null,
     "status": "missing",
     "error": "PRO/CONTRO not found; bytes=53585 title='Thomas Pompei - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False",
-    "fetchedAt": "2026-09-02T22:19:53.881263+00:00"
+    "fetchedAt": "2026-09-03T23:48:30.486340+00:00"
   },
   {
     "id": "254",
@@ -723,7 +723,7 @@
     "contro": "Ovviamente c'è solo un contro in questo caso, il prezzo: dopo una stagione come la scorsa ripetersi non è mai facile, ma nonostante ciò sarà nettamente il più pagato, probabilmente anche al livello di alcuni centrocampisti e difensori top. Seguite l'FVM per non esagerare.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:08:46.092558+00:00"
+    "fetchedAt": "2026-09-03T23:48:32.668264+00:00"
   },
   {
     "id": "7181",
@@ -734,7 +734,7 @@
     "contro": "Leggermente discontinuo, non proprio un top da modificatore. Occhio comunque al prezzo, potrebbe non essere bassissimo, seguite l'FVM per non sbagliare.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:08:50.361455+00:00"
+    "fetchedAt": "2026-09-03T23:48:35.186538+00:00"
   },
   {
     "id": "4998",
@@ -745,7 +745,7 @@
     "contro": "Ovviamente in questo caso occhio soprattutto al prezzo, potrebbe essere parecchio alto in diverse leghe. Seguite l’FVM per non esagerare.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:08:47.879813+00:00"
+    "fetchedAt": "2026-09-03T23:48:36.983499+00:00"
   },
   {
     "id": "2788",
@@ -756,7 +756,7 @@
     "contro": "Prezzo non bassissimo, seguite l'FVM per non esagerare. Occhio ai problemi fisici, ha spesso a che fare con acciacchi.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:08:55.331219+00:00"
+    "fetchedAt": "2026-09-03T23:48:38.878443+00:00"
   },
   {
     "id": "2296",
@@ -767,7 +767,7 @@
     "contro": "Potrebbe alternarsi un po' di più con la Champions League. Inoltre occhio sempre ai cartellini, non sono pochissimi.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:08:57.613342+00:00"
+    "fetchedAt": "2026-09-03T23:48:40.833196+00:00"
   },
   {
     "id": "4159",
@@ -778,7 +778,7 @@
     "contro": "Senza modificatore perde di valore, porta pochi bonus.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:08:52.770032+00:00"
+    "fetchedAt": "2026-09-03T23:48:42.741431+00:00"
   },
   {
     "id": "4409",
@@ -789,7 +789,7 @@
     "contro": "Il prezzo può variare, monitorate l'FVM per non esagerare. Occhio, nell'ultima stagione ha avuto qualche problemino fisico di troppo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:09:05.593581+00:00"
+    "fetchedAt": "2026-09-03T23:48:44.599712+00:00"
   },
   {
     "id": "2120",
@@ -800,7 +800,7 @@
     "contro": "Ovviamente in questo caso occhio soprattutto al prezzo che potrebbe essere alto, seguite l'FVM per non sforare.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:09:00.571188+00:00"
+    "fetchedAt": "2026-09-03T23:48:46.461601+00:00"
   },
   {
     "id": "4976",
@@ -811,7 +811,7 @@
     "contro": "Non porta tantissimi bonus pur giocando da terzino, occhio a non esagerare con il costo d'acquisto. Ottimo colpo, ma non un top.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:09:08.131915+00:00"
+    "fetchedAt": "2026-09-03T23:48:48.257161+00:00"
   },
   {
     "id": "5022",
@@ -822,7 +822,7 @@
     "contro": "Un po' altalenante in termini di MV, abbastanza incline anche ai cartellini.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:09:02.376717+00:00"
+    "fetchedAt": "2026-09-03T23:48:50.189320+00:00"
   },
   {
     "id": "5833",
@@ -833,7 +833,7 @@
     "contro": "Ovviamente ne vale la pena al prezzo giusto, non parliamo di un top assoluto seguite l'FVM per non esagerare. Poco propenso al gol.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:09:20.521864+00:00"
+    "fetchedAt": "2026-09-03T23:48:52.118683+00:00"
   },
   {
     "id": "4317",
@@ -844,7 +844,7 @@
     "contro": "Un minimo altalenante, ha dei momenti di pausa. Inoltre, occhio anche a qualche acciacco fisico di troppo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:09:10.402125+00:00"
+    "fetchedAt": "2026-09-03T23:48:54.460152+00:00"
   },
   {
     "id": "6956",
@@ -855,7 +855,7 @@
     "contro": "Da monitorare sempre il prezzo, se va troppo oltre non ne vale la pena. Un minimo di discontinuità c'è sempre, occhio al calendario. Inoltre da attenzionare le sue condizioni fisiche, non sembra essere al 100%.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:09:12.283377+00:00"
+    "fetchedAt": "2026-09-03T23:48:56.636764+00:00"
   },
   {
     "id": "6217",
@@ -866,7 +866,7 @@
     "contro": "Ha dei periodi di blackout, inoltre occhio alla concorrenza che in questa stagione è ancora più folta. Non è un inamovibile.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:09:14.522475+00:00"
+    "fetchedAt": "2026-09-03T23:48:58.302837+00:00"
   },
   {
     "id": "2514",
@@ -877,7 +877,7 @@
     "contro": "Le partite da giocare saranno molteplici, non possiamo di certo parlare di un inamovibile. Occhio anche a qualche problemino fisico di troppo che spesso si è ripresentato nel corso delle sue ultime stagioni.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:09:17.777651+00:00"
+    "fetchedAt": "2026-09-03T23:49:00.384167+00:00"
   },
   {
     "id": "2816",
@@ -888,7 +888,7 @@
     "contro": "Monitorate sempre l'FVM per non esagerare con il prezzo che potrebbe non essere bassissimo. Incline a qualche problemino fisico.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:09:23.650188+00:00"
+    "fetchedAt": "2026-09-03T23:49:02.290348+00:00"
   },
   {
     "id": "5750",
@@ -899,7 +899,7 @@
     "contro": "Leggermente discontinuo in termini di MV, da utilizzare anche in base al calendario. Occhio ai cartellini.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:09:28.363274+00:00"
+    "fetchedAt": "2026-09-03T23:49:04.035848+00:00"
   },
   {
     "id": "4807",
@@ -910,7 +910,7 @@
     "contro": "Incline ai cartellini. Con la Champions inoltre potrebbe alternarsi di più rispetto alla scorsa stagione, occhio anche agli acciacchi fisici.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:09:37.846102+00:00"
+    "fetchedAt": "2026-09-03T23:49:05.833228+00:00"
   },
   {
     "id": "5982",
@@ -921,7 +921,7 @@
     "contro": "Non proprio un gran dispensatore di bonus, dovrà arrivarci. Inoltre occhio alla concorrenza di Diouf, gli darà parecchio fastidio.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:09:26.144272+00:00"
+    "fetchedAt": "2026-09-03T23:49:07.957447+00:00"
   },
   {
     "id": "5526",
@@ -932,7 +932,7 @@
     "contro": "Da anni convive con diversi problemi fisici, le partite saltate per infortunio sono sempre parecchie. Necessita coperture affidabili.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:09:30.693192+00:00"
+    "fetchedAt": "2026-09-03T23:49:09.602877+00:00"
   },
   {
     "id": "6869",
@@ -943,7 +943,7 @@
     "contro": "Ancora leggermente altalenante in termini di MV, troppo incline ai malus invece.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:09:33.172624+00:00"
+    "fetchedAt": "2026-09-03T23:49:11.564384+00:00"
   },
   {
     "id": "5641",
@@ -954,18 +954,18 @@
     "contro": "Leggermente discontinuo in termini di rendimento, ogni tanto ha dei periodi non proprio felicissimi. Per il modificatore sarà comunque da alternare in base alle partite.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:09:48.965856+00:00"
+    "fetchedAt": "2026-09-03T23:49:13.168496+00:00"
   },
   {
     "id": "5885",
     "name": "Dodò",
     "team": "Fiorentina",
     "url": "https://www.fantacalcio.it/serie-a/squadre/fiorentina/dodo/5885",
-    "pro": "Titolare fisso, anche abbastanza propositivo e incline al bonus. Sempre molto interessante per qualità-prezzo.",
+    "pro": "Giocherà tanto, anche abbastanza propositivo e incline al bonus. Sempre molto interessante per qualità-prezzo.",
     "contro": "Non proprio un profilo ideale per il modificatore difesa. Occhio alle sirene di mercato.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:09:35.822701+00:00"
+    "fetchedAt": "2026-09-03T23:49:14.922256+00:00"
   },
   {
     "id": "5514",
@@ -976,7 +976,7 @@
     "contro": "Resta il titolare di una squadra che concede comunque diverse reti e di conseguenza non si può schierare a prescindere, va tenuto sempre d'occhio il calendario.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:09:40.843854+00:00"
+    "fetchedAt": "2026-09-03T23:49:16.773059+00:00"
   },
   {
     "id": "4994",
@@ -987,7 +987,7 @@
     "contro": "Ovviamente non una macchina da bonus, e neanche un profilo super affidabile per il modificatore. Inoltre, occhio anche alla concorrenza di Zanoli.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:10:25.404204+00:00"
+    "fetchedAt": "2026-09-03T23:49:18.479100+00:00"
   },
   {
     "id": "5555",
@@ -998,7 +998,7 @@
     "contro": "Abbastanza discontinuo nel rendimento, non proprio un profilo da modificatore. Inoltre la concorrenza di Zemura resta comunque fastidiosa.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:10:28.688492+00:00"
+    "fetchedAt": "2026-09-03T23:49:20.286950+00:00"
   },
   {
     "id": "554",
@@ -1009,7 +1009,7 @@
     "contro": "Sempre alle prese con diversi problemini fisici che spesso influenzano le sue stagioni. Inoltre occhio al ballottaggio serrato con Bellanova.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:09:53.173586+00:00"
+    "fetchedAt": "2026-09-03T23:49:22.087344+00:00"
   },
   {
     "id": "4734",
@@ -1020,7 +1020,7 @@
     "contro": "Discontinuo in termini di media voto, non proprio un profilo ideale per il modificatore difesa. Occhio al prezzo, non esagerate.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:09:58.150459+00:00"
+    "fetchedAt": "2026-09-03T23:49:23.783055+00:00"
   },
   {
     "id": "4657",
@@ -1031,7 +1031,7 @@
     "contro": "Non proprio propenso al bonus. Duttile si, ma comunque non per forza un inamovibile.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:10:07.765324+00:00"
+    "fetchedAt": "2026-09-03T23:49:25.968214+00:00"
   },
   {
     "id": "5520",
@@ -1042,7 +1042,7 @@
     "contro": "Abbastanza altalenante, soprattutto in termini di media voto. Non proprio l'ideale dunque per il modificatore difesa.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:09:43.504073+00:00"
+    "fetchedAt": "2026-09-03T23:49:28.126469+00:00"
   },
   {
     "id": "6320",
@@ -1053,7 +1053,7 @@
     "contro": "Parecchio discontinuo in termini di MV e rendimento, non proprio un profilo ideale per il modificatore difesa. Non è detto che sia un titolare inamovibile.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:10:10.606224+00:00"
+    "fetchedAt": "2026-09-03T23:49:30.160990+00:00"
   },
   {
     "id": "6989",
@@ -1064,7 +1064,7 @@
     "contro": "Milita in una squadra di bassa classifica e che subirà diversi gol, di conseguenza è da utilizzare anche in base al calendario.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:09:45.951794+00:00"
+    "fetchedAt": "2026-09-03T23:49:31.818527+00:00"
   },
   {
     "id": "6496",
@@ -1075,7 +1075,7 @@
     "contro": "Abbastanza altalenante in termini di rendimento e quindi anche di MV, non proprio un top da modificatore. Occhio sempre un minimo alla concorrenza di Estupinan.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:10:12.920000+00:00"
+    "fetchedAt": "2026-09-03T23:49:34.073302+00:00"
   },
   {
     "id": "1852",
@@ -1086,7 +1086,7 @@
     "contro": "Altalenante, anche a causa dei continui problemi fisici con cui ha a che fare nel corso della sua carriera. Inoltre, occhio alla concorrenza a sinistra, non è scontato che sia un inamovibile.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:10:16.041145+00:00"
+    "fetchedAt": "2026-09-03T23:49:36.078171+00:00"
   },
   {
     "id": "6664",
@@ -1097,7 +1097,7 @@
     "contro": "Gli estimatori non mancano, in alcuni casi il prezzo potrebbe anche alzarsi, seguite l'FVM per non esagerare. Non proprio ideale in chiave modificatore.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:10:18.781216+00:00"
+    "fetchedAt": "2026-09-03T23:49:38.191471+00:00"
   },
   {
     "id": "5862",
@@ -1108,7 +1108,7 @@
     "contro": "Leggermente discontinuo in termini di MV, dunque non proprio affidabilissimo in chiave modificatore.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:10:20.927932+00:00"
+    "fetchedAt": "2026-09-03T23:49:39.989537+00:00"
   },
   {
     "id": "7529",
@@ -1119,7 +1119,7 @@
     "contro": "Al primo anno in Serie A potrebbe aver bisogno di ambientarsi, inoltre parte comunque leggermente dietro nelle gerarchie rispetto ad Hermoso.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:10:23.391734+00:00"
+    "fetchedAt": "2026-09-03T23:49:41.908482+00:00"
   },
   {
     "id": "6495",
@@ -1130,7 +1130,7 @@
     "contro": "Non proprio un inamovibile, la concorrenza è folta. Altalenante nel rendimento, non ideale per il modificatore. Occhio ai malus.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:11:55.583712+00:00"
+    "fetchedAt": "2026-09-03T23:49:43.470283+00:00"
   },
   {
     "id": "6727",
@@ -1141,7 +1141,7 @@
     "contro": "La concorrenza non manca e sappiamo che Fabregas predilige un turnover marcato. Occhio al modificatore difesa, potrebbe non essere proprio un top in tal senso. Inoltre attenzione anche al prezzo, monitorate il suo FVM per non esagerare.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:10:31.173564+00:00"
+    "fetchedAt": "2026-09-03T23:49:45.569387+00:00"
   },
   {
     "id": "5675",
@@ -1152,7 +1152,7 @@
     "contro": null,
     "status": "missing",
     "error": "PRO/CONTRO not found; bytes=54041 title='Arthur Theate - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False",
-    "fetchedAt": "2026-09-02T22:19:56.069172+00:00"
+    "fetchedAt": "2026-09-03T23:49:47.265897+00:00"
   },
   {
     "id": "4137",
@@ -1162,8 +1162,8 @@
     "pro": null,
     "contro": null,
     "status": "missing",
-    "error": "PRO/CONTRO not found; bytes=227919 title='Diego Carlos - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False",
-    "fetchedAt": "2026-09-02T22:19:58.363629+00:00"
+    "error": "PRO/CONTRO not found; bytes=228048 title='Diego Carlos - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False",
+    "fetchedAt": "2026-09-03T23:49:48.836313+00:00"
   },
   {
     "id": "6046",
@@ -1174,7 +1174,7 @@
     "contro": "Non si può definire un inamovibile, inoltre dovrà ambientarsi con la linea difensiva a quattro, con cui non si è praticamente mai cimentato. Ha saltato tutto il ritiro per infortunio.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:09:50.724200+00:00"
+    "fetchedAt": "2026-09-03T23:49:50.974354+00:00"
   },
   {
     "id": "6042",
@@ -1185,7 +1185,7 @@
     "contro": "Leggermente discontinuo, i momenti no non mancano nelle sue stagioni. Non ha un gran feeling con il bonus.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:09:55.773075+00:00"
+    "fetchedAt": "2026-09-03T23:49:52.572287+00:00"
   },
   {
     "id": "4433",
@@ -1196,7 +1196,7 @@
     "contro": "Qualcuno, memore dell'annata a Cagliari, potrebbe anche spingersi troppo oltre in termini di prezzo, voi seguite l'FVM per non esagerare. Occhio alla concorrenza di Holm, il ballottaggio è serrato.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:11:21.482161+00:00"
+    "fetchedAt": "2026-09-03T23:49:54.928594+00:00"
   },
   {
     "id": "4210",
@@ -1207,7 +1207,7 @@
     "contro": "L'età avanza, occhio agli acciacchi. Da alternare in base al calendario, non un primo slot per le vostre rose dunque. Qualche giallo di troppo lo prende.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:10:01.121814+00:00"
+    "fetchedAt": "2026-09-03T23:49:56.593118+00:00"
   },
   {
     "id": "5701",
@@ -1218,7 +1218,7 @@
     "contro": "Altalenante in termini di MV, non proprio un profilo da modificatore difesa.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:10:35.802323+00:00"
+    "fetchedAt": "2026-09-03T23:49:58.306971+00:00"
   },
   {
     "id": "5365",
@@ -1229,7 +1229,7 @@
     "contro": "Leggermente discontinuo e anche con qualche acciacco fisico di troppo negli ultimi anni. Non esagerate nel costo d’asta, seguite l’FVM.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:10:40.812375+00:00"
+    "fetchedAt": "2026-09-03T23:49:59.754222+00:00"
   },
   {
     "id": "6531",
@@ -1237,10 +1237,10 @@
     "team": "Fiorentina",
     "url": "https://www.fantacalcio.it/serie-a/squadre/fiorentina/jimenez-a/6531",
     "pro": "Propositivo, anche abbastanza incline al bonus. Duttilissimo, può andare a voto praticamente sempre, incidendo anche da subentrato. Prezzo abbordabile.",
-    "contro": "Leggermente discontinuo, soprattutto in termini di MV. Non un profilo ideale per il modificatore difesa.",
+    "contro": "Leggermente discontinuo, soprattutto in termini di MV. Non un profilo ideale per il modificatore difesa, concorrenza folta a destra.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:10:04.038906+00:00"
+    "fetchedAt": "2026-09-03T23:50:01.834255+00:00"
   },
   {
     "id": "7469",
@@ -1251,7 +1251,7 @@
     "contro": "Visto anche il contesto, potrebbero non mancare le insufficienze e i cartellini. Inoltre occhio alla concorrenza, non è detto che venga confermato come titolare inamovibile anche in Serie A.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:12:23.630846+00:00"
+    "fetchedAt": "2026-09-03T23:50:04.262866+00:00"
   },
   {
     "id": "5620",
@@ -1262,7 +1262,7 @@
     "contro": "I problemi fisici continuano a tormentarlo, restano il suo \"contro\" principale. Anche per questo motivo non è un top, potrebbe saltare diverse partite anche stavolta. Occhio a Pedraza.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:11:37.634790+00:00"
+    "fetchedAt": "2026-09-03T23:50:06.288147+00:00"
   },
   {
     "id": "4401",
@@ -1273,7 +1273,7 @@
     "contro": "La concorrenza è sicuramente più folta e fastidiosa nella scorsa stagione, non si può più considerare un inamovibile assoluto. Porta pochissimi bonus.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:10:48.405617+00:00"
+    "fetchedAt": "2026-09-03T23:50:07.854238+00:00"
   },
   {
     "id": "7485",
@@ -1284,7 +1284,7 @@
     "contro": "Gioca in una squadra che lotta per non retrocedere, di conseguenza il rendimento potrebbe essere abbastanza altalenante. Non proprio ideale per il modificatore.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:11:51.245264+00:00"
+    "fetchedAt": "2026-09-03T23:50:09.952995+00:00"
   },
   {
     "id": "6672",
@@ -1295,7 +1295,7 @@
     "contro": "Leggermente incline ai cartellini, di certo non un profilo ideale per il modificatore. Sarà da alternare sempre in base al calendario.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:10:55.708775+00:00"
+    "fetchedAt": "2026-09-03T23:50:12.050038+00:00"
   },
   {
     "id": "6642",
@@ -1306,7 +1306,7 @@
     "contro": "La concorrenza è folta e non è assolutamente scontato che sia un inamovibile, anzi. Il suo rendimento è spesso altalenante, non è proprio ideale per il modificatore difesa.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:10:57.570362+00:00"
+    "fetchedAt": "2026-09-03T23:50:14.385169+00:00"
   },
   {
     "id": "5010",
@@ -1317,7 +1317,7 @@
     "contro": "La concorrenza è folta, potrebbe non essere un titolare inamovibile. Sarà da alternare sempre in base al calendario e non da schierare a prescindere. Occhio agli acciacchi fisici.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:11:00.593284+00:00"
+    "fetchedAt": "2026-09-03T23:50:16.728818+00:00"
   },
   {
     "id": "4664",
@@ -1328,7 +1328,7 @@
     "contro": "Parecchio incline ai problemi fisici, inoltre avrà un ballottaggio serrato con Buongiorno.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:11:06.216893+00:00"
+    "fetchedAt": "2026-09-03T23:50:18.897260+00:00"
   },
   {
     "id": "7580",
@@ -1339,7 +1339,7 @@
     "contro": "Ballottaggio serrato con Doekhi, non è assolutamente scontato che sia un titolare inamovibile, anzi. Occhio ai cartellini.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:11:09.294936+00:00"
+    "fetchedAt": "2026-09-03T23:50:21.131861+00:00"
   },
   {
     "id": "7220",
@@ -1349,8 +1349,8 @@
     "pro": null,
     "contro": null,
     "status": "missing",
-    "error": "PRO/CONTRO not found; bytes=230836 title='Rafik Belghali - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False",
-    "fetchedAt": "2026-09-02T22:20:01.006646+00:00"
+    "error": "PRO/CONTRO not found; bytes=231194 title='Rafik Belghali - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False",
+    "fetchedAt": "2026-09-03T23:50:23.057438+00:00"
   },
   {
     "id": "2640",
@@ -1361,7 +1361,7 @@
     "contro": "Concorrenza foltissima, non è scontato che sia un inamovibile. Spesso alle prese anche con qualche problemino fisico di troppo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:12:06.044694+00:00"
+    "fetchedAt": "2026-09-03T23:50:25.462244+00:00"
   },
   {
     "id": "4887",
@@ -1372,7 +1372,7 @@
     "contro": "Discontinuo, non proprio un profilo da modificatore. Ballottaggio serrato con Zappacosta, ai nastri di partenza non è un inamovibile.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:11:14.142029+00:00"
+    "fetchedAt": "2026-09-03T23:50:26.956456+00:00"
   },
   {
     "id": "7219",
@@ -1383,7 +1383,7 @@
     "contro": "Potrebbe essere il profilo ideale di Sarri, ma nulla è scontato, anzi. La concorrenza non manca.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:11:16.410385+00:00"
+    "fetchedAt": "2026-09-03T23:50:28.768882+00:00"
   },
   {
     "id": "7212",
@@ -1394,7 +1394,7 @@
     "contro": "Non ha proprio un gran feeling con il bonus, anzi. Il Bologna è una squadra propositiva, non mancheranno gli errori in fase difensiva.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:11:19.129177+00:00"
+    "fetchedAt": "2026-09-03T23:50:30.403106+00:00"
   },
   {
     "id": "5678",
@@ -1405,7 +1405,7 @@
     "contro": "Altalenante anche a causa di qualche problema fisico di troppo. Ballottaggio serratissimo con Zortea, la coppia sembra obbligatoria.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:12:11.652128+00:00"
+    "fetchedAt": "2026-09-03T23:50:32.002881+00:00"
   },
   {
     "id": "7414",
@@ -1416,7 +1416,7 @@
     "contro": "In fase difensiva ha ampi margini di miglioramento, almeno al momento non è proprio un top da modificatore. Il ballottaggio con Valle è serrato.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:10:38.171772+00:00"
+    "fetchedAt": "2026-09-03T23:50:33.745492+00:00"
   },
   {
     "id": "6867",
@@ -1427,7 +1427,7 @@
     "contro": "Ballottaggio serratissimo con Kaiki. Non proprio un profilo ideale per il modificatore difesa. Discontinuo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:11:23.436409+00:00"
+    "fetchedAt": "2026-09-03T23:50:35.475037+00:00"
   },
   {
     "id": "7410",
@@ -1438,7 +1438,7 @@
     "contro": "Non è mai facile ambientarsi nel calcio italiano, specialmente per un difensore. Non è detto che sia fin da subito un inamovibile, anzi.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:11:29.132050+00:00"
+    "fetchedAt": "2026-09-03T23:50:37.343184+00:00"
   },
   {
     "id": "4952",
@@ -1449,7 +1449,7 @@
     "contro": "Tocca alternarlo tanto in base al calendario, potrebbe incappare in diverse insufficienze. Occhio anche ai cartellini.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:11:31.602832+00:00"
+    "fetchedAt": "2026-09-03T23:50:39.444110+00:00"
   },
   {
     "id": "6238",
@@ -1460,7 +1460,7 @@
     "contro": "Altalenante nel rendimento, non proprio un profilo da modificatore. Ha faticato in carriera ad affermarsi in Serie A, occhio a considerarlo un inamovibile assoluto.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:12:26.646598+00:00"
+    "fetchedAt": "2026-09-03T23:50:41.562326+00:00"
   },
   {
     "id": "6660",
@@ -1471,7 +1471,7 @@
     "contro": "Non proprio un top da modificatore. Occhio ai malus, è abbastanza incline ai cartellini. Porta pochissimi bonus.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:11:33.495178+00:00"
+    "fetchedAt": "2026-09-03T23:50:43.703782+00:00"
   },
   {
     "id": "4177",
@@ -1482,7 +1482,7 @@
     "contro": "Ovviamente parte dietro nelle gerarchie, può andare spesso a voto, ma allo stesso tempo non mancheranno gli SV. Porta pochi bonus.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:11:35.887969+00:00"
+    "fetchedAt": "2026-09-03T23:50:45.695553+00:00"
   },
   {
     "id": "5877",
@@ -1493,7 +1493,7 @@
     "contro": "Ovviamente anche in questa stagione è un'alternativa ai nastri di partenza. Sostituto sia di Dimarco che di Bastoni, ma ancora una volta non un titolare.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:10:43.403373+00:00"
+    "fetchedAt": "2026-09-03T23:50:47.572657+00:00"
   },
   {
     "id": "460",
@@ -1504,7 +1504,7 @@
     "contro": "La Lazio di gol ne prende e ciò influisce anche sulla sua MV. Occhio poi sempre anche al mercato, sia in estate che in inverno potrebbe andare via.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:10:45.795958+00:00"
+    "fetchedAt": "2026-09-03T23:50:50.036274+00:00"
   },
   {
     "id": "4817",
@@ -1515,7 +1515,7 @@
     "contro": "Non proprio particolarmente propositivo. Qualche assist potrebbe portarlo, ma poco propenso al gol.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:12:34.427485+00:00"
+    "fetchedAt": "2026-09-03T23:50:52.371133+00:00"
   },
   {
     "id": "2188",
@@ -1526,7 +1526,7 @@
     "contro": "Forse troppo altalenante in termini di MV, diciamo non proprio un profilo da modificatore. Poi adesso la concorrenza è ancor più folta.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:11:40.253841+00:00"
+    "fetchedAt": "2026-09-03T23:50:54.230187+00:00"
   },
   {
     "id": "6990",
@@ -1537,7 +1537,7 @@
     "contro": "Altalenante nel rendimento, non è proprio un profilo ideale per chi utilizza il modificatore di difesa.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:11:46.043075+00:00"
+    "fetchedAt": "2026-09-03T23:50:56.107677+00:00"
   },
   {
     "id": "4502",
@@ -1548,18 +1548,18 @@
     "contro": "Affidabile si, ma tutto dipende dal calendario. Militando in una squadra di bassa classifica i gol e gli errori non mancheranno, dunque non potete fidarvi di lui alla cieca.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:11:49.307961+00:00"
+    "fetchedAt": "2026-09-03T23:50:58.141917+00:00"
   },
   {
     "id": "4751",
     "name": "Tomori",
     "team": "Milan",
     "url": "https://www.fantacalcio.it/serie-a/squadre/milan/tomori/4751",
-    "pro": "Andrà sicuramente via al prezzo minimo.",
-    "contro": "Messo fuori rosa, non rientra nei piani dell'allenatore.",
+    "pro": "Reintegrato in rosa, prezzo molto basso. Può piano piano scalare le gerarchie e conquistarsi lo spazio che merita un calciatore del suo livello.",
+    "contro": "Ovviamente l'opinione dell'allenatore resta non super positiva, la concorrenza è folta e lui parte inizialmente dietro nelle gerarchie.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:10:50.226542+00:00"
+    "fetchedAt": "2026-09-03T23:51:00.362533+00:00"
   },
   {
     "id": "6202",
@@ -1570,7 +1570,7 @@
     "contro": "Non è assolutamente scontato che sia un inamovibile. Gli SV potrebbero non essere pochissimi.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:11:53.098739+00:00"
+    "fetchedAt": "2026-09-03T23:51:02.155793+00:00"
   },
   {
     "id": "2724",
@@ -1581,7 +1581,7 @@
     "contro": "Ha dimostrato di essere abbastanza altalenante, inoltre molto dipenderà anche dall'assetto tattico proposto da Allegri. Incline ai problemi fisici, salterà tutto il ritiro estivo e non solo per infortunio.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:10:53.333959+00:00"
+    "fetchedAt": "2026-09-03T23:51:03.999338+00:00"
   },
   {
     "id": "6485",
@@ -1592,7 +1592,7 @@
     "contro": "Il livello aumenta, anche quello della concorrenza. Parte come titolare, ma dovrà adattarsi nel nuovo club e nella difesa a quattro.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:11:03.119093+00:00"
+    "fetchedAt": "2026-09-03T23:51:06.115898+00:00"
   },
   {
     "id": "7329",
@@ -1603,7 +1603,7 @@
     "contro": "Rispetto a quanto visto con il Torino agirà stabilmente da terzino e non da quinto, occhio dunque agli errori difensivi, potrebbero far calare la MV.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:12:01.331882+00:00"
+    "fetchedAt": "2026-09-03T23:51:08.043868+00:00"
   },
   {
     "id": "7069",
@@ -1614,7 +1614,7 @@
     "contro": "Ovviamente la concorrenza non manca si certo, anzi. Avrà alti e bassi, non proprio da modificatore.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:12:51.734696+00:00"
+    "fetchedAt": "2026-09-03T23:51:10.411540+00:00"
   },
   {
     "id": "7564",
@@ -1625,7 +1625,7 @@
     "contro": "Al primo anno in Serie A, per un difensore non è mai facile ambientarsi subito nel nostro campionato. Inoltre, la concorrenza dietro non manca.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:12:54.238439+00:00"
+    "fetchedAt": "2026-09-03T23:51:12.121539+00:00"
   },
   {
     "id": "4705",
@@ -1636,7 +1636,7 @@
     "contro": "Parte ovviamente leggermente dietro nelle gerarchie, non si può considerare di certo un inamovibile. Incline a qualche problema fisico di troppo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:12:03.772844+00:00"
+    "fetchedAt": "2026-09-03T23:51:13.943943+00:00"
   },
   {
     "id": "4147",
@@ -1647,7 +1647,7 @@
     "contro": null,
     "status": "missing",
     "error": "PRO/CONTRO not found; bytes=53956 title='Caleta-Car Duje - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False",
-    "fetchedAt": "2026-09-02T22:20:03.004700+00:00"
+    "fetchedAt": "2026-09-03T23:51:15.992661+00:00"
   },
   {
     "id": "7621",
@@ -1658,7 +1658,7 @@
     "contro": null,
     "status": "missing",
     "error": "PRO/CONTRO not found; bytes=54073 title='Yukinari Sugawara - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False",
-    "fetchedAt": "2026-09-02T22:20:05.511336+00:00"
+    "fetchedAt": "2026-09-03T23:51:17.999793+00:00"
   },
   {
     "id": "7532",
@@ -1669,7 +1669,7 @@
     "contro": "Ovviamente sarà alla prima stagione da protagonista in A, occhio dunque al salto di categoria. Non è ovviamente scontato che sia un inamovibile fin da subito.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:12:14.369179+00:00"
+    "fetchedAt": "2026-09-03T23:51:19.890401+00:00"
   },
   {
     "id": "7274",
@@ -1680,7 +1680,7 @@
     "contro": "Un minimo di concorrenza c'è anche per lui. Da schierare in base al calendario, non a prescindere.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:12:16.320199+00:00"
+    "fetchedAt": "2026-09-03T23:51:21.687982+00:00"
   },
   {
     "id": "6893",
@@ -1691,7 +1691,7 @@
     "contro": "Non si può considerare un inamovibile, la concorrenza resta folta. Leggermente discontinuo in termini di MV.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:12:18.672044+00:00"
+    "fetchedAt": "2026-09-03T23:51:23.718716+00:00"
   },
   {
     "id": "7294",
@@ -1702,7 +1702,7 @@
     "contro": "Duttile, ma c’è parecchia concorrenza sia centralmente che a sinistra. Alla sua prima esperienza in Serie A, non sarà facilissimo ambientarsi ed essere subito protagonista.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:11:26.200098+00:00"
+    "fetchedAt": "2026-09-03T23:51:25.467556+00:00"
   },
   {
     "id": "7467",
@@ -1713,7 +1713,7 @@
     "contro": "Ovviamente sarà da alternare soprattutto in base al calendario, non potrà essere schierato a prescindere.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:13:03.611047+00:00"
+    "fetchedAt": "2026-09-03T23:51:27.831792+00:00"
   },
   {
     "id": "6766",
@@ -1724,7 +1724,7 @@
     "contro": "Discontinuo nel rendimento, non è un profilo da schierare a prescindere. Inoltre occhio alla concorrenza sempre folta.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:12:31.391290+00:00"
+    "fetchedAt": "2026-09-03T23:51:29.545464+00:00"
   },
   {
     "id": "6632",
@@ -1735,7 +1735,7 @@
     "contro": "Parecchio incline ai problemi fisici, anche nella prossima stagione le partite saltate potrebbero non essere poche.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:11:43.329244+00:00"
+    "fetchedAt": "2026-09-03T23:51:31.543762+00:00"
   },
   {
     "id": "5739",
@@ -1746,7 +1746,7 @@
     "contro": "Parte leggermente dietro nelle gerarchie, abbastanza discontinuo e altalenante nel rendimento, non proprio da modificatore.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:13:10.913178+00:00"
+    "fetchedAt": "2026-09-03T23:51:33.509803+00:00"
   },
   {
     "id": "5840",
@@ -1757,7 +1757,7 @@
     "contro": "Concorrenza importante a sinistra, lui sembrerebbe partire leggermente dietro nelle gerarchie. Porta pochissimi bonus.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:12:39.594712+00:00"
+    "fetchedAt": "2026-09-03T23:51:35.261900+00:00"
   },
   {
     "id": "6631",
@@ -1768,7 +1768,7 @@
     "contro": "Parte comunque dietro nelle gerarchie difensive, non si può di certo considerare un inamovibile, anzi.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:13:28.404787+00:00"
+    "fetchedAt": "2026-09-03T23:51:37.474731+00:00"
   },
   {
     "id": "5851",
@@ -1779,7 +1779,7 @@
     "contro": "Abbastanza altalenante sotto diversi aspetti, anche a causa di qualche problemino fisico di troppo. Non proprio un profilo da modificatore, parte dietro Obrador.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:13:33.953027+00:00"
+    "fetchedAt": "2026-09-03T23:51:39.198257+00:00"
   },
   {
     "id": "7253",
@@ -1790,7 +1790,7 @@
     "contro": "Ha dimostrato di essere comunque altalenante, di conseguenza, anche in chiave modificatore, sarà comunque da alternare in base al calendario e non dunque da schierare a prescindere.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:11:58.614517+00:00"
+    "fetchedAt": "2026-09-03T23:51:40.706590+00:00"
   },
   {
     "id": "4845",
@@ -1801,7 +1801,7 @@
     "contro": "Concorrenza foltissima sulla corsia di destra, non proprio un profilo ideale per il modificatore. Incline ai problemi fisici.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:12:47.473549+00:00"
+    "fetchedAt": "2026-09-03T23:51:42.553664+00:00"
   },
   {
     "id": "5695",
@@ -1812,7 +1812,7 @@
     "contro": "Discontinuo nel rendimento e in termini di MV, non proprio un profilo ideale per il modificatore difesa. Occhio ai cartellini.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:12:50.051816+00:00"
+    "fetchedAt": "2026-09-03T23:51:44.344108+00:00"
   },
   {
     "id": "5751",
@@ -1823,7 +1823,7 @@
     "contro": null,
     "status": "missing",
     "error": "PRO/CONTRO not found; bytes=54013 title='Nathan Patterson - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False",
-    "fetchedAt": "2026-09-02T22:20:07.161014+00:00"
+    "fetchedAt": "2026-09-03T23:51:46.268845+00:00"
   },
   {
     "id": "5578",
@@ -1834,7 +1834,7 @@
     "contro": "Parte dietro nelle gerarchie sia come terzino che come centrale, non offre grosse garanzie di titolarità. Altalenante, non proprio un profilo da modificatore.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:13:55.628917+00:00"
+    "fetchedAt": "2026-09-03T23:51:48.558689+00:00"
   },
   {
     "id": "7068",
@@ -1845,7 +1845,7 @@
     "contro": "Non si può considerare un inamovibile ovviamente. La concorrenza non manca.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:12:09.101701+00:00"
+    "fetchedAt": "2026-09-03T23:51:50.259943+00:00"
   },
   {
     "id": "7268",
@@ -1856,7 +1856,7 @@
     "contro": "Discontinuo nel rendimento, tutt'altro che un profilo da modificatore. Non si può assolutamente considerare un inamovibile, anzi.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:12:56.173838+00:00"
+    "fetchedAt": "2026-09-03T23:51:51.929323+00:00"
   },
   {
     "id": "7014",
@@ -1867,7 +1867,7 @@
     "contro": "La concorrenza è folta, non è un titolare inamovibile. Porta pochi bonus pur giocando stabilmente come terzino.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:12:59.217667+00:00"
+    "fetchedAt": "2026-09-03T23:51:53.575704+00:00"
   },
   {
     "id": "5603",
@@ -1878,7 +1878,7 @@
     "contro": "Concorrenza folta, ballottaggio serrato. Non proprio costante nel rendimento, non troppo affidabile per il modificatore.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:13:00.928984+00:00"
+    "fetchedAt": "2026-09-03T23:51:55.578822+00:00"
   },
   {
     "id": "5449",
@@ -1889,7 +1889,7 @@
     "contro": "Altalenante nel rendimento, concorrenza comunque molto folta. Non è un inamovibile e neanche un profilo da modificatore.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:12:21.147945+00:00"
+    "fetchedAt": "2026-09-03T23:51:57.164152+00:00"
   },
   {
     "id": "5757",
@@ -1900,7 +1900,7 @@
     "contro": "Ovviamente potrebbe subite un minimo di cambio di categoria, inoltre militando in una squadra di bassa classifica sarà sempre da alternare anche in base al calendario.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:14:12.651352+00:00"
+    "fetchedAt": "2026-09-03T23:51:59.079750+00:00"
   },
   {
     "id": "7537",
@@ -1911,7 +1911,7 @@
     "contro": "Arriva per giocare in una posizione di campo dove la concorrenza è parecchio folta, dovrà sgomitare per collezionare un minutaggio importante.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:13:06.372421+00:00"
+    "fetchedAt": "2026-09-03T23:52:00.702013+00:00"
   },
   {
     "id": "5831",
@@ -1922,7 +1922,7 @@
     "contro": "Parte leggermente dietro nelle gerarchie difensive. Abbastanza incline ai malus.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:13:08.566512+00:00"
+    "fetchedAt": "2026-09-03T23:52:02.861739+00:00"
   },
   {
     "id": "7012",
@@ -1930,10 +1930,10 @@
     "team": "Lazio",
     "url": "https://www.fantacalcio.it/serie-a/squadre/lazio/provstgaard/7012",
     "pro": "Può entrare stabilmente nelle rotazioni difensive, racimolando diverse partite a voto. Andrà via ad un prezzo anche abbastanza basso.",
-    "contro": "Altalenante nel rendimento, non proprio un top da modificatore. Inoltre la concorrenza è folta, non si può considerare un inamovibile.",
+    "contro": "Altalenante nel rendimento, non proprio un top da modificatore. Inoltre la concorrenza è folta, è da tenere d'occhio.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:14:15.556753+00:00"
+    "fetchedAt": "2026-09-03T23:52:04.750858+00:00"
   },
   {
     "id": "7131",
@@ -1944,7 +1944,7 @@
     "contro": "Il ballottaggio con Marusic è serrato, ma parte leggermente dietro nelle gerarchie. Per la prima volta in una grande piazza, potrebbe impiegare un po’ ad ambientarsi.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:14:17.587504+00:00"
+    "fetchedAt": "2026-09-03T23:52:06.809239+00:00"
   },
   {
     "id": "7240",
@@ -1955,7 +1955,7 @@
     "contro": "Parte dietro nelle gerarchie rispetto a Gaspar e Tiago Gabriel. Gli SV potrebbero non essere pochi.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:12:37.106098+00:00"
+    "fetchedAt": "2026-09-03T23:52:09.021658+00:00"
   },
   {
     "id": "5838",
@@ -1966,7 +1966,7 @@
     "contro": "Abbastanza discontinuo nel rendimento, porta pochi bonus. Inoltre non è da considerare un inamovibile, anzi.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:13:21.103704+00:00"
+    "fetchedAt": "2026-09-03T23:52:10.886339+00:00"
   },
   {
     "id": "5307",
@@ -1977,7 +1977,7 @@
     "contro": "Abbastanza altalenante in termini di MV, parecchio incline ai cartellini.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:13:25.610337+00:00"
+    "fetchedAt": "2026-09-03T23:52:12.783087+00:00"
   },
   {
     "id": "6986",
@@ -1988,7 +1988,7 @@
     "contro": "Non un inamovibile, si alternerà molto. Anche leggermente discontinuo in termini di MV.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:12:42.259285+00:00"
+    "fetchedAt": "2026-09-03T23:52:14.554940+00:00"
   },
   {
     "id": "4374",
@@ -1999,7 +1999,7 @@
     "contro": "Non proprio un profilo da modificatore, anche abbastanza incline ai cartellini. Porta pochi bonus. Non titolarissimo e alle prese con diversi problemi fisici.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:13:30.988213+00:00"
+    "fetchedAt": "2026-09-03T23:52:16.609575+00:00"
   },
   {
     "id": "7526",
@@ -2010,7 +2010,7 @@
     "contro": "Appena arrivato, dovrà ambientarsi. Inoltre la concorrenza non manca, dovrà sgomitare per diventare un inamovibile.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:13:35.826797+00:00"
+    "fetchedAt": "2026-09-03T23:52:18.428505+00:00"
   },
   {
     "id": "4263",
@@ -2021,7 +2021,7 @@
     "contro": "Non è un inamovibile ai nastri di partenza, inoltre è anche abbastanza discontinuo per rendimento e dunque in chiave modificatore.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:13:37.810361+00:00"
+    "fetchedAt": "2026-09-03T23:52:20.396810+00:00"
   },
   {
     "id": "5820",
@@ -2032,7 +2032,7 @@
     "contro": "Da alternare ovviamente in base al calendario, non è neanche scontato che sia un titolare inamovibile.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:13:39.571467+00:00"
+    "fetchedAt": "2026-09-03T23:52:22.254720+00:00"
   },
   {
     "id": "5527",
@@ -2043,7 +2043,7 @@
     "contro": "Reduce da un bruttissimo infortunio, potrebbe non offrire enormi garanzie sulla tenuta fisica, inoltre occhio alla concorrenza di Vojvoda.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:13:42.058636+00:00"
+    "fetchedAt": "2026-09-03T23:52:24.000286+00:00"
   },
   {
     "id": "7312",
@@ -2054,7 +2054,7 @@
     "contro": "Alla prima vera stagione intera in Serie A. Ancora abbastanza discontinuo, parte comunque dietro nelle gerarchie rispetto a Zanoli.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:13:44.581712+00:00"
+    "fetchedAt": "2026-09-03T23:52:25.986236+00:00"
   },
   {
     "id": "6890",
@@ -2065,7 +2065,7 @@
     "contro": "Forse troppo discontinuo in termini di rendimento, non proprio un profilo ideale per il modificatore difesa. Inoltre non è scontato che sia un inamovibile.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:12:45.413875+00:00"
+    "fetchedAt": "2026-09-03T23:52:27.717027+00:00"
   },
   {
     "id": "6821",
@@ -2076,7 +2076,7 @@
     "contro": "Non è scontato che sia un inamovibile, la concorrenza non manca. Qualsiasi sia la sua posizione, non è troppo propenso al bonus.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:14:37.154191+00:00"
+    "fetchedAt": "2026-09-03T23:52:29.665785+00:00"
   },
   {
     "id": "4375",
@@ -2087,7 +2087,7 @@
     "contro": "Parte leggermente dietro nelle gerarchie rispetto a Bracaglia. Dovrà ambientarsi in un contesto già parecchio collaudato.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:13:50.471148+00:00"
+    "fetchedAt": "2026-09-03T23:52:31.412448+00:00"
   },
   {
     "id": "7563",
@@ -2098,7 +2098,7 @@
     "contro": "Parte nettamente dietro nelle gerarchie rispetto a Di Lorenzo, potrebbe esser impiegato davvero poche volte da titolare.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:13:52.942129+00:00"
+    "fetchedAt": "2026-09-03T23:52:33.270744+00:00"
   },
   {
     "id": "256",
@@ -2108,8 +2108,8 @@
     "pro": null,
     "contro": null,
     "status": "missing",
-    "error": "PRO/CONTRO not found; bytes=226425 title='Juan Jesus - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False",
-    "fetchedAt": "2026-09-02T22:20:09.315302+00:00"
+    "error": "PRO/CONTRO not found; bytes=226764 title='Juan Jesus - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False",
+    "fetchedAt": "2026-09-03T23:52:35.263909+00:00"
   },
   {
     "id": "5498",
@@ -2120,7 +2120,7 @@
     "contro": "Non proprio affidabilissimo in termini di modificatore difesa. Incline ai malus, inoltre parte anche abbastanza dietro nelle gerarchie.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:13:57.949054+00:00"
+    "fetchedAt": "2026-09-03T23:52:37.226783+00:00"
   },
   {
     "id": "7326",
@@ -2131,7 +2131,7 @@
     "contro": "Molto irruente, con il modo di difendere del Bologna potrebbero non mancare sia gli errori che i cartellini. In ballottaggio serrato.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:14:00.575418+00:00"
+    "fetchedAt": "2026-09-03T23:52:39.151664+00:00"
   },
   {
     "id": "7125",
@@ -2142,7 +2142,7 @@
     "contro": "Di certo non può essere considerato un titolare, almeno ai nastri di partenza, la concorrenza non manca. Ancora leggermente discontinuo, non proprio da modificatore.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:14:02.968562+00:00"
+    "fetchedAt": "2026-09-03T23:52:40.669604+00:00"
   },
   {
     "id": "4378",
@@ -2153,7 +2153,7 @@
     "contro": "Concorrenza folta, tutt'altro che un inamovibile. Parecchio altalenante, non da modificatore. Troppo incline ai cartellini.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:14:05.048968+00:00"
+    "fetchedAt": "2026-09-03T23:52:42.850980+00:00"
   },
   {
     "id": "7175",
@@ -2164,7 +2164,7 @@
     "contro": "Parte dietro nelle gerarchie, non si può assolutamente considerare un inamovibile. Non proprio un profilo da modificatore.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:14:08.017951+00:00"
+    "fetchedAt": "2026-09-03T23:52:45.103351+00:00"
   },
   {
     "id": "7540",
@@ -2175,7 +2175,7 @@
     "contro": "Arriva in un contesto già parecchio consolidato, dovrà sgomitare per diventare un titolatissimo, cosa che almeno ai nastri di partenza non dovrebbe essere. Non proprio da modificatore.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:14:10.291874+00:00"
+    "fetchedAt": "2026-09-03T23:52:47.482905+00:00"
   },
   {
     "id": "5273",
@@ -2186,7 +2186,7 @@
     "contro": "Parte dietro nelle gerarchie rispetto a Bartesaghi, rischia di giocare raramente da titolare. Tremendamente altalenante in termini di media voto.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:13:13.031024+00:00"
+    "fetchedAt": "2026-09-03T23:52:49.082834+00:00"
   },
   {
     "id": "6659",
@@ -2197,7 +2197,7 @@
     "contro": "Milita in una squadra che lotterà per non retrocede, il rendimento potrebbe essere altalenante. Inoltre, occhio sempre alla concorrenza.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:13:18.167210+00:00"
+    "fetchedAt": "2026-09-03T23:52:50.861285+00:00"
   },
   {
     "id": "7238",
@@ -2208,7 +2208,7 @@
     "contro": "La concorrenza resta folta, non è scontato che sia un titolare inamovibile. Non proprio un profilo da modificatore.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:14:19.423579+00:00"
+    "fetchedAt": "2026-09-03T23:52:52.452632+00:00"
   },
   {
     "id": "4925",
@@ -2219,7 +2219,7 @@
     "contro": "Abbastanza altalenante in termini di MV, non proprio un profilo da modificatore. Parecchio incline ai cartellini.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:14:21.157944+00:00"
+    "fetchedAt": "2026-09-03T23:52:54.436042+00:00"
   },
   {
     "id": "7235",
@@ -2230,7 +2230,7 @@
     "contro": "C'è concorrenza, potrebbe ruotare e non essere inamovibile. Altalenante e irruente, incline ai cartellini.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:13:22.919547+00:00"
+    "fetchedAt": "2026-09-03T23:52:56.039731+00:00"
   },
   {
     "id": "7255",
@@ -2241,7 +2241,7 @@
     "contro": "Non un inamovibile, anzi. Non proprio un profilo ideale per il modificatore difesa.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:14:23.065965+00:00"
+    "fetchedAt": "2026-09-03T23:52:57.769001+00:00"
   },
   {
     "id": "6985",
@@ -2252,7 +2252,7 @@
     "contro": "Abbastanza discontinuo in termini di MV, non proprio ideale per il modificatore. Inoltre non parte avanti nelle gerarchie, anzi.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:14:25.486575+00:00"
+    "fetchedAt": "2026-09-03T23:52:59.427915+00:00"
   },
   {
     "id": "6925",
@@ -2263,7 +2263,7 @@
     "contro": "Parte dietro nelle gerarchie, rischia di collezionare più di un SV.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:14:27.270495+00:00"
+    "fetchedAt": "2026-09-03T23:53:01.506985+00:00"
   },
   {
     "id": "5994",
@@ -2274,7 +2274,7 @@
     "contro": "La concorrenza è parecchio folta, lui sembrerebbe partire nettamente dietro nelle gerarchie. Rischia di collezionare davvero diversi SV.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:14:29.770754+00:00"
+    "fetchedAt": "2026-09-03T23:53:03.563833+00:00"
   },
   {
     "id": "7538",
@@ -2285,7 +2285,7 @@
     "contro": "La concorrenza in casa Venezia nella linea difensiva è davvero foltissima, dovrà sgomitare per avere continuità. Al primo anno in Serie A potrebbero non mancare i momenti di blackout.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:13:47.172881+00:00"
+    "fetchedAt": "2026-09-03T23:53:05.702943+00:00"
   },
   {
     "id": "6892",
@@ -2296,7 +2296,7 @@
     "contro": "La concorrenza non manca, parte come titolare, ma non è scontato che sia inamovibile. Altalenante, non proprio un profilo ideale per il modificatore difesa.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:14:32.293634+00:00"
+    "fetchedAt": "2026-09-03T23:53:07.828243+00:00"
   },
   {
     "id": "6673",
@@ -2307,7 +2307,7 @@
     "contro": "Ovviamente il livello in Serie A si alza, potrebbe essere leggermente discontinuo. Sarà da schierare sempre in base al calendario.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:14:35.317199+00:00"
+    "fetchedAt": "2026-09-03T23:53:09.740424+00:00"
   },
   {
     "id": "7478",
@@ -2318,7 +2318,7 @@
     "contro": "Leggermente altalenante nel rendimento e di conseguenza anche in chiave modificatore. Non proprio un inamovibile, la concorrenza è folta sia nel ruolo di braccetto che di esterno.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:15:22.378833+00:00"
+    "fetchedAt": "2026-09-03T23:53:11.375845+00:00"
   },
   {
     "id": "7154",
@@ -2329,7 +2329,7 @@
     "contro": "Parte chiaramente dietro nelle gerarchie, rischia di andare raramente a voto.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:14:39.701754+00:00"
+    "fetchedAt": "2026-09-03T23:53:13.532691+00:00"
   },
   {
     "id": "7605",
@@ -2340,7 +2340,7 @@
     "contro": "Si gioca il posto con Oyono, ma non solo. Spesso Alvini potrebbe preferire anche un terzino \"bloccato\" ad entrambi. Non è sicurissimo del posto, anzi.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:14:41.628256+00:00"
+    "fetchedAt": "2026-09-03T23:53:15.691039+00:00"
   },
   {
     "id": "6601",
@@ -2351,7 +2351,7 @@
     "contro": "Non proprio affidabilissimo in termini di minutaggio, anche a causa di continui problemi fisici che spesso si ripresentano nel corso delle sue stagioni.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:14:44.464322+00:00"
+    "fetchedAt": "2026-09-03T23:53:18.227718+00:00"
   },
   {
     "id": "5742",
@@ -2362,7 +2362,7 @@
     "contro": null,
     "status": "missing",
     "error": "PRO/CONTRO not found; bytes=54066 title='Cody Drameh - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False",
-    "fetchedAt": "2026-09-02T22:20:11.394439+00:00"
+    "fetchedAt": "2026-09-03T23:53:20.121208+00:00"
   },
   {
     "id": "7483",
@@ -2373,18 +2373,18 @@
     "contro": "Ovviamente non parte avanti nelle gerarchie, anzi. Al primo anno in Serie A, non offre grandi garanzie, anche in termini di MV.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:14:47.042118+00:00"
+    "fetchedAt": "2026-09-03T23:53:22.173724+00:00"
   },
   {
     "id": "6896",
     "name": "Van Der Brempt",
-    "team": "Como",
-    "url": "https://www.fantacalcio.it/serie-a/squadre/como/van-der-brempt/6896",
+    "team": "Sassuolo",
+    "url": "https://www.fantacalcio.it/serie-a/squadre/sassuolo/van-der-brempt/6896",
     "pro": "Può racimolare diverse partite a voto, anche da subentrato. Arriva per giocare tanto e può regalare anche qualche bonus. Prezzo molto basso, affidabile.",
-    "contro": "Ha avuto qualche acciacco di troppo nell'ultimo periodo. Non è scontato che sia subito un inamovibile, la concorrenza sulla corsia di destra è folta. Rosa Sassuolo Muric Russo A. Turati Satalino Idzes Obrador Leysen F. Walukiewicz Doig Candè Odenthal Van Der Brempt Cinquegrano Missori Pieragnolo Macchioni Thorstvedt Konè I. Volpato Matic Adzic Bakola Dominguez B. Boloca Lipani Iannoni Berardi Laurientè Esposito Se. Bowie Moro L. Kulla",
+    "contro": "Ha avuto qualche acciacco di troppo nell'ultimo periodo. Non è scontato che sia subito un inamovibile, la concorrenza sulla corsia di destra è folta.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:14:48.867238+00:00"
+    "fetchedAt": "2026-09-03T23:53:24.661591+00:00"
   },
   {
     "id": "6977",
@@ -2395,7 +2395,7 @@
     "contro": "Parecchio altalenante, sia in termini di minutaggio che di MV. Troppo incline ai cartellini.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:14:50.998916+00:00"
+    "fetchedAt": "2026-09-03T23:53:26.359396+00:00"
   },
   {
     "id": "7413",
@@ -2406,7 +2406,7 @@
     "contro": "Non parte avanti nelle gerarchie, dovrà sgomitare per soffiare il posto a Martin. La coppia intriga, ma non costerà pochissimo. Alla prima stagione in A, potrebbe essere leggermente discontinuo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:14:54.256223+00:00"
+    "fetchedAt": "2026-09-03T23:53:28.601962+00:00"
   },
   {
     "id": "791",
@@ -2417,7 +2417,7 @@
     "contro": "Parte dietro nelle gerarchie, sia a destra che a sinistra. Porta pochissimi bonus.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:14:56.713290+00:00"
+    "fetchedAt": "2026-09-03T23:53:30.174855+00:00"
   },
   {
     "id": "2263",
@@ -2428,7 +2428,7 @@
     "contro": "Altalenante, sia in termini di MV che di minutaggio. Parte abbastanza dietro nelle gerarchie. Spesso alle prese con qualche acciacco fisico di troppo",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:14:58.688513+00:00"
+    "fetchedAt": "2026-09-03T23:53:31.837369+00:00"
   },
   {
     "id": "2728",
@@ -2439,7 +2439,7 @@
     "contro": "La concorrenza è folta, parte dietro nelle gerarchie. Abbastanza altalenante in termini di MV.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:15:01.297521+00:00"
+    "fetchedAt": "2026-09-03T23:53:33.493823+00:00"
   },
   {
     "id": "6883",
@@ -2450,7 +2450,7 @@
     "contro": "Parte dietro nelle gerarchie rispetto agli altri difensori, rischia di giocare davvero raramente da titolare. Abbastanza altalenante per MV.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:15:03.731814+00:00"
+    "fetchedAt": "2026-09-03T23:53:35.378474+00:00"
   },
   {
     "id": "7182",
@@ -2461,7 +2461,7 @@
     "contro": "Parte dietro nelle gerarchie, rischia di giocare raramente da titolare. Abbastanza altalenante in termini di media voto.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:15:06.029683+00:00"
+    "fetchedAt": "2026-09-03T23:53:37.228270+00:00"
   },
   {
     "id": "7525",
@@ -2472,7 +2472,7 @@
     "contro": "Al grande salto in un campionato di alto livello, potrebbe impiegare un minimo ad ambientarsi. Inoltre parte comunque abbastanza dietro nelle gerarchie.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:15:08.096661+00:00"
+    "fetchedAt": "2026-09-03T23:53:39.027610+00:00"
   },
   {
     "id": "7476",
@@ -2483,7 +2483,7 @@
     "contro": "Ancora leggermente discontinuo, soprattutto per MV e dunque in chiave modificatore.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:15:10.567686+00:00"
+    "fetchedAt": "2026-09-03T23:53:40.893613+00:00"
   },
   {
     "id": "6638",
@@ -2494,7 +2494,7 @@
     "contro": "Parte nettamente dietro nelle gerarchie, rischia di giocare davvero poco.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:15:13.051906+00:00"
+    "fetchedAt": "2026-09-03T23:53:42.722401+00:00"
   },
   {
     "id": "7202",
@@ -2505,7 +2505,7 @@
     "contro": "Concorrenza folta, lui non parte proprio avanti nelle gerarchie. Gli SV potrebbero non mancare, occhio anche agli infortuni.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:15:15.447599+00:00"
+    "fetchedAt": "2026-09-03T23:53:44.829255+00:00"
   },
   {
     "id": "252",
@@ -2516,7 +2516,7 @@
     "contro": "Parecchio discontinuo negli ultimi anni, non offre grosse garanzie, sia in termini di MV, e quindi modificatore, che di minutaggio. Parte dietro nelle gerarchie.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:15:17.275136+00:00"
+    "fetchedAt": "2026-09-03T23:53:47.117109+00:00"
   },
   {
     "id": "6021",
@@ -2527,7 +2527,7 @@
     "contro": "La concorrenza è parecchio folta, lui è in ballottaggio serrato con gli altri. Non un inamovibile.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:15:19.782135+00:00"
+    "fetchedAt": "2026-09-03T23:53:48.927940+00:00"
   },
   {
     "id": "6681",
@@ -2538,7 +2538,7 @@
     "contro": "Non poco discontinuo, nel rendimento e dunque anche in chiave modificatore. Si alternerà tanto, non si può considerare un inamovibile.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:15:24.884418+00:00"
+    "fetchedAt": "2026-09-03T23:53:50.902456+00:00"
   },
   {
     "id": "7548",
@@ -2549,7 +2549,7 @@
     "contro": "Parte leggermente dietro, sia come terzino che come esterno. Al primo anno in Serie A potrebbe anche subire il cambio di categoria.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:15:26.716095+00:00"
+    "fetchedAt": "2026-09-03T23:53:52.585538+00:00"
   },
   {
     "id": "6537",
@@ -2559,8 +2559,8 @@
     "pro": null,
     "contro": null,
     "status": "missing",
-    "error": "PRO/CONTRO not found; bytes=223467 title='Saba Goglichidze - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False",
-    "fetchedAt": "2026-09-02T22:20:13.294177+00:00"
+    "error": "PRO/CONTRO not found; bytes=224416 title='Saba Goglichidze - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False",
+    "fetchedAt": "2026-09-03T23:53:54.375522+00:00"
   },
   {
     "id": "7573",
@@ -2571,7 +2571,7 @@
     "contro": "Parte chiaramente dietro nelle gerarchie, rischia di andare raramente a voto.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:15:29.385535+00:00"
+    "fetchedAt": "2026-09-03T23:53:56.200411+00:00"
   },
   {
     "id": "5812",
@@ -2582,7 +2582,7 @@
     "contro": "Parte dietro nelle gerarchie, rischia di giocare raramente, quasi mai da titolare.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:15:31.888134+00:00"
+    "fetchedAt": "2026-09-03T23:53:57.826606+00:00"
   },
   {
     "id": "7599",
@@ -2593,7 +2593,7 @@
     "contro": "Parte dietro nelle gerarchie, probabilmente l'ultimo tra gli esterni. Rischia di collezionare diversi SV.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-09-02T22:20:15.351169+00:00"
+    "fetchedAt": "2026-09-03T23:54:00.019649+00:00"
   },
   {
     "id": "7615",
@@ -2604,7 +2604,7 @@
     "contro": "Parte ovviamente dietro nelle gerarchie, la concorrenza nel reparto arretrato è parecchio folta.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-09-02T22:20:17.101520+00:00"
+    "fetchedAt": "2026-09-03T23:54:01.719102+00:00"
   },
   {
     "id": "487",
@@ -2615,7 +2615,7 @@
     "contro": "L'età purtroppo avanza, inoltre parte parecchio dietro nelle gerarchie. Tra qualche acciacco e concorrenza folta rischia di giocare davvero pochissimo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:15:34.867110+00:00"
+    "fetchedAt": "2026-09-03T23:54:03.961028+00:00"
   },
   {
     "id": "418",
@@ -2626,7 +2626,7 @@
     "contro": "Nettamente dietro nelle gerarchie, rischia concretamente di chiudere la propria stagione con zero presenze.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:15:36.896124+00:00"
+    "fetchedAt": "2026-09-03T23:54:05.979719+00:00"
   },
   {
     "id": "5424",
@@ -2637,7 +2637,7 @@
     "contro": "Prima vera stagione in Serie A, non ci aspettiamo possa avere un rendimento molto continuo. Inoltre parte dietro nelle gerarchie, non è scontato che diventi un titolare.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:15:38.865392+00:00"
+    "fetchedAt": "2026-09-03T23:54:07.739811+00:00"
   },
   {
     "id": "294",
@@ -2648,7 +2648,7 @@
     "contro": "Parte nettamente dietro nelle gerarchie, rischia di collezionare davvero poche presenze.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:15:42.081123+00:00"
+    "fetchedAt": "2026-09-03T23:54:10.133267+00:00"
   },
   {
     "id": "6039",
@@ -2659,7 +2659,7 @@
     "contro": "Parte dietro nelle gerarchie difensive. Altalenante, occhio anche ai problemi fisici che spesso l'hanno tormentato negli ultimi anni.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:15:44.295931+00:00"
+    "fetchedAt": "2026-09-03T23:54:12.133038+00:00"
   },
   {
     "id": "327",
@@ -2670,7 +2670,7 @@
     "contro": "Parte dietro nelle gerarchie, potrebbe essere davvero raramente titolare. Non da modificatore, più propenso al malus che al bonus.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:15:46.930998+00:00"
+    "fetchedAt": "2026-09-03T23:54:13.747814+00:00"
   },
   {
     "id": "5399",
@@ -2681,7 +2681,7 @@
     "contro": "Parecchio incline ai problemi fisici, parte anche abbastanza dietro nelle gerarchie. Poco affidabile in chiave modificatore.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:15:49.695167+00:00"
+    "fetchedAt": "2026-09-03T23:54:15.549672+00:00"
   },
   {
     "id": "6809",
@@ -2692,18 +2692,18 @@
     "contro": "Parte nettamente dietro nelle gerarchie, rischia di giocare davvero poco.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:15:52.850304+00:00"
+    "fetchedAt": "2026-09-03T23:54:17.487000+00:00"
   },
   {
     "id": "5481",
     "name": "Mazzocchi",
-    "team": "Napoli",
-    "url": "https://www.fantacalcio.it/serie-a/squadre/napoli/mazzocchi/5481",
-    "pro": "Affidabile quando chiamato in causa, andrà via sicuramente al prezzo minimo.",
-    "contro": "Parte nettamente dietro nelle gerarchie, rischia di racimolare pochissime partite a voto.",
+    "team": "Venezia",
+    "url": "https://www.fantacalcio.it/serie-a/squadre/venezia/mazzocchi/5481",
+    "pro": "Calciatore affidabile, che probabilmente agirà in posizione più avanzata. Duttilissimo al Mantra, può regalare diverse partite a voto e qualche bonus ad un prezzo molto basso.",
+    "contro": "La concorrenza è folta, quindi non è scontato che sia un inamovibile assoluto.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:15:55.510411+00:00"
+    "fetchedAt": "2026-09-03T23:54:19.253736+00:00"
   },
   {
     "id": "6149",
@@ -2714,18 +2714,18 @@
     "contro": "Parte nettamente dietro nelle gerarchie rispetto a Valeri, rischia di collezionare diversi SV.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:15:58.056670+00:00"
+    "fetchedAt": "2026-09-03T23:54:21.414911+00:00"
   },
   {
     "id": "7260",
     "name": "Ziolkowski",
-    "team": "Roma",
-    "url": "https://www.fantacalcio.it/serie-a/squadre/roma/ziolkowski/7260",
-    "pro": "Giovane di talento che può racimolare un minimo di partite a voto. Buona MV, andrà sicuramente via ad un prezzo molto basso.",
-    "contro": "Di sicuro non parte avanti nelle gerarchie difensive, anzi, forse è l'ultimo del pacchetto. Ancora un po' acerbo.",
+    "team": "Monza",
+    "url": "https://www.fantacalcio.it/serie-a/squadre/monza/ziolkowski/7260",
+    "pro": "Giovane di talento che può racimolare un discreto numero di partite a voto. Buona MV, andrà sicuramente via ad un prezzo molto basso.",
+    "contro": "Di sicuro non parte avanti nelle gerarchie difensive, ma può giocarsi le sue carte. Ancora un po' acerbo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:16:00.679184+00:00"
+    "fetchedAt": "2026-09-03T23:54:23.432522+00:00"
   },
   {
     "id": "7156",
@@ -2736,7 +2736,7 @@
     "contro": "Parte nettamente dietro nelle gerarchie, rischia di collezionare diversi SV.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:16:05.902445+00:00"
+    "fetchedAt": "2026-09-03T23:54:25.638662+00:00"
   },
   {
     "id": "7454",
@@ -2747,7 +2747,7 @@
     "contro": "Giovanissimo, alla prima esperienza in Serie A, rischia di giocare davvero raramente.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:16:10.608108+00:00"
+    "fetchedAt": "2026-09-03T23:54:27.775340+00:00"
   },
   {
     "id": "7553",
@@ -2758,7 +2758,7 @@
     "contro": "Parliamo forse dell'ultimo centrale nelle gerarchie difensive. Rischia di giocare davvero raramente.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:16:12.623494+00:00"
+    "fetchedAt": "2026-09-03T23:54:29.754230+00:00"
   },
   {
     "id": "7604",
@@ -2769,7 +2769,7 @@
     "contro": "Non parte avanti nelle gerarchie, anzi. La concorrenza è molto folta e non è detto che riesca ad andare spesso a voto.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:16:21.392395+00:00"
+    "fetchedAt": "2026-09-03T23:54:31.538077+00:00"
   },
   {
     "id": "6826",
@@ -2779,8 +2779,8 @@
     "pro": null,
     "contro": null,
     "status": "missing",
-    "error": "PRO/CONTRO not found; bytes=222045 title='Ali Dembelè - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False",
-    "fetchedAt": "2026-09-02T22:20:18.880857+00:00"
+    "error": "PRO/CONTRO not found; bytes=221773 title='Ali Dembelè - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False",
+    "fetchedAt": "2026-09-03T23:54:33.378752+00:00"
   },
   {
     "id": "6875",
@@ -2791,7 +2791,7 @@
     "contro": "Ovviamente il costo rischia di essere davvero altissimo. Seguite l'FVM e provate a non spingervi troppo oltre, potreste seriamente rischiare di compromettere la vostra asta andandolo a prendere a prezzi troppo alti.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:16:26.708333+00:00"
+    "fetchedAt": "2026-09-03T23:54:35.309265+00:00"
   },
   {
     "id": "2194",
@@ -2802,7 +2802,7 @@
     "contro": "Il prezzo è alto, dunque vi con sigliamo di seguire l'FVM per non esagerare. Occhio agli acciacchi fisici, nella scorsa stagione le partite saltate non sono state poche.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:16:28.672238+00:00"
+    "fetchedAt": "2026-09-03T23:54:36.942418+00:00"
   },
   {
     "id": "4777",
@@ -2813,7 +2813,7 @@
     "contro": "In questo caso il \"contro\" principale è legato ovviamente al prezzo, rischia di costare tantissimo. Seguite l'FVM per non esagerare.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:16:31.254778+00:00"
+    "fetchedAt": "2026-09-03T23:54:38.922894+00:00"
   },
   {
     "id": "2167",
@@ -2824,7 +2824,7 @@
     "contro": "Sempre leggermente discontinuo, in ogni stagione non mancano i periodi di digiuno (a volte anche abbastanza lunghi). Occhio al prezzo, seguite l'FVM indicato per non esagerare.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:16:34.351697+00:00"
+    "fetchedAt": "2026-09-03T23:54:40.673462+00:00"
   },
   {
     "id": "2423",
@@ -2835,7 +2835,7 @@
     "contro": "Ovviamente per profili del genere il contro principale è il prezzo, potrebbe essere parecchio alto. Inoltre, occhio sempre a qualche problemino fisico di troppo che spesso influenza le sue stagioni.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:16:36.581139+00:00"
+    "fetchedAt": "2026-09-03T23:54:42.455804+00:00"
   },
   {
     "id": "2379",
@@ -2846,7 +2846,7 @@
     "contro": "Con Amorim potrebbe avere qualche compito difensivo in più. Occhio dunque, i bonus potrebbero diminuire rispetto alla scorsa stagione.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:16:39.315107+00:00"
+    "fetchedAt": "2026-09-03T23:54:44.288600+00:00"
   },
   {
     "id": "7126",
@@ -2857,7 +2857,7 @@
     "contro": "La sua collocazione tattica resta il problema principale (con Paz è costretto ad allargarsi), dovrà sapersi adattare. Dunque, il suo rendimento potrebbe comunque risentirne un minimo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:16:42.102453+00:00"
+    "fetchedAt": "2026-09-03T23:54:46.367104+00:00"
   },
   {
     "id": "7556",
@@ -2868,7 +2868,7 @@
     "contro": "Ovviamente occhio al prezzo, potrebbe essere parecchio alto. Parecchio giovane alla prima esperienza in A, con Gasperini ci si alterna tanto e potrebbero non mancare i momenti no.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:16:44.567176+00:00"
+    "fetchedAt": "2026-09-03T23:54:47.987701+00:00"
   },
   {
     "id": "5559",
@@ -2879,7 +2879,7 @@
     "contro": "Reduce da una splendida stagione, rischia di andare via a cifre davvero alte. Tenete d'occhio l'FVM per evitare di esagerare.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:16:46.661331+00:00"
+    "fetchedAt": "2026-09-03T23:54:49.969901+00:00"
   },
   {
     "id": "1870",
@@ -2890,7 +2890,7 @@
     "contro": "Il costo è comunque da monitorare, in alcune leghe si potrebbe anche esagerare, dunque seguite l'FVM per non sbagliare. Poco propenso al gol.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:16:51.783783+00:00"
+    "fetchedAt": "2026-09-03T23:54:51.592056+00:00"
   },
   {
     "id": "2766",
@@ -2901,7 +2901,7 @@
     "contro": "Resta ovviamente il timore della discontinuità, suo tallone d'Achille, spesso alimentata anche da qualche acciacco fisico di troppo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:16:48.537774+00:00"
+    "fetchedAt": "2026-09-03T23:54:53.719398+00:00"
   },
   {
     "id": "4973",
@@ -2912,7 +2912,7 @@
     "contro": "La concorrenza è folta, non è scontato che sia un inamovibile. Forse, per la prima volta, il suo prezzo potrebbe essere più alto del solito.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:16:54.826625+00:00"
+    "fetchedAt": "2026-09-03T23:54:55.603353+00:00"
   },
   {
     "id": "2517",
@@ -2923,7 +2923,7 @@
     "contro": "Ovviamente c'è da stare attenti ai problemi fisici che potrebbero ripresentarsi anche in questa stagione, dunque meglio non esagerare con il prezzo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:17:02.085190+00:00"
+    "fetchedAt": "2026-09-03T23:54:57.183409+00:00"
   },
   {
     "id": "632",
@@ -2934,7 +2934,7 @@
     "contro": "Ha dimostrato di essere parecchio altalenante in termini di rendimento e di bonus. Intriga, ma soltanto al prezzo giusto.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:16:59.354687+00:00"
+    "fetchedAt": "2026-09-03T23:54:58.774698+00:00"
   },
   {
     "id": "6908",
@@ -2945,7 +2945,7 @@
     "contro": "Profilo molto interessante, ma occhio al prezzo. Si alzerà in maniera vertiginosa rispetto alla scorsa stagione, seguite l'FVM per non esagerare.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:16:57.028475+00:00"
+    "fetchedAt": "2026-09-03T23:55:00.923242+00:00"
   },
   {
     "id": "5119",
@@ -2956,7 +2956,7 @@
     "contro": "Fin qui sempre altalenante nel corso della propria carriera. Non è scontato che faccia bene nonostante le qualità e le caratteristiche. Occhio al prezzo, se c'è chi è disposto a fare follie, forse meglio mollare.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:17:15.925966+00:00"
+    "fetchedAt": "2026-09-03T23:55:02.740672+00:00"
   },
   {
     "id": "6884",
@@ -2967,7 +2967,7 @@
     "contro": "Discontinuo nel rendimento, a volte troppo fumoso. Inoltre non si può considerare un inamovibile, si alternerà.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:17:22.405922+00:00"
+    "fetchedAt": "2026-09-03T23:55:04.366579+00:00"
   },
   {
     "id": "7314",
@@ -2978,7 +2978,7 @@
     "contro": "Ovviamente occhio al prezzo, sarà uno dei più pagati in casa Lazio. Inoltre in caso di 4-2-3-1 potrebbe avere qualche compito difensivo in più.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:17:07.155316+00:00"
+    "fetchedAt": "2026-09-03T23:55:06.492690+00:00"
   },
   {
     "id": "5687",
@@ -2989,7 +2989,7 @@
     "contro": "Dopo la scorsa stagione il suo prezzo potrebbe anche aumentare, meglio non esagerare. Resta comunque discontinuo sotto diversi aspetti, non va trattato come un top.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:17:09.788850+00:00"
+    "fetchedAt": "2026-09-03T23:55:08.445204+00:00"
   },
   {
     "id": "5792",
@@ -3000,18 +3000,18 @@
     "contro": "Occhio al mercato (anche invernale), resta in partenza. Anche per questo motivo non esagerate con il prezzo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:17:13.047226+00:00"
+    "fetchedAt": "2026-09-03T23:55:10.038623+00:00"
   },
   {
     "id": "5800",
     "name": "Gudmundsson A.",
-    "team": "Fiorentina",
-    "url": "https://www.fantacalcio.it/serie-a/squadre/fiorentina/gudmundsson-a/5800",
-    "pro": "Andrà sempre a voto, nella maggior parte dei casi da titolare. Probabile primo rigorista, dopo la scorsa stagione avrà un prezzo sicuramente più basso.",
-    "contro": "Parecchio discontinuo nel rendimento e spesso alle prese con qualche acciacco fisico di troppo.",
+    "team": "Lazio",
+    "url": "https://www.fantacalcio.it/serie-a/squadre/lazio/gudmundsson-a/5800",
+    "pro": "Andrà sempre a voto, spesso anche da subentrato. Papabile vice rigorista, incline al bonus e scommessa dal prezzo molto basso. Duttile.",
+    "contro": "Parecchio discontinuo nel rendimento e spesso alle prese con qualche acciacco fisico di troppo. Concorrenza foltissima, parte dietro nelle gerarchie, sia come falso nove che sulle fasce.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:17:04.853221+00:00"
+    "fetchedAt": "2026-09-03T23:55:12.093349+00:00"
   },
   {
     "id": "152",
@@ -3022,7 +3022,7 @@
     "contro": "L'età avanza e la concorrenza è folta, non si può considerare un inamovibile. Il turnover non mancherà anche per lui.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:17:42.740084+00:00"
+    "fetchedAt": "2026-09-03T23:55:14.256691+00:00"
   },
   {
     "id": "2606",
@@ -3033,7 +3033,7 @@
     "contro": "Non è un calciatore di stampo offensivo, dunque non aspettatevi un bottino importante di bonus.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:17:24.956635+00:00"
+    "fetchedAt": "2026-09-03T23:55:15.930619+00:00"
   },
   {
     "id": "6684",
@@ -3044,7 +3044,7 @@
     "contro": "Leggermente discontinuo nel rendimento e anche nel minutaggio.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:17:47.544108+00:00"
+    "fetchedAt": "2026-09-03T23:55:17.990419+00:00"
   },
   {
     "id": "5172",
@@ -3055,7 +3055,7 @@
     "contro": "Può migliorare, ma fino ad oggi non è mai stato una macchina da bonus. Inoltre in casa Inter la concorrenza in mediana è parecchio folta, non è scontato che sia subito un inamovibile.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:17:31.909151+00:00"
+    "fetchedAt": "2026-09-03T23:55:20.174688+00:00"
   },
   {
     "id": "4179",
@@ -3066,7 +3066,7 @@
     "contro": "Negli ultimi anni ha dimostrato di essere altalenante, anche a causa di alcuni problemi fisici. La concorrenza poi alla Juve è folta, non è un inamovibile.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-09-02T22:20:21.518958+00:00"
+    "fetchedAt": "2026-09-03T23:55:21.934257+00:00"
   },
   {
     "id": "1850",
@@ -3077,7 +3077,7 @@
     "contro": null,
     "status": "missing",
     "error": "PRO/CONTRO not found; bytes=54069 title='Franck Kessiè - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False",
-    "fetchedAt": "2026-09-02T22:20:23.531135+00:00"
+    "fetchedAt": "2026-09-03T23:55:23.958076+00:00"
   },
   {
     "id": "7625",
@@ -3088,7 +3088,7 @@
     "contro": null,
     "status": "missing",
     "error": "PRO/CONTRO not found; bytes=53883 title='Goncalves \"Pote\" Pedro - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False",
-    "fetchedAt": "2026-09-02T22:20:25.501713+00:00"
+    "fetchedAt": "2026-09-03T23:55:25.993745+00:00"
   },
   {
     "id": "7129",
@@ -3099,7 +3099,7 @@
     "contro": "Può migliorare tanto, ma ovviamente resta non proprio un grandissimo dispensatore di gol. La concorrenza è folta, si alternerà tanto.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:17:18.008704+00:00"
+    "fetchedAt": "2026-09-03T23:55:27.870789+00:00"
   },
   {
     "id": "5823",
@@ -3110,7 +3110,7 @@
     "contro": "Ovviamente c'è però sempre da fare i conti con la sua situazione fisica, spesso ha a che fare con qualche acciacco di troppo. Inoltre, occhio alla concorrenza.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:17:40.086243+00:00"
+    "fetchedAt": "2026-09-03T23:55:29.771050+00:00"
   },
   {
     "id": "7436",
@@ -3121,7 +3121,7 @@
     "contro": "Al primo anno in Serie A, arriva in un contesto preciso e in una squadra con una concorrenza parecchio folta sulla trequarti. Potrebbe non essere super continuo, sotto diversi aspetti.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:17:20.474924+00:00"
+    "fetchedAt": "2026-09-03T23:55:32.045896+00:00"
   },
   {
     "id": "4892",
@@ -3132,7 +3132,7 @@
     "contro": "Abbastanza altalenante, sia in termini di produzione di bonus che di MV. Non è un top, dunque non esagerate in sede d'asta. Non è un inamovibile.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:17:56.558540+00:00"
+    "fetchedAt": "2026-09-03T23:55:33.923191+00:00"
   },
   {
     "id": "7078",
@@ -3143,7 +3143,7 @@
     "contro": "Parliamo di un classe 2007 che a 18 anni arriva per la prima volta in Serie A. Calma, dategli un minimo di tempo. Inoltre, occhio al prezzo, consultate sempre l'FVM.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:17:27.394639+00:00"
+    "fetchedAt": "2026-09-03T23:55:35.734965+00:00"
   },
   {
     "id": "6372",
@@ -3154,7 +3154,7 @@
     "contro": "Da capire quale sarà la collocazione tattica, arriva inoltre con aspettative importanti. Al primo anno in Italia dovrà ambientarsi, fino ad oggi non è mai stato una macchina da bonus.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:17:29.536643+00:00"
+    "fetchedAt": "2026-09-03T23:55:37.453768+00:00"
   },
   {
     "id": "184",
@@ -3165,18 +3165,18 @@
     "contro": "Concorrenza folta, potrebbe andare spesso a voto anche da subentrato, dunque non di facilissima gestione in sede di formazione. Occhio agli acciacchi.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:18:15.714689+00:00"
+    "fetchedAt": "2026-09-03T23:55:39.671995+00:00"
   },
   {
     "id": "6844",
     "name": "Rowe",
-    "team": "Bologna",
-    "url": "https://www.fantacalcio.it/serie-a/squadre/bologna/rowe/6844",
-    "pro": "Può consacrarsi con il calcio proposto da Tedesco. Di stampo offensivo, propenso al bonus. Andrà praticamente sempre a voto, può incidere anche da subentrato.",
-    "contro": "Intriga tanto, dunque occhio al prezzo, potrebbe non essere proprio basso. Seguite l'FVM per non sbagliare. Ancora leggermente discontinuo, occhio alla concorrenza di Cambiaghi.",
+    "team": "Atalanta",
+    "url": "https://www.fantacalcio.it/serie-a/squadre/atalanta/rowe/6844",
+    "pro": "Può consacrarsi con il calcio proposto da Sarri. Di stampo offensivo, propenso al bonus. Andrà praticamente sempre a voto, può incidere anche da subentrato.",
+    "contro": "Intriga tanto, dunque occhio al prezzo, potrebbe non essere proprio basso. Seguite l'FVM per non sbagliare. Ancora leggermente discontinuo, occhio alla concorrenza di Raspadori, ballottaggio serratissimo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:17:37.326827+00:00"
+    "fetchedAt": "2026-09-03T23:55:41.558392+00:00"
   },
   {
     "id": "6151",
@@ -3187,7 +3187,7 @@
     "contro": "Vizietto del bonus si, ma ovviamente è un centrocampista di stampo difensivo, non proprio un trequartista insomma. Con la Champions potrebbe ruotare più del solito.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:17:52.361021+00:00"
+    "fetchedAt": "2026-09-03T23:55:43.680611+00:00"
   },
   {
     "id": "2848",
@@ -3198,7 +3198,7 @@
     "contro": "Dovrà rispettare le attese, che non sono basse. Inoltre occhio al prezzo, potrebbe essere alto in diverse leghe, seguite l'FVM per non esagerare.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:18:23.144461+00:00"
+    "fetchedAt": "2026-09-03T23:55:45.463450+00:00"
   },
   {
     "id": "4220",
@@ -3209,7 +3209,7 @@
     "contro": "La concorrenza in mediana è folta, non è scontato che sia un inamovibile. Tremendamente altalenante e discontinuo, occhio anche ai problemini fisici.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:17:45.258869+00:00"
+    "fetchedAt": "2026-09-03T23:55:47.970144+00:00"
   },
   {
     "id": "7223",
@@ -3220,7 +3220,7 @@
     "contro": "Partiamo col dire che non è un inamovibile, tutt'altro. Anzi, parte anche dietro nelle gerarchie. Abbastanza altalenante nel rendimento e nella produzione di bonus.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:18:00.871316+00:00"
+    "fetchedAt": "2026-09-03T23:55:49.810958+00:00"
   },
   {
     "id": "5589",
@@ -3231,18 +3231,18 @@
     "contro": "Nonostante non sia proprio avulso alla manovra offensiva, non porta tantissimi bonus. E' sicuramente la sua pecca principale.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:18:03.284687+00:00"
+    "fetchedAt": "2026-09-03T23:55:51.531232+00:00"
   },
   {
     "id": "5844",
     "name": "Thorstvedt",
     "team": "Sassuolo",
     "url": "https://www.fantacalcio.it/serie-a/squadre/sassuolo/thorstvedt/5844",
-    "pro": "Inamovibile qualora rimanesse, sempre propenso all'inserimento e abbastanza incline al bonus. Per rapporto qualità-prezzo può rappresentare un ottimo acquisto.",
-    "contro": "Qualche acciacco fisico di troppo l'ha tormentato nella scorsa stagione. Ha chiesto la cessione.",
+    "pro": "Inamovibile, sempre propenso all'inserimento e abbastanza incline al bonus. Per rapporto qualità-prezzo può rappresentare un ottimo acquisto.",
+    "contro": "Qualche acciacco fisico di troppo l'ha tormentato nella scorsa stagione.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:18:05.732782+00:00"
+    "fetchedAt": "2026-09-03T23:55:53.301518+00:00"
   },
   {
     "id": "6274",
@@ -3253,7 +3253,7 @@
     "contro": "In fase di non possesso soffre, in termini di MV potrebbe essere più altalenante del previsto.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:18:20.130693+00:00"
+    "fetchedAt": "2026-09-03T23:55:55.039197+00:00"
   },
   {
     "id": "7070",
@@ -3264,7 +3264,7 @@
     "contro": "Andrà sempre a voto, ma non possiamo considerarlo un titolare inamovibile. Ancora leggermente discontinuo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:18:46.047473+00:00"
+    "fetchedAt": "2026-09-03T23:55:56.781107+00:00"
   },
   {
     "id": "827",
@@ -3275,7 +3275,7 @@
     "contro": "Poco propenso al bonus, pochissimi gol. Inoltre non è scontato che sia inamovibile.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:18:48.496436+00:00"
+    "fetchedAt": "2026-09-03T23:55:58.815886+00:00"
   },
   {
     "id": "5562",
@@ -3286,7 +3286,7 @@
     "contro": "Non proprio propenso al bonus. Inoltre, la concorrenza è folta anche per lui, potrebbe essere meno inamovibile.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:17:54.130281+00:00"
+    "fetchedAt": "2026-09-03T23:56:00.460041+00:00"
   },
   {
     "id": "5500",
@@ -3297,7 +3297,7 @@
     "contro": "Il ballottaggio con Isaksen è serratissimo e probabilmente ce lo porteremo dietro per tutta la stagione. Ancora leggermente discontinuo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:18:25.725122+00:00"
+    "fetchedAt": "2026-09-03T23:56:02.199181+00:00"
   },
   {
     "id": "6398",
@@ -3308,7 +3308,7 @@
     "contro": "La sua stagione inizia con un infortunio non lieve che gli farà saltare tutta la preparazione, potrebbe influenzare non poco la sua annata. Ballottaggio con Cancellierri serratissimo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:18:28.185398+00:00"
+    "fetchedAt": "2026-09-03T23:56:04.025185+00:00"
   },
   {
     "id": "5878",
@@ -3319,7 +3319,7 @@
     "contro": "Storicamente altalenante, sia nel rendimento che nella produzione di bonus. Occhio dunque, va trattato per il suo valore reale, seguite l’FVM. Non un inamovibile, anzi.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:18:51.128305+00:00"
+    "fetchedAt": "2026-09-03T23:56:05.773384+00:00"
   },
   {
     "id": "536",
@@ -3330,7 +3330,7 @@
     "contro": "Negli anni ha arretrato sempre di più il proprio raggio d'azione, non particolarmente propenso al bonus. Potrebbe non essere più inamovibile.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:17:58.854994+00:00"
+    "fetchedAt": "2026-09-03T23:56:07.949580+00:00"
   },
   {
     "id": "779",
@@ -3341,7 +3341,7 @@
     "contro": "Potrebbe alternarsi più del solito. Un profilo non di stampo offensivo, tutt'altro, poco propenso al bonus.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:18:55.487640+00:00"
+    "fetchedAt": "2026-09-03T23:56:09.925260+00:00"
   },
   {
     "id": "5735",
@@ -3352,7 +3352,7 @@
     "contro": "Occhio alla delicatissima situazione extra-campo, potrebbe influenzare non poco la sua stagione.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:18:57.952078+00:00"
+    "fetchedAt": "2026-09-03T23:56:11.893225+00:00"
   },
   {
     "id": "5888",
@@ -3363,7 +3363,7 @@
     "contro": "Occhio alla concorrenza folta, non è scontato che possa essere un titolare inamovibile.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:18:07.614332+00:00"
+    "fetchedAt": "2026-09-03T23:56:13.919712+00:00"
   },
   {
     "id": "530",
@@ -3374,7 +3374,7 @@
     "contro": "Abbastanza discontinuo e altalenante, sia in termini di rendimento che a causa di continui acciacchi fisici che spesso si ripresentano. La concorrenza sulla trequarti è folta, si alternerà tanto.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:18:10.134321+00:00"
+    "fetchedAt": "2026-09-03T23:56:15.977391+00:00"
   },
   {
     "id": "2077",
@@ -3385,7 +3385,7 @@
     "contro": "Almeno ai nastri di partenza non possiamo considerarlo un inamovibile. La concorrenza è tanta, di certo non può essere considerato uno slot alto nel vostro centrocampo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:18:13.208196+00:00"
+    "fetchedAt": "2026-09-03T23:56:17.647919+00:00"
   },
   {
     "id": "2765",
@@ -3396,7 +3396,7 @@
     "contro": "Leggermente discontinuo, non è scontato che sia un inamovibile. La concorrenza è folta, dunque sicuramente non va trattato come un titolarissimo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:18:35.103862+00:00"
+    "fetchedAt": "2026-09-03T23:56:19.811299+00:00"
   },
   {
     "id": "4436",
@@ -3407,18 +3407,18 @@
     "contro": "La concorrenza sulle corsie laterali è folta, potrebbe alternarsi spessissimo. Spesso incappa in qualche acciacco fisico di troppo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:18:37.443377+00:00"
+    "fetchedAt": "2026-09-03T23:56:21.870877+00:00"
   },
   {
     "id": "1933",
     "name": "Mandragora",
-    "team": "Fiorentina",
-    "url": "https://www.fantacalcio.it/serie-a/squadre/fiorentina/mandragora/1933",
+    "team": "Torino",
+    "url": "https://www.fantacalcio.it/serie-a/squadre/torino/mandragora/1933",
     "pro": "Ormai una certezza in termini di bonus, specialmente di gol. Sempre a voto, ha un feeling marcato con il +3. Spesso sottovalutato, il prezzo anche stavolta non sarà alto.",
-    "contro": "Come ogni anno non mancano però i dubbi sulla sua titolarità. Tra il cambio allenatore, l'età che avanza e la concorrenza folta di certo non lo si può considerare un inamovibile.",
+    "contro": "Occhio perchè il prezzo potrebbe salire tanto dopo il cambio maglia, occhio all'FVM per evitare di pagarlo troppo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:18:18.424204+00:00"
+    "fetchedAt": "2026-09-03T23:56:23.895607+00:00"
   },
   {
     "id": "7472",
@@ -3429,7 +3429,7 @@
     "contro": "Da capire se sarà in grado di confermare il livello visto in Serie B anche nella massima categoria e di imporsi come titolare inamovibile.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:19:14.351047+00:00"
+    "fetchedAt": "2026-09-03T23:56:25.502553+00:00"
   },
   {
     "id": "4856",
@@ -3440,7 +3440,7 @@
     "contro": "Tremendamente altalenante e discontinuo, sotto diversi aspetti. Parte dietro nelle gerarchie offensive.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:19:24.131985+00:00"
+    "fetchedAt": "2026-09-03T23:56:27.684019+00:00"
   },
   {
     "id": "4287",
@@ -3451,7 +3451,7 @@
     "contro": "Di stampo difensivo, porta pochissimi bonus. Con Allegri inoltre le rotazioni coinvolgeranno anche lui.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:18:53.064381+00:00"
+    "fetchedAt": "2026-09-03T23:56:29.499214+00:00"
   },
   {
     "id": "6717",
@@ -3462,7 +3462,7 @@
     "contro": "Reduce da un infortunio serissimo rimediato al Mondiale, rischia di non rientrare prima del 2027. Inoltre potrebbe impiegare non poco a rientrare in condizione.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:18:30.561415+00:00"
+    "fetchedAt": "2026-09-03T23:56:31.397616+00:00"
   },
   {
     "id": "7551",
@@ -3473,7 +3473,7 @@
     "contro": "Il prezzo potrebbe non essere bassissimo, anzi. Consultate l'FVM per non esagerare. Al primo anno in Italia, potrebbe avere problemi di discontinuità.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:19:00.462502+00:00"
+    "fetchedAt": "2026-09-03T23:56:33.310719+00:00"
   },
   {
     "id": "7618",
@@ -3484,7 +3484,7 @@
     "contro": null,
     "status": "missing",
     "error": "PRO/CONTRO not found; bytes=54081 title='Omari Hutchinson - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False",
-    "fetchedAt": "2026-09-02T22:20:27.189051+00:00"
+    "fetchedAt": "2026-09-03T23:56:35.455073+00:00"
   },
   {
     "id": "6833",
@@ -3495,7 +3495,7 @@
     "contro": null,
     "status": "missing",
     "error": "PRO/CONTRO not found; bytes=54248 title='Samuel Mbangula - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False",
-    "fetchedAt": "2026-09-02T22:20:29.043094+00:00"
+    "fetchedAt": "2026-09-03T23:56:37.228363+00:00"
   },
   {
     "id": "4364",
@@ -3506,7 +3506,7 @@
     "contro": "Ha arretrato di parecchio il proprio raggio d'azione, ormai molto poco propenso al gol. Non è scontato che sia un inamovibile.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:18:33.225322+00:00"
+    "fetchedAt": "2026-09-03T23:56:39.213301+00:00"
   },
   {
     "id": "5422",
@@ -3517,7 +3517,7 @@
     "contro": "La concorrenza è alta, non è scontato che sia titolare, anzi. Inoltre, non è assolutamente detto che possa consacrarsi, fin qui nella sua carriera i bonus non sono mai stati tanti.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:19:46.658926+00:00"
+    "fetchedAt": "2026-09-03T23:56:41.311613+00:00"
   },
   {
     "id": "5858",
@@ -3528,7 +3528,7 @@
     "contro": "Ha arretrato ormai da anni il proprio raggio d'azione, più un equilibratore che un centrocampista di stampo offensivo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:19:03.142160+00:00"
+    "fetchedAt": "2026-09-03T23:56:43.153452+00:00"
   },
   {
     "id": "4870",
@@ -3539,7 +3539,7 @@
     "contro": "Più propenso al malus che al bonus, non proprio costante anche in termini di MV. Non inamovibile.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:19:05.760866+00:00"
+    "fetchedAt": "2026-09-03T23:56:44.690234+00:00"
   },
   {
     "id": "7311",
@@ -3550,7 +3550,7 @@
     "contro": "Almeno in partenza è difficile pensare di considerarlo un inamovibile. Non è un profilo particolarmente propenso al bonus.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:19:08.408677+00:00"
+    "fetchedAt": "2026-09-03T23:56:46.467122+00:00"
   },
   {
     "id": "4465",
@@ -3561,7 +3561,7 @@
     "contro": "Ottima copertura, ma di certo non un titolare per le vostre rose. Poco propenso al gol. Inoltre con Oulai potrebbe perdere anche parecchio minutaggio.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:18:40.570889+00:00"
+    "fetchedAt": "2026-09-03T23:56:48.108380+00:00"
   },
   {
     "id": "6294",
@@ -3572,7 +3572,7 @@
     "contro": "Anche in questo caso occhio alla concorrenza che, in casa Fiorentina, soprattutto in mediana, è parecchio folta. Potrebbe alternarsi spesso.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:18:42.793325+00:00"
+    "fetchedAt": "2026-09-03T23:56:49.759638+00:00"
   },
   {
     "id": "5791",
@@ -3583,7 +3583,7 @@
     "contro": "Intriga al Mantra, ma al Classic non può essere più di una semplice copertura. Porta pochissimi bonus.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:19:17.098133+00:00"
+    "fetchedAt": "2026-09-03T23:56:51.877207+00:00"
   },
   {
     "id": "5685",
@@ -3594,7 +3594,7 @@
     "contro": "Parte comunque dietro nelle gerarchie, in maniera forse anche abbastanza netta. Troppo altalenante nel rendimento nelle ultime stagioni.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:20:44.470336+00:00"
+    "fetchedAt": "2026-09-03T23:56:53.999808+00:00"
   },
   {
     "id": "4459",
@@ -3605,7 +3605,7 @@
     "contro": "Il ballottaggio con Cataldi è serratissimo e probabilmente ce lo porteremo dietro per tutta la stagione. Poco propenso al bonus.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:19:19.713777+00:00"
+    "fetchedAt": "2026-09-03T23:56:55.793684+00:00"
   },
   {
     "id": "5504",
@@ -3616,7 +3616,7 @@
     "contro": "Un minimo di concorrenza c'è e non è da sottovalutare. Non è un calciatore prettamente di stampo offensivo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:19:22.170051+00:00"
+    "fetchedAt": "2026-09-03T23:56:57.647915+00:00"
   },
   {
     "id": "6593",
@@ -3627,7 +3627,7 @@
     "contro": "Leggermente discontinuo, sia in termini di rendimento che di minutaggio. Non si può di certo definire un inamovibile.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:20:10.699493+00:00"
+    "fetchedAt": "2026-09-03T23:56:59.523802+00:00"
   },
   {
     "id": "6666",
@@ -3638,7 +3638,7 @@
     "contro": "Negli ultimi anni ha arretrato di parecchio il proprio raggio d'azione. Incline a qualche problemino fisico di troppo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:19:29.252473+00:00"
+    "fetchedAt": "2026-09-03T23:57:01.322501+00:00"
   },
   {
     "id": "6190",
@@ -3649,7 +3649,7 @@
     "contro": "Parte leggermente dietro nelle gerarchie, non è di certo un inamovibile. La concorrenza è folta. Inoltre è ancora abbastanza altalenante.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:19:31.550241+00:00"
+    "fetchedAt": "2026-09-03T23:57:03.729077+00:00"
   },
   {
     "id": "6680",
@@ -3660,7 +3660,7 @@
     "contro": "Prettamente di stampo difensivo, porta davvero pochissimi bonus.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:19:36.796742+00:00"
+    "fetchedAt": "2026-09-03T23:57:05.250997+00:00"
   },
   {
     "id": "6783",
@@ -3671,7 +3671,7 @@
     "contro": "Ovviamente la concorrenza è folta, sia in mediana che sulla trequarti. Alla prima esperienza in Serie A dovrà sgomitare non poco, pochi gol per ora.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:19:39.835340+00:00"
+    "fetchedAt": "2026-09-03T23:57:07.368601+00:00"
   },
   {
     "id": "5946",
@@ -3682,7 +3682,7 @@
     "contro": "Di stampo difensivo, non è molto propenso all’ìnserimento e di conseguenza al bonus. Inoltre, la concorrenza resta comunque folta e non è scontato che sia subito un inamovibile.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:19:42.382861+00:00"
+    "fetchedAt": "2026-09-03T23:57:09.055462+00:00"
   },
   {
     "id": "4479",
@@ -3693,7 +3693,7 @@
     "contro": "Jolly si, ma spesso dalla panchina. Anche all'Atalanta dovrebbe diventare un subentrante di lusso. Non di facilissima gestione in sede di formazione.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:19:44.688352+00:00"
+    "fetchedAt": "2026-09-03T23:57:11.134964+00:00"
   },
   {
     "id": "7619",
@@ -3704,7 +3704,7 @@
     "contro": null,
     "status": "missing",
     "error": "PRO/CONTRO not found; bytes=54045 title='Joel Monteiro - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False",
-    "fetchedAt": "2026-09-02T22:20:30.908341+00:00"
+    "fetchedAt": "2026-09-03T23:57:12.687879+00:00"
   },
   {
     "id": "5680",
@@ -3715,7 +3715,7 @@
     "contro": null,
     "status": "missing",
     "error": "PRO/CONTRO not found; bytes=54079 title='Pape Matar Sarr - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False",
-    "fetchedAt": "2026-09-02T22:20:32.568675+00:00"
+    "fetchedAt": "2026-09-03T23:57:14.774783+00:00"
   },
   {
     "id": "5298",
@@ -3726,7 +3726,7 @@
     "contro": "La concorrenza è folta, non è scontato che sia un titolare inamovibile. Giocherà stabilmente nei due di centrocampo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:19:48.507347+00:00"
+    "fetchedAt": "2026-09-03T23:57:16.491309+00:00"
   },
   {
     "id": "4260",
@@ -3737,7 +3737,7 @@
     "contro": "Non porta tantissimi bonus. Occhio poi, spesso incline a qualche problemino fisico di troppo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:19:51.116978+00:00"
+    "fetchedAt": "2026-09-03T23:57:18.404580+00:00"
   },
   {
     "id": "6010",
@@ -3748,7 +3748,7 @@
     "contro": "Parecchio discontinuo, sotto diversi aspetti. Inoltre non è scontato che sia un inamovibile, anzi.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:19:11.381062+00:00"
+    "fetchedAt": "2026-09-03T23:57:20.270764+00:00"
   },
   {
     "id": "7412",
@@ -3759,7 +3759,7 @@
     "contro": "Si alternerà tanto, ma parte comunque leggermente dietro nelle gerarchie. Diversi assist, ma pochissimi gol.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:19:53.822110+00:00"
+    "fetchedAt": "2026-09-03T23:57:22.643384+00:00"
   },
   {
     "id": "5036",
@@ -3770,7 +3770,7 @@
     "contro": "Parte dietro nelle gerarchie, non è un inamovibile, anzi. Non porta tantissimi bonus.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:19:55.710613+00:00"
+    "fetchedAt": "2026-09-03T23:57:24.820589+00:00"
   },
   {
     "id": "6678",
@@ -3781,7 +3781,7 @@
     "contro": "Alla prima vera stagione in Serie A, ci aspettiamo un minimo di discontinuità. Inoltre, almeno ai nastri di partenza, non è un titolarissimo. Dovrebbe alternarsi parecchio.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:19:58.255892+00:00"
+    "fetchedAt": "2026-09-03T23:57:27.019676+00:00"
   },
   {
     "id": "7464",
@@ -3792,7 +3792,7 @@
     "contro": "Alla prima esperienza in Serie A, avrà sicuramente bisogno di ambientarsi. La concorrenza è folta e non si può considerare subito un inamovibile. Non proprio un profilo incline al bonus.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:20:01.259941+00:00"
+    "fetchedAt": "2026-09-03T23:57:29.238172+00:00"
   },
   {
     "id": "5998",
@@ -3803,7 +3803,7 @@
     "contro": "Abbastanza discontinuo, soprattutto in termini di bonus. La concorrenza è folta, lui non è da considerare un inamovibile, almeno in partenza.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:20:31.005032+00:00"
+    "fetchedAt": "2026-09-03T23:57:31.081730+00:00"
   },
   {
     "id": "6020",
@@ -3814,7 +3814,7 @@
     "contro": "Duttilissimo, ma non possiamo considerarlo un titolare inamovibile. Non proprio un profilo da bonus.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:20:03.812550+00:00"
+    "fetchedAt": "2026-09-03T23:57:33.565895+00:00"
   },
   {
     "id": "5761",
@@ -3825,7 +3825,7 @@
     "contro": "Parecchio discontinuo, anche a causa di continui problemi fisici che lo tormentano ormai da anni. Inoltre la concorrenza è folta e lui parte dietro nelle gerarchie.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:20:05.679223+00:00"
+    "fetchedAt": "2026-09-03T23:57:35.473524+00:00"
   },
   {
     "id": "6549",
@@ -3836,7 +3836,7 @@
     "contro": "La concorrenza c'è e non è assolutamente da sottovalutare, anzi. Parecchio discontinuo nel rendimento e anche nella produzione dei bonus.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:20:08.306482+00:00"
+    "fetchedAt": "2026-09-03T23:57:37.251779+00:00"
   },
   {
     "id": "2741",
@@ -3847,7 +3847,7 @@
     "contro": "Ovviamente occhio sempre agli infortuni, spesso ha a che fare con problemi fisici che influenzano le sue stagioni. Ormai stabilmente nei due di centrocampo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:19:25.956623+00:00"
+    "fetchedAt": "2026-09-03T23:57:39.333877+00:00"
   },
   {
     "id": "4349",
@@ -3858,7 +3858,7 @@
     "contro": "Non proprio propenso al gol. Incline ai cartellini, inoltre la concorrenza a centrocampo non manca mai. Brutto infortunio durante la pre-season.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:20:13.227612+00:00"
+    "fetchedAt": "2026-09-03T23:57:41.652213+00:00"
   },
   {
     "id": "2528",
@@ -3869,7 +3869,7 @@
     "contro": "Porta pochissimi bonus, inoltre con l'età che avanza rischia di giocare sempre qualche partita in meno tra acciacchi vari e concorrenza.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:20:15.263328+00:00"
+    "fetchedAt": "2026-09-03T23:57:43.243181+00:00"
   },
   {
     "id": "6677",
@@ -3880,7 +3880,7 @@
     "contro": "Al primo vero possibile anno da protagonista in Serie A. Dovrà faticare per diventare un inamovibile, la concorrenza nel suo ruolo è importante.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:21:02.564422+00:00"
+    "fetchedAt": "2026-09-03T23:57:45.382794+00:00"
   },
   {
     "id": "7036",
@@ -3891,7 +3891,7 @@
     "contro": "Ancora parecchio discontinuo, specialmente in termini di minutaggio. Acerbo, la concorrenza nel suo ruolo è foltissima.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:21:04.745959+00:00"
+    "fetchedAt": "2026-09-03T23:57:47.228037+00:00"
   },
   {
     "id": "7060",
@@ -3902,7 +3902,7 @@
     "contro": "Sarà alla prima stagione da protagonista in Serie A, dunque potrebbe risentire ovviamente del cambio di categoria nel corso dell’annata. Non è scontato che sia subito costante e continuo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:21:06.790119+00:00"
+    "fetchedAt": "2026-09-03T23:57:49.053067+00:00"
   },
   {
     "id": "6218",
@@ -3913,7 +3913,7 @@
     "contro": "Si è dimostrato parecchio altalenante negli ultimi anni, sia in termini di produzione bonus che di minutaggio. Occhio anche ai problemini fisici.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:19:33.732366+00:00"
+    "fetchedAt": "2026-09-03T23:57:51.515434+00:00"
   },
   {
     "id": "7198",
@@ -3924,7 +3924,7 @@
     "contro": "Non possiamo considerarlo un inamovibile, la concorrenza in mediana è folta e lui si alternerà spesso. Non porta tantissimi bonus.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:21:10.697087+00:00"
+    "fetchedAt": "2026-09-03T23:57:53.141220+00:00"
   },
   {
     "id": "5674",
@@ -3935,7 +3935,7 @@
     "contro": "Deve ambientarsi in una nuova realtà ed entrare nei meccanismi. Gioca in una squadra che lotterà per non retrocede e ciò ovviamente influirà sul suo rendimento.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:20:19.074668+00:00"
+    "fetchedAt": "2026-09-03T23:57:54.993924+00:00"
   },
   {
     "id": "7146",
@@ -3946,7 +3946,7 @@
     "contro": "Non porta tanti bonus, anzi. Inoltre, con il rientro di Pessina e con Folorunsho e Akinsanmiro non è scontato che sia un inamovibile.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:20:21.683702+00:00"
+    "fetchedAt": "2026-09-03T23:57:57.094397+00:00"
   },
   {
     "id": "7624",
@@ -3957,7 +3957,7 @@
     "contro": null,
     "status": "missing",
     "error": "PRO/CONTRO not found; bytes=53999 title='Daniel Braganca - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False",
-    "fetchedAt": "2026-09-02T22:20:34.303076+00:00"
+    "fetchedAt": "2026-09-03T23:57:58.755901+00:00"
   },
   {
     "id": "7528",
@@ -3968,7 +3968,7 @@
     "contro": "Non proprio di stampo offensivo, alla prima esperienza in Europa, potrebbe impiegare un po’ di tempo per ambientarsi definitivamente. Almeno ai nastri di partenza non è da considerarsi un inamovibile.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:20:23.469756+00:00"
+    "fetchedAt": "2026-09-03T23:58:00.496517+00:00"
   },
   {
     "id": "6640",
@@ -3979,7 +3979,7 @@
     "contro": "La concorrenza è folta, non si può considerare un inamovibile. Parecchio altalenante nel rendimento.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:20:26.111268+00:00"
+    "fetchedAt": "2026-09-03T23:58:02.337417+00:00"
   },
   {
     "id": "7409",
@@ -3990,7 +3990,7 @@
     "contro": "Giovane, dovrà comunque ambientarsi e ciò potrebbe richiedere tempo. Duttile, ma leggermente dietro nelle gerarchie sia a centrocampo che sull’esterno. Ancora un po’ discontinuo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:20:36.970499+00:00"
+    "fetchedAt": "2026-09-03T23:58:04.101998+00:00"
   },
   {
     "id": "5301",
@@ -4001,7 +4001,7 @@
     "contro": "Abbastanza altalenante e discontinuo nel rendimento e nei bonus. Inoltre la concorrenza è folta e lui non può essere considerato un inamovibile.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:21:45.613117+00:00"
+    "fetchedAt": "2026-09-03T23:58:05.712052+00:00"
   },
   {
     "id": "6629",
@@ -4012,7 +4012,7 @@
     "contro": "La concorrenza non manca, non è assolutamente scontato che sia un titolarissimo. Abbastanza altalenante nel rendimento.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:20:46.429258+00:00"
+    "fetchedAt": "2026-09-03T23:58:07.639321+00:00"
   },
   {
     "id": "7203",
@@ -4023,7 +4023,7 @@
     "contro": "La concorrenza in mediana è foltissima, lui di certo non parte più avanti di tutti nelle gerarchie. Si alternerà tanto, inoltre segna poco.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:20:57.523679+00:00"
+    "fetchedAt": "2026-09-03T23:58:09.715712+00:00"
   },
   {
     "id": "6898",
@@ -4034,7 +4034,7 @@
     "contro": "Tanti voti, ma porta davvero pochissimi bonus. Occhio ai cartellini.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:20:59.323209+00:00"
+    "fetchedAt": "2026-09-03T23:58:11.916489+00:00"
   },
   {
     "id": "7535",
@@ -4045,7 +4045,7 @@
     "contro": "La concorrenza in casa Torino non manca di certo, anzi. Non è assolutamente detto che sia titolare, inoltre non porta tantissimi bonus.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:22:09.681651+00:00"
+    "fetchedAt": "2026-09-03T23:58:14.017202+00:00"
   },
   {
     "id": "6170",
@@ -4056,7 +4056,7 @@
     "contro": "Di stampo difensivo, porta davvero pochissimi bonus. Poi non è assolutamente scontato che sia un titolare inamovibile.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:20:17.287189+00:00"
+    "fetchedAt": "2026-09-03T23:58:15.764657+00:00"
   },
   {
     "id": "5507",
@@ -4067,7 +4067,7 @@
     "contro": "Negli anni ha arretrato di parecchio il proprio raggio d’azione, sempre più difensivo e meno propenso al bonus e al gol ancor di più.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:21:13.358932+00:00"
+    "fetchedAt": "2026-09-03T23:58:17.593108+00:00"
   },
   {
     "id": "5319",
@@ -4078,7 +4078,7 @@
     "contro": "Concorrenza parecchio folta, ai nastri di partenza non si può considerarlo proprio un titolarissimo. Discontinuo per MV.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:21:16.354763+00:00"
+    "fetchedAt": "2026-09-03T23:58:19.742320+00:00"
   },
   {
     "id": "6994",
@@ -4089,7 +4089,7 @@
     "contro": "Leggermente discontinuo, non è proprio un profilo da gol. Se vi aspettate un centrocampista dal +3 facile, meglio virare su un altro tipo di calciatore.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:21:18.580060+00:00"
+    "fetchedAt": "2026-09-03T23:58:21.847582+00:00"
   },
   {
     "id": "6618",
@@ -4100,18 +4100,18 @@
     "contro": "Giovanissimo, ancora leggermente discontinuo, sotto diversi aspetti. Concorrenza parecchio folta in avanti, rischia di partire raramente da titolare.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:21:22.977119+00:00"
+    "fetchedAt": "2026-09-03T23:58:24.060600+00:00"
   },
   {
     "id": "22",
     "name": "De Roon",
-    "team": "Atalanta",
-    "url": "https://www.fantacalcio.it/serie-a/squadre/atalanta/de-roon/22",
+    "team": "Roma",
+    "url": "https://www.fantacalcio.it/serie-a/squadre/roma/de-roon/22",
     "pro": "Equilibratore affidabile in termini di media voto, pochi malus. Può garantire diverse presenze come al solito.",
-    "contro": "Porta pochissimi bonus, avrà compiti ancor più difensivi con il nuovo allenatore. Rosa Roma Svilar De Marzi Gollini Molina N. Wesley Mancini N'Dicka Hermoso Koulierakis Balerdi Rensch Ghilardi Angelino Ziolkowski Lulli Mora Konè M. Pellegrini Lo. Cristante Pisilli De Roon El Aynaoui Malen Dybala Castro S. Soulè Vaz",
+    "contro": "Porta pochissimi bonus, avrà compiti difensivi. Parte dietro nelle gerarchie, non più un titolarissimo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:21:25.580035+00:00"
+    "fetchedAt": "2026-09-03T23:58:25.800201+00:00"
   },
   {
     "id": "6054",
@@ -4122,7 +4122,7 @@
     "contro": "Non è un inamovibile, anzi. Parte dietro nelle gerarchie, porta pochi bonus.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:21:27.664094+00:00"
+    "fetchedAt": "2026-09-03T23:58:27.838113+00:00"
   },
   {
     "id": "6895",
@@ -4133,7 +4133,7 @@
     "contro": "Parte dietro nelle gerarchie rispetto agli altri esterni. Ancora discontinuo nel rendimento e nel minutaggio.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:21:29.430583+00:00"
+    "fetchedAt": "2026-09-03T23:58:29.894002+00:00"
   },
   {
     "id": "7127",
@@ -4144,7 +4144,7 @@
     "contro": "Spesso risulta fumoso, non proprio un bomber di razza insomma. Inoltre, di certo non parliamo di un inamovibile.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:20:28.418063+00:00"
+    "fetchedAt": "2026-09-03T23:58:31.736187+00:00"
   },
   {
     "id": "6206",
@@ -4155,7 +4155,7 @@
     "contro": "Sarà ovviamente da alternare in base al calendario. Altalenante in termini di media voto.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:21:33.470594+00:00"
+    "fetchedAt": "2026-09-03T23:58:33.629740+00:00"
   },
   {
     "id": "7473",
@@ -4166,7 +4166,7 @@
     "contro": "Di stampo prettamente difensivo, poco propenso al bonus. Inoltre, occhio alla concorrenza, il livello sale e non è scontato che sia un inamovibile.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:21:36.072206+00:00"
+    "fetchedAt": "2026-09-03T23:58:35.630682+00:00"
   },
   {
     "id": "7474",
@@ -4177,7 +4177,7 @@
     "contro": "Non è mai facile confermarsi agli stessi livelli quando c’è il famoso salto di categoria. Inoltre la concorrenza non manca e di conseguenza non è assolutamente scontato che sia un inamovibile anche in Serie A.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:21:39.111649+00:00"
+    "fetchedAt": "2026-09-03T23:58:38.096688+00:00"
   },
   {
     "id": "6506",
@@ -4188,7 +4188,7 @@
     "contro": "Discontinuo, alla prima vera annata intera in Serie A. Non proprio un bomber di razza, anzi. Inoltre non è scontato che sia un inamovibile.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:21:41.013479+00:00"
+    "fetchedAt": "2026-09-03T23:58:40.205988+00:00"
   },
   {
     "id": "7341",
@@ -4199,7 +4199,7 @@
     "contro": "Porta pochi bonus, non proprio propenso al gol. Non è un inamovibile, si alternerà spesso.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:20:34.180958+00:00"
+    "fetchedAt": "2026-09-03T23:58:42.303300+00:00"
   },
   {
     "id": "4970",
@@ -4210,7 +4210,7 @@
     "contro": "L'età avanza e tra concorrenze e qualche acciacco fisico di troppo rischia di giocare poco, quasi mai da titolare.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:21:43.228126+00:00"
+    "fetchedAt": "2026-09-03T23:58:44.383559+00:00"
   },
   {
     "id": "2857",
@@ -4221,7 +4221,7 @@
     "contro": "Non è scontato che sia un inamovibile, anzi, la concorrenza sulla trequarti è folta. Parecchio discontinuo, spesso incline anche a qualche problemino fisico di troppo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:20:40.026999+00:00"
+    "fetchedAt": "2026-09-03T23:58:46.570851+00:00"
   },
   {
     "id": "2529",
@@ -4232,7 +4232,7 @@
     "contro": "L'età avanza, la concorrenza è folta e gli acciacchi fisici non mancano. Non è più un inamovibile come un tempo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:20:42.459685+00:00"
+    "fetchedAt": "2026-09-03T23:58:48.785774+00:00"
   },
   {
     "id": "4911",
@@ -4243,7 +4243,7 @@
     "contro": "Altalenante e discontinuo nel rendimento, inoltre parte comunque dietro nelle gerarchie.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:21:47.591027+00:00"
+    "fetchedAt": "2026-09-03T23:58:50.798317+00:00"
   },
   {
     "id": "333",
@@ -4254,7 +4254,7 @@
     "contro": "Il ballottaggio con Rovella è serratissimo e probabilmente ce lo porteremo dietro per tutta la stagione.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:21:49.589646+00:00"
+    "fetchedAt": "2026-09-03T23:58:52.510186+00:00"
   },
   {
     "id": "7322",
@@ -4265,7 +4265,7 @@
     "contro": "Molto più propenso al malus che al bonus.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:21:51.778397+00:00"
+    "fetchedAt": "2026-09-03T23:58:54.983550+00:00"
   },
   {
     "id": "6015",
@@ -4276,7 +4276,7 @@
     "contro": "Ancora altalenante in termini di rendimento, anche a causa di alcuni problemi fisici che spesso si ripresentano nel corso delle sue stagioni.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:20:49.426876+00:00"
+    "fetchedAt": "2026-09-03T23:58:57.124374+00:00"
   },
   {
     "id": "7318",
@@ -4287,7 +4287,7 @@
     "contro": "La concorrenza non manca, anzi, lui parte leggermente dietro nelle gerarchie.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:20:52.159680+00:00"
+    "fetchedAt": "2026-09-03T23:58:59.394710+00:00"
   },
   {
     "id": "5453",
@@ -4298,7 +4298,7 @@
     "contro": "Non è assodato che sia un titolare inamovibile, anzi, la concorrenza è folta. Poco propenso al bonus.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:21:55.217592+00:00"
+    "fetchedAt": "2026-09-03T23:59:01.147077+00:00"
   },
   {
     "id": "4199",
@@ -4309,7 +4309,7 @@
     "contro": "Altalenante, anche a causa di qualche problema fisico di troppo che spesso influenza le sue stagioni. Concorrenza foltissima in mediana, parte leggermente dietro nelle gerarchie.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:21:57.905124+00:00"
+    "fetchedAt": "2026-09-03T23:59:03.241136+00:00"
   },
   {
     "id": "6252",
@@ -4320,7 +4320,7 @@
     "contro": "Non è scontato che sia un inamovibile, anche nonostante il cambio maglia. Abbastanza altalenante.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:22:00.514260+00:00"
+    "fetchedAt": "2026-09-03T23:59:05.021162+00:00"
   },
   {
     "id": "6207",
@@ -4331,7 +4331,7 @@
     "contro": "Fumoso, non riesce mai a portare tanti bonus. Altalenante, anche in termini di minutaggio. La concorrenza è folta.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:22:03.003493+00:00"
+    "fetchedAt": "2026-09-03T23:59:07.027985+00:00"
   },
   {
     "id": "6005",
@@ -4342,18 +4342,18 @@
     "contro": "Non possiamo di certo considerarlo un titolare inamovibile, la concorrenza è abbastanza folta. Non porta tantissimi bonus.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:22:11.579153+00:00"
+    "fetchedAt": "2026-09-03T23:59:09.050856+00:00"
   },
   {
     "id": "6827",
     "name": "Njie",
-    "team": "Torino",
-    "url": "https://www.fantacalcio.it/serie-a/squadre/torino/njie/6827",
-    "pro": "Acquisto importante, ci aspettiamo possa essere protagonista. Andrà spesso a voto, incisivo anche da subentrato. Per qualità-prezzo intriga parecchio.",
-    "contro": "E' ancora parecchio altalenante, sotto diversi aspetti. Non è scontato che diventi fin da subito un inamovibile. Rosa Fiorentina De Gea Christensen O. Lezzerini Dodò Jimenez A. Dragusin Valdepenas Viery Parisi Pongracic Ranieri L. Joao Mario Atta Gudmundsson A. Mastantuono Mandragora Fagioli Ndour Oulai Njie Brescianini Kean Pellegrino M.",
+    "team": "Fiorentina",
+    "url": "https://www.fantacalcio.it/serie-a/squadre/fiorentina/njie/6827",
+    "pro": "Acquisto importante, ci aspettiamo possa essere protagonista. Andrà spesso a voto, incisivo anche da subentrato. Per qualità-prezzo intriga.",
+    "contro": "E' ancora parecchio altalenante, sotto diversi aspetti. Non è scontato che diventi fin da subito un inamovibile.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:21:08.616871+00:00"
+    "fetchedAt": "2026-09-03T23:59:11.185229+00:00"
   },
   {
     "id": "7208",
@@ -4364,7 +4364,7 @@
     "contro": "Non un inamovibile, si alternerà comunque tanto. Non proprio un profilo propenso al bonus.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:22:14.214949+00:00"
+    "fetchedAt": "2026-09-03T23:59:13.262065+00:00"
   },
   {
     "id": "7550",
@@ -4375,7 +4375,7 @@
     "contro": "Qualche acciacco di troppo nell'ultimo periodo, inoltre non è proprio un centrocampista incline al gol. Ballottaggio serrato.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:21:21.168215+00:00"
+    "fetchedAt": "2026-09-03T23:59:15.190966+00:00"
   },
   {
     "id": "7579",
@@ -4386,18 +4386,18 @@
     "contro": null,
     "status": "missing",
     "error": "PRO/CONTRO not found; bytes=54060 title='Yanis Massolin - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False",
-    "fetchedAt": "2026-09-02T22:20:36.166942+00:00"
+    "fetchedAt": "2026-09-03T23:59:16.853763+00:00"
   },
   {
     "id": "6024",
     "name": "Sulemana I.",
-    "team": "Atalanta",
-    "url": "https://www.fantacalcio.it/serie-a/squadre/atalanta/sulemana-i/6024",
+    "team": "Sassuolo",
+    "url": "https://www.fantacalcio.it/serie-a/squadre/sassuolo/sulemana-i/6024",
     "pro": "Può racimolare qualche partita a voto, andrà via quasi sicuramente al prezzo minimo.",
     "contro": "Porta pochi bonus, inoltre parte dietro nelle gerarchie. Di stampo difensivo, occhio ai malus.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:22:16.578128+00:00"
+    "fetchedAt": "2026-09-03T23:59:18.862801+00:00"
   },
   {
     "id": "1871",
@@ -4408,7 +4408,7 @@
     "contro": "L'età avanza, tra acciacchi e concorrenza non è più un titolare fisso. Potrebbero essere diversi gli SV.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:21:31.423193+00:00"
+    "fetchedAt": "2026-09-03T23:59:20.475280+00:00"
   },
   {
     "id": "4947",
@@ -4419,7 +4419,7 @@
     "contro": "La concorrenza in mediana è parecchio folta, si alternerà costantemente. Non possiamo considerarlo un inamovibile.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:22:19.187581+00:00"
+    "fetchedAt": "2026-09-03T23:59:22.738612+00:00"
   },
   {
     "id": "6241",
@@ -4430,7 +4430,7 @@
     "contro": "Potrebbe faticare in termini di continuità in Serie A, sia sotto l’aspetto del minutaggio che del rendimento. Non proprio propenso al bonus.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:22:21.273451+00:00"
+    "fetchedAt": "2026-09-03T23:59:24.768729+00:00"
   },
   {
     "id": "6917",
@@ -4441,7 +4441,7 @@
     "contro": "Di stampo prettamente difensivo, porta pochissimi bonus. Inoltre, non sembrerebbe essere un titolare inamovibile, almeno ai nastri di partenza.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:22:25.817541+00:00"
+    "fetchedAt": "2026-09-03T23:59:26.877440+00:00"
   },
   {
     "id": "6503",
@@ -4452,7 +4452,7 @@
     "contro": "Giovanissimo, rischia di collezionare davvero tantissimi SV. Inoltre, non è un profilo dai tantissimi bonus in canna.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:22:27.518424+00:00"
+    "fetchedAt": "2026-09-03T23:59:29.282744+00:00"
   },
   {
     "id": "7248",
@@ -4463,7 +4463,7 @@
     "contro": "Di stampo difensivo, poco propenso al bonus. Parte dietro nelle gerarchie, rischia di collezionare poche presenze.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:22:29.964218+00:00"
+    "fetchedAt": "2026-09-03T23:59:30.862574+00:00"
   },
   {
     "id": "5457",
@@ -4474,7 +4474,7 @@
     "contro": "Parte dietro nelle gerarchie, non è minimamente propenso al bonus. Parecchio incline al malus.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:22:32.251022+00:00"
+    "fetchedAt": "2026-09-03T23:59:33.061111+00:00"
   },
   {
     "id": "5295",
@@ -4485,7 +4485,7 @@
     "contro": "Porta pochissimi bonus, inoltre parte comunque dietro nelle gerarchie.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:22:34.755580+00:00"
+    "fetchedAt": "2026-09-03T23:59:35.247454+00:00"
   },
   {
     "id": "7477",
@@ -4496,7 +4496,7 @@
     "contro": "Non porta tantissimi bonus, anzi. Inoltre la gerarchia è folta e lui non si può di certo considerare un inamovibile.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:22:37.305342+00:00"
+    "fetchedAt": "2026-09-03T23:59:37.139035+00:00"
   },
   {
     "id": "5131",
@@ -4507,7 +4507,7 @@
     "contro": "Dietro nelle gerarchie rispetto a Lobotka ai nastri di partenza. Poco propenso al bonus, incline invece ai problemini fisici.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:22:39.375823+00:00"
+    "fetchedAt": "2026-09-03T23:59:39.184779+00:00"
   },
   {
     "id": "7138",
@@ -4518,7 +4518,7 @@
     "contro": "Non proprio propenso al bonus, inoltre non è proprio un inamovibile.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:22:42.151699+00:00"
+    "fetchedAt": "2026-09-03T23:59:40.981393+00:00"
   },
   {
     "id": "7536",
@@ -4529,7 +4529,7 @@
     "contro": "Giovanissimo, alla prima esperienza in un campionato come la Serie A, potrebbe faticare, soprattutto all’inizio. Potrebbe non essere particolarmente continuo in termini di minutaggio.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:22:05.505423+00:00"
+    "fetchedAt": "2026-09-03T23:59:42.972128+00:00"
   },
   {
     "id": "7183",
@@ -4540,7 +4540,7 @@
     "contro": "Non possiamo assolutamente considerarlo un titolare, occhio dunque perchè potrebbero non mancare gli SV. Parecchio altalenante nel rendimento.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:22:46.892396+00:00"
+    "fetchedAt": "2026-09-03T23:59:44.582395+00:00"
   },
   {
     "id": "5872",
@@ -4551,7 +4551,7 @@
     "contro": "Parecchio discontinuo nel rendimento e nella produzione dei bonus. Inoltre, non parte avanti nelle gerarchie, anzi.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:22:49.915028+00:00"
+    "fetchedAt": "2026-09-03T23:59:46.527757+00:00"
   },
   {
     "id": "801",
@@ -4561,8 +4561,8 @@
     "pro": null,
     "contro": null,
     "status": "missing",
-    "error": "PRO/CONTRO not found; bytes=229627 title='Roberto Gagliardini - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False",
-    "fetchedAt": "2026-09-02T22:20:38.111180+00:00"
+    "error": "PRO/CONTRO not found; bytes=230148 title='Roberto Gagliardini - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False",
+    "fetchedAt": "2026-09-03T23:59:48.586186+00:00"
   },
   {
     "id": "7232",
@@ -4572,8 +4572,8 @@
     "pro": null,
     "contro": null,
     "status": "missing",
-    "error": "PRO/CONTRO not found; bytes=54083 title='Toni Fernandez - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False",
-    "fetchedAt": "2026-09-02T22:20:39.957822+00:00"
+    "error": "PRO/CONTRO not found; bytes=54081 title='Toni Fernandez - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False",
+    "fetchedAt": "2026-09-03T23:59:50.854952+00:00"
   },
   {
     "id": "6225",
@@ -4584,7 +4584,7 @@
     "contro": "Parte comunque dietro nelle gerarchie, non proprio un profilo di stampo difensivo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:22:52.560819+00:00"
+    "fetchedAt": "2026-09-03T23:59:52.484219+00:00"
   },
   {
     "id": "6815",
@@ -4595,7 +4595,7 @@
     "contro": "Non proprio un gran dispensatore di bonus. Non scontato che sia un inamovibile, parecchio discontinuo sotto diversi aspetti.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:22:55.306431+00:00"
+    "fetchedAt": "2026-09-03T23:59:54.624577+00:00"
   },
   {
     "id": "6903",
@@ -4606,7 +4606,7 @@
     "contro": "Non parte avanti nelle gerarchie, tutt’altro. Alla prima vera esperienza in Serie A, potrebbe non avere grande continuità, soprattutto in termini di minutaggio. Poco propenso al bonus.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:22:23.180790+00:00"
+    "fetchedAt": "2026-09-03T23:59:56.273204+00:00"
   },
   {
     "id": "6980",
@@ -4617,7 +4617,7 @@
     "contro": "Si alternerà, non possiamo considerarlo di certo un inamovibile, tutt'altro. Ancora leggermente discontinuo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:22:57.107455+00:00"
+    "fetchedAt": "2026-09-03T23:59:58.603763+00:00"
   },
   {
     "id": "6191",
@@ -4628,7 +4628,7 @@
     "contro": "Abbastanza dietro nelle gerarchie. Al Fanta è un profilo poco interessante, molto più propenso ai malus che ai bonus.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:23:24.197835+00:00"
+    "fetchedAt": "2026-09-04T00:00:00.824398+00:00"
   },
   {
     "id": "5880",
@@ -4639,7 +4639,7 @@
     "contro": "Segna poco, inoltre tra l’età che avanza, qualche acciacco di troppo e la concorrenza folta, potrebbe giocare sempre meno.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:22:59.595321+00:00"
+    "fetchedAt": "2026-09-04T00:00:02.395088+00:00"
   },
   {
     "id": "7276",
@@ -4650,7 +4650,7 @@
     "contro": "Altalenante, sia per rendimento che per minutaggio. Non si può assolutamente considerare un inamovibile.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:23:34.090257+00:00"
+    "fetchedAt": "2026-09-04T00:00:04.385819+00:00"
   },
   {
     "id": "6219",
@@ -4661,7 +4661,7 @@
     "contro": "La concorrenza è folta e lui non è scontato che sia un inamovibile. Inoltre è molto più propenso ai malus che ai bonus.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:23:01.708610+00:00"
+    "fetchedAt": "2026-09-04T00:00:06.193445+00:00"
   },
   {
     "id": "6246",
@@ -4672,7 +4672,7 @@
     "contro": "Abbastanza altalenante, anche in termini di minutaggio. La concorrenza non manca, potrebbe collezionare più di un SV.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:23:04.247874+00:00"
+    "fetchedAt": "2026-09-04T00:00:07.886646+00:00"
   },
   {
     "id": "6212",
@@ -4683,7 +4683,7 @@
     "contro": "Non proprio continuo in termini di rendimento e ovviamente anche per quanto concerne il minutaggio. Parte dietro nelle gerarchie e inoltre porta pochi bonus.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:23:44.673187+00:00"
+    "fetchedAt": "2026-09-04T00:00:10.014101+00:00"
   },
   {
     "id": "7418",
@@ -4694,7 +4694,7 @@
     "contro": "Non poco discontinuo, sia nel rendimento che nella produzione dei bonus. Parte comunque dietro nelle gerarchie, potrebbe non giocare spessissimo da titolare.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:23:06.902853+00:00"
+    "fetchedAt": "2026-09-04T00:00:12.037108+00:00"
   },
   {
     "id": "526",
@@ -4705,7 +4705,7 @@
     "contro": "Non è più inamovibile come un tempo, parte leggermente dietro nelle gerarchie. Inoltre non è proprio un profilo da bonus.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:23:10.172544+00:00"
+    "fetchedAt": "2026-09-04T00:00:14.171961+00:00"
   },
   {
     "id": "6592",
@@ -4716,7 +4716,7 @@
     "contro": "Parte leggermente dietro nelle gerarchie, rischia di andare a voto spesso da subentrato, di difficile gestione in sede di formazione.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:23:13.364824+00:00"
+    "fetchedAt": "2026-09-04T00:00:15.960429+00:00"
   },
   {
     "id": "7574",
@@ -4727,7 +4727,7 @@
     "contro": "Non proprio propenso al bonus, inoltre parte parecchio dietro nelle gerarchie.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-09-02T22:20:41.684259+00:00"
+    "fetchedAt": "2026-09-04T00:00:17.640000+00:00"
   },
   {
     "id": "7092",
@@ -4738,7 +4738,7 @@
     "contro": null,
     "status": "missing",
     "error": "PRO/CONTRO not found; bytes=54028 title='Lazar Jovanovic - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False",
-    "fetchedAt": "2026-09-02T22:20:43.750273+00:00"
+    "fetchedAt": "2026-09-04T00:00:19.742483+00:00"
   },
   {
     "id": "7165",
@@ -4749,7 +4749,7 @@
     "contro": "Parte leggermente dietro nelle gerarchie. Profilo di stampo difensivo, più malus che bonus in canna.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:23:15.629458+00:00"
+    "fetchedAt": "2026-09-04T00:00:21.709825+00:00"
   },
   {
     "id": "7357",
@@ -4760,7 +4760,7 @@
     "contro": "Parte comunque dietro nelle gerarchie, rischia di giocare poco, quasi mai da titolare.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:23:17.512481+00:00"
+    "fetchedAt": "2026-09-04T00:00:23.441454+00:00"
   },
   {
     "id": "7456",
@@ -4771,7 +4771,7 @@
     "contro": "Non proprio un centrocampista propenso al bonus. La concorrenza è folta, rischia di giocare raramente da titolare.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:23:19.497456+00:00"
+    "fetchedAt": "2026-09-04T00:00:25.236303+00:00"
   },
   {
     "id": "5725",
@@ -4782,7 +4782,7 @@
     "contro": "Porta pochissimi bonus, inoltre allo stesso tempo non offre grosse garanzie in termini di minutaggio.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:23:21.482327+00:00"
+    "fetchedAt": "2026-09-04T00:00:27.719134+00:00"
   },
   {
     "id": "7345",
@@ -4793,7 +4793,7 @@
     "contro": "Giovanissimo, alla prima stagione completa in un campionato così importante. La concorrenza è folta e lui non è scontato che sia titolare fin da subito. Potrebbe avere un rendimento altalenante.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:23:27.004547+00:00"
+    "fetchedAt": "2026-09-04T00:00:29.446151+00:00"
   },
   {
     "id": "6410",
@@ -4804,7 +4804,7 @@
     "contro": "Parte comunque dietro nelle gerarchie, nettamente di stampo difensivo, porta pochissimi bonus. Incline ai problemi fisici.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:23:29.426842+00:00"
+    "fetchedAt": "2026-09-04T00:00:31.358957+00:00"
   },
   {
     "id": "7319",
@@ -4815,7 +4815,7 @@
     "contro": "Parte nettamente dietro nelle gerarchie. Di stampo difensivo, poco propenso al bonus.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:23:31.290789+00:00"
+    "fetchedAt": "2026-09-04T00:00:33.781116+00:00"
   },
   {
     "id": "5007",
@@ -4826,7 +4826,7 @@
     "contro": "La concorrenza in mediana non manca. Molto discontinuo in termini di rendimento, occhio ai problemi fisici.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:23:39.145492+00:00"
+    "fetchedAt": "2026-09-04T00:00:35.556100+00:00"
   },
   {
     "id": "6889",
@@ -4837,7 +4837,7 @@
     "contro": "La concorrenza in mediana è foltissima, lui parte dietro nelle gerarchie. Inoltre è sempre alle prese con dei problemini di natura fisica che spesso influenzano le sue stagioni.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:23:41.861872+00:00"
+    "fetchedAt": "2026-09-04T00:00:37.248351+00:00"
   },
   {
     "id": "7481",
@@ -4848,7 +4848,7 @@
     "contro": "Non parte avanti nelle gerarchie, anzi. La concorrenza è foltissima e sembrerebbe uno degli ultimi nelle idee dell’allenatore.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:23:47.130726+00:00"
+    "fetchedAt": "2026-09-04T00:00:38.968428+00:00"
   },
   {
     "id": "7571",
@@ -4859,7 +4859,7 @@
     "contro": "Ovviamente la concorrenza non manca, potrebbe essere di difficile gestione in sede di formazione. Rischia di giocare raramente da titolare.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:23:49.585972+00:00"
+    "fetchedAt": "2026-09-04T00:00:40.686112+00:00"
   },
   {
     "id": "7572",
@@ -4870,7 +4870,7 @@
     "contro": "Parte ovviamente dietro nelle gerarchie, rischia di giocare davvero raramente da titolare. Porta pochi bonus.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:23:52.464124+00:00"
+    "fetchedAt": "2026-09-04T00:00:42.673383+00:00"
   },
   {
     "id": "7575",
@@ -4881,7 +4881,7 @@
     "contro": "Si alternerà tanto, non si può considerare un perno inamovibile. Giovanissimo, ancora altalenante.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-09-02T22:20:45.892219+00:00"
+    "fetchedAt": "2026-09-04T00:00:44.914963+00:00"
   },
   {
     "id": "5462",
@@ -4892,7 +4892,7 @@
     "contro": "Parte dietro nelle gerarchie, potrebbe partire raramente da titolare. Non proprio incline al bonus.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-09-02T22:20:48.317726+00:00"
+    "fetchedAt": "2026-09-04T00:00:46.492034+00:00"
   },
   {
     "id": "5585",
@@ -4903,7 +4903,7 @@
     "contro": "Ovviamente in questo caso il \"contro\" principale sarà il prezzo. Potrebbe arrivare a cifre stratosferiche, un suo acquisto potrebbe compromettervi tutta l'asta.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:24:01.833459+00:00"
+    "fetchedAt": "2026-09-04T00:00:48.238339+00:00"
   },
   {
     "id": "2764",
@@ -4914,7 +4914,7 @@
     "contro": "Il prezzo sarà alto come al solito, anzi altissimo. Seguite l'FVM per non esagerare. Inoltre, non mancheranno i soliti periodi di digiuno a cui ci ha abituato nelle ultime stagioni.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:24:04.296759+00:00"
+    "fetchedAt": "2026-09-04T00:00:50.214741+00:00"
   },
   {
     "id": "4871",
@@ -4925,7 +4925,7 @@
     "contro": "Altalenante nella distribuzione dei bonus, la concorrenza di Pio Esposito sarà ancor più fastidioso. Occhio agli acciacchi fisici, spesso influenzano le sue stagioni.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:24:06.806848+00:00"
+    "fetchedAt": "2026-09-04T00:00:51.818827+00:00"
   },
   {
     "id": "6052",
@@ -4936,7 +4936,7 @@
     "contro": "Ovviamente in questo caso occhio al prezzo, ha dimostrato di essere ancora leggermente altalenante, dunque meglio non esagerare. Seguite l'FVM.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:24:12.559594+00:00"
+    "fetchedAt": "2026-09-04T00:00:53.879713+00:00"
   },
   {
     "id": "6397",
@@ -4947,7 +4947,7 @@
     "contro": "Ovviamente il prezzo potrebbe essere anche con contro, perciò vi consigliamo di seguire l’FVM per non esagerare. Al primo anno in Serie A potrebbe anche impiegare un po’ ad adattarsi.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:24:10.107001+00:00"
+    "fetchedAt": "2026-09-04T00:00:55.526820+00:00"
   },
   {
     "id": "5951",
@@ -4958,18 +4958,18 @@
     "contro": "Può incrementare il proprio bottino di bonus, ma non è proprio un bomber di razza, quindi occhio a non esagerare con il prezzo (che sarà alto). Seguite l'FVM.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:24:18.087945+00:00"
+    "fetchedAt": "2026-09-04T00:00:57.379798+00:00"
   },
   {
     "id": "2097",
     "name": "Kean",
-    "team": "Fiorentina",
-    "url": "https://www.fantacalcio.it/serie-a/squadre/fiorentina/kean/2097",
+    "team": "Como",
+    "url": "https://www.fantacalcio.it/serie-a/squadre/como/kean/2097",
     "pro": "Giocherà tanto anche al Como, con Fabregas può tornare a segnare con continuità e ad essere protagonista. Dopo la scorsa stagione e con il cambio maglia potrebbe andare via anche ad una cifra abbordabile.",
     "contro": "Resta comunque discontinuo, soprattutto nel rendimento. Ha diversi momenti in cui si assenta, il ballottaggio con Douvikas sarà serratissimo e continuo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:24:15.714587+00:00"
+    "fetchedAt": "2026-09-04T00:00:59.159555+00:00"
   },
   {
     "id": "6752",
@@ -4980,7 +4980,7 @@
     "contro": null,
     "status": "missing",
     "error": "PRO/CONTRO not found; bytes=54010 title='Nick Woltemade - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False",
-    "fetchedAt": "2026-09-02T22:20:51.363488+00:00"
+    "fetchedAt": "2026-09-04T00:01:00.764864+00:00"
   },
   {
     "id": "7017",
@@ -4991,7 +4991,7 @@
     "contro": "Sembrava non avere punti deboli in chiave Fanta, invece con Kean il discorso cambia. Non è più scontato che sia un inamovibile, anzi.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:24:24.002945+00:00"
+    "fetchedAt": "2026-09-04T00:01:02.415676+00:00"
   },
   {
     "id": "6434",
@@ -5002,7 +5002,7 @@
     "contro": "Ha dei momenti di pausa, ancora leggermente discontinuo. Occhio al prezzo, potrebbe essere parecchio alto. Consultate l'FVM per non esagerare.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:24:20.800652+00:00"
+    "fetchedAt": "2026-09-04T00:01:04.065154+00:00"
   },
   {
     "id": "2137",
@@ -5013,7 +5013,7 @@
     "contro": "Leggermente avanti si, ma il ballottaggio con Krstovic resta comunque serrato. Spesso alle prese con problemi fisici, il rischio che salti diverse partite è sempre alto.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:24:28.864941+00:00"
+    "fetchedAt": "2026-09-04T00:01:06.202615+00:00"
   },
   {
     "id": "531",
@@ -5024,7 +5024,7 @@
     "contro": "Sempre leggermente discontinuo, inoltre l'età avanza e gli acciacchi fisici aumentano. Incline ai cartellini.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:24:34.622031+00:00"
+    "fetchedAt": "2026-09-04T00:01:08.210894+00:00"
   },
   {
     "id": "5637",
@@ -5035,7 +5035,7 @@
     "contro": "Spesso alle prese con problemi di natura fisica, acciacchi che si ripresentano di continuo e che influenzano le sue stagioni.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:24:31.932255+00:00"
+    "fetchedAt": "2026-09-04T00:01:10.380545+00:00"
   },
   {
     "id": "6435",
@@ -5046,7 +5046,7 @@
     "contro": "Non un inamovibile ai nastri di partenza, il ballottaggio con Scamacca è infatti serratissimo. Ancora leggermente discontinuo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:24:26.198062+00:00"
+    "fetchedAt": "2026-09-04T00:01:12.468195+00:00"
   },
   {
     "id": "5995",
@@ -5057,7 +5057,7 @@
     "contro": "Non proprio il classico esterno di Sarri, potrebbe impiegare un po' ad adattarsi alle richieste del tecnico toscano. Sempre occhio alla concorrenza.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:24:36.773333+00:00"
+    "fetchedAt": "2026-09-04T00:01:14.531068+00:00"
   },
   {
     "id": "7071",
@@ -5068,7 +5068,7 @@
     "contro": "Parte comunque ancora dietro nelle gerarchie rispetto a Thuram e Lautaro, dunque non va trattato come top o titolare inamovibile.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:24:38.861342+00:00"
+    "fetchedAt": "2026-09-04T00:01:16.273876+00:00"
   },
   {
     "id": "309",
@@ -5079,7 +5079,7 @@
     "contro": "Purtroppo però il se è grosso quanto una casa. Le condizioni fisiche dell'argentino restano un punto interrogativo enorme. Se sta bene è un inamovibile per Gasp, è facile aspettarsi che le partite saltate per infortunio possano essere diverse anche stavolta.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:24:42.617723+00:00"
+    "fetchedAt": "2026-09-04T00:01:18.053757+00:00"
   },
   {
     "id": "6675",
@@ -5090,7 +5090,7 @@
     "contro": "Non proprio continuo, soprattutto per una questione fisica. Dovrà ambientarsi ad un nuovo contesto.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:24:40.698975+00:00"
+    "fetchedAt": "2026-09-04T00:01:19.870797+00:00"
   },
   {
     "id": "6060",
@@ -5101,7 +5101,7 @@
     "contro": "Dopo la scorsa stagione il prezzo resta comunque un minimo da monitorare, potrebbe alzarsi. Ha dei momenti di pausa non brevissimi nel corso della stagione.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:24:45.759636+00:00"
+    "fetchedAt": "2026-09-04T00:01:22.044709+00:00"
   },
   {
     "id": "4371",
@@ -5112,7 +5112,7 @@
     "contro": "La collocazione tattica resta la sua spada di Damocle. Non è un esterno puro e neanche una punta, con Sarri potrebbe giocare in entrambi ruoli o essere la prima alternativa. Non è scontato che sia un titolare inamovibile.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:24:50.706202+00:00"
+    "fetchedAt": "2026-09-04T00:01:23.952146+00:00"
   },
   {
     "id": "7351",
@@ -5123,7 +5123,7 @@
     "contro": "La concorrenza non manca, inoltre non parliamo di un bomber di razza. Pecca un po' di discontinuità.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:24:53.894120+00:00"
+    "fetchedAt": "2026-09-04T00:01:25.841387+00:00"
   },
   {
     "id": "7023",
@@ -5131,10 +5131,10 @@
     "team": "Fiorentina",
     "url": "https://www.fantacalcio.it/serie-a/squadre/fiorentina/pellegrino-m/7023",
     "pro": "Possibile rigorista quando in campo, arma importante anche a gara in corso. Fenomenale di testa. Può garantire un buon numero di bonus ad un prezzo comunque abbordabile.",
-    "contro": "Un acquisto che conviene al costo giusto, soprattutto dopo il cambio maglia. Ha dei momenti di blackout, non si può considerare un top. Inoltre parte dietro Kean nelle gerarchie.",
+    "contro": "Un acquisto che conviene al costo giusto, soprattutto dopo il cambio maglia. Ha dei momenti di blackout, non si può considerare un top. Ballottaggio serrato con Beto, non è più un inamovibile.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:24:56.724113+00:00"
+    "fetchedAt": "2026-09-04T00:01:27.578131+00:00"
   },
   {
     "id": "6572",
@@ -5145,7 +5145,7 @@
     "contro": "Perde terreno in termini di titolarità. Al Bologna era inamovibile, alla Roma parte leggermente dietro nelle gerarchie.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:24:59.407953+00:00"
+    "fetchedAt": "2026-09-04T00:01:29.641196+00:00"
   },
   {
     "id": "2061",
@@ -5156,7 +5156,7 @@
     "contro": "Come spesso capita ai centravanti, ha dei digiuni che possono durare anche diverse settimane. Quando non segna la MV non brilla.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:24:47.567897+00:00"
+    "fetchedAt": "2026-09-04T00:01:31.579900+00:00"
   },
   {
     "id": "5694",
@@ -5167,7 +5167,7 @@
     "contro": null,
     "status": "missing",
     "error": "PRO/CONTRO not found; bytes=54285 title='Beto - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False",
-    "fetchedAt": "2026-09-02T22:20:53.607758+00:00"
+    "fetchedAt": "2026-09-04T00:01:33.670788+00:00"
   },
   {
     "id": "5734",
@@ -5178,7 +5178,7 @@
     "contro": "Un minimo di equivoco tattico con Dybala in campo si crea, si pestano un po' i piedi. Ancora leggermente discontinuo in termini sia di rendimento che di produzione bonus. Parte dietro nelle gerarchie, è sul mercato.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:25:09.190632+00:00"
+    "fetchedAt": "2026-09-04T00:01:35.467339+00:00"
   },
   {
     "id": "4463",
@@ -5189,7 +5189,7 @@
     "contro": "Approda al Sassuolo dove dovrebbe agire da falso 9, in una posizione quasi del tutto nuova. Si gioca il posto con Bowie.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:25:01.889391+00:00"
+    "fetchedAt": "2026-09-04T00:01:37.150911+00:00"
   },
   {
     "id": "6967",
@@ -5200,7 +5200,7 @@
     "contro": "Con la Champions in vista si alternerà anche lui. Occhio ovviamente anche agli acciacchi fisici che nell'ultimo periodo l'hanno tormentato.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:25:15.205631+00:00"
+    "fetchedAt": "2026-09-04T00:01:39.122420+00:00"
   },
   {
     "id": "2038",
@@ -5211,7 +5211,7 @@
     "contro": "Non proprio continuo nella distribuzione dei gol, ha i suoi momenti no. Occhio sempre alla concorrenza, non manca in biancoceleste.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:25:04.207520+00:00"
+    "fetchedAt": "2026-09-04T00:01:40.977733+00:00"
   },
   {
     "id": "7547",
@@ -5222,7 +5222,7 @@
     "contro": "Al primo anno in Serie A potrebbe ovviamente impiegare un minimo prima di ambientarsi. Inoltre milita in una squadra non proprio offensiva.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:25:06.855042+00:00"
+    "fetchedAt": "2026-09-04T00:01:43.342465+00:00"
   },
   {
     "id": "4923",
@@ -5233,7 +5233,7 @@
     "contro": "Resta un profilo comunque parecchio discontinuo, sia nella distribuzione dei bonus che nel rendimento e nella MV di conseguenza.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:25:17.792331+00:00"
+    "fetchedAt": "2026-09-04T00:01:44.870759+00:00"
   },
   {
     "id": "7484",
@@ -5244,7 +5244,7 @@
     "contro": "Ovviamente molto dipenderà anche dalla pericolosità offensiva del Venezia. Al primo anno in Serie A potrebbe comunque impiegare un minimo ad ambientarsi.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:25:12.395717+00:00"
+    "fetchedAt": "2026-09-04T00:01:46.743875+00:00"
   },
   {
     "id": "6646",
@@ -5255,7 +5255,7 @@
     "contro": "La concorrenza non manca sul fronte offensivo, rischia di essere meno inamovibile di quanto ci si possa aspettare. Non è un bomber di razza.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:25:30.869502+00:00"
+    "fetchedAt": "2026-09-04T00:01:48.673534+00:00"
   },
   {
     "id": "6229",
@@ -5266,7 +5266,7 @@
     "contro": "Giocatore molto discontinuo, sotto diversi aspetti, anche per quanto concerne la situazione fisica.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:25:20.944143+00:00"
+    "fetchedAt": "2026-09-04T00:01:50.264802+00:00"
   },
   {
     "id": "7554",
@@ -5277,7 +5277,7 @@
     "contro": "Prima esperienza in Europa, in una squadra che lotterà per non retrocedere e che non segna tantissimo. Le difficoltà non mancheranno.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:25:33.219506+00:00"
+    "fetchedAt": "2026-09-04T00:01:52.221887+00:00"
   },
   {
     "id": "5436",
@@ -5288,7 +5288,7 @@
     "contro": "Ovviamente il salto di categoria spesso si fa sentire, non è assolutamente scontato che possa avere lo stesso rendimento avuto nella scorsa stagione. Tutt'altro che un inamovibile.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:26:00.350611+00:00"
+    "fetchedAt": "2026-09-04T00:01:54.206767+00:00"
   },
   {
     "id": "2155",
@@ -5299,7 +5299,7 @@
     "contro": "Sempre altalenante nel rendimento, ovviamente non si può considerare un vostro titolare inamovibile.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:25:43.099652+00:00"
+    "fetchedAt": "2026-09-04T00:01:55.842244+00:00"
   },
   {
     "id": "7347",
@@ -5310,7 +5310,7 @@
     "contro": "Occhio ovviamente alla concorrenza, non è scontato che diventi subito un inamovibile e che riesca ad imporsi.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:25:28.481748+00:00"
+    "fetchedAt": "2026-09-04T00:01:57.584301+00:00"
   },
   {
     "id": "6904",
@@ -5321,7 +5321,7 @@
     "contro": "Non è un bomber di razza, dunque non vi aspettate un rendimento da centravanti puro. Leggermente discontinuo, potrebbe anche accusare il cambio di categoria.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:25:53.336453+00:00"
+    "fetchedAt": "2026-09-04T00:01:59.604119+00:00"
   },
   {
     "id": "7612",
@@ -5332,7 +5332,7 @@
     "contro": "La concorrenza in avanti è parecchio folta, alla prima esperienza in Serie A non è assolutamente scontato che diventi un inamovibile assoluto.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:25:45.629575+00:00"
+    "fetchedAt": "2026-09-04T00:02:01.611708+00:00"
   },
   {
     "id": "4359",
@@ -5343,7 +5343,7 @@
     "contro": "Parte leggermente dietro nelle gerarchie rispetto a Dovbyk. Non si può considerare di certo un inamovibile, almeno in fase di start.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:25:48.006072+00:00"
+    "fetchedAt": "2026-09-04T00:02:03.692653+00:00"
   },
   {
     "id": "6530",
@@ -5354,7 +5354,7 @@
     "contro": "Un minimo discontinuo nel rendimento, potrebbe ovviamente fare più fatica in Serie A. Inoltre, non manca la concorrenza.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:25:36.230128+00:00"
+    "fetchedAt": "2026-09-04T00:02:05.503007+00:00"
   },
   {
     "id": "6164",
@@ -5365,7 +5365,7 @@
     "contro": "Altalenante, non è scontato che sia un inamovibile. Inoltre, occhio agli acciacchi fisici e alla concorrenza.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:25:50.681167+00:00"
+    "fetchedAt": "2026-09-04T00:02:07.733285+00:00"
   },
   {
     "id": "5029",
@@ -5376,7 +5376,7 @@
     "contro": "Non proprio un bomber freddissimo, risulta anche parecchio discontinuo, sia sotto l’aspetto dei bonus che di minutaggio. Il ballottaggio con Stulic sarà comunque serrato.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:25:41.233292+00:00"
+    "fetchedAt": "2026-09-04T00:02:09.678906+00:00"
   },
   {
     "id": "7600",
@@ -5387,7 +5387,7 @@
     "contro": "Parte leggermente dietro rispetto a Colombo, il ballottaggio è serrato e probabilmente lo sarà per tutta la stagione. Al primo anno in Serie A.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:25:58.566699+00:00"
+    "fetchedAt": "2026-09-04T00:02:11.494938+00:00"
   },
   {
     "id": "6669",
@@ -5398,7 +5398,7 @@
     "contro": "Non proprio un bomber di razza, parte comunque dietro nelle gerarchie rispetto agli altri. Rischia di essere raramente titolare.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:26:03.046798+00:00"
+    "fetchedAt": "2026-09-04T00:02:13.634318+00:00"
   },
   {
     "id": "2832",
@@ -5409,7 +5409,7 @@
     "contro": "Parte dietro nelle gerarchie, rischia di giocare raramente da titolare (dunque difficile da gestire in sede di formazione). Altalenante, non è un bomber di razza.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:26:14.911359+00:00"
+    "fetchedAt": "2026-09-04T00:02:15.594655+00:00"
   },
   {
     "id": "7523",
@@ -5420,7 +5420,7 @@
     "contro": "Sarà al primo anno in Serie A. Avrà bisogno di un minimo di ambientamento, ci aspettiamo dei momenti di difficoltà. Milita in una squadra non proprio super offensiva.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:26:31.910133+00:00"
+    "fetchedAt": "2026-09-04T00:02:17.816748+00:00"
   },
   {
     "id": "7449",
@@ -5431,7 +5431,7 @@
     "contro": "La concorrenza è folta e la sua titolarità è tutt’altro che certa e scontata. Inoltre, è alla prima esperienza assoluta in Serie A, potrebbe impiegarci un minimo ad ambientarsi totalmente.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:25:55.788169+00:00"
+    "fetchedAt": "2026-09-04T00:02:20.031661+00:00"
   },
   {
     "id": "7623",
@@ -5442,7 +5442,7 @@
     "contro": null,
     "status": "missing",
     "error": "PRO/CONTRO not found; bytes=54178 title='Wilfried Gnonto - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False",
-    "fetchedAt": "2026-09-02T22:20:55.530382+00:00"
+    "fetchedAt": "2026-09-04T00:02:21.687730+00:00"
   },
   {
     "id": "5918",
@@ -5453,7 +5453,7 @@
     "contro": "Non proprio un bomber di razza, anzi. Spesso fumoso, parte leggermente dietro nelle gerarchie, sia a sinistra che a destra.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:26:09.957430+00:00"
+    "fetchedAt": "2026-09-04T00:02:23.595534+00:00"
   },
   {
     "id": "6204",
@@ -5464,7 +5464,7 @@
     "contro": "Ancora abbastanza altalenante, non sempre freddissimo dinanzi alla porta. Non è probabilmente un titolare inamovibile.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:26:50.212139+00:00"
+    "fetchedAt": "2026-09-04T00:02:26.118424+00:00"
   },
   {
     "id": "6556",
@@ -5475,7 +5475,7 @@
     "contro": "Molto altalenante nel rendimento, non proprio un bomber di razza. Concorrenza folta, non è un titolarissimo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:26:16.954554+00:00"
+    "fetchedAt": "2026-09-04T00:02:27.872983+00:00"
   },
   {
     "id": "7252",
@@ -5486,7 +5486,7 @@
     "contro": "Molto altalenante, porterà diverse insufficienze. Occhio inoltre alla concorrenza, non è scontato che sia un inamovibile, anzi.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:26:04.864866+00:00"
+    "fetchedAt": "2026-09-04T00:02:29.618413+00:00"
   },
   {
     "id": "6831",
@@ -5497,7 +5497,7 @@
     "contro": "Concorrenza folta, lui è parecchio discontinuo nel rendimento, anche a causa di qualche problemino fisico di troppo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:26:22.315370+00:00"
+    "fetchedAt": "2026-09-04T00:02:31.804068+00:00"
   },
   {
     "id": "608",
@@ -5508,7 +5508,7 @@
     "contro": "La concorrenza in avanti è davvero foltissima. Altalenante il suo rendimento nelle ultime annate a causa di continui problemi fisici.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:26:07.960998+00:00"
+    "fetchedAt": "2026-09-04T00:02:33.614750+00:00"
   },
   {
     "id": "7620",
@@ -5519,7 +5519,7 @@
     "contro": null,
     "status": "missing",
     "error": "PRO/CONTRO not found; bytes=53968 title='Exequiel Zeballos - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False",
-    "fetchedAt": "2026-09-02T22:20:57.108904+00:00"
+    "fetchedAt": "2026-09-04T00:02:35.667658+00:00"
   },
   {
     "id": "4896",
@@ -5530,7 +5530,7 @@
     "contro": "Tatticamente ibrido, non sarà facile cucirgli su misura una posizione precisa. Spesso altalenante, sotto diversi aspetti.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:26:24.459504+00:00"
+    "fetchedAt": "2026-09-04T00:02:37.925899+00:00"
   },
   {
     "id": "7610",
@@ -5541,7 +5541,7 @@
     "contro": "Concorrenza foltissima in avanti, è tutt'altro che scontato che sia un titolare fisso. Sarà di difficile gestione in sede di formazione.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:26:41.772663+00:00"
+    "fetchedAt": "2026-09-04T00:02:39.966816+00:00"
   },
   {
     "id": "6145",
@@ -5552,7 +5552,7 @@
     "contro": "Discontinuo in termini di rendimento, la concorrenza non manca. Potrebbe alternarsi tanto.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:26:43.690096+00:00"
+    "fetchedAt": "2026-09-04T00:02:42.145975+00:00"
   },
   {
     "id": "6243",
@@ -5563,7 +5563,7 @@
     "contro": "Discontinuo, incline alle insufficienze. Si alternerà, non si può considerare un titolare inamovibile.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:26:45.651354+00:00"
+    "fetchedAt": "2026-09-04T00:02:44.086670+00:00"
   },
   {
     "id": "7374",
@@ -5574,7 +5574,7 @@
     "contro": "Si alternerà tanto, potrebbero essere più le partite da subentrato che da titolare. Ancora leggermente discontinuo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:26:48.135605+00:00"
+    "fetchedAt": "2026-09-04T00:02:46.510961+00:00"
   },
   {
     "id": "7453",
@@ -5585,7 +5585,7 @@
     "contro": "Ovviamente parte dietro nelle gerarchie rispetto a Colombo. Inoltre, al primo anno in Serie A, potrebbe impiegare un minimo nell’ambientamento.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:26:52.521066+00:00"
+    "fetchedAt": "2026-09-04T00:02:48.348910+00:00"
   },
   {
     "id": "7001",
@@ -5596,7 +5596,7 @@
     "contro": "Abbastanza discontinuo, non è proprio un bomber anzi. Difficile da gestire in sede di formazione.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:27:17.656897+00:00"
+    "fetchedAt": "2026-09-04T00:02:50.196064+00:00"
   },
   {
     "id": "6519",
@@ -5607,7 +5607,7 @@
     "contro": "Parte abbastanza dietro nelle gerarchie, rischia di racimolare davvero poche partite da titolare.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:26:27.058270+00:00"
+    "fetchedAt": "2026-09-04T00:02:52.508421+00:00"
   },
   {
     "id": "5882",
@@ -5618,7 +5618,7 @@
     "contro": "Il livello si alza, l’età avanza e la concorrenza non manca. Parliamo di una copertura da ultimi slot, nulla in più.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:26:29.801350+00:00"
+    "fetchedAt": "2026-09-04T00:02:54.726693+00:00"
   },
   {
     "id": "7162",
@@ -5629,7 +5629,7 @@
     "contro": "Non ha una collocazione tattica precisa, nettamente dietro nelle gerarchie in tutti i ruoli offensivi. Altalenante.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:26:55.625835+00:00"
+    "fetchedAt": "2026-09-04T00:02:57.024871+00:00"
   },
   {
     "id": "7120",
@@ -5640,7 +5640,7 @@
     "contro": "Altalenante e discontinuo nel rendimento, inoltre la concorrenza è folta e lui sembrerebbe partire dietro nelle gerarchie rispetto ad Alisson.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:26:58.547617+00:00"
+    "fetchedAt": "2026-09-04T00:02:58.943258+00:00"
   },
   {
     "id": "6215",
@@ -5651,7 +5651,7 @@
     "contro": "Parte nettamente dietro nelle gerarchie rispetto ai suoi concorrenti. Rischia di racimolare davvero poche presenze.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:27:01.018852+00:00"
+    "fetchedAt": "2026-09-04T00:03:00.873760+00:00"
   },
   {
     "id": "7213",
@@ -5662,7 +5662,7 @@
     "contro": "Dietro nelle gerarchie, alle prese con diversi problemini fisici. Altalenante.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:26:34.305864+00:00"
+    "fetchedAt": "2026-09-04T00:03:03.287915+00:00"
   },
   {
     "id": "7349",
@@ -5673,7 +5673,7 @@
     "contro": "Parte nettamente dietro nelle gerarchie, rischia di giocare davvero poco, praticamente mai da titolare.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:27:03.006259+00:00"
+    "fetchedAt": "2026-09-04T00:03:05.305992+00:00"
   },
   {
     "id": "7272",
@@ -5684,7 +5684,7 @@
     "contro": "Concorrenza foltissima in attacco, lui sembrerebbe partire dietro nelle gerarchie. Rischia di collezionare poche presenze da titolare.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:27:06.096920+00:00"
+    "fetchedAt": "2026-09-04T00:03:07.375330+00:00"
   },
   {
     "id": "4387",
@@ -5695,7 +5695,7 @@
     "contro": "Rispetto alla B cambieranno diverse cose. Non solo il livello degli avversari che si alza, ma anche quelli dei contendenti ad una maglia da titolare. Parte dietro nelle gerarchie.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:26:37.293561+00:00"
+    "fetchedAt": "2026-09-04T00:03:09.124172+00:00"
   },
   {
     "id": "7546",
@@ -5706,7 +5706,7 @@
     "contro": "Giovanissimo, alla prima esperienza in un campionato di livello così alto. Parte leggermente dietro nelle gerarchie, ancora non proprio super concreto.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:27:08.590323+00:00"
+    "fetchedAt": "2026-09-04T00:03:11.611108+00:00"
   },
   {
     "id": "2012",
@@ -5717,7 +5717,7 @@
     "contro": "Sono diversi anni che convive con infortuni durissimi, che non gli hanno permesso di giocare quasi mai. Inoltre, nel suo ruolo la concorrenza è foltissima.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:26:39.106589+00:00"
+    "fetchedAt": "2026-09-04T00:03:13.383635+00:00"
   },
   {
     "id": "7602",
@@ -5728,7 +5728,7 @@
     "contro": "Concorrenza abbastanza folta in avanti, tutt'altro che scontato che possa essere un titolare inamovibile. Non proprio una macchina da bonus.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-09-02T22:20:59.071627+00:00"
+    "fetchedAt": "2026-09-04T00:03:15.554731+00:00"
   },
   {
     "id": "5336",
@@ -5738,8 +5738,8 @@
     "pro": null,
     "contro": null,
     "status": "missing",
-    "error": "PRO/CONTRO not found; bytes=234423 title=\"M'Bala Nzola - Profilo calciatore 2025/26 | Fantacalcio\" hasDescrizione=False",
-    "fetchedAt": "2026-09-02T22:21:01.174640+00:00"
+    "error": "PRO/CONTRO not found; bytes=233675 title=\"M'Bala Nzola - Profilo calciatore 2025/26 | Fantacalcio\" hasDescrizione=False",
+    "fetchedAt": "2026-09-04T00:03:17.714896+00:00"
   },
   {
     "id": "6822",
@@ -5750,7 +5750,7 @@
     "contro": "Arriva in un top club dove ovviamente parte dietro nelle gerarchie. Rischia di partire davvero raramente dal primo minuto.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:27:15.755248+00:00"
+    "fetchedAt": "2026-09-04T00:03:19.501746+00:00"
   },
   {
     "id": "7342",
@@ -5761,7 +5761,7 @@
     "contro": "Parte nettamente dietro nelle gerarchie rispetto a Pellegrino. Ancora abbastanza altalenante nel rendimento.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:27:19.839534+00:00"
+    "fetchedAt": "2026-09-04T00:03:21.400047+00:00"
   },
   {
     "id": "7561",
@@ -5772,7 +5772,7 @@
     "contro": "Parte dietro nelle gerarchie, rischia di essere raramente titolare. Abbastanza discontinuo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:27:22.349493+00:00"
+    "fetchedAt": "2026-09-04T00:03:23.603031+00:00"
   },
   {
     "id": "7317",
@@ -5783,7 +5783,7 @@
     "contro": "Parte nettamente dietro nelle gerarchie, rischia di giocare davvero poco.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:27:24.057345+00:00"
+    "fetchedAt": "2026-09-04T00:03:25.581137+00:00"
   },
   {
     "id": "7161",
@@ -5794,7 +5794,7 @@
     "contro": "Concorrenza foltissima in attacco, lui sembrerebbe partire dietro nelle gerarchie. Rischia di collezionare poche presenze da titolare.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:27:30.753505+00:00"
+    "fetchedAt": "2026-09-04T00:03:27.665340+00:00"
   },
   {
     "id": "7408",
@@ -5805,7 +5805,7 @@
     "contro": "Parte abbastanza dietro nelle gerarchie, rischia di collezionare diversi SV e di non giocare praticamente mai da titolare. Ancora acerbo.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:27:32.933494+00:00"
+    "fetchedAt": "2026-09-04T00:03:29.536504+00:00"
   },
   {
     "id": "7482",
@@ -5816,7 +5816,7 @@
     "contro": "Parte nettamente dietro nelle gerarchie, rischia di collezionare diversi SV, non giocando praticamente mai da titolare.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:27:36.070240+00:00"
+    "fetchedAt": "2026-09-04T00:03:31.657504+00:00"
   },
   {
     "id": "7568",
@@ -5827,7 +5827,7 @@
     "contro": "Dietro nelle gerarchie, rischia di giocare poco, praticamente mai da titolare.",
     "status": "ok",
     "error": null,
-    "fetchedAt": "2026-08-30T22:27:37.921187+00:00"
+    "fetchedAt": "2026-09-04T00:03:34.154798+00:00"
   },
   {
     "id": "7622",
@@ -5838,6 +5838,6 @@
     "contro": null,
     "status": "missing",
     "error": "PRO/CONTRO not found; bytes=53963 title='Robinho Junior - Profilo calciatore 2025/26 | Fantacalcio' hasDescrizione=False",
-    "fetchedAt": "2026-09-02T22:21:03.347289+00:00"
+    "fetchedAt": "2026-09-04T00:03:35.864089+00:00"
   }
 ]
