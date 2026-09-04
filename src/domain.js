@@ -139,6 +139,13 @@ export function getForecast(slot) {
     ? Number(slot.actualPurchasePrice)
     : Number(slot.originalPlannedBudget)||0;
 }
+export function getResidual(slot) {
+  const baseline=Number(slot.originalPlannedBudget)||0;
+  const actual=slot.actualPurchasePrice!=null&&Number.isFinite(Number(slot.actualPurchasePrice))
+    ? Number(slot.actualPurchasePrice)
+    : 0;
+  return baseline-actual;
+}
 export function budgetSummary(budget,slots) { const spent=slots.reduce((s,x)=>s+Number(x.actualPurchasePrice??0),0); const planned=slots.reduce((s,x)=>s+Number(x.originalPlannedBudget||0),0); const forecast=slots.filter(x=>x.actualPurchasePrice==null).reduce((s,x)=>s+getForecast(x),0); return {budget,planned,unallocated:budget-planned,spent,remaining:budget-spent,currentPlannedRemaining:forecast,variance:(budget-spent)-forecast}; }
 export function percentageOfBudget(value,budget) {
   const total=Number(budget),amount=Number(value);

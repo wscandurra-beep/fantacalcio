@@ -1,4 +1,4 @@
-import test from 'node:test';import assert from 'node:assert/strict';import {assignRankingCategory,rankPlayers,assignTiers,budgetSummary,slotPlanSummary,statusFor,availablePlayers,getForecast,updateForecasts,updateSlotBaseline,updateSlotStrategy,percentageOfBudget,formatPercentage,areaVariance,totalCompletedVariance,slotCountsFromSlots,validateSlotCounts,reconcileSlotCounts,normalizeMantraRoles,mantraRoleDepletion,tierDepletion,groupSlotsByCategory,availableMantraRoles,defaultAliasConfiguration,validateAliasConfiguration,aliasForMantraRole,classifyPlayersByAliases,reconcileAliasSlots,reconcilePurchasedAssignments,validatePurchasedAssignments} from '../src/domain.js';
+import test from 'node:test';import assert from 'node:assert/strict';import {assignRankingCategory,rankPlayers,assignTiers,budgetSummary,slotPlanSummary,statusFor,availablePlayers,getForecast,getResidual,updateForecasts,updateSlotBaseline,updateSlotStrategy,percentageOfBudget,formatPercentage,areaVariance,totalCompletedVariance,slotCountsFromSlots,validateSlotCounts,reconcileSlotCounts,normalizeMantraRoles,mantraRoleDepletion,tierDepletion,groupSlotsByCategory,availableMantraRoles,defaultAliasConfiguration,validateAliasConfiguration,aliasForMantraRole,classifyPlayersByAliases,reconcileAliasSlots,reconcilePurchasedAssignments,validatePurchasedAssignments} from '../src/domain.js';
 test('role category priority',()=>{assert.equal(assignRankingCategory('Ds;Dc'),'DC');assert.equal(assignRankingCategory('Dd;Dc'),'DC');assert.equal(assignRankingCategory('Dc;E'),'E');assert.equal(assignRankingCategory('W;A'),'WA');assert.equal(assignRankingCategory('Por'),'POR')});
 test('slot groups follow strategy order and retain configured extra categories',()=>{const groups=groupSlotsByCategory([{id:'1',category:'PC'},{id:'2',category:'DC'},{id:'3',category:'M'},{id:'4',category:'DC'}]);assert.deepEqual(groups.map(group=>[group.category,group.slots.map(slot=>slot.id)]),[['PC',['1']],['DC',['2','4']],['M',['3']]])});
 test('ranking uses auction value then quotation',()=>{const r=rankPlayers([{id:'a',name:'a',auctionValue:20,quotation:4},{id:'b',name:'b',auctionValue:20,quotation:7},{id:'c',name:'c',auctionValue:30,quotation:1}]);assert.deepEqual(r.map(x=>x.id),['c','b','a'])});
@@ -38,6 +38,13 @@ test('forecast is always derived with Actual taking priority over Baseline',()=>
   assert.equal(getForecast({...completed,originalPlannedBudget:55}),63);
   assert.equal(getForecast({...completed,actualPurchasePrice:47}),47);
   assert.equal(getForecast({...completed,actualPurchasePrice:null}),50);
+});
+
+test('residual is Baseline minus Actual and treats an open slot Actual as zero',()=>{
+  assert.equal(getResidual({originalPlannedBudget:25,actualPurchasePrice:14}),11);
+  assert.equal(getResidual({originalPlannedBudget:260,actualPurchasePrice:null}),260);
+  assert.equal(getResidual({originalPlannedBudget:25,actualPurchasePrice:0}),25);
+  assert.equal(getResidual({originalPlannedBudget:30,actualPurchasePrice:42}),-12);
 });
 
 test('legacy persisted forecast is discarded and cannot become stale',()=>{
