@@ -67,8 +67,8 @@ export function classifyPlayersByAliases(players=[],configuration=[]) {
 }
 /**
  * Make the persisted purchase assignment follow the current Mantra Role → Alias
- * mapping.  Slot-plan order is authoritative; manual auction-card placement is
- * deliberately not used as a roster assignment.
+ * mapping. For purchased players, a compatible manual auction-card placement is
+ * authoritative so the roster and financial views follow the auction row.
  */
 export function reconcilePurchasedAssignments({slots=[],market={},auctionView={}},players=[],configuration=[]) {
   const playerById=new Map(players.map(player=>[String(player.id),player]));
@@ -84,7 +84,7 @@ export function reconcilePurchasedAssignments({slots=[],market={},auctionView={}
   const records=purchasedIds.map(playerId=>{
     const entry=market[playerId]||{},legacy=occupiedByPlayer.get(playerId);
     const player=playerById.get(playerId),mappedAlias=player?aliasForMantraRole(player.roles,configuration):null;
-    const explicitId=entry.assignedSlot?.id??entry.assignedSlotId??legacy?.slotId??null;
+    const explicitId=auctionView?.placements?.[playerId]??entry.assignedSlotId??entry.assignedSlot?.id??legacy?.slotId??null;
     const price=entry.actualPurchasePrice??legacy?.price??null;
     return {playerId,entry,mappedAlias,explicitId,price,assigned:null};
   });
@@ -104,6 +104,7 @@ export function reconcilePurchasedAssignments({slots=[],market={},auctionView={}
     }
     nextMarket[record.playerId]={...record.entry,marketStatus:'MY TEAM',actualPurchasePrice:record.price,
       assignedSlot:record.assigned?{id:record.assigned.id,alias:record.assigned.category}:null,
+      assignedSlotId:record.assigned?.id??null,
       slotAssignmentStatus:record.assigned?'ASSIGNED':'OVERFLOW'};
   }
   const placements={...(auctionView?.placements||{})};

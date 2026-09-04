@@ -2,7 +2,7 @@ import {CATEGORY_PRIORITY,DEFAULT_SLOT_COUNTS,rankPlayers,assignTiers,budgetSumm
 import {getFormation,getFormationIds} from './mantraFormations.js';
 import {applyInjurySnapshot,formatItalianDate,normalizeInjuryUpdate} from './injury-data.js';
 import {applyProContro,normalizeProControRuns} from './pro-contro-data.js';
-import {auctionInjuryStatus,auctionPlayerMarketStatus,auctionSlotTitle,auctionStatusCounts,buildAuctionRows,moveAuctionPlayer,sortAuctionSoldLast} from './auction-view.js';
+import {auctionInjuryStatus,auctionPlayerMarketStatus,auctionSlotTitle,auctionStatusCounts,buildAuctionRows,canDropAuctionPlayer,moveAuctionPlayer,sortAuctionSoldLast} from './auction-view.js';
 import {resetPlayer} from './player-reset.js';
 import {backupFilename,createBackup,parseBackup} from './backup.js';
 const loadIssues=[];
@@ -277,10 +277,12 @@ function initAuctionDragAndDrop(){
     card.addEventListener('dragend',()=>{draggedId='';document.querySelectorAll('.dragging,.drop-target').forEach(item=>item.classList.remove('dragging','drop-target'))});
   });
   document.querySelectorAll('.auction-slot-track').forEach(track=>{
-    track.addEventListener('dragover',event=>{event.preventDefault();event.dataTransfer.dropEffect='move';document.querySelectorAll('.drop-target').forEach(item=>item.classList.remove('drop-target'));const target=event.target.closest('.auction-player-card');(target||track).classList.add('drop-target')});
+    const dropContext=()=>{const player=players().find(item=>String(item.id)===String(draggedId)),slotId=track.closest('[data-slot-id]').dataset.slotId,toSlot=slotId==='OUT'?{id:'OUT',category:'OUT'}:state.slots.find(item=>item.id===slotId);return {player,slotId,toSlot}};
+    track.addEventListener('dragover',event=>{const {player,toSlot}=dropContext();if(!canDropAuctionPlayer(player,toSlot,state.market,state.slots))return;event.preventDefault();event.dataTransfer.dropEffect='move';document.querySelectorAll('.drop-target').forEach(item=>item.classList.remove('drop-target'));const target=event.target.closest('.auction-player-card');(target||track).classList.add('drop-target')});
     track.addEventListener('dragleave',event=>{if(!track.contains(event.relatedTarget))track.classList.remove('drop-target')});
     track.addEventListener('drop',event=>{
-      event.preventDefault();const playerId=draggedId||event.dataTransfer.getData('text/plain'),slotId=track.closest('[data-slot-id]').dataset.slotId;
+      event.preventDefault();const playerId=draggedId||event.dataTransfer.getData('text/plain'),{player,slotId,toSlot}=dropContext();
+      if(String(player?.id)!==String(playerId)||!canDropAuctionPlayer(player,toSlot,state.market,state.slots))return;
       const target=event.target.closest('.auction-player-card');let index=target?Number(target.dataset.index):track.querySelectorAll('.auction-player-card').length;
       if(target&&event.clientX>target.getBoundingClientRect().left+target.getBoundingClientRect().width/2)index++;
       const rows=buildAuctionRows(players(),state.slots,state.auctionView,true),source=rows.find(row=>row.players.some(player=>player.id===playerId));
