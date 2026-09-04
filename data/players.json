@@ -321,7 +321,7 @@
     "quotation": 9.0,
     "hypeFactor": 2.89,
     "cups": "",
-    "age": null,
+    "age": 28,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -334,7 +334,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7332",
@@ -398,7 +399,7 @@
     "quotation": 8.0,
     "hypeFactor": 3.12,
     "cups": "",
-    "age": null,
+    "age": 28,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -411,7 +412,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "4236",
@@ -761,7 +763,7 @@
     "quotation": 1.0,
     "hypeFactor": 10.0,
     "cups": "",
-    "age": null,
+    "age": 24,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -774,7 +776,8 @@
     "AvgPG": 0.0,
     "AvgMF": 0.0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "2809",
@@ -864,7 +867,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "",
-    "age": null,
+    "age": 22,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -877,7 +880,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "219",
@@ -1201,7 +1205,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "",
-    "age": null,
+    "age": 25,
     "status": "OK",
     "pro": "Lo acquisterete sicuramente al prezzo minimo. ",
     "contro": "Parliamo del terzo portiere del Sassuolo. Potrebbe serenamente chiudere la propria stagione con 0 presenze all'attivo.",
@@ -1214,7 +1218,8 @@
     "AvgPG": 0.0,
     "AvgMF": 0.0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "4867",
@@ -1408,7 +1413,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "",
-    "age": null,
+    "age": 25,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -1421,7 +1426,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "2127",
@@ -1641,7 +1647,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "",
-    "age": null,
+    "age": 26,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -1654,7 +1660,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7626",
@@ -1666,7 +1673,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "Champions",
-    "age": null,
+    "age": 20,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -1679,7 +1686,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "254",
@@ -2159,7 +2167,7 @@
     "quotation": 10.0,
     "hypeFactor": 3.5,
     "cups": "Champions",
-    "age": null,
+    "age": 26,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -2172,7 +2180,8 @@
     "AvgPG": 15.0,
     "AvgMF": 5.97,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "5526",
@@ -2730,7 +2739,7 @@
     "quotation": 8.0,
     "hypeFactor": 3.25,
     "cups": "",
-    "age": null,
+    "age": 33,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -2743,7 +2752,8 @@
     "AvgPG": 25.0,
     "AvgMF": 6.1,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "6046",
@@ -2755,7 +2765,7 @@
     "quotation": 7.0,
     "hypeFactor": 1.57,
     "cups": "Champions",
-    "age": null,
+    "age": 27,
     "status": "il difensore operato a fine giugno per una lesione del tendine prossimale del muscolo semimembranoso della coscia sinistra, in recupero e pronto a tornare in campo dall'inizio di ottobre.",
     "pro": "Titolare quasi inamovibile. Con l'arrivo di Juric potrebbe aumentare esponenzialmente il livello. Possibile grande affare per rapporto qualitÃ -prezzo, soprattutto per chi utilizza il modificatore difesa. ",
     "contro": "Non proprio un centrale difensivo incline al gol. Inoltre, occhio ai cartellini, con la filosofia di gioco inculcata da Juric potrebbero aumenatre.",
@@ -2768,7 +2778,8 @@
     "AvgPG": 26.33,
     "AvgMF": 5.82,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "6042",
@@ -3118,7 +3129,7 @@
     "quotation": 7.0,
     "hypeFactor": 2.57,
     "cups": "Champions",
-    "age": null,
+    "age": 25,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -3131,7 +3142,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7580",
@@ -3169,7 +3181,7 @@
     "quotation": 7.0,
     "hypeFactor": 2.86,
     "cups": "",
-    "age": null,
+    "age": 24,
     "status": "OK",
     "pro": "Indiziato principale per ricoprire il ruolo di titolare a destra. AndrÃ  quasi sempre a voto, propositivo. Prezzo molto contenuto. ",
     "contro": "Al primo anno in Serie A, discontinuo. Non proprio un profilo da modificatore.",
@@ -3182,7 +3194,8 @@
     "AvgPG": 26.0,
     "AvgMF": 6.21,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "2640",
@@ -3662,7 +3675,7 @@
     "quotation": 6.0,
     "hypeFactor": 1.33,
     "cups": "",
-    "age": null,
+    "age": 28,
     "status": "OK",
     "pro": "RientrerÃ  stabilmente nelle rotazioni difensive. Centrale con il vizio del gol, buon rapporto qualitÃ -prezzo, anche per il modificatore. ",
     "contro": "Ha dimostrato di essere un calciatore discontinuo in termini di rendimento. Inoltre, incline ai problemini fisici, che potrebbero non mancare anche nella prossima stagione. Ballottaggio serrato.",
@@ -3675,7 +3688,8 @@
     "AvgPG": 25.0,
     "AvgMF": 6.0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "6202",
@@ -3713,7 +3727,7 @@
     "quotation": 6.0,
     "hypeFactor": 2.5,
     "cups": "Champions",
-    "age": null,
+    "age": 27,
     "status": "il difensore operato nella seconda metà di luglio al menisco del ginocchio destro. Sta recuperando lentamente, ipotizziamo possa tornare arruolabile da metà novembre.",
     "pro": "Affidabilissimo in termini di media voto, un vero e proprio \"animale\" da modificatore difesa. Per lo piÃ¹ titolare, di solito colleziona anche pochi malus. ",
     "contro": "Incline ai problemi fisici, potrebbero essere diverse le partite saltate per infortunio. Inoltre, la concorrenza nel suo ruolo non manca.",
@@ -3726,7 +3740,8 @@
     "AvgPG": 27.67,
     "AvgMF": 6.28,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "6485",
@@ -3738,7 +3753,7 @@
     "quotation": 7.0,
     "hypeFactor": 3.14,
     "cups": "Champions",
-    "age": null,
+    "age": 24,
     "status": "OK",
     "pro": "Jolly difensivo che puÃ² agire sia come terzino che come centrale di difesa. Regolare in termini di rendimento, costante. Prezzo molto moderato. Spesso a voto. ",
     "contro": "Tante rotazioni, si alternerÃ  molto spesso anche con gli altri in rosa. Non Ã¨ un inamovibile, nÃ¨ come terzino, nÃ¨ come centrale.",
@@ -3751,7 +3766,8 @@
     "AvgPG": 25.0,
     "AvgMF": 5.86,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7329",
@@ -3867,7 +3883,7 @@
     "quotation": 6.0,
     "hypeFactor": 2.5,
     "cups": "",
-    "age": null,
+    "age": 29,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -3880,7 +3896,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7621",
@@ -3892,7 +3909,7 @@
     "quotation": 6.0,
     "hypeFactor": 2.5,
     "cups": "",
-    "age": null,
+    "age": 26,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -3905,7 +3922,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7532",
@@ -4073,7 +4091,7 @@
     "quotation": 5.0,
     "hypeFactor": 2.4,
     "cups": "",
-    "age": null,
+    "age": 28,
     "status": "OK",
     "pro": "Titolare inamovibile e indiscusso. Leader difensivo. Molto pericoloso nel gioco aereo anche nell'area avversaria. Profilo da modificatore, super interessante per il rapporto qualitÃ -prezzo. ",
     "contro": "Incline a qualche problemino fisico di troppo. Occhio, dovrÃ  disputare la coppa d'Africa. Milita in una squadra di bassa classifica, le insufficienze potrebbero non mancare.",
@@ -4086,7 +4104,8 @@
     "AvgPG": 22.5,
     "AvgMF": 5.89,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "5739",
@@ -4280,7 +4299,7 @@
     "quotation": 5.0,
     "hypeFactor": 2.4,
     "cups": "",
-    "age": null,
+    "age": 24,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -4293,7 +4312,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "5578",
@@ -4435,7 +4455,7 @@
     "quotation": 4.0,
     "hypeFactor": 2.5,
     "cups": "Conference",
-    "age": null,
+    "age": 25,
     "status": "il cursore di fascia della Viola sta svolgendo l'iter di recupero dall'infortunio al legamento crociato al ginocchio, punta a tornare convocabile da novembre.",
     "pro": "Ottima copertura di Gosens. AgirÃ  piÃ¹ avanzato, potrebbe arrivare qualche bonus in piÃ¹. Il prezzo dovrebbe essere molto basso. ",
     "contro": "Leggermente discontinuo. Parte dietro nelle gerarchie rispetto a Gosens, quasi obbligatoria la coppia, soprattutto al Mantra.",
@@ -4448,7 +4468,8 @@
     "AvgPG": 21.33,
     "AvgMF": 5.95,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "5757",
@@ -4538,7 +4559,7 @@
     "quotation": 4.0,
     "hypeFactor": 3.25,
     "cups": "",
-    "age": null,
+    "age": 23,
     "status": "OK",
     "pro": "Ha disputato un'ottima pre-season e ha impressionato tanto Sarri. Centrale completo e affidabile, intrigante per la MV. Potrebbe essere un affare per rapporto qualitÃ -prezzo. ",
     "contro": "Deve scalare le gerarchie, non possiamo definirlo un inamovibile ai nastri di partenza. Sconsigliamo qualsiasi tipo di coppia con un altro centrale biancoceleste.",
@@ -4551,7 +4572,8 @@
     "AvgPG": 12.0,
     "AvgMF": 6.17,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7131",
@@ -4563,7 +4585,7 @@
     "quotation": 4.0,
     "hypeFactor": 2.5,
     "cups": "",
-    "age": null,
+    "age": 23,
     "status": "OK",
     "pro": "Potrebbe spesso agire a tutta fascia. Incline al bonus, si sovrappone spessissimo. Affare molto interessante per rapporto qualitÃ -prezzo. AndrÃ  spesso a voto. ",
     "contro": "Ballottaggio serrato, parte leggermente dietro nelle gerarchie. Al primo anno in Serie A, rischia di esser discontinuo sotto diversi aspetti.",
@@ -4576,7 +4598,8 @@
     "AvgPG": 23.0,
     "AvgMF": 5.72,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7240",
@@ -4666,7 +4689,7 @@
     "quotation": 6.0,
     "hypeFactor": 2.67,
     "cups": "Europa L.",
-    "age": null,
+    "age": 23,
     "status": "OK",
     "pro": "Jolly molto duttile, acquisto intrigante al massimo in chiave Mantra. RientrerÃ  nelle rotazioni di Gasp, sia come braccetto che a tutta fascia. Scommessa low cost molto interessante per completare il reparto. ",
     "contro": "Non possiamo definirlo un titolare inamovibile. Se necessitate di coperture che offrono garanzie in termini di minutaggio, virate su altri profili.",
@@ -4679,7 +4702,8 @@
     "AvgPG": 13.5,
     "AvgMF": 6.35,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "4374",
@@ -4691,7 +4715,7 @@
     "quotation": 4.0,
     "hypeFactor": 3.0,
     "cups": "",
-    "age": null,
+    "age": 26,
     "status": "Il difensore alle prese con un forte trauma contusivo alla gamba destra, da valutare il rientro da metà settembre.",
     "pro": "Duttile e di esperienza, troverÃ  sicuramente tanto spazio. PuÃ² giocare in piÃ¹ posizioni. Prezzo molto basso, intriga al Mantra. ",
     "contro": "La concorrenza non manca, in entrambi i ruoli. Non possiamo definirlo di certo un inamovibile.",
@@ -4704,7 +4728,8 @@
     "AvgPG": 29.67,
     "AvgMF": 5.68,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7526",
@@ -4742,7 +4767,7 @@
     "quotation": 4.0,
     "hypeFactor": 3.0,
     "cups": "",
-    "age": null,
+    "age": 35,
     "status": "OK",
     "pro": "Forte fisicamente, roccioso di testa e sempre pericoloso. RientrerÃ  nelle rotazioni, duttile. Prezzo molto basso. ",
     "contro": "Anche in questo caso non parliamo di un inamovibile. Discontinuo in termini di rendimento e minutaggio.",
@@ -4755,7 +4780,8 @@
     "AvgPG": 18.0,
     "AvgMF": 6.07,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "5820",
@@ -4793,7 +4819,7 @@
     "quotation": 4.0,
     "hypeFactor": 2.5,
     "cups": "",
-    "age": null,
+    "age": 25,
     "status": "il calciatore operato a fine gennaio per la lesione del legamento crociato anteriore del ginocchio destro, sta ultimando la fase di recupero e può tornare in campo da ottobre.",
     "pro": "Scommessina low cost per chiudere il reparto, molto propositivo. Potrebbe andare a voto in piÃ¹ di un'occasione. ",
     "contro": "Parte ovviamente nettamente dietro nelle gerarchie. Rischia di giocare raramente, quasi mai da titolare.",
@@ -4806,7 +4832,8 @@
     "AvgPG": 21.33,
     "AvgMF": 6.0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7312",
@@ -4844,7 +4871,7 @@
     "quotation": 4.0,
     "hypeFactor": 1.5,
     "cups": "",
-    "age": null,
+    "age": 22,
     "status": "Il difensore non al meglio per noie fisiche, forfait contro Lecce e Milan. Punta a tornare arruolabile dall'inizio di settembre, da valutare convocazione per Frosinone.",
     "pro": null,
     "contro": null,
@@ -4857,7 +4884,8 @@
     "AvgPG": 3.0,
     "AvgMF": 5.67,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "6821",
@@ -4947,7 +4975,7 @@
     "quotation": 5.0,
     "hypeFactor": 2.4,
     "cups": "",
-    "age": null,
+    "age": 35,
     "status": "OK",
     "pro": "Potrete acquistarlo al prezzo minimo. ",
     "contro": "Parte nettamente dietro nelle gerarchie, parliamo del quinto centrale di riserva. Rischia di collezionare davvero pochissimi minuti, specialmente in campionato.",
@@ -4960,7 +4988,8 @@
     "AvgPG": 19.33,
     "AvgMF": 5.7,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "5498",
@@ -5024,7 +5053,7 @@
     "quotation": 3.0,
     "hypeFactor": 1.0,
     "cups": "",
-    "age": null,
+    "age": 21,
     "status": "il calciatore in ripresa dalla rottura del legamento crociato, può tornare arruolabile dalla fine di ottobre.",
     "pro": "Molto propositivo, si sovrappone spesso. CollezionerÃ  tanti voti, anche a gara in corso. Prezzo molto basso. Utile sia in una difesa a 3 che a 4. ",
     "contro": "La concorrenza non manca, qualsiasi sia l'assetto tattico del Cagliari. Parte dietro nelle gerarchie, potrebbe non collezionare tante presenze da titolare.",
@@ -5037,7 +5066,8 @@
     "AvgPG": 17.0,
     "AvgMF": 6.09,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "4378",
@@ -5283,7 +5313,7 @@
     "quotation": 3.0,
     "hypeFactor": 2.67,
     "cups": "",
-    "age": null,
+    "age": 28,
     "status": "il difensore a gennaio vittima della rottura legamento crociato anteriore ginocchio destro, punta a tornare convocabile dalla metà di settembre.",
     "pro": "AndrÃ  a voto molto spesso. Potrebbe rappresentare una copertura interessante in chiave modificatore. Prezzo molto basso. ",
     "contro": "Leggermente discontinuo, le insufficienze non mancheranno. Incline ai cartellini.",
@@ -5296,7 +5326,8 @@
     "AvgPG": 12.5,
     "AvgMF": 5.69,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "6925",
@@ -5412,7 +5443,7 @@
     "quotation": 3.0,
     "hypeFactor": 2.33,
     "cups": "",
-    "age": null,
+    "age": 28,
     "status": "il difensore operato in estate per il perdurare di un problema all'anca e recuperabile da fine ottobre.",
     "pro": null,
     "contro": null,
@@ -5425,7 +5456,8 @@
     "AvgPG": 14.0,
     "AvgMF": 5.86,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7478",
@@ -5541,7 +5573,7 @@
     "quotation": 4.0,
     "hypeFactor": 3.0,
     "cups": "",
-    "age": null,
+    "age": 24,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -5554,7 +5586,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7483",
@@ -5566,7 +5599,7 @@
     "quotation": 2.0,
     "hypeFactor": 3.0,
     "cups": "Europa L.",
-    "age": null,
+    "age": 24,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -5579,7 +5612,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "6896",
@@ -5591,7 +5625,7 @@
     "quotation": 2.0,
     "hypeFactor": 5.5,
     "cups": "",
-    "age": null,
+    "age": 24,
     "status": "OK",
     "pro": "Si puÃ² acquistare serenamente al prezzo minimo. PuÃ² racimolare diverse partite a voto, anche da subentrato. ",
     "contro": "Parte dietro nelle gerarchie nel ruolo di terzino destro. Non proprio un laterale incline al bonus.",
@@ -5604,7 +5638,8 @@
     "AvgPG": 16.0,
     "AvgMF": 5.94,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "6977",
@@ -5720,7 +5755,7 @@
     "quotation": 2.0,
     "hypeFactor": 3.5,
     "cups": "",
-    "age": null,
+    "age": 27,
     "status": "OK",
     "pro": "Affidabile, bravo in costruzione. Buona alternativa a Tavares, puÃ² essere interessante come copertura. Pronto a sfruttare le occasioni che arriveranno, con Sarri puÃ² fare bene anche in zona assist. ",
     "contro": "Parte ovviamente dietro nelle gerarchie rispetto a Nuno Tavares. Il consiglio Ã¨ di prenderli in coppia, ma insieme non costeranno pochissimo.",
@@ -5733,7 +5768,8 @@
     "AvgPG": 20.0,
     "AvgMF": 5.89,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "6883",
@@ -5745,7 +5781,7 @@
     "quotation": 2.0,
     "hypeFactor": 2.0,
     "cups": "",
-    "age": null,
+    "age": 26,
     "status": "OK",
     "pro": "SarÃ  sicuramente un profilo che verrÃ  considerato per le rotazioni in difesa. Affidabile, andrÃ  via probabilmente al prezzo minimo. ",
     "contro": "Rientra da un grave infortuno e potrebbe impiegare diverse settimane prima di recuperare la forma migliore. Parte dietro nelle gerarchie, soprattutto nel girone d'andata potrebbe racimolare pochissime presenze.",
@@ -5758,7 +5794,8 @@
     "AvgPG": 11.5,
     "AvgMF": 5.72,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7182",
@@ -6004,7 +6041,7 @@
     "quotation": 3.0,
     "hypeFactor": 2.33,
     "cups": "",
-    "age": null,
+    "age": 22,
     "status": "OK",
     "pro": "Difensore molto duttile, ancor piÃ¹ intrigante al Mantra. Potrebbe racimolare diverse partite a voto. Prezzo contenutissimo. ",
     "contro": "Anche in questo caso non possiamo parlare di un titolare fisso. Si alternerÃ  stabilmente. Leggermente discontinuo e incline ai cartellini. Non da modificatore.",
@@ -6017,7 +6054,8 @@
     "AvgPG": 13.0,
     "AvgMF": 3.76,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7573",
@@ -6055,7 +6093,7 @@
     "quotation": 3.0,
     "hypeFactor": 2.33,
     "cups": "",
-    "age": null,
+    "age": 23,
     "status": "OK",
     "pro": "Scommessina low cost intrigante. Duttile, una delle prime alternative sia a destra che a sinistra. Prezzo bassissimo. ",
     "contro": "Parte leggermente dietro nelle gerarchie, potrebbe agire anche in una posizione piÃ¹ arretrata rispetto al solito.",
@@ -6068,7 +6106,8 @@
     "AvgPG": 20.33,
     "AvgMF": 5.76,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7599",
@@ -6262,7 +6301,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "",
-    "age": null,
+    "age": 33,
     "status": "il difensore ai box per un problema fisico e out nella 3a di campionato contro l'Udinese. Tempi di recupero da valutare.",
     "pro": "Jolly duttile, anche in chiave Mantra. Sarri lo stima. PuÃ² garantire un discreto numero di partite a voto, anche da subentrato. ",
     "contro": "Parte dietro nelle gerarchie, sia come centrale che come riserva. Con praticamente una partita a settimana, potrebbe partire raramente dal 1'.",
@@ -6275,7 +6314,8 @@
     "AvgPG": 12.33,
     "AvgMF": 5.97,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "5399",
@@ -6313,7 +6353,7 @@
     "quotation": 1.0,
     "hypeFactor": 3.0,
     "cups": "Champions",
-    "age": null,
+    "age": 22,
     "status": "Il difensore KO in amichevole l'8 agosto vittima di una lesione di alto grado del collaterale mediale del ginocchio sinistro. Tempi di recupero da valutare, ma rischia uno stop di almeno due mesi.",
     "pro": "Potrebbe rientrare un minimo nelle rotazioni difensive di Conte. Profilo affidabile, anche per il modificatore. Prezzo bassissimo. ",
     "contro": "Parte dietro nelle gerarchie, le presenze potrebbero non essere molte nella sua prima stagione al Napoli.",
@@ -6326,7 +6366,8 @@
     "AvgPG": 12.0,
     "AvgMF": 5.73,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "5481",
@@ -6338,7 +6379,7 @@
     "quotation": 1.0,
     "hypeFactor": 12.0,
     "cups": "",
-    "age": null,
+    "age": 31,
     "status": "OK",
     "pro": "Probabilmente lo acquisterete al prezzo minimo. Quando chiamato in causa, risponde sempre presente. ",
     "contro": "Qualora restasse al Napoli, la sensazione Ã¨ che si possa ripetere una stagione molto simile alla scorsa, dove ha collezionato appena 10 presenze.",
@@ -6351,7 +6392,8 @@
     "AvgPG": 14.67,
     "AvgMF": 5.74,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "6149",
@@ -6389,7 +6431,7 @@
     "quotation": 1.0,
     "hypeFactor": 8.0,
     "cups": "",
-    "age": null,
+    "age": 21,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -6402,7 +6444,8 @@
     "AvgPG": 9.0,
     "AvgMF": 5.78,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7156",
@@ -6414,7 +6457,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "",
-    "age": null,
+    "age": 23,
     "status": "il difensore sta proseguendo la fase di recupero dalla lesione legamento crociato anteriore gamba destra e ipotizziamo possa tornare convocabile da ottobre.",
     "pro": "Terzino affidabile sotto diversi aspetti, andrÃ  via sicuramente al prezzo minimo. ",
     "contro": "Prenderlo in coppia con Doig Ã¨ praticamente d'obbligo. Parte nettamente dietro nelle gerarchie, rischia di giocare raramente dal 1'.",
@@ -6427,7 +6470,8 @@
     "AvgPG": 0.0,
     "AvgMF": 0.0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7454",
@@ -7037,7 +7081,7 @@
     "quotation": 13.0,
     "hypeFactor": 3.92,
     "cups": "Champions",
-    "age": null,
+    "age": 27,
     "status": "OK",
     "pro": "Costante e super affidabile, sia per MV che per minutaggio. Titolare inamovibile. Al Mantra parliamo di un top indiscusso. Propenso all'inserimento. ",
     "contro": "Propenso all'inserimento, si, ma con Juric i compiti potrebbero essere piÃ¹ difensivi e i bonus potrebbero anche diminuire.",
@@ -7050,7 +7094,8 @@
     "AvgPG": 34.0,
     "AvgMF": 6.49,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "5800",
@@ -7062,7 +7107,7 @@
     "quotation": 11.0,
     "hypeFactor": 3.64,
     "cups": "",
-    "age": null,
+    "age": 29,
     "status": "OK",
     "pro": "Rigorista, ha le potenzialitÃ  per fare meglio rispetto alla scorsa stagione. Con il cambio ruolo, Ã¨ diventato un top di lista indiscusso, soprattutto per potenzialitÃ  in termini di bonus. AndrÃ  praticamente sempre a voto. ",
     "contro": "Qualche problemino fisico di troppo. Con il cambio ruolo l'appeal Ã¨ aumentato, dunque il prezzo potrebbe essere altissimo. Il consiglio Ã¨ di non andare oltre l'FVM indicato.",
@@ -7075,7 +7120,8 @@
     "AvgPG": 29.33,
     "AvgMF": 6.99,
     "R": 3,
-    "P": 3
+    "P": 3,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "152",
@@ -7217,7 +7263,7 @@
     "quotation": 12.0,
     "hypeFactor": 3.92,
     "cups": "Champions",
-    "age": null,
+    "age": 29,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -7230,7 +7276,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7625",
@@ -7242,7 +7289,7 @@
     "quotation": 12.0,
     "hypeFactor": 4.17,
     "cups": "Conference",
-    "age": null,
+    "age": 28,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -7255,7 +7302,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 3,
-    "P": 3
+    "P": 3,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7129",
@@ -7449,7 +7497,7 @@
     "quotation": 10.0,
     "hypeFactor": 4.2,
     "cups": "Champions",
-    "age": null,
+    "age": 23,
     "status": "OK",
     "pro": "A voto praticamente sempre, sia da titolare che da subentrato. Di stampo offensivo e con il vizio marcato del bonus. Intriga, ma al prezzo giusto (seguite l'FVM). ",
     "contro": "Si alternerÃ  tanto, non Ã¨ un titolare inamovibile. In carriera, fino ad oggi, ha dimostrato di essere molto discontinuo.",
@@ -7462,7 +7510,8 @@
     "AvgPG": 28.0,
     "AvgMF": 6.59,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "6151",
@@ -7526,7 +7575,7 @@
     "quotation": 10.0,
     "hypeFactor": 4.1,
     "cups": "Champions",
-    "age": null,
+    "age": 30,
     "status": "OK",
     "pro": "Sicuramente piÃ¹ prezioso al Mantra che al Classic, nel complesso un buon profilo, equilibrato e affidabile sotto diversi aspetti. Rapporto qualitÃ -prezzo sempre conveniente. ",
     "contro": "Maggiore concorrenza, potrebbe arrivare piÃ¹ di una panchina. Inoltre, con l'arrivo di De Bruyne, gli saranno assegnati piÃ¹ compiti difensivi e d'interdizione. Potrebbe portare meno bonus rispetto alla scorsa stagione. Occhio, disputerÃ  la Coppa d'Africa.",
@@ -7539,7 +7588,8 @@
     "AvgPG": 28.67,
     "AvgMF": 6.56,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7223",
@@ -7915,7 +7965,7 @@
     "quotation": 9.0,
     "hypeFactor": 2.22,
     "cups": "Europa L.",
-    "age": null,
+    "age": 30,
     "status": "OK",
     "pro": "RientrerÃ  stabilmente nelle rotazioni, con Gasperini avanzerÃ  il proprio raggio d'azione. Vizio del bonus, per rapporto qualitÃ  prezzo puÃ² essere molto interessante. ",
     "contro": "TroverÃ  spazio, ma parte dietro nelle gerarchie. Parecchio incline ai problemi di natura fisica.",
@@ -7928,7 +7978,8 @@
     "AvgPG": 26.0,
     "AvgMF": 6.47,
     "R": 0,
-    "P": 3
+    "P": 3,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "2077",
@@ -8018,7 +8069,7 @@
     "quotation": 8.0,
     "hypeFactor": 2.88,
     "cups": "",
-    "age": null,
+    "age": 29,
     "status": "OK",
     "pro": "Costante, regolare e con il vizietto del bonus. AndrÃ  quasi sempre a voto. Affidabile per MV. Il tutto ad un prezzo molto contenuto. ",
     "contro": "Il suo posto da inamovibile Ã¨ a forte rischio dopo l'arrivo di Sohm. Non proprio di stampo offensivo in questo nuovo assetto viola. Attenzione ai cartellini.",
@@ -8031,7 +8082,8 @@
     "AvgPG": 30.33,
     "AvgMF": 6.52,
     "R": 3,
-    "P": 2
+    "P": 2,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7472",
@@ -8121,7 +8173,7 @@
     "quotation": 8.0,
     "hypeFactor": 2.5,
     "cups": "",
-    "age": null,
+    "age": 24,
     "status": "il centrocampista canadese vittima a giugno nella gara dei Mondiali di una rottura di tibia e perone. Operato, punta a tornare in campo da dicembre.",
     "pro": "Calciatore di grande livello e di caratura superiore. Ci aspettiamo possa andare a voto quasi sempre, spesso da titolare. Completo, pronto anche ad inserirsi. Al Mantra intriga tanto. Buon rapporto qualitÃ -prezzo. ",
     "contro": "Ovviamente Ã¨ al primo anno in Serie A, dunque occhio. Potrebbe faticare un po' all'inizio, ruotare piÃ¹ di quanto ci si aspetti.",
@@ -8134,7 +8186,8 @@
     "AvgPG": 35.0,
     "AvgMF": 6.63,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7551",
@@ -8172,7 +8225,7 @@
     "quotation": 7.0,
     "hypeFactor": 3.14,
     "cups": "",
-    "age": null,
+    "age": 22,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -8185,7 +8238,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "6833",
@@ -8197,7 +8251,7 @@
     "quotation": 8.0,
     "hypeFactor": 3.5,
     "cups": "Europa L.",
-    "age": null,
+    "age": 22,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -8210,7 +8264,8 @@
     "AvgPG": 15.0,
     "AvgMF": 7.13,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "4364",
@@ -8690,7 +8745,7 @@
     "quotation": 6.0,
     "hypeFactor": 3.83,
     "cups": "",
-    "age": null,
+    "age": 27,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -8703,7 +8758,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "5680",
@@ -8715,7 +8771,7 @@
     "quotation": 8.0,
     "hypeFactor": 3.38,
     "cups": "Champions",
-    "age": null,
+    "age": 23,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -8728,7 +8784,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "5298",
@@ -9026,7 +9083,7 @@
     "quotation": 7.0,
     "hypeFactor": 2.86,
     "cups": "",
-    "age": null,
+    "age": 29,
     "status": "Il centrocampista costretto a saltare l'inizio di campionato per una lussazione della rotula del ginocchio destro rimediata nella prima metà di agosto in allenamento. Tempi di recupero da monitorare, ma proverà a tornare arruolabile dall'inizio di novembre.",
     "pro": null,
     "contro": null,
@@ -9039,7 +9096,8 @@
     "AvgPG": 24.0,
     "AvgMF": 6.23,
     "R": 0,
-    "P": 3
+    "P": 3,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "4349",
@@ -9051,7 +9109,7 @@
     "quotation": 6.0,
     "hypeFactor": 3.5,
     "cups": "",
-    "age": null,
+    "age": 26,
     "status": "il centrocampista alle prese dalla seconda metà di luglio con una lesione di medio grado alla coscia destra, ma a fine agosto ha deciso, assieme allo staff medico ducale, di operarsi. Lungo stop e ipotesi di ritorno in campo da novembre.",
     "pro": null,
     "contro": null,
@@ -9064,7 +9122,8 @@
     "AvgPG": 21.33,
     "AvgMF": 6.18,
     "R": 0,
-    "P": 2
+    "P": 2,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "2528",
@@ -9258,7 +9317,7 @@
     "quotation": 7.0,
     "hypeFactor": 2.43,
     "cups": "",
-    "age": null,
+    "age": 28,
     "status": "OK",
     "pro": "Centrocampista molto duttile che intriga tantissimo anche al Mantra. Calciatore incline al bonus, sia gol che assist. Molto intrigante per rapporto qualitÃ -prezzo. ",
     "contro": "La concorrenza non manca, sia sulle corsie laterali che in mediana, quindi occhio. Inoltre, Ã¨ al primo anno in Serie A e non Ã¨ scontato che possa confermarsi sui livelli della scorsa stagione.",
@@ -9271,7 +9330,8 @@
     "AvgPG": 30.0,
     "AvgMF": 5.82,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7624",
@@ -9283,7 +9343,7 @@
     "quotation": 6.0,
     "hypeFactor": 3.33,
     "cups": "",
-    "age": null,
+    "age": 27,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -9296,7 +9356,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7528",
@@ -9724,7 +9785,7 @@
     "quotation": 4.0,
     "hypeFactor": 2.0,
     "cups": "",
-    "age": null,
+    "age": 21,
     "status": "l'ala offensiva dei lariani vittima della rottura tendine d'Achille, proverà a recuperare dalla seconda metà di settembre.",
     "pro": "Scheggia impazzita, calciatore che puÃ² fare molto bene anche da subentrato. Quasi sempre a voto. Prezzo probabilmente molto basso. ",
     "contro": "Occhio, potrebbe spesso partire dalla panchina e rendere la sua gestione in sede di formazione non proprio semplicissima. Non una macchina da bonus.",
@@ -9737,7 +9798,8 @@
     "AvgPG": 12.0,
     "AvgMF": 6.54,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "6206",
@@ -9905,7 +9967,7 @@
     "quotation": 4.0,
     "hypeFactor": 2.75,
     "cups": "",
-    "age": null,
+    "age": 26,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -9918,7 +9980,8 @@
     "AvgPG": 8.0,
     "AvgMF": 5.75,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "2529",
@@ -9982,7 +10045,7 @@
     "quotation": 4.0,
     "hypeFactor": 3.75,
     "cups": "",
-    "age": null,
+    "age": 32,
     "status": "il regista biancoceleste ha ripreso a lavorare sul campo d'allenamento, messa da parte l'ernia bilaterale che lo ha costretto a saltare la preparazione estiva. Recuperabile dalla metà di settembre.",
     "pro": "Buona copertura di Rovella, molto interessante al Mantra. Tiratore di punizioni eccellente. Prezzo bassissimo. Spesso a voto. ",
     "contro": "Nettamente dietro nelle gerarchie rispetto a Rovella. Al Mantra, dove attira di piÃ¹ l'attenzione, Ã¨ quasi obbligatoria la coppia con Rovella.",
@@ -9995,7 +10058,8 @@
     "AvgPG": 24.33,
     "AvgMF": 6.25,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7322",
@@ -10215,7 +10279,7 @@
     "quotation": 4.0,
     "hypeFactor": 7.0,
     "cups": "Conference",
-    "age": null,
+    "age": 21,
     "status": "OK",
     "pro": "Acquistabile al prezzo minimo. Potrebbe racimolare qualche presenza da subentrato. ",
     "contro": "Ancora acerbo e discontinuo. Concorrenza foltissima, parte nettamente dietro nelle gerarchie. Potrebbe collezionare diversi SV.",
@@ -10228,7 +10292,8 @@
     "AvgPG": 9.5,
     "AvgMF": 6.04,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7208",
@@ -10292,7 +10357,7 @@
     "quotation": 4.0,
     "hypeFactor": 3.0,
     "cups": "",
-    "age": null,
+    "age": 23,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -10305,7 +10370,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "6024",
@@ -10317,7 +10383,7 @@
     "quotation": 3.0,
     "hypeFactor": 2.67,
     "cups": "",
-    "age": null,
+    "age": 23,
     "status": "OK",
     "pro": "Potrebbe collezionare diverse presenze, specialmente a gara in corso. Interessante al Mantra come copertura. Prezzo bassissimo. ",
     "contro": "Parte dietro nelle gerarchie, non si puÃ² considerare un titolarissimo. Poco incline al bonus.",
@@ -10330,7 +10396,8 @@
     "AvgPG": 14.33,
     "AvgMF": 6.33,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "1871",
@@ -10394,7 +10461,7 @@
     "quotation": 3.0,
     "hypeFactor": 2.0,
     "cups": "",
-    "age": null,
+    "age": 29,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -10407,7 +10474,8 @@
     "AvgPG": 20.0,
     "AvgMF": 5.78,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "6917",
@@ -10705,7 +10773,7 @@
     "quotation": 4.0,
     "hypeFactor": 2.25,
     "cups": "",
-    "age": null,
+    "age": 32,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -10718,7 +10786,8 @@
     "AvgPG": 22.33,
     "AvgMF": 5.78,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7232",
@@ -10730,7 +10799,7 @@
     "quotation": 2.0,
     "hypeFactor": 3.0,
     "cups": "",
-    "age": null,
+    "age": 18,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -10743,7 +10812,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "6225",
@@ -10833,7 +10903,7 @@
     "quotation": 2.0,
     "hypeFactor": 2.0,
     "cups": "",
-    "age": null,
+    "age": 20,
     "status": "il calciatore operato al tendine rotuleo e ora in fase di recupero. Di certo assente nel prossimo turno di campionato, ipotesi di rientro da fine ottobre.",
     "pro": "Scommessina molto intrigante, soprattutto al Classic. Centrocampista di stampo offensivo che puÃ² rendersi molto utile anche a gara in corso. Prezzo molto abbordabile. ",
     "contro": "Giovanissimo, potrebbe andare a fasi alterne. Dunque, non vi aspettate una garanzia in termini di costanza di rendimento. Duttile, ma al momento dietro nelle gerarchie sulla trequarti.",
@@ -10846,7 +10916,8 @@
     "AvgPG": 5.0,
     "AvgMF": 7.35,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "6191",
@@ -10884,7 +10955,7 @@
     "quotation": 2.0,
     "hypeFactor": 3.0,
     "cups": "",
-    "age": null,
+    "age": 31,
     "status": "il centrocampista non al meglio per noie fisiche, forfait per domenica contro il Parma. Da valutare.",
     "pro": null,
     "contro": null,
@@ -10897,7 +10968,8 @@
     "AvgPG": 19.5,
     "AvgMF": 5.93,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7276",
@@ -10935,7 +11007,7 @@
     "quotation": 2.0,
     "hypeFactor": 2.5,
     "cups": "",
-    "age": null,
+    "age": 27,
     "status": "il centrocampista fuori causa per un problema al ginocchio e fuori causa in questo inizio di campionato. Da valutare rientro da fine settembre.",
     "pro": "Titolare inamovibile. Calciatore di grande qualitÃ , super affidabile in termini di media voto. Profilo particolarmente intrigante soprattutto al Mantra. ",
     "contro": "Non proprio incline al bonus, sia gol che assist. Parliamo dunque di una copertura affidabile per minutaggio, ma non per altro.",
@@ -10948,7 +11020,8 @@
     "AvgPG": 16.0,
     "AvgMF": 5.79,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "6246",
@@ -11012,7 +11085,7 @@
     "quotation": 2.0,
     "hypeFactor": 3.0,
     "cups": "",
-    "age": null,
+    "age": 27,
     "status": "il georgiano a inizio luglio vittima della frattura al terzo metatarso del piede destro, può tornare arruolabile dalla prima metà di settembre.",
     "pro": null,
     "contro": null,
@@ -11025,7 +11098,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "526",
@@ -11037,7 +11111,7 @@
     "quotation": 2.0,
     "hypeFactor": 2.0,
     "cups": "",
-    "age": null,
+    "age": 33,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -11050,7 +11124,8 @@
     "AvgPG": 20.0,
     "AvgMF": 6.12,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "6592",
@@ -11114,7 +11189,7 @@
     "quotation": 2.0,
     "hypeFactor": 2.5,
     "cups": "",
-    "age": null,
+    "age": 19,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -11127,7 +11202,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7165",
@@ -11217,7 +11293,7 @@
     "quotation": 1.0,
     "hypeFactor": 3.0,
     "cups": "",
-    "age": null,
+    "age": 26,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -11230,7 +11306,8 @@
     "AvgPG": 1.0,
     "AvgMF": 6.0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7345",
@@ -11268,7 +11345,7 @@
     "quotation": 1.0,
     "hypeFactor": 2.0,
     "cups": "",
-    "age": null,
+    "age": 24,
     "status": "OK",
     "pro": "Potrebbe rientrare nelle rotazioni in mediana, sia come play che come mezz'ala. Spesso a voto, anche da subentrato. Prezzo minimo. ",
     "contro": "Di stampo marcatamente difensivo, non garantisce bonus. Inoltre, parte dietro nelle gerarchie. Potrebbero esserci diversi SV nella sua stagione.",
@@ -11281,7 +11358,8 @@
     "AvgPG": 15.0,
     "AvgMF": 5.76,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7319",
@@ -11397,7 +11475,7 @@
     "quotation": 1.0,
     "hypeFactor": 1.0,
     "cups": "",
-    "age": null,
+    "age": 19,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -11410,7 +11488,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7572",
@@ -11656,7 +11735,7 @@
     "quotation": 24.0,
     "hypeFactor": 7.62,
     "cups": "",
-    "age": null,
+    "age": 26,
     "status": "OK",
     "pro": "Top di lista nel ruolo di attaccante, bomber. Pronto a garantire almeno una quindicina di gol. Titolarissimo. ",
     "contro": "Non proprio costante nella distribuzione dei bonus. Non un grande rigorista. Occhio al prezzo, il consiglio, come al solito, Ã¨ di non andare troppo oltre l'FVM indicato.",
@@ -11669,7 +11748,8 @@
     "AvgPG": 24.0,
     "AvgMF": 6.93,
     "R": 2,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "6752",
@@ -11681,7 +11761,7 @@
     "quotation": 23.0,
     "hypeFactor": 6.96,
     "cups": "Champions",
-    "age": null,
+    "age": 24,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -11694,7 +11774,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 2,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7017",
@@ -11888,7 +11969,7 @@
     "quotation": 17.0,
     "hypeFactor": 6.18,
     "cups": "Champions",
-    "age": null,
+    "age": 21,
     "status": "OK",
     "pro": "Probabilmente unico vero centravanti di razza e ben strutturato fisicamente presente in rosa. Queste caratteristiche potrebbero favorirlo nella conquista di un minutaggio importante. Buona arma anche a gara in corso. Grandissimo senso del gol. Prezzo molto contenuto. ",
     "contro": "Al primo anno in Serie A in un top club potrebbe faticare a trovare subito continuitÃ , sotto diversi aspetti. Concorrenza folta, rischia di partire molto spesso dalla panchina rendendo la sua gestione in sede di formazione non semplicissima.",
@@ -11901,7 +11982,8 @@
     "AvgPG": 31.0,
     "AvgMF": 7.02,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "309",
@@ -12121,7 +12203,7 @@
     "quotation": 14.0,
     "hypeFactor": 3.57,
     "cups": "Conference",
-    "age": null,
+    "age": 28,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -12134,7 +12216,8 @@
     "AvgPG": 1.0,
     "AvgMF": 5.5,
     "R": 1,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "5734",
@@ -12172,7 +12255,7 @@
     "quotation": 13.0,
     "hypeFactor": 3.08,
     "cups": "",
-    "age": null,
+    "age": 24,
     "status": "OK",
     "pro": "Titolare e occhio, potrebbe tirare anche i rigori. Vizietto del bonus marcato, sia gol che assist. Rapporto qualitÃ -prezzo intriga moltissimo. ",
     "contro": "Va preso solo al prezzo giusto, per questo tenete d'occhio il suo FVM. Leggermente discontinuo.",
@@ -12185,7 +12268,8 @@
     "AvgPG": 23.0,
     "AvgMF": 4.56,
     "R": 2,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "6967",
@@ -12379,7 +12463,7 @@
     "quotation": 10.0,
     "hypeFactor": 3.4,
     "cups": "",
-    "age": null,
+    "age": 23,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -12392,7 +12476,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "5436",
@@ -12508,7 +12593,7 @@
     "quotation": 9.0,
     "hypeFactor": 3.11,
     "cups": "",
-    "age": null,
+    "age": 24,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -12521,7 +12606,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 3,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "4359",
@@ -12559,7 +12645,7 @@
     "quotation": 9.0,
     "hypeFactor": 2.78,
     "cups": "",
-    "age": null,
+    "age": 23,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -12572,7 +12658,8 @@
     "AvgPG": 5.0,
     "AvgMF": 6.1,
     "R": 0,
-    "P": 3
+    "P": 3,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "6164",
@@ -12584,7 +12671,7 @@
     "quotation": 8.0,
     "hypeFactor": 1.62,
     "cups": "",
-    "age": null,
+    "age": 26,
     "status": "OK",
     "pro": "Calciatore molto duttile, incisivo anche a gara in corso. Rapporto qualitÃ -prezzo intrigante. AndrÃ  molto spesso a voto. ",
     "contro": "Discontinuo, incline ai problemi fisici. Non proprio un bomber di razza.",
@@ -12597,7 +12684,8 @@
     "AvgPG": 19.67,
     "AvgMF": 6.66,
     "R": 3,
-    "P": 2
+    "P": 2,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "5029",
@@ -12765,7 +12853,7 @@
     "quotation": 8.0,
     "hypeFactor": 3.38,
     "cups": "Conference",
-    "age": null,
+    "age": 22,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -12778,7 +12866,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "5918",
@@ -12790,7 +12879,7 @@
     "quotation": 6.0,
     "hypeFactor": 1.33,
     "cups": "Champions",
-    "age": null,
+    "age": 24,
     "status": "L'attaccante KO in amichevole l'8 agosto vittima di una lesione del collaterale mediale di secondo grado del ginocchio sinistro, recuperabile da inizio ottobre.",
     "pro": "Juric lo conosce bene, l'ha voluto fortemente e lo utilizzerÃ  tanto, sia da titolare che a gara in corso. Prezzo abbastanza basso. ",
     "contro": "Non propenso al bonus, non proprio un dettaglio da poco per un attaccante. Potrebbe essere una discreta copertura, ma nulla in piÃ¹.",
@@ -12803,7 +12892,8 @@
     "AvgPG": 21.0,
     "AvgMF": 6.24,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "6204",
@@ -12945,7 +13035,7 @@
     "quotation": 6.0,
     "hypeFactor": 3.0,
     "cups": "",
-    "age": null,
+    "age": 24,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -12958,7 +13048,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "4896",
@@ -13022,7 +13113,7 @@
     "quotation": 5.0,
     "hypeFactor": 2.6,
     "cups": "",
-    "age": null,
+    "age": 26,
     "status": "OK",
     "pro": "Torna sotto la guida di Baroni che l'ha valorizzato tantissimo al Verona. PuÃ² essere un interessante slot di copertura, pronto a garantire minutaggio e qualche bonus. ",
     "contro": "Calciatore discontinuo che arriva da un paio di stagioni non positive. Potrebbe impiegare un po' di tempo prima di tornare ad essere subito decisivo. AvrÃ  anche compiti difensivi, non vi aspettate un bomber.",
@@ -13035,7 +13126,8 @@
     "AvgPG": 17.0,
     "AvgMF": 6.18,
     "R": 3,
-    "P": 1
+    "P": 1,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "6243",
@@ -13359,7 +13451,7 @@
     "quotation": 4.0,
     "hypeFactor": 2.0,
     "cups": "",
-    "age": null,
+    "age": 26,
     "status": "l'attaccante a fine luglio ha deciso di operarsi per un problema alla schiena, che lo costringerà a stare ai box per buona parte del girone d'andata del campionato. Tentativo di rientro da ottobre.",
     "pro": null,
     "contro": null,
@@ -13372,7 +13464,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 3,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7546",
@@ -13436,7 +13529,7 @@
     "quotation": 5.0,
     "hypeFactor": 2.8,
     "cups": "",
-    "age": null,
+    "age": 22,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -13449,7 +13542,8 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "5336",
@@ -13461,7 +13555,7 @@
     "quotation": 4.0,
     "hypeFactor": 2.5,
     "cups": "",
-    "age": null,
+    "age": 30,
     "status": "OK",
     "pro": "Dovrebbe essere il centravanti titolare del Pisa, anche rigorista. Prezzo comunque molto contenuto. Garantisce un buon bottino di gol. ",
     "contro": "Incline a qualche problema fisico di troppo, situazione da monitorare. Potrebbe disputare la Coppa d'Africa, non un punto a favore.",
@@ -13474,7 +13568,8 @@
     "AvgPG": 18.67,
     "AvgMF": 4.12,
     "R": 1,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "6822",
@@ -13564,7 +13659,7 @@
     "quotation": 1.0,
     "hypeFactor": 2.0,
     "cups": "",
-    "age": null,
+    "age": 20,
     "status": "Il calciatore ricoverato il 16 agosto dopo che avrebbe rischiato di annegare in piscina. Dimesso poi il 28 agosto, ora condizioni monitorate da parte dello staff medico rossoblù. Tempi di recupero da valutare, assente di certo nel prossimo turno di campionato.",
     "pro": null,
     "contro": null,
@@ -13577,7 +13672,8 @@
     "AvgPG": 3.0,
     "AvgMF": 5.67,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   },
   {
     "id": "7161",
@@ -13693,7 +13789,7 @@
     "quotation": 1.0,
     "hypeFactor": 3.0,
     "cups": "",
-    "age": null,
+    "age": 18,
     "status": "OK",
     "pro": null,
     "contro": null,
@@ -13706,6 +13802,7 @@
     "AvgPG": 0,
     "AvgMF": 0,
     "R": 0,
-    "P": 0
+    "P": 0,
+    "ageSource": "Statistiche_Giocatori.xlsx"
   }
 ]
