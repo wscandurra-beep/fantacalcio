@@ -72,3 +72,13 @@ test('auction sections reuse the slot plan ordering',async()=>{
   assert.match(app,/editable\?slotPlanGroups\(slots\)\.map/);
   assert.match(app,/planOrderedSlots=slotPlanGroups\(state\.slots\)\.flatMap\(group=>group\.slots\),rows=buildAuctionRows\(players\(\),planOrderedSlots,state\.auctionView,true\)/);
 });
+
+
+test('auction exposes an editable budget backed by the slot baseline',async()=>{
+  const app=await readFile(new URL('../src/app.js',import.meta.url),'utf8');
+  assert.match(app,/data-auction-budget type="number"[^>]+slot\.originalPlannedBudget/);
+  assert.match(app,/state\.slots=updateSlotBaseline\(state\.slots,slotId,value\)/);
+  assert.match(app,/input\.addEventListener\('change',finalize\)/);
+  assert.match(app,/input\.addEventListener\('blur',finalize\)/);
+  assert.match(app,/event\.key==='Enter'/);
+});
