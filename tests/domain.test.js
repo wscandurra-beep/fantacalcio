@@ -193,6 +193,26 @@ test('an acquired player follows its auction row without repacking other purchas
   assert.deepEqual(result.market.schmid.assignedSlot,{id:'A2',alias:'A'});
   assert.equal(result.auctionView.placements.schmid,'A2');
 });
+test('buying Schmid in A4 keeps A4 even when an earlier slot is free',()=>{
+  const players=[{id:'schmid',roles:'A'}],configuration=[{alias:'A',mantraRoles:['A']}];
+  const slots=Array.from({length:4},(_,index)=>({id:`A${index+1}`,category:'A'}));
+  const market={schmid:{marketStatus:'MY TEAM',actualPurchasePrice:15,assignedSlot:{id:'A4',alias:'A'},assignedSlotId:'A4'}};
+  const result=reconcilePurchasedAssignments({slots,market,auctionView:{placements:{schmid:'A4'},orders:{}}},players,configuration);
+  assert.equal(result.slots.find(slot=>slot.playerId==='schmid').id,'A4');
+  assert.equal(result.market.schmid.assignedSlotId,'A4');
+  const restored=reconcilePurchasedAssignments(JSON.parse(JSON.stringify(result)),players,configuration);
+  assert.equal(restored.market.schmid.assignedSlotId,'A4');
+});
+test('a pinned purchase never promotes when its current slot is occupied',()=>{
+  const players=[{id:'current',roles:'A'},{id:'new',roles:'A'}],configuration=[{alias:'A',mantraRoles:['A']}];
+  const slots=[{id:'A1',category:'A'},{id:'A2',category:'A'},{id:'A4',category:'A',playerId:'current',actualPurchasePrice:9}];
+  const market={current:{marketStatus:'MY TEAM',actualPurchasePrice:9,assignedSlotId:'A4'},new:{marketStatus:'MY TEAM',actualPurchasePrice:5,assignedSlotId:'A4'}};
+  const result=reconcilePurchasedAssignments({slots,market,auctionView:{placements:{current:'A4',new:'A4'},orders:{}}},players,configuration);
+  assert.equal(result.market.new.slotAssignmentStatus,'OVERFLOW');
+  assert.equal(result.auctionView.placements.new,'A4');
+  assert.equal(result.slots.find(slot=>slot.id==='A1').playerId,null);
+  assert.equal(result.slots.find(slot=>slot.id==='A2').playerId,null);
+});
 test('mapping changes deterministically reallocate purchases and report overflow',()=>{
   const players=[{id:'a',roles:'W;A'},{id:'b',roles:'W;A'}],slots=[{id:'WA2',category:'W',playerId:'a',actualPurchasePrice:9},{id:'C1',category:'C'}];
   const market={a:{marketStatus:'MY TEAM'},b:{marketStatus:'MY TEAM',actualPurchasePrice:4}};
