@@ -167,6 +167,20 @@ function nextSlotId(slots,category) {
   while(used.has(`${category}${index}`))index++;
   return `${category}${index}`;
 }
+function normalizeSlotIdentifiers(slots,categoryOrder=CATEGORY_PRIORITY) {
+  const ordered=[...categoryOrder];
+  for(const slot of slots)if(slot.category&&!ordered.includes(slot.category))ordered.push(slot.category);
+  const normalized=new Map();
+  for(const category of ordered){
+    const ownPrefix=new RegExp(`^${category}\\d+$`);
+    const grouped=slots.map((slot,index)=>({slot,index})).filter(item=>item.slot.category===category)
+      // Keep existing identifiers first. Slots moved into this role are appended,
+      // so C1…C5 followed by a legacy WA2 correctly becomes C6.
+      .sort((left,right)=>(Number(ownPrefix.test(right.slot.id))-Number(ownPrefix.test(left.slot.id)))||left.index-right.index);
+    grouped.forEach(({slot},index)=>normalized.set(slot,{...slot,id:`${category}${index+1}`}));
+  }
+  return slots.map(slot=>normalized.get(slot)??slot);
+}
 function priorityForIndex(index) { return index===0?'Key':index<3?'Starter':'Reserve'; }
 export function reconcileSlotCounts(slots,input,maxRosterSize=34) {
   const {counts}=validateSlotCounts(input,maxRosterSize);
@@ -189,7 +203,7 @@ export function reconcileSlotCounts(slots,input,maxRosterSize=34) {
       result.push(slot);grouped.push(slot);
     }
   }
-  return updateForecasts(result);
+  return updateForecasts(normalizeSlotIdentifiers(result));
 }
 export function reconcileAliasSlots(slots,configuration,maxRosterSize=34) {
   const planned=configuration.filter(item=>item.alias!==OUT_ALIAS);
@@ -215,5 +229,5 @@ export function reconcileAliasSlots(slots,configuration,maxRosterSize=34) {
       result.push(slot);grouped.push(slot);
     }
   }
-  return updateForecasts(result);
+  return updateForecasts(normalizeSlotIdentifiers(result));
 }
