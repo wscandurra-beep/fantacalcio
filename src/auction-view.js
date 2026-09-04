@@ -1,4 +1,11 @@
+import {getForecast} from './domain.js';
+
 const emptyAuctionValue=value=>value==null||value===''||Number(value)===0||!Number.isFinite(Number(value));
+
+export function auctionSlotTitle(slot){
+  if(slot.id==='OUT')return slot.id;
+  return `${slot.id} · BDG ${slot.originalPlannedBudget} · FRC ${getForecast(slot)}`;
+}
 
 export function auctionInjuryStatus(status){
   if(status==='OK')return {label:'OK',interactive:false,detail:null};

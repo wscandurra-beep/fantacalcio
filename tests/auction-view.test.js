@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
-import {auctionInjuryStatus,auctionPlayerMarketStatus,auctionStatusCounts,buildAuctionRows,moveAuctionPlayer,sortAuctionPlayers,sortAuctionSoldLast} from '../src/auction-view.js';
+import {auctionInjuryStatus,auctionPlayerMarketStatus,auctionSlotTitle,auctionStatusCounts,buildAuctionRows,moveAuctionPlayer,sortAuctionPlayers,sortAuctionSoldLast} from '../src/auction-view.js';
 
 const players=[
   {id:'a',rankingCategory:'DC',tier:1,auctionValue:12},
@@ -58,6 +58,12 @@ test('auction status counts classify every player exactly once',()=>{
   assert.deepEqual(auctionStatusCounts(players,market,acquired),{sold:1,acquired:2,available:1});
   assert.equal(auctionPlayerMarketStatus(players[1],market,acquired),'SOLD');
   assert.equal(auctionPlayerMarketStatus(players[3],market,acquired),'ACQUIRED');
+});
+
+test('auction slot titles show the persisted baseline and current forecast',()=>{
+  assert.equal(auctionSlotTitle({id:'POR1',originalPlannedBudget:45,actualPurchasePrice:null}),'POR1 · BDG 45 · FRC 45');
+  assert.equal(auctionSlotTitle({id:'POR1',originalPlannedBudget:45,actualPurchasePrice:32}),'POR1 · BDG 45 · FRC 32');
+  assert.equal(auctionSlotTitle({id:'OUT'}),'OUT');
 });
 
 test('auction sections reuse the slot plan ordering',async()=>{
