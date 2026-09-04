@@ -124,6 +124,13 @@ export function mantraRoleDepletion(players,state={}) {
 export function updateForecasts(slots) {
   return slots.map(({currentForecastBudget,...slot})=>slot);
 }
+export function updateSlotBaseline(slots,slotId,value) {
+  if(typeof value==='string'&&!value.trim())throw new Error(`Baseline non valida per ${slotId}`);
+  const originalPlannedBudget=Number(value);
+  if(!Number.isFinite(originalPlannedBudget)||originalPlannedBudget<0)throw new Error(`Baseline non valida per ${slotId}`);
+  if(!slots.some(slot=>slot.id===slotId))throw new Error(`Slot non trovato: ${slotId}`);
+  return updateForecasts(slots.map(slot=>slot.id===slotId?{...slot,originalPlannedBudget}:slot));
+}
 export function updateSlotStrategy(slots,edits) {
   const categories=new Set([...CATEGORY_PRIORITY.slice(1),...Object.values(edits).map(edit=>edit.category).filter(category=>category&&category!=='POR')]);
   const updated=slots.map(slot=>{

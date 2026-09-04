@@ -1,4 +1,4 @@
-import {CATEGORY_PRIORITY,DEFAULT_SLOT_COUNTS,rankPlayers,assignTiers,budgetSummary,slotPlanSummary,tierDepletion,mantraRoleDepletion,updateForecasts,updateSlotStrategy,getForecast,percentageOfBudget,formatPercentage,areaVariance,groupSlotsByCategory,availableMantraRoles,defaultAliasConfiguration,validateAliasConfiguration,classifyPlayersByAliases,reconcileAliasSlots} from './domain.js';
+import {CATEGORY_PRIORITY,DEFAULT_SLOT_COUNTS,rankPlayers,assignTiers,budgetSummary,slotPlanSummary,tierDepletion,mantraRoleDepletion,updateForecasts,updateSlotBaseline,updateSlotStrategy,getForecast,percentageOfBudget,formatPercentage,areaVariance,groupSlotsByCategory,availableMantraRoles,defaultAliasConfiguration,validateAliasConfiguration,classifyPlayersByAliases,reconcileAliasSlots} from './domain.js';
 import {getFormation,getFormationIds} from './mantraFormations.js';
 import {applyInjurySnapshot,formatItalianDate,normalizeInjuryUpdate} from './injury-data.js';
 import {applyProContro,normalizeProControRuns} from './pro-contro-data.js';
@@ -61,7 +61,7 @@ try{state.slots=reconcileAliasSlots(state.slots,state.aliasConfiguration)}catch(
 }
 state.rosterSize=state.slots.length;
 function players(){const classified=classifyPlayersByAliases(raw,state.aliasConfiguration);return state.aliasConfiguration.flatMap(({alias})=>{const ranked=rankPlayers(classified.filter(player=>player.strategicAlias===alias));return alias==='OUT'?ranked.map(player=>({...player,tier:1})):assignTiers(ranked,state.slots.filter(slot=>slot.category===alias).length)});}
-const save=()=>{localStorage.setItem(STORAGE_KEY,JSON.stringify(state));render()};let view='cockpit';
+const save=(rerender=true)=>{localStorage.setItem(STORAGE_KEY,JSON.stringify(state));if(rerender)render()};let view='cockpit';
 let marketControls={query:'',category:'',availability:'AVAILABLE',team:'',sort:null};
 let pressurePage='tier';
 let pressureGroups=[];
@@ -163,7 +163,33 @@ function initBaselineEditor(){
     document.querySelector('[data-total-baseline-pct]').textContent=formatPercentage(percentageOfBudget(baseline,budget));
     document.querySelector('[data-total-forecast-pct]').textContent=formatPercentage(percentageOfBudget(forecast,budget));
   };
-  inputs.forEach(input=>input.oninput=()=>refresh(input));
+  const persistBaseline=input=>{
+    const value=input.value.trim(),slotId=input.closest('[data-slot-id]')?.dataset.slotId;
+    try{
+      if(value==='')throw new Error('Baseline richiesta');
+      state.slots=updateSlotBaseline(state.slots,slotId,value);
+      input.setCustomValidity('');
+      input.removeAttribute('aria-invalid');
+      save(false);
+      refresh(input);
+      return true;
+    }catch(error){
+      input.setCustomValidity(error.message);
+      input.setAttribute('aria-invalid','true');
+      return false;
+    }
+  };
+  inputs.forEach(input=>{
+    input.oninput=()=>persistBaseline(input);
+    input.onchange=()=>{
+      if(persistBaseline(input))return;
+      const slot=state.slots.find(item=>item.id===input.closest('[data-slot-id]').dataset.slotId);
+      input.value=slot.originalPlannedBudget;
+      input.setCustomValidity('');
+      input.removeAttribute('aria-invalid');
+      refresh(input);
+    };
+  });
   document.querySelector('#budget').oninput=()=>refresh(inputs[0]);
   const countInputs=[...document.querySelectorAll('[data-alias-slots]')];
   const previewSlotTotal=()=>{document.querySelector('#size').value=countInputs.reduce((sum,input)=>sum+Number(input.value||0),0)};
@@ -176,7 +202,7 @@ function initBaselineEditor(){
     inputs.forEach((input,index)=>{
       const selected=index>=Math.min(drag.start,end)&&index<=Math.max(drag.start,end);
       input.closest('.baseline-cell').classList.toggle('fill-preview',selected);
-      if(selected){input.value=drag.value;refresh(input)}
+      if(selected){input.value=drag.value;persistBaseline(input)}
     });
   };
   document.querySelectorAll('.fill-handle').forEach((handle,index)=>handle.onpointerdown=event=>{

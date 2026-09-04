@@ -1,4 +1,4 @@
-import test from 'node:test';import assert from 'node:assert/strict';import {assignRankingCategory,rankPlayers,assignTiers,budgetSummary,slotPlanSummary,statusFor,availablePlayers,getForecast,updateForecasts,updateSlotStrategy,percentageOfBudget,formatPercentage,areaVariance,totalCompletedVariance,slotCountsFromSlots,validateSlotCounts,reconcileSlotCounts,normalizeMantraRoles,mantraRoleDepletion,tierDepletion,groupSlotsByCategory,availableMantraRoles,defaultAliasConfiguration,validateAliasConfiguration,aliasForMantraRole,classifyPlayersByAliases,reconcileAliasSlots} from '../src/domain.js';
+import test from 'node:test';import assert from 'node:assert/strict';import {assignRankingCategory,rankPlayers,assignTiers,budgetSummary,slotPlanSummary,statusFor,availablePlayers,getForecast,updateForecasts,updateSlotBaseline,updateSlotStrategy,percentageOfBudget,formatPercentage,areaVariance,totalCompletedVariance,slotCountsFromSlots,validateSlotCounts,reconcileSlotCounts,normalizeMantraRoles,mantraRoleDepletion,tierDepletion,groupSlotsByCategory,availableMantraRoles,defaultAliasConfiguration,validateAliasConfiguration,aliasForMantraRole,classifyPlayersByAliases,reconcileAliasSlots} from '../src/domain.js';
 test('role category priority',()=>{assert.equal(assignRankingCategory('Ds;Dc'),'DC');assert.equal(assignRankingCategory('Dd;Dc'),'DC');assert.equal(assignRankingCategory('Dc;E'),'E');assert.equal(assignRankingCategory('W;A'),'WA');assert.equal(assignRankingCategory('Por'),'POR')});
 test('slot groups follow strategy order and retain configured extra categories',()=>{const groups=groupSlotsByCategory([{id:'1',category:'PC'},{id:'2',category:'DC'},{id:'3',category:'M'},{id:'4',category:'DC'}]);assert.deepEqual(groups.map(group=>[group.category,group.slots.map(slot=>slot.id)]),[['PC',['1']],['DC',['2','4']],['M',['3']]])});
 test('ranking uses auction value then quotation',()=>{const r=rankPlayers([{id:'a',name:'a',auctionValue:20,quotation:4},{id:'b',name:'b',auctionValue:20,quotation:7},{id:'c',name:'c',auctionValue:30,quotation:1}]);assert.deepEqual(r.map(x=>x.id),['c','b','a'])});
@@ -12,6 +12,22 @@ test('tier groups expose every original player and retain purchased players',()=
 test('injury status',()=>{assert.equal(statusFor(null),'OK');assert.equal(statusFor({injuryDetails:'Lesione',expectedReturn:'ottobre'}),'Lesione · Rientro: ottobre')});
 test('slot strategy allows manual baseline and outfield role changes',()=>{const slots=[{id:'DC1',category:'DC',originalPlannedBudget:20}];assert.deepEqual(updateSlotStrategy(slots,{DC1:{category:'WA',originalPlannedBudget:'35'}}),[{id:'DC1',category:'WA',originalPlannedBudget:35}])});
 test('goalkeeper role is fixed while its baseline remains editable',()=>{const slots=[{id:'POR1',category:'POR',originalPlannedBudget:30}];assert.deepEqual(updateSlotStrategy(slots,{POR1:{category:'PC',originalPlannedBudget:'40'}}),[{id:'POR1',category:'POR',originalPlannedBudget:40}]);assert.throws(()=>updateSlotStrategy([{id:'DC1',category:'DC',originalPlannedBudget:20}],{DC1:{category:'POR',originalPlannedBudget:20}}),/Ruolo non valido/)});
+test('baseline edits update only the requested slot and survive persistence and reconciliation',()=>{
+  const slots=[
+    {id:'POR1',category:'POR',originalPlannedBudget:45,playerId:null,actualPurchasePrice:null},
+    {id:'POR2',category:'POR',originalPlannedBudget:30,playerId:null,actualPurchasePrice:null},
+    {id:'POR3',category:'POR',originalPlannedBudget:20,playerId:null,actualPurchasePrice:null}
+  ];
+  const updated=updateSlotBaseline(slots,'POR1','37');
+  assert.equal(updated.find(slot=>slot.id==='POR1').originalPlannedBudget,37);
+  assert.equal(updated.find(slot=>slot.id==='POR2').originalPlannedBudget,30);
+  const reloaded=JSON.parse(JSON.stringify(updated));
+  const reconciled=reconcileAliasSlots(reloaded,[{alias:'POR',slotCount:3}]);
+  assert.equal(reconciled.find(slot=>slot.id==='POR1').originalPlannedBudget,37);
+  assert.equal(updateSlotBaseline(reconciled,'POR1',42)[0].originalPlannedBudget,42);
+  assert.throws(()=>updateSlotBaseline(reconciled,'POR1',''),/Baseline non valida/);
+  assert.throws(()=>updateSlotBaseline(reconciled,'POR1',-1),/Baseline non valida/);
+});
 test('forecast is always derived with Actual taking priority over Baseline',()=>{
   const open={originalPlannedBudget:50,actualPurchasePrice:null};
   const completed={originalPlannedBudget:50,actualPurchasePrice:63};
