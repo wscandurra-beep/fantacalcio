@@ -64,6 +64,16 @@ export function buildAuctionRows(players,slots,viewState={},includeOut=false){
   return rows;
 }
 
+export function auctionPlayerSlotId(rows=[],playerId){
+  return rows.find(row=>row.players.some(player=>String(player.id)===String(playerId)))?.slot.id??null;
+}
+
+export function pinAuctionPlayerToCurrentSlot(viewState,playerId,rows=[]){
+  const slotId=auctionPlayerSlotId(rows,playerId);
+  if(!slotId)return viewState;
+  return {...(viewState||{}),placements:{...(viewState?.placements||{}),[playerId]:slotId},orders:{...(viewState?.orders||{})}};
+}
+
 export function moveAuctionPlayer(viewState,playerId,toSlotId,toIndex,rows){
   const next={placements:{...(viewState?.placements||{})},orders:{...(viewState?.orders||{})}};
   next.placements[playerId]=toSlotId;

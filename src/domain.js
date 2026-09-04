@@ -84,9 +84,11 @@ export function reconcilePurchasedAssignments({slots=[],market={},auctionView={}
   const records=purchasedIds.map(playerId=>{
     const entry=market[playerId]||{},legacy=occupiedByPlayer.get(playerId);
     const player=playerById.get(playerId),mappedAlias=player?aliasForMantraRole(player.roles,configuration):null;
+    const hasCurrentPlacement=Object.hasOwn(auctionView?.placements||{},playerId);
     const explicitId=auctionView?.placements?.[playerId]??entry.assignedSlotId??entry.assignedSlot?.id??legacy?.slotId??null;
     const price=entry.actualPurchasePrice??legacy?.price??null;
-    return {playerId,entry,mappedAlias,explicitId,price,assigned:null};
+    const positionLocked=hasCurrentPlacement&&(explicitId==='OUT'||slots.some(slot=>slot.id===explicitId&&slot.category===mappedAlias));
+    return {playerId,entry,mappedAlias,explicitId,price,positionLocked,assigned:null};
   });
   // Honour compatible explicit assignments before allocating any free slot.
   for(const record of records){
@@ -94,7 +96,7 @@ export function reconcilePurchasedAssignments({slots=[],market={},auctionView={}
     if(slot&&slot.category===record.mappedAlias&&!used.has(slot.id)){record.assigned=slot;used.add(slot.id);}
   }
   for(const record of records){
-    if(!record.assigned){
+    if(!record.assigned&&!record.positionLocked){
       const slot=nextSlots.find(item=>item.category===record.mappedAlias&&!used.has(item.id));
       if(slot){record.assigned=slot;used.add(slot.id);}
     }
@@ -108,7 +110,7 @@ export function reconcilePurchasedAssignments({slots=[],market={},auctionView={}
       slotAssignmentStatus:record.assigned?'ASSIGNED':'OVERFLOW'};
   }
   const placements={...(auctionView?.placements||{})};
-  for(const record of records){if(record.assigned)placements[record.playerId]=record.assigned.id;else delete placements[record.playerId];}
+  for(const record of records){if(record.assigned)placements[record.playerId]=record.assigned.id;else if(!record.positionLocked)delete placements[record.playerId];}
   const nextAuctionView={...(auctionView||{}),placements,orders:{...(auctionView?.orders||{})}};
   validatePurchasedAssignments(nextSlots,nextMarket,players,configuration);
   return {slots:updateForecasts(nextSlots),market:nextMarket,auctionView:nextAuctionView,overflow:records.filter(record=>!record.assigned).map(record=>record.playerId)};

@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
-import {auctionInjuryStatus,auctionPlayerMarketStatus,auctionSlotTitle,auctionStatusCounts,buildAuctionRows,canDropAuctionPlayer,moveAuctionPlayer,sortAuctionPlayers,sortAuctionSoldLast} from '../src/auction-view.js';
+import {auctionInjuryStatus,auctionPlayerMarketStatus,auctionPlayerSlotId,auctionSlotTitle,auctionStatusCounts,buildAuctionRows,canDropAuctionPlayer,moveAuctionPlayer,pinAuctionPlayerToCurrentSlot,sortAuctionPlayers,sortAuctionSoldLast} from '../src/auction-view.js';
 
 const players=[
   {id:'a',rankingCategory:'DC',tier:1,auctionValue:12},
@@ -26,6 +26,24 @@ test('manual order and cross-slot placement override automatic assignment',()=>{
   const moved=buildAuctionRows(players,slots,view);
   assert.deepEqual(moved.map(row=>row.players.map(player=>player.id)),[['b','d'],['c','a']]);
   assert.equal(view.placements.a,'DC2');
+});
+
+test('status actions can pin the current slot without promoting the card',()=>{
+  const schmid={id:'schmid',strategicAlias:'A',tier:4,auctionValue:10};
+  const auctionSlots=Array.from({length:4},(_,index)=>({id:`A${index+1}`,category:'A'}));
+  const rows=buildAuctionRows([schmid],auctionSlots);
+  const pinned=pinAuctionPlayerToCurrentSlot({},schmid.id,rows);
+  assert.equal(auctionPlayerSlotId(rows,schmid.id),'A4');
+  assert.equal(pinned.placements.schmid,'A4');
+  assert.equal(buildAuctionRows([schmid],auctionSlots,pinned)[3].players[0].id,'schmid');
+});
+
+test('sold status leaves a pinned C6 card in C6',()=>{
+  const player={id:'sold-player',strategicAlias:'C',tier:6,auctionValue:10};
+  const auctionSlots=Array.from({length:6},(_,index)=>({id:`C${index+1}`,category:'C'}));
+  const initial=buildAuctionRows([player],auctionSlots),view=pinAuctionPlayerToCurrentSlot({},player.id,initial);
+  const afterStatus=buildAuctionRows([player],auctionSlots,view);
+  assert.equal(auctionPlayerSlotId(afterStatus,player.id),'C6');
 });
 
 test('drop compatibility is independent from available and sold status',()=>{
