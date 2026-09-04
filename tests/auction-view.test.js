@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
-import {auctionInjuryStatus,buildAuctionRows,moveAuctionPlayer,sortAuctionPlayers} from '../src/auction-view.js';
+import {auctionInjuryStatus,auctionPlayerMarketStatus,auctionStatusCounts,buildAuctionRows,moveAuctionPlayer,sortAuctionPlayers,sortAuctionSoldLast} from '../src/auction-view.js';
 
 const players=[
   {id:'a',rankingCategory:'DC',tier:1,auctionValue:12},
@@ -46,6 +46,18 @@ test('auction injury status only exposes details for unavailable players',()=>{
   assert.deepEqual(auctionInjuryStatus('OK'),{label:'OK',interactive:false,detail:null});
   assert.deepEqual(auctionInjuryStatus('Lesione muscolare'),{label:'NOT OK',interactive:true,detail:'Lesione muscolare'});
   assert.equal(auctionInjuryStatus(null).detail,'Dettaglio infortunio non disponibile');
+});
+
+test('sold players move to the end without changing the relative order of either group',()=>{
+  const market={b:{marketStatus:'SOLD'},d:{marketStatus:'SOLD'},c:{marketStatus:'MY TEAM'}};
+  assert.deepEqual(sortAuctionSoldLast(players,market).map(player=>player.id),['a','c','b','d']);
+});
+
+test('auction status counts classify every player exactly once',()=>{
+  const market={b:{marketStatus:'SOLD'},c:{marketStatus:'MY TEAM'}},acquired=new Set(['d']);
+  assert.deepEqual(auctionStatusCounts(players,market,acquired),{sold:1,acquired:2,available:1});
+  assert.equal(auctionPlayerMarketStatus(players[1],market,acquired),'SOLD');
+  assert.equal(auctionPlayerMarketStatus(players[3],market,acquired),'ACQUIRED');
 });
 
 test('auction sections reuse the slot plan ordering',async()=>{
