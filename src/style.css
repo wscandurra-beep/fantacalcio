@@ -27,3 +27,6 @@
 
 /* Single-player reset shared by Asta and Mercato. */
 .player-reset{display:inline-grid;place-items:center;width:25px;height:25px;padding:0;border:1px solid #3a444f;border-radius:50%;background:#1b222b;color:var(--muted);font-size:17px;line-height:1;cursor:pointer;transition:color .15s,border-color .15s,background .15s}.player-reset:hover,.player-reset:focus-visible{border-color:var(--lime);background:#253020;color:var(--lime);outline:none}.player-reset:disabled{visibility:hidden;pointer-events:none}.auction-player-reset{position:absolute;top:7px;right:7px;z-index:1}.auction-player-head{padding-right:25px}.market-state{display:inline-block;margin:4px;color:var(--lime);font-size:9px;font-weight:800}.market-player-reset{vertical-align:middle;margin:1px 2px}
+
+/* Complete local backup and disaster recovery controls. */
+.backup-panel{display:grid;grid-template-columns:1fr auto;align-items:center;gap:12px 24px}.backup-panel h2{margin:0 0 6px}.backup-panel p{margin:0;max-width:680px;line-height:1.5}.backup-actions{display:flex;flex:0 0 auto;gap:8px}.backup-status{grid-column:1/-1;min-height:20px;color:var(--lime);font-size:12px;font-weight:700}.backup-status.error{color:#ff7f7f}@media(max-width:640px){.backup-panel{grid-template-columns:1fr;align-items:stretch}.backup-actions{display:grid;grid-template-columns:1fr 1fr}.backup-status{grid-column:1/-1}}
