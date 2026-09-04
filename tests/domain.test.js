@@ -172,6 +172,27 @@ test('purchases use only their mapped Alias and persist the assigned slot',()=>{
   assert.equal(result.auctionView.placements.p1,'C1');
   assert.equal(validatePurchasedAssignments(result.slots,result.market,players,configuration),true);
 });
+test('an acquired player follows its auction row without repacking other purchases',()=>{
+  const players=[{id:'schmid',roles:'A'},{id:'other',roles:'A'}];
+  const configuration=[{alias:'A',mantraRoles:['A']}];
+  const slots=[
+    {id:'A1',category:'A',playerId:'other',actualPurchasePrice:8},
+    {id:'A2',category:'A'},
+    {id:'A3',category:'A'},
+    {id:'A4',category:'A',playerId:'schmid',actualPurchasePrice:15}
+  ];
+  const market={
+    schmid:{marketStatus:'MY TEAM',actualPurchasePrice:15,assignedSlot:{id:'A4',alias:'A'},assignedSlotId:'A4'},
+    other:{marketStatus:'MY TEAM',actualPurchasePrice:8,assignedSlot:{id:'A1',alias:'A'},assignedSlotId:'A1'}
+  };
+  const result=reconcilePurchasedAssignments({slots,market,auctionView:{placements:{schmid:'A2',other:'A1'},orders:{A2:['schmid']}}},players,configuration);
+  assert.equal(result.slots.find(slot=>slot.id==='A2').playerId,'schmid');
+  assert.equal(result.slots.find(slot=>slot.id==='A1').playerId,'other');
+  assert.equal(result.slots.find(slot=>slot.id==='A4').playerId,null);
+  assert.equal(result.market.schmid.assignedSlotId,'A2');
+  assert.deepEqual(result.market.schmid.assignedSlot,{id:'A2',alias:'A'});
+  assert.equal(result.auctionView.placements.schmid,'A2');
+});
 test('mapping changes deterministically reallocate purchases and report overflow',()=>{
   const players=[{id:'a',roles:'W;A'},{id:'b',roles:'W;A'}],slots=[{id:'WA2',category:'W',playerId:'a',actualPurchasePrice:9},{id:'C1',category:'C'}];
   const market={a:{marketStatus:'MY TEAM'},b:{marketStatus:'MY TEAM',actualPurchasePrice:4}};

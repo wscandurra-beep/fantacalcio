@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
-import {auctionInjuryStatus,auctionPlayerMarketStatus,auctionSlotTitle,auctionStatusCounts,buildAuctionRows,moveAuctionPlayer,sortAuctionPlayers,sortAuctionSoldLast} from '../src/auction-view.js';
+import {auctionInjuryStatus,auctionPlayerMarketStatus,auctionSlotTitle,auctionStatusCounts,buildAuctionRows,canDropAuctionPlayer,moveAuctionPlayer,sortAuctionPlayers,sortAuctionSoldLast} from '../src/auction-view.js';
 
 const players=[
   {id:'a',rankingCategory:'DC',tier:1,auctionValue:12},
@@ -26,6 +26,20 @@ test('manual order and cross-slot placement override automatic assignment',()=>{
   const moved=buildAuctionRows(players,slots,view);
   assert.deepEqual(moved.map(row=>row.players.map(player=>player.id)),[['b','d'],['c','a']]);
   assert.equal(view.placements.a,'DC2');
+});
+
+test('drop compatibility is independent from available and sold status',()=>{
+  const player={id:'a',strategicAlias:'D'},target={id:'D2',category:'D',playerId:null};
+  assert.equal(canDropAuctionPlayer(player,target,{},[]),true);
+  assert.equal(canDropAuctionPlayer(player,target,{a:{marketStatus:'SOLD'}},[]),true);
+  assert.equal(canDropAuctionPlayer(player,{id:'C2',category:'C'},{a:{marketStatus:'SOLD'}},[]),false);
+});
+
+test('acquired cards can move to free compatible slots but not OUT or occupied slots',()=>{
+  const player={id:'a',strategicAlias:'D'},market={a:{marketStatus:'MY TEAM'}};
+  assert.equal(canDropAuctionPlayer(player,{id:'D2',category:'D',playerId:null},market,[]),true);
+  assert.equal(canDropAuctionPlayer(player,{id:'D2',category:'D',playerId:'b'},market,[]),false);
+  assert.equal(canDropAuctionPlayer(player,{id:'OUT',category:'OUT'},market,[]),false);
 });
 
 test('an override to a removed strategy slot falls back to the current tier layout',()=>{

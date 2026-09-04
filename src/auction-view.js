@@ -74,3 +74,11 @@ export function moveAuctionPlayer(viewState,playerId,toSlotId,toIndex,rows){
   }
   return next;
 }
+
+export function canDropAuctionPlayer(player,toSlot,market={},slots=[]){
+  if(!player||!toSlot)return false;
+  const acquired=market[player.id]?.marketStatus==='MY TEAM'||slots.some(slot=>String(slot.playerId)===String(player.id));
+  if(toSlot.id==='OUT')return !acquired;
+  if(toSlot.category!==player.strategicAlias)return false;
+  return !acquired||!toSlot.playerId||String(toSlot.playerId)===String(player.id);
+}
