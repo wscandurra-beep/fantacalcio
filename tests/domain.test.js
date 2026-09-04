@@ -136,3 +136,13 @@ test('Alias slots use configurable names and protect completed purchases',()=>{
   assert.deepEqual(slots.map(slot=>slot.id),['POR1','POR2','POR3','D1','D2']);
   assert.throws(()=>reconcileAliasSlots([{id:'D1',category:'D',playerId:'x',actualPurchasePrice:2}],[{alias:'POR',slotCount:3},{alias:'D',slotCount:0}]),/già acquistati/);
 });
+test('A migrated slot is renumbered in its current role after existing role slots',()=>{
+  const slots=[
+    {id:'C1',category:'C'},{id:'C2',category:'C'},{id:'C3',category:'C'},{id:'C4',category:'C'},{id:'C5',category:'C'},
+    {id:'WA2',category:'C',playerId:'player-1',actualPurchasePrice:20}
+  ];
+  const configuration=[{alias:'POR',slotCount:3},{alias:'C',slotCount:6}];
+  const reconciled=reconcileAliasSlots(slots,configuration);
+  assert.deepEqual(reconciled.filter(slot=>slot.category==='C').map(slot=>slot.id),['C1','C2','C3','C4','C5','C6']);
+  assert.equal(reconciled.find(slot=>slot.playerId==='player-1').id,'C6');
+});
