@@ -1,4 +1,4 @@
-import test from 'node:test';import assert from 'node:assert/strict';import {assignRankingCategory,rankPlayers,assignTiers,budgetSummary,slotPlanSummary,statusFor,availablePlayers,getForecast,updateForecasts,updateSlotBaseline,updateSlotStrategy,percentageOfBudget,formatPercentage,areaVariance,totalCompletedVariance,slotCountsFromSlots,validateSlotCounts,reconcileSlotCounts,normalizeMantraRoles,mantraRoleDepletion,tierDepletion,groupSlotsByCategory,availableMantraRoles,defaultAliasConfiguration,validateAliasConfiguration,aliasForMantraRole,classifyPlayersByAliases,reconcileAliasSlots} from '../src/domain.js';
+import test from 'node:test';import assert from 'node:assert/strict';import {assignRankingCategory,rankPlayers,assignTiers,budgetSummary,slotPlanSummary,statusFor,availablePlayers,getForecast,updateForecasts,updateSlotBaseline,updateSlotStrategy,percentageOfBudget,formatPercentage,areaVariance,totalCompletedVariance,slotCountsFromSlots,validateSlotCounts,reconcileSlotCounts,normalizeMantraRoles,mantraRoleDepletion,tierDepletion,groupSlotsByCategory,availableMantraRoles,defaultAliasConfiguration,validateAliasConfiguration,aliasForMantraRole,classifyPlayersByAliases,reconcileAliasSlots,reconcilePurchasedAssignments,validatePurchasedAssignments} from '../src/domain.js';
 test('role category priority',()=>{assert.equal(assignRankingCategory('Ds;Dc'),'DC');assert.equal(assignRankingCategory('Dd;Dc'),'DC');assert.equal(assignRankingCategory('Dc;E'),'E');assert.equal(assignRankingCategory('W;A'),'WA');assert.equal(assignRankingCategory('Por'),'POR')});
 test('slot groups follow strategy order and retain configured extra categories',()=>{const groups=groupSlotsByCategory([{id:'1',category:'PC'},{id:'2',category:'DC'},{id:'3',category:'M'},{id:'4',category:'DC'}]);assert.deepEqual(groups.map(group=>[group.category,group.slots.map(slot=>slot.id)]),[['PC',['1']],['DC',['2','4']],['M',['3']]])});
 test('ranking uses auction value then quotation',()=>{const r=rankPlayers([{id:'a',name:'a',auctionValue:20,quotation:4},{id:'b',name:'b',auctionValue:20,quotation:7},{id:'c',name:'c',auctionValue:30,quotation:1}]);assert.deepEqual(r.map(x=>x.id),['c','b','a'])});
@@ -161,4 +161,24 @@ test('A migrated slot is renumbered in its current role after existing role slot
   const reconciled=reconcileAliasSlots(slots,configuration);
   assert.deepEqual(reconciled.filter(slot=>slot.category==='C').map(slot=>slot.id),['C1','C2','C3','C4','C5','C6']);
   assert.equal(reconciled.find(slot=>slot.playerId==='player-1').id,'C6');
+});
+test('purchases use only their mapped Alias and persist the assigned slot',()=>{
+  const players=[{id:'p1',roles:'M;C'},{id:'p2',roles:'M;C'},{id:'p3',roles:'Dc'}];
+  const configuration=[{alias:'C',mantraRoles:['M;C']},{alias:'D',mantraRoles:['Dc']}];
+  const slots=[{id:'WA2',category:'W',playerId:'p1',actualPurchasePrice:11},{id:'C1',category:'C'},{id:'C2',category:'C'},{id:'D1',category:'D'}];
+  const result=reconcilePurchasedAssignments({slots,market:{p2:{marketStatus:'MY TEAM',actualPurchasePrice:7,assignedSlot:{id:'C2',alias:'C'}},p3:{marketStatus:'MY TEAM',actualPurchasePrice:5}},auctionView:{placements:{p1:'WA2'},orders:{}}},players,configuration);
+  assert.deepEqual(result.slots.filter(slot=>slot.playerId).map(slot=>[slot.id,slot.category,slot.playerId]),[['C1','C','p1'],['C2','C','p2'],['D1','D','p3']]);
+  assert.deepEqual(result.market.p1.assignedSlot,{id:'C1',alias:'C'});
+  assert.equal(result.auctionView.placements.p1,'C1');
+  assert.equal(validatePurchasedAssignments(result.slots,result.market,players,configuration),true);
+});
+test('mapping changes deterministically reallocate purchases and report overflow',()=>{
+  const players=[{id:'a',roles:'W;A'},{id:'b',roles:'W;A'}],slots=[{id:'WA2',category:'W',playerId:'a',actualPurchasePrice:9},{id:'C1',category:'C'}];
+  const market={a:{marketStatus:'MY TEAM'},b:{marketStatus:'MY TEAM',actualPurchasePrice:4}};
+  const result=reconcilePurchasedAssignments({slots,market,auctionView:{}},players,[{alias:'C',mantraRoles:['W;A']},{alias:'W',mantraRoles:[]}]);
+  assert.equal(result.slots.find(slot=>slot.id==='C1').playerId,'a');
+  assert.deepEqual(result.market.a.assignedSlot,{id:'C1',alias:'C'});
+  assert.equal(result.market.b.assignedSlot,null);
+  assert.equal(result.market.b.slotAssignmentStatus,'OVERFLOW');
+  assert.deepEqual(result.overflow,['b']);
 });

@@ -65,6 +65,66 @@ export function aliasForMantraRole(roles,configuration=[]) {
 export function classifyPlayersByAliases(players=[],configuration=[]) {
   return players.map(player=>({...player,strategicAlias:aliasForMantraRole(player.roles,configuration)}));
 }
+/**
+ * Make the persisted purchase assignment follow the current Mantra Role → Alias
+ * mapping.  Slot-plan order is authoritative; manual auction-card placement is
+ * deliberately not used as a roster assignment.
+ */
+export function reconcilePurchasedAssignments({slots=[],market={},auctionView={}},players=[],configuration=[]) {
+  const playerById=new Map(players.map(player=>[String(player.id),player]));
+  const occupied=slots.filter(slot=>slot.playerId).map(slot=>({playerId:String(slot.playerId),slotId:slot.id,price:slot.actualPurchasePrice}));
+  const occupiedByPlayer=new Map(occupied.map(item=>[item.playerId,item]));
+  const purchasedIds=[];
+  for(const item of occupied)if(!purchasedIds.includes(item.playerId))purchasedIds.push(item.playerId);
+  for(const [id,item] of Object.entries(market))if(item?.marketStatus==='MY TEAM'&&!purchasedIds.includes(String(id)))purchasedIds.push(String(id));
+
+  const nextSlots=slots.map(slot=>({...slot,playerId:null,actualPurchasePrice:null}));
+  const nextMarket={...market};
+  const used=new Set();
+  const records=purchasedIds.map(playerId=>{
+    const entry=market[playerId]||{},legacy=occupiedByPlayer.get(playerId);
+    const player=playerById.get(playerId),mappedAlias=player?aliasForMantraRole(player.roles,configuration):null;
+    const explicitId=entry.assignedSlot?.id??entry.assignedSlotId??legacy?.slotId??null;
+    const price=entry.actualPurchasePrice??legacy?.price??null;
+    return {playerId,entry,mappedAlias,explicitId,price,assigned:null};
+  });
+  // Honour compatible explicit assignments before allocating any free slot.
+  for(const record of records){
+    const slot=nextSlots.find(item=>item.id===record.explicitId);
+    if(slot&&slot.category===record.mappedAlias&&!used.has(slot.id)){record.assigned=slot;used.add(slot.id);}
+  }
+  for(const record of records){
+    if(!record.assigned){
+      const slot=nextSlots.find(item=>item.category===record.mappedAlias&&!used.has(item.id));
+      if(slot){record.assigned=slot;used.add(slot.id);}
+    }
+    if(record.assigned){
+      record.assigned.playerId=record.playerId;
+      record.assigned.actualPurchasePrice=record.price;
+    }
+    nextMarket[record.playerId]={...record.entry,marketStatus:'MY TEAM',actualPurchasePrice:record.price,
+      assignedSlot:record.assigned?{id:record.assigned.id,alias:record.assigned.category}:null,
+      slotAssignmentStatus:record.assigned?'ASSIGNED':'OVERFLOW'};
+  }
+  const placements={...(auctionView?.placements||{})};
+  for(const record of records){if(record.assigned)placements[record.playerId]=record.assigned.id;else delete placements[record.playerId];}
+  const nextAuctionView={...(auctionView||{}),placements,orders:{...(auctionView?.orders||{})}};
+  validatePurchasedAssignments(nextSlots,nextMarket,players,configuration);
+  return {slots:updateForecasts(nextSlots),market:nextMarket,auctionView:nextAuctionView,overflow:records.filter(record=>!record.assigned).map(record=>record.playerId)};
+}
+export function validatePurchasedAssignments(slots=[],market={},players=[],configuration=[]) {
+  const playerById=new Map(players.map(player=>[String(player.id),player])),used=new Set();
+  for(const slot of slots.filter(item=>item.playerId)){
+    if(used.has(slot.id))throw new Error(`Slot duplicato: ${slot.id}`);
+    used.add(slot.id);
+    const player=playerById.get(String(slot.playerId));
+    const mappedAlias=player?aliasForMantraRole(player.roles,configuration):null;
+    if(slot.category!==mappedAlias)throw new Error(`Slot ${slot.id} incompatibile con ${slot.playerId}`);
+    const assigned=market[slot.playerId]?.assignedSlot;
+    if(!assigned||assigned.id!==slot.id||assigned.alias!==mappedAlias)throw new Error(`Assegnazione persistente non valida per ${slot.playerId}`);
+  }
+  return true;
+}
 export function rankPlayers(players) { return [...players].sort((a,b)=>(b.auctionValue-a.auctionValue)||(b.quotation-a.quotation)||a.name.localeCompare(b.name)).map((p,i)=>({...p,rankingPosition:i+1})); }
 export function assignTiers(players, slotCount) {
   if(!Number.isInteger(slotCount)||slotCount<1) return [];
