@@ -4,7 +4,7 @@ import {applyInjurySnapshot,formatItalianDate,normalizeInjuryUpdate} from './inj
 import {applyProContro,normalizeProControRuns} from './pro-contro-data.js';
 import {auctionInjuryStatus,auctionPlayerMarketStatus,auctionStatusCounts,buildAuctionRows,moveAuctionPlayer,sortAuctionSoldLast} from './auction-view.js';
 import {resetPlayer} from './player-reset.js';
-import {STORAGE_KEY,backupFilename,createBackup,parseBackup} from './backup.js';
+import {backupFilename,createBackup,parseBackup} from './backup.js';
 const loadIssues=[];
 async function fetchJson(path,fallback,label){
   try{
