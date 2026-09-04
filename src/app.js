@@ -122,7 +122,7 @@ function auctionCard(player,index,acquiredPlayerIds){
 }
 function auction(){
   const planOrderedSlots=slotPlanGroups(state.slots).flatMap(group=>group.slots),rows=buildAuctionRows(players(),planOrderedSlots,state.auctionView,true),acquiredIds=acquiredPlayerIds();
-  return `<div class=eyebrow>Live auction board</div><h1>Asta</h1><p class="muted auction-intro">Slot e Tier seguono la Strategia d'Asta. Trascina una card per creare un ordine o un'assegnazione manuale solo in questa vista.</p><div class=auction-board>${rows.map(({slot,players:rowPlayers})=>{const items=sortAuctionSoldLast(rowPlayers,state.market,acquiredIds),counts=auctionStatusCounts(items,state.market,acquiredIds);return `<section class=auction-slot-row data-slot-id="${slot.id}"><header class=auction-slot-head><h2>${escapeHtml(auctionSlotTitle(slot))}</h2><span>${slot.id==='OUT'?'Override manuale · Tier unico':`${escapeHtml(slot.category)} · Tier ${state.slots.filter(item=>item.category===slot.category).indexOf(slot)+1}`} · ${items.length} giocatori · Sold: ${counts.sold} · Acquistati: ${counts.acquired} · Disponibili: ${counts.available}</span></header><div class=auction-slot-track>${items.map((player,index)=>auctionCard(player,index,acquiredIds)).join('')}<div class=auction-empty>${items.length?'Trascina qui per aggiungere in coda':'Trascina qui un giocatore'}</div></div></section>`}).join('')}</div>`;
+  return `<div class=eyebrow>Live auction board</div><h1>Asta</h1><p class="muted auction-intro">Slot e Tier seguono la Strategia d'Asta. Trascina una card per creare un ordine o un'assegnazione manuale solo in questa vista.</p><div class=auction-board>${rows.map(({slot,players:rowPlayers})=>{const items=sortAuctionSoldLast(rowPlayers,state.market,acquiredIds),counts=auctionStatusCounts(items,state.market,acquiredIds),title=slot.id==='OUT'?escapeHtml(auctionSlotTitle(slot)):`${escapeHtml(slot.id)} <span aria-hidden="true">· BDG</span> <input data-auction-budget type="number" min="0" step="any" value="${escapeHtml(slot.originalPlannedBudget)}" aria-label="BDG ${escapeHtml(slot.id)}"> <span aria-hidden="true">· FRC</span> <output data-auction-forecast>${getForecast(slot)}</output>`;return `<section class=auction-slot-row data-slot-id="${slot.id}"><header class=auction-slot-head><h2>${title}</h2><span>${slot.id==='OUT'?'Override manuale · Tier unico':`${escapeHtml(slot.category)} · Tier ${state.slots.filter(item=>item.category===slot.category).indexOf(slot)+1}`} · ${items.length} giocatori · Sold: ${counts.sold} · Acquistati: ${counts.acquired} · Disponibili: ${counts.available}</span></header><div class=auction-slot-track>${items.map((player,index)=>auctionCard(player,index,acquiredIds)).join('')}<div class=auction-empty>${items.length?'Trascina qui per aggiungere in coda':'Trascina qui un giocatore'}</div></div></section>`}).join('')}</div>`;
 }
 const sortIndicator=key=>marketControls.sort?.key===key?(marketControls.sort.direction==='asc'?'↑':'↓'):'↕';
 const sortHeader=(key,label)=>`<button type=button class=sort-button data-sort="${key}">${label} <span aria-hidden=true>${sortIndicator(key)}</span></button>`;
@@ -249,6 +249,27 @@ function initMarketFilters(){
   bindTableControls();
 }
 function initAuctionDragAndDrop(){
+  document.querySelectorAll('[data-auction-budget]').forEach(input=>{
+    const slotId=input.closest('[data-slot-id]').dataset.slotId;
+    const persist=()=>{
+      const slot=state.slots.find(item=>item.id===slotId),value=input.value.trim();
+      try{
+        if(value==='')throw new Error('BDG richiesto');
+        const next=Number(value);
+        if(next===Number(slot.originalPlannedBudget)){input.setCustomValidity('');input.removeAttribute('aria-invalid');return true}
+        state.slots=updateSlotBaseline(state.slots,slotId,value);
+        input.setCustomValidity('');input.removeAttribute('aria-invalid');
+        save(false);
+        input.closest('.auction-slot-head').querySelector('[data-auction-forecast]').textContent=getForecast(state.slots.find(item=>item.id===slotId));
+        return true;
+      }catch(error){input.setCustomValidity(error.message);input.setAttribute('aria-invalid','true');return false}
+    };
+    const finalize=()=>{if(persist())return;input.value=state.slots.find(item=>item.id===slotId).originalPlannedBudget;input.setCustomValidity('');input.removeAttribute('aria-invalid')};
+    input.addEventListener('input',persist);
+    input.addEventListener('change',finalize);
+    input.addEventListener('blur',finalize);
+    input.addEventListener('keydown',event=>{if(event.key==='Enter'){event.preventDefault();finalize();input.blur()}});
+  });
   let draggedId='';
   document.querySelectorAll('.auction-player-card').forEach(card=>{
     card.addEventListener('dragstart',event=>{draggedId=card.dataset.playerId;card.classList.add('dragging');event.dataTransfer.effectAllowed='move';event.dataTransfer.setData('text/plain',draggedId)});
