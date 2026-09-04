@@ -14,6 +14,30 @@ export function sortAuctionPlayers(players=[]){
   }).map(item=>item.player);
 }
 
+export function auctionPlayerMarketStatus(player,market={},acquiredPlayerIds=new Set()){
+  const marketStatus=market[player.id]?.marketStatus||'AVAILABLE';
+  if(marketStatus==='SOLD')return 'SOLD';
+  if(marketStatus==='MY TEAM'||acquiredPlayerIds.has(player.id))return 'ACQUIRED';
+  return 'AVAILABLE';
+}
+
+export function sortAuctionSoldLast(players=[],market={},acquiredPlayerIds=new Set()){
+  const available=[],sold=[];
+  for(const player of players)(auctionPlayerMarketStatus(player,market,acquiredPlayerIds)==='SOLD'?sold:available).push(player);
+  return available.concat(sold);
+}
+
+export function auctionStatusCounts(players=[],market={},acquiredPlayerIds=new Set()){
+  const counts={sold:0,acquired:0,available:0};
+  for(const player of players){
+    const status=auctionPlayerMarketStatus(player,market,acquiredPlayerIds);
+    if(status==='SOLD')counts.sold+=1;
+    else if(status==='ACQUIRED')counts.acquired+=1;
+    else counts.available+=1;
+  }
+  return counts;
+}
+
 export function buildAuctionRows(players,slots,viewState={},includeOut=false){
   const placements=viewState.placements||{},orders=viewState.orders||{};
   const rows=slots.map(slot=>({slot,players:[]}));
