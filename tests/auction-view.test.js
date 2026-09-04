@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
 import {auctionInjuryStatus,buildAuctionRows,moveAuctionPlayer,sortAuctionPlayers} from '../src/auction-view.js';
 
 const players=[
@@ -45,4 +46,11 @@ test('auction injury status only exposes details for unavailable players',()=>{
   assert.deepEqual(auctionInjuryStatus('OK'),{label:'OK',interactive:false,detail:null});
   assert.deepEqual(auctionInjuryStatus('Lesione muscolare'),{label:'NOT OK',interactive:true,detail:'Lesione muscolare'});
   assert.equal(auctionInjuryStatus(null).detail,'Dettaglio infortunio non disponibile');
+});
+
+test('auction sections reuse the slot plan ordering',async()=>{
+  const app=await readFile(new URL('../src/app.js',import.meta.url),'utf8');
+  assert.match(app,/function slotPlanGroups\(slots\)\{return groupSlotsByCategory\(slots,false,state\.aliasConfiguration\.map\(item=>item\.alias\)\);\}/);
+  assert.match(app,/editable\?slotPlanGroups\(slots\)\.map/);
+  assert.match(app,/planOrderedSlots=slotPlanGroups\(state\.slots\)\.flatMap\(group=>group\.slots\),rows=buildAuctionRows\(players\(\),planOrderedSlots,state\.auctionView,true\)/);
 });
