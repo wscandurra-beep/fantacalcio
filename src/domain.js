@@ -78,9 +78,8 @@ export function reconcilePurchasedAssignments({slots=[],market={},auctionView={}
   for(const item of occupied)if(!purchasedIds.includes(item.playerId))purchasedIds.push(item.playerId);
   for(const [id,item] of Object.entries(market))if(item?.marketStatus==='MY TEAM'&&!purchasedIds.includes(String(id)))purchasedIds.push(String(id));
 
-  const nextSlots=slots.map(slot=>({...slot,playerId:null,actualPurchasePrice:null}));
+  const nextSlots=slots.map(slot=>({...slot,playerIds:[],playerId:null,actualPurchasePrice:null}));
   const nextMarket={...market};
-  const used=new Set();
   const records=purchasedIds.map(playerId=>{
     const entry=market[playerId]||{},legacy=occupiedByPlayer.get(playerId);
     const player=playerById.get(playerId),mappedAlias=player?aliasForMantraRole(player.roles,configuration):null;
@@ -93,16 +92,18 @@ export function reconcilePurchasedAssignments({slots=[],market={},auctionView={}
   // Honour compatible explicit assignments before allocating any free slot.
   for(const record of records){
     const slot=nextSlots.find(item=>item.id===record.explicitId);
-    if(slot&&slot.category===record.mappedAlias&&!used.has(slot.id)){record.assigned=slot;used.add(slot.id);}
+    if(slot&&slot.category===record.mappedAlias)record.assigned=slot;
   }
   for(const record of records){
     if(!record.assigned&&!record.positionLocked){
-      const slot=nextSlots.find(item=>item.category===record.mappedAlias&&!used.has(item.id));
-      if(slot){record.assigned=slot;used.add(slot.id);}
+      const compatible=nextSlots.filter(item=>item.category===record.mappedAlias);
+      const slot=compatible.find(item=>item.playerIds.length===0)??compatible.sort((a,b)=>a.playerIds.length-b.playerIds.length)[0];
+      if(slot)record.assigned=slot;
     }
     if(record.assigned){
-      record.assigned.playerId=record.playerId;
-      record.assigned.actualPurchasePrice=record.price;
+      record.assigned.playerIds.push(record.playerId);
+      record.assigned.playerId??=record.playerId;
+      record.assigned.actualPurchasePrice=Number(record.assigned.actualPurchasePrice??0)+Number(record.price??0);
     }
     nextMarket[record.playerId]={...record.entry,marketStatus:'MY TEAM',actualPurchasePrice:record.price,
       assignedSlot:record.assigned?{id:record.assigned.id,alias:record.assigned.category}:null,
@@ -116,17 +117,34 @@ export function reconcilePurchasedAssignments({slots=[],market={},auctionView={}
   return {slots:updateForecasts(nextSlots),market:nextMarket,auctionView:nextAuctionView,overflow:records.filter(record=>!record.assigned).map(record=>record.playerId)};
 }
 export function validatePurchasedAssignments(slots=[],market={},players=[],configuration=[]) {
-  const playerById=new Map(players.map(player=>[String(player.id),player])),used=new Set();
-  for(const slot of slots.filter(item=>item.playerId)){
-    if(used.has(slot.id))throw new Error(`Slot duplicato: ${slot.id}`);
-    used.add(slot.id);
-    const player=playerById.get(String(slot.playerId));
-    const mappedAlias=player?aliasForMantraRole(player.roles,configuration):null;
-    if(slot.category!==mappedAlias)throw new Error(`Slot ${slot.id} incompatibile con ${slot.playerId}`);
-    const assigned=market[slot.playerId]?.assignedSlot;
-    if(!assigned||assigned.id!==slot.id||assigned.alias!==mappedAlias)throw new Error(`Assegnazione persistente non valida per ${slot.playerId}`);
+  const playerById=new Map(players.map(player=>[String(player.id),player])),represented=new Set();
+  for(const slot of slots){
+    for(const playerId of slot.playerIds??(slot.playerId?[slot.playerId]:[])){
+      if(represented.has(String(playerId)))throw new Error(`Giocatore duplicato nelle sintesi: ${playerId}`);
+      represented.add(String(playerId));
+      const player=playerById.get(String(playerId));
+      const mappedAlias=player?aliasForMantraRole(player.roles,configuration):null;
+      if(slot.category!==mappedAlias)throw new Error(`Slot ${slot.id} incompatibile con ${playerId}`);
+      const assigned=market[playerId]?.assignedSlot;
+      if(!assigned||assigned.id!==slot.id||assigned.alias!==mappedAlias)throw new Error(`Assegnazione persistente non valida per ${playerId}`);
+    }
   }
   return true;
+}
+
+/** The purchase records in market are the single source used by every view. */
+export function canonicalPurchases(market={}) {
+  return Object.entries(market).filter(([,entry])=>entry?.marketStatus==='MY TEAM').map(([playerId,entry])=>({playerId:String(playerId),price:Number(entry.actualPurchasePrice)||0,slotId:entry.assignedSlotId??entry.assignedSlot?.id??null}));
+}
+export function purchaseReconciliation(slots=[],market={}) {
+  const purchases=canonicalPurchases(market),represented=slots.flatMap(slot=>slot.playerIds??(slot.playerId?[String(slot.playerId)]:[])).map(String);
+  return {purchased:purchases.length,represented:represented.length,consistent:purchases.length===represented.length&&new Set(represented).size===represented.length};
+}
+export function purchaseFinancialSummary(budget,slots=[],market={}) {
+  const purchases=canonicalPurchases(market),spent=purchases.reduce((sum,purchase)=>sum+purchase.price,0);
+  const planned=slots.reduce((sum,slot)=>sum+Number(slot.originalPlannedBudget||0),0),covered=new Set(purchases.map(purchase=>purchase.slotId).filter(Boolean));
+  const forecast=spent+slots.filter(slot=>!covered.has(slot.id)).reduce((sum,slot)=>sum+Number(slot.originalPlannedBudget||0),0);
+  return {budget:Number(budget)||0,planned,spent,forecast,remaining:(Number(budget)||0)-spent,variance:(Number(budget)||0)-forecast};
 }
 export function rankPlayers(players) { return [...players].sort((a,b)=>(b.auctionValue-a.auctionValue)||(b.quotation-a.quotation)||a.name.localeCompare(b.name)).map((p,i)=>({...p,rankingPosition:i+1})); }
 export function assignTiers(players, slotCount) {
