@@ -90,5 +90,5 @@ export function canDropAuctionPlayer(player,toSlot,market={},slots=[]){
   const acquired=market[player.id]?.marketStatus==='MY TEAM'||slots.some(slot=>String(slot.playerId)===String(player.id));
   if(toSlot.id==='OUT')return !acquired;
   if(toSlot.category!==player.strategicAlias)return false;
-  return !acquired||!toSlot.playerId||String(toSlot.playerId)===String(player.id);
+  return true;
 }

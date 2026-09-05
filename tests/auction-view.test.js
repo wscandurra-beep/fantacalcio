@@ -53,10 +53,10 @@ test('drop compatibility is independent from available and sold status',()=>{
   assert.equal(canDropAuctionPlayer(player,{id:'C2',category:'C'},{a:{marketStatus:'SOLD'}},[]),false);
 });
 
-test('acquired cards can move to free compatible slots but not OUT or occupied slots',()=>{
+test('acquired cards can move to any compatible slot, including an occupied slot, but not OUT',()=>{
   const player={id:'a',strategicAlias:'D'},market={a:{marketStatus:'MY TEAM'}};
   assert.equal(canDropAuctionPlayer(player,{id:'D2',category:'D',playerId:null},market,[]),true);
-  assert.equal(canDropAuctionPlayer(player,{id:'D2',category:'D',playerId:'b'},market,[]),false);
+  assert.equal(canDropAuctionPlayer(player,{id:'D2',category:'D',playerId:'b'},market,[]),true);
   assert.equal(canDropAuctionPlayer(player,{id:'OUT',category:'OUT'},market,[]),false);
 });
 

@@ -1,4 +1,4 @@
-import test from 'node:test';import assert from 'node:assert/strict';import {assignRankingCategory,rankPlayers,assignTiers,budgetSummary,slotPlanSummary,statusFor,availablePlayers,getForecast,getResidual,updateForecasts,updateSlotBaseline,updateSlotStrategy,percentageOfBudget,formatPercentage,areaVariance,totalCompletedVariance,slotCountsFromSlots,validateSlotCounts,reconcileSlotCounts,normalizeMantraRoles,mantraRoleDepletion,tierDepletion,groupSlotsByCategory,availableMantraRoles,defaultAliasConfiguration,validateAliasConfiguration,aliasForMantraRole,classifyPlayersByAliases,reconcileAliasSlots,reconcilePurchasedAssignments,validatePurchasedAssignments} from '../src/domain.js';
+import test from 'node:test';import assert from 'node:assert/strict';import {assignRankingCategory,rankPlayers,assignTiers,budgetSummary,slotPlanSummary,statusFor,availablePlayers,getForecast,getResidual,updateForecasts,updateSlotBaseline,updateSlotStrategy,percentageOfBudget,formatPercentage,areaVariance,totalCompletedVariance,slotCountsFromSlots,validateSlotCounts,reconcileSlotCounts,normalizeMantraRoles,mantraRoleDepletion,tierDepletion,groupSlotsByCategory,availableMantraRoles,defaultAliasConfiguration,validateAliasConfiguration,aliasForMantraRole,classifyPlayersByAliases,reconcileAliasSlots,reconcilePurchasedAssignments,validatePurchasedAssignments,canonicalPurchases,purchaseReconciliation,purchaseFinancialSummary} from '../src/domain.js';
 test('role category priority',()=>{assert.equal(assignRankingCategory('Ds;Dc'),'DC');assert.equal(assignRankingCategory('Dd;Dc'),'DC');assert.equal(assignRankingCategory('Dc;E'),'E');assert.equal(assignRankingCategory('W;A'),'WA');assert.equal(assignRankingCategory('Por'),'POR')});
 test('slot groups follow strategy order and retain configured extra categories',()=>{const groups=groupSlotsByCategory([{id:'1',category:'PC'},{id:'2',category:'DC'},{id:'3',category:'M'},{id:'4',category:'DC'}]);assert.deepEqual(groups.map(group=>[group.category,group.slots.map(slot=>slot.id)]),[['PC',['1']],['DC',['2','4']],['M',['3']]])});
 test('ranking uses auction value then quotation',()=>{const r=rankPlayers([{id:'a',name:'a',auctionValue:20,quotation:4},{id:'b',name:'b',auctionValue:20,quotation:7},{id:'c',name:'c',auctionValue:30,quotation:1}]);assert.deepEqual(r.map(x=>x.id),['c','b','a'])});
@@ -210,23 +210,53 @@ test('buying Schmid in A4 keeps A4 even when an earlier slot is free',()=>{
   const restored=reconcilePurchasedAssignments(JSON.parse(JSON.stringify(result)),players,configuration);
   assert.equal(restored.market.schmid.assignedSlotId,'A4');
 });
-test('a pinned purchase never promotes when its current slot is occupied',()=>{
+test('pinned purchases share their current role slot without promotion',()=>{
   const players=[{id:'current',roles:'A'},{id:'new',roles:'A'}],configuration=[{alias:'A',mantraRoles:['A']}];
   const slots=[{id:'A1',category:'A'},{id:'A2',category:'A'},{id:'A4',category:'A',playerId:'current',actualPurchasePrice:9}];
   const market={current:{marketStatus:'MY TEAM',actualPurchasePrice:9,assignedSlotId:'A4'},new:{marketStatus:'MY TEAM',actualPurchasePrice:5,assignedSlotId:'A4'}};
   const result=reconcilePurchasedAssignments({slots,market,auctionView:{placements:{current:'A4',new:'A4'},orders:{}}},players,configuration);
-  assert.equal(result.market.new.slotAssignmentStatus,'OVERFLOW');
+  assert.equal(result.market.new.slotAssignmentStatus,'ASSIGNED');
   assert.equal(result.auctionView.placements.new,'A4');
+  assert.deepEqual(result.slots.find(slot=>slot.id==='A4').playerIds,['current','new']);
   assert.equal(result.slots.find(slot=>slot.id==='A1').playerId,null);
   assert.equal(result.slots.find(slot=>slot.id==='A2').playerId,null);
 });
-test('mapping changes deterministically reallocate purchases and report overflow',()=>{
+test('mapping changes deterministically reallocate all purchases to the compatible slot',()=>{
   const players=[{id:'a',roles:'W;A'},{id:'b',roles:'W;A'}],slots=[{id:'WA2',category:'W',playerId:'a',actualPurchasePrice:9},{id:'C1',category:'C'}];
   const market={a:{marketStatus:'MY TEAM'},b:{marketStatus:'MY TEAM',actualPurchasePrice:4}};
   const result=reconcilePurchasedAssignments({slots,market,auctionView:{}},players,[{alias:'C',mantraRoles:['W;A']},{alias:'W',mantraRoles:[]}]);
   assert.equal(result.slots.find(slot=>slot.id==='C1').playerId,'a');
   assert.deepEqual(result.market.a.assignedSlot,{id:'C1',alias:'C'});
-  assert.equal(result.market.b.assignedSlot,null);
-  assert.equal(result.market.b.slotAssignmentStatus,'OVERFLOW');
-  assert.deepEqual(result.overflow,['b']);
+  assert.deepEqual(result.market.b.assignedSlot,{id:'C1',alias:'C'});
+  assert.equal(result.market.b.slotAssignmentStatus,'ASSIGNED');
+  assert.deepEqual(result.slots.find(slot=>slot.id==='C1').playerIds,['a','b']);
+  assert.deepEqual(result.overflow,[]);
+});
+
+test('one, two and three purchases remain represented in the same role slot',()=>{
+  const players=['a','b','c'].map(id=>({id,roles:'A'})),configuration=[{alias:'A',mantraRoles:['A']}],slots=[{id:'A1',category:'A',originalPlannedBudget:20}];
+  for(let count=1;count<=3;count++){
+    const market=Object.fromEntries(players.slice(0,count).map((player,index)=>[player.id,{marketStatus:'MY TEAM',actualPurchasePrice:index+2,assignedSlotId:'A1'}]));
+    const result=reconcilePurchasedAssignments({slots,market,auctionView:{placements:Object.fromEntries(players.slice(0,count).map(player=>[player.id,'A1']))}},players,configuration);
+    assert.deepEqual(result.slots[0].playerIds,players.slice(0,count).map(player=>player.id));
+    assert.equal(result.slots[0].actualPurchasePrice,Array.from({length:count},(_,index)=>index+2).reduce((a,b)=>a+b,0));
+  }
+});
+
+test('undo, move and JSON refresh preserve canonical multi-player counts and finances',()=>{
+  const players=['a','b','c'].map(id=>({id,roles:'A'})),configuration=[{alias:'A',mantraRoles:['A']}],slots=[{id:'A1',category:'A',originalPlannedBudget:20},{id:'A2',category:'A',originalPlannedBudget:10}];
+  const market=Object.fromEntries(players.map((player,index)=>[player.id,{marketStatus:'MY TEAM',actualPurchasePrice:index+3,assignedSlotId:'A1'}]));
+  let state=reconcilePurchasedAssignments({slots,market,auctionView:{placements:{a:'A1',b:'A1',c:'A1'}}},players,configuration);
+  assert.deepEqual(purchaseReconciliation(state.slots,state.market),{purchased:3,represented:3,consistent:true});
+  delete state.market.b;
+  state.auctionView.placements.c='A2';
+  state=reconcilePurchasedAssignments(JSON.parse(JSON.stringify(state)),players,configuration);
+  assert.deepEqual(state.slots.find(slot=>slot.id==='A1').playerIds,['a']);
+  assert.deepEqual(state.slots.find(slot=>slot.id==='A2').playerIds,['c']);
+  assert.deepEqual(purchaseReconciliation(state.slots,state.market),{purchased:2,represented:2,consistent:true});
+  assert.deepEqual(purchaseFinancialSummary(100,state.slots,state.market),{budget:100,planned:30,spent:8,forecast:8,remaining:92,variance:92});
+});
+
+test('reconciliation explicitly detects a missing summary representation',()=>{
+  assert.deepEqual(purchaseReconciliation([{id:'A1',playerIds:['a']}],{a:{marketStatus:'MY TEAM'},b:{marketStatus:'MY TEAM'}}),{purchased:2,represented:1,consistent:false});
 });
