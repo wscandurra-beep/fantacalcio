@@ -7,6 +7,13 @@
   padding-left: 1.25rem;
 }
 
+.age-fallback { text-decoration: underline dotted; text-underline-offset: .2em; }
+.dob-filters { display: flex; gap: .75rem; margin: 1rem 0; }
+.dob-filters input { flex: 1; }
+.dob-list { max-height: 26rem; overflow: auto; }
+.dob-list table { width: 100%; border-collapse: collapse; }
+.dob-list th, .dob-list td { padding: .55rem; border-bottom: 1px solid var(--line); text-align: left; }
+
 @media (max-width: 900px) {
   .diagnostics {
     columns: 1;

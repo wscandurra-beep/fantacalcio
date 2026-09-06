@@ -1,4 +1,4 @@
-name: Scrape missing player ages
+name: Scrape missing player birth dates
 
 on:
   workflow_dispatch:
@@ -39,7 +39,7 @@ jobs:
       - name: Test scraper and importer
         run: python3 -m unittest discover -s tests -p '*_test.py'
 
-      - name: Run missing-age scraper
+      - name: Update persistent birth-date registry
         shell: bash
         run: |
           set -euo pipefail
@@ -66,16 +66,16 @@ jobs:
           bad = [p for p in players if p.get('age') is not None and not (15 <= int(p['age']) <= 50)]
           if bad:
               raise SystemExit(f'Invalid ages: {bad[:5]}')
-          enrichment_path = Path('data/player_ages.json')
+          enrichment_path = Path('data/player-birthdates.json')
           if enrichment_path.exists():
               payload = json.loads(enrichment_path.read_text(encoding='utf-8'))
               rows = payload.get('players', [])
               ids = [str(row.get('id')) for row in rows]
               if len(ids) != len(set(ids)):
-                  raise SystemExit('Duplicate player IDs in data/player_ages.json')
+                  raise SystemExit('Duplicate player IDs in data/player-birthdates.json')
               print('Age enrichment:', payload.get('counts', {}))
               print('Diagnostics:', {k: len(v) for k, v in payload.get('diagnostics', {}).items()})
-          print('Remaining missing ages:', sum(p.get('age') is None for p in players))
+          print('Remaining missing DOB:', sum(not p.get('dateOfBirth') for p in players))
           PY
 
       - name: Commit enrichment results safely
@@ -85,13 +85,13 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add -f data/player_ages.json data/players.json data/import-quality.json
+          git add -f data/player-birthdates.json data/players.json data/import-quality.json
           if git diff --cached --quiet; then
             echo "No age-enrichment changes to commit."
             exit 0
           fi
 
-          git commit -m "Update player age enrichment"
+          git commit -m "Update player birth-date registry"
           git fetch origin main
           if ! git rebase origin/main; then
             echo "Rebase conflict: aborting without overwriting main."

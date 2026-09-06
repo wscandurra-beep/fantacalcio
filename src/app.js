@@ -6,6 +6,7 @@ import {auctionInjuryStatus,auctionPlayerMarketStatus,auctionPlayerSlotId,auctio
 import {resetPlayer} from './player-reset.js';
 import {backupFilename,createBackup,parseBackup} from './backup.js';
 import {analyzePlayerImport,loadImportStore,mergePlayerDataset,readPlayerWorkbook,referenceSeason,saveImportVersion} from './import-manager.js';
+import {applyDynamicAges} from './age-domain.js';
 const loadIssues=[];
 async function fetchJson(path,fallback,label){
   try{
@@ -31,6 +32,7 @@ raw=applyInjurySnapshot(raw,injurySnapshot);
 injuryUpdate=normalizeInjuryUpdate(injuryUpdate,injurySnapshot);
 const savedImports=loadImportStore();
 if(savedImports.history[0]?.snapshot)raw=savedImports.history[0].snapshot;
+raw=applyDynamicAges(raw);
 const configuredEndpoint=document.querySelector('meta[name="injury-refresh-endpoint"]')?.content?.trim()||'';
 const refreshEndpoint=configuredEndpoint.startsWith('http')?configuredEndpoint.replace(/\/$/,''):'';
 const mantraRoleOptions=availableMantraRoles(raw);

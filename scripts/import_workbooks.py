@@ -6,6 +6,7 @@ import json
 import re
 import sys
 import unicodedata
+from datetime import date, datetime
 from collections import defaultdict
 from pathlib import Path
 from zipfile import ZipFile
@@ -157,6 +158,80 @@ def age_number(value):
     """Convert values such as FBref's ``22-226`` age to a whole-year age."""
     match = re.match(r"^\s*(\d{1,3})(?:\D|$)", str(value or ""))
     return int(match.group(1)) if match else None
+
+
+def valid_iso_date(value):
+    """Return a validated ISO date or ``None``; never infer a DOB from an age."""
+    try:
+        return datetime.strptime(str(value), "%Y-%m-%d").date().isoformat()
+    except (TypeError, ValueError):
+        return None
+
+
+def age_on(date_of_birth, reference_date=None):
+    """Canonical importer-side age calculation, mirroring the browser domain."""
+    dob = valid_iso_date(date_of_birth)
+    if not dob:
+        return None
+    born = datetime.strptime(dob, "%Y-%m-%d").date()
+    reference = reference_date or date.today()
+    return reference.year - born.year - ((reference.month, reference.day) < (born.month, born.day))
+
+
+def load_player_registry(path):
+    """Load the persistent registry. Rows are retained even when no longer active."""
+    if not path.exists():
+        return []
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    rows = payload.get("players", payload) if isinstance(payload, dict) else payload
+    return [row for row in rows if isinstance(row, dict)]
+
+
+def apply_player_registry(players, registry_rows):
+    """Associate identity by stable id first, then unique normalized name + team."""
+    by_id = {str(row.get("id")): row for row in registry_rows if row.get("id")}
+    by_name_team = defaultdict(list)
+    for row in registry_rows:
+        by_name_team[(normalize_player_name(row.get("name")), normalize_player_name(row.get("team")))].append(row)
+    matched, ambiguous = set(), []
+    for player in players:
+        row = by_id.get(str(player.get("id")))
+        matched_by = "id" if row else None
+        if not row:
+            candidates = by_name_team[(normalize_player_name(player.get("name")), normalize_player_name(player.get("team")))]
+            if len(candidates) == 1:
+                row, matched_by = candidates[0], "normalized_name_team"
+            elif len(candidates) > 1:
+                ambiguous.append({"id": player.get("id"), "name": player.get("name"), "team": player.get("team"),
+                                  "candidateIds": [item.get("id") for item in candidates]})
+        if row:
+            matched.add(id(row))
+            # A stable id makes team/name mutable metadata, not identity.
+            row.update({"id": player.get("id"), "name": player.get("name"), "team": player.get("team")})
+            player["dateOfBirth"] = valid_iso_date(row.get("dateOfBirth"))
+            player["dobSource"] = row.get("source")
+            player["dobVerifiedAt"] = row.get("verifiedAt")
+            player["dobMatchedBy"] = matched_by
+        else:
+            row = {"id": player.get("id"), "name": player.get("name"), "team": player.get("team"),
+                   "dateOfBirth": None, "source": None, "verifiedAt": None,
+                   "matchingStatus": "ambiguous" if ambiguous and ambiguous[-1].get("id") == player.get("id") else "missing"}
+            registry_rows.append(row)
+            matched.add(id(row))
+            player["dateOfBirth"] = None
+        player["legacyAge"] = player.get("age")
+        player["age"] = age_on(player.get("dateOfBirth")) or player.get("legacyAge")
+        player["ageBasis"] = "dateOfBirth" if player.get("dateOfBirth") else ("legacy" if player.get("legacyAge") is not None else "missing")
+        row["legacyAge"] = player.get("legacyAge")
+        row["matchingStatus"] = "matched" if player.get("dateOfBirth") else row.get("matchingStatus", "missing")
+    return {"matched": len(matched), "ambiguous": ambiguous}
+
+
+def write_player_registry(path, rows):
+    ordered = sorted(rows, key=lambda row: (normalize_player_name(row.get("name")), str(row.get("id") or "")))
+    payload = {"schemaVersion": 1, "description": "Persistent player identity and birth-date registry",
+               "players": ordered}
+    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
 def abbreviated_name_matches(short_name, full_name):
@@ -388,6 +463,20 @@ def import_data(root=ROOT):
     quality["ageRecoveredFbref"] = recovered["fbref"]
     quality["ageRecoveredTransfermarkt"] = recovered["transfermarkt"]
     quality["ageEnrichmentIgnored"] = recovered["ignored"]
+    registry_path = root / "data/player-birthdates.json"
+    registry = load_player_registry(registry_path)
+    registry_quality = apply_player_registry(players, registry)
+    write_player_registry(registry_path, registry)
+    quality["activePlayers"] = len(players)
+    quality["dobKnown"] = sum(bool(player.get("dateOfBirth")) for player in players)
+    quality["dobMissing"] = len(players) - quality["dobKnown"]
+    quality["dobCoveragePct"] = round(100 * quality["dobKnown"] / len(players), 2) if players else 0
+    quality["ageFallback"] = sum(player.get("ageBasis") == "legacy" for player in players)
+    quality["dobAmbiguous"] = len(registry_quality["ambiguous"])
+    quality["dobAmbiguousPlayers"] = registry_quality["ambiguous"]
+    quality["dobMissingPlayers"] = [{"id": p["id"], "name": p["name"], "team": p["team"],
+                                    "hasLegacyAge": p.get("legacyAge") is not None}
+                                   for p in players if not p.get("dateOfBirth")]
     quality["ageMissing"] = sum(player.get("age") is None for player in players)
     quality["ageComplete"] = len(players) - quality["ageMissing"]
     quality["missingPlayers"] = [{"name": p["name"], "team": p["team"]} for p in players if p.get("age") is None]

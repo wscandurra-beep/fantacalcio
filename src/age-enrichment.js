@@ -1,4 +1,4 @@
-import {playerKey} from './age-domain.js';
+import {applyDynamicAges, playerKey} from './age-domain.js';
 
 async function loadJson(path, fallback) {
   try {
@@ -16,7 +16,7 @@ const [players, quality] = await Promise.all([
   loadJson('./data/import-quality.json', {ageMatched: 0, ambiguousCount: 0, unmatchedCount: 0, ambiguous: [], unmatched: []}),
 ]);
 
-const ages = new Map(players.map(player => [playerKey(player.name, player.team), player.age]));
+const ages = new Map(applyDynamicAges(players).map(player => [playerKey(player.name, player.team), player]));
 
 function decorateMarket() {
   const table = document.querySelector('#marketTable table');
@@ -39,7 +39,13 @@ function decorateMarket() {
     const name = playerCell?.querySelector('b')?.textContent || '';
     const team = (playerCell?.querySelector('.muted')?.textContent || '').split('·')[0].trim();
     const ageCell = document.createElement('td');
-    ageCell.textContent = ages.get(playerKey(name, team)) ?? '—';
+    const player = ages.get(playerKey(name, team));
+    ageCell.textContent = player?.age ?? '—';
+    if (player?.ageIsFallback) {
+      ageCell.classList.add('age-fallback');
+      ageCell.title = 'Età storica (DOB non disponibile)';
+      ageCell.setAttribute('aria-label', `${player.age}, valore storico di fallback`);
+    }
     row.insertBefore(ageCell, row.cells[7]);
   }
   table.dataset.ageEnriched = 'true';
@@ -61,9 +67,12 @@ function decorateQuality() {
   const grid = heading?.nextElementSibling;
   if (!grid || grid.dataset.ageEnriched) return;
   grid.append(
-    qualityCard('Età associate', quality.ageMatched),
-    qualityCard('Nomi ambigui', quality.ambiguousCount),
-    qualityCard('Righe statistiche non associate', quality.unmatchedCount),
+    qualityCard('Giocatori attivi', quality.activePlayers ?? players.length),
+    qualityCard('DOB conosciuta', quality.dobKnown ?? 0),
+    qualityCard('DOB mancante', quality.dobMissing ?? players.length),
+    qualityCard('Copertura DOB', `${quality.dobCoveragePct ?? 0}%`),
+    qualityCard('Fallback età', quality.ageFallback ?? 0),
+    qualityCard('Matching ambiguo', quality.dobAmbiguous ?? 0),
   );
 
   const diagnostics = [...quality.ambiguous.map(item => `Ambiguo: ${item.name} (${item.team || 'squadra ignota'})`),
@@ -81,6 +90,32 @@ function decorateQuality() {
       list.append(item);
     }
     panel.append(title, list);
+    grid.parentElement.append(panel);
+  }
+  const missing = quality.dobMissingPlayers || [];
+  if (missing.length) {
+    const panel = document.createElement('section');
+    panel.className = 'card section dob-missing';
+    panel.innerHTML = '<h2>DOB da completare</h2><div class="dob-filters"><input type="search" placeholder="Filtra giocatore o squadra" aria-label="Filtra giocatori senza data di nascita"><select aria-label="Filtra stato fallback"><option value="all">Tutti</option><option value="fallback">Con età fallback</option><option value="none">Senza età</option></select></div><div class="dob-list"></div>';
+    const input = panel.querySelector('input');
+    const select = panel.querySelector('select');
+    const list = panel.querySelector('.dob-list');
+    const renderMissing = () => {
+      const query = input.value.trim().toLocaleLowerCase('it');
+      const filtered = missing.filter(item => `${item.name} ${item.team}`.toLocaleLowerCase('it').includes(query)
+        && (select.value === 'all' || (select.value === 'fallback') === Boolean(item.hasLegacyAge)));
+      list.textContent = '';
+      const table = document.createElement('table');
+      table.innerHTML = '<thead><tr><th>ID</th><th>Giocatore</th><th>Squadra</th><th>Stato</th></tr></thead><tbody></tbody>';
+      for (const item of filtered) {
+        const row = table.tBodies[0].insertRow();
+        for (const value of [item.id || '—', item.name, item.team, item.hasLegacyAge ? 'Età fallback' : 'Età assente']) row.insertCell().textContent = value;
+      }
+      list.append(table);
+    };
+    input.addEventListener('input', renderMissing);
+    select.addEventListener('change', renderMissing);
+    renderMissing();
     grid.parentElement.append(panel);
   }
   grid.dataset.ageEnriched = 'true';

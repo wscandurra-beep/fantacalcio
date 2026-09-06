@@ -23,7 +23,13 @@
     "AvgMF": 5.4,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "4431",
@@ -49,7 +55,13 @@
     "AvgMF": 5.4,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "5116",
@@ -75,7 +87,13 @@
     "AvgMF": 5.29,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 28,
+    "ageBasis": "legacy"
   },
   {
     "id": "4964",
@@ -101,7 +119,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 29,
+    "ageBasis": "legacy"
   },
   {
     "id": "6966",
@@ -127,7 +151,13 @@
     "AvgMF": 5.29,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 31,
+    "ageBasis": "legacy"
   },
   {
     "id": "4312",
@@ -153,7 +183,13 @@
     "AvgMF": 5.14,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 31,
+    "ageBasis": "legacy"
   },
   {
     "id": "2521",
@@ -179,7 +215,13 @@
     "AvgMF": 5.21,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 35,
+    "ageBasis": "legacy"
   },
   {
     "id": "572",
@@ -205,7 +247,13 @@
     "AvgMF": 5.29,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 29,
+    "ageBasis": "legacy"
   },
   {
     "id": "133",
@@ -231,7 +279,13 @@
     "AvgMF": 5.22,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 35,
+    "ageBasis": "legacy"
   },
   {
     "id": "4360",
@@ -257,7 +311,13 @@
     "AvgMF": 5.08,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 25,
+    "ageBasis": "legacy"
   },
   {
     "id": "6482",
@@ -283,7 +343,13 @@
     "AvgMF": 3.67,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 24,
+    "ageBasis": "legacy"
   },
   {
     "id": "6462",
@@ -309,7 +375,13 @@
     "AvgMF": 4.8,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "6534",
@@ -335,7 +407,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 28,
+    "ageBasis": "legacy"
   },
   {
     "id": "7332",
@@ -361,7 +439,13 @@
     "AvgMF": 4.78,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 28,
+    "ageBasis": "legacy"
   },
   {
     "id": "2134",
@@ -387,7 +471,13 @@
     "AvgMF": 4.97,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 31,
+    "ageBasis": "legacy"
   },
   {
     "id": "6344",
@@ -413,7 +503,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 28,
+    "ageBasis": "legacy"
   },
   {
     "id": "4236",
@@ -439,7 +535,13 @@
     "AvgMF": 4.77,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "7411",
@@ -465,7 +567,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 21,
+    "ageBasis": "legacy"
   },
   {
     "id": "6248",
@@ -491,7 +599,13 @@
     "AvgMF": 2.62,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 24,
+    "ageBasis": "legacy"
   },
   {
     "id": "6415",
@@ -517,7 +631,13 @@
     "AvgMF": 0.0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 22,
+    "ageBasis": "legacy"
   },
   {
     "id": "2170",
@@ -543,7 +663,13 @@
     "AvgMF": 5.45,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 29,
+    "ageBasis": "legacy"
   },
   {
     "id": "4485",
@@ -569,7 +695,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 28,
+    "ageBasis": "legacy"
   },
   {
     "id": "7463",
@@ -595,7 +727,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 23,
+    "ageBasis": "legacy"
   },
   {
     "id": "2814",
@@ -621,7 +759,13 @@
     "AvgMF": 5.0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 32,
+    "ageBasis": "legacy"
   },
   {
     "id": "6662",
@@ -647,7 +791,13 @@
     "AvgMF": 2.54,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 25,
+    "ageBasis": "legacy"
   },
   {
     "id": "4",
@@ -673,7 +823,13 @@
     "AvgMF": 4.69,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 34,
+    "ageBasis": "legacy"
   },
   {
     "id": "7533",
@@ -699,7 +855,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 19,
+    "ageBasis": "legacy"
   },
   {
     "id": "7172",
@@ -725,7 +887,13 @@
     "AvgMF": 5.62,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 18,
+    "ageBasis": "legacy"
   },
   {
     "id": "6650",
@@ -751,7 +919,13 @@
     "AvgMF": 2.15,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 28,
+    "ageBasis": "legacy"
   },
   {
     "id": "7301",
@@ -777,7 +951,13 @@
     "AvgMF": 0.0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 24,
+    "ageBasis": "legacy"
   },
   {
     "id": "2809",
@@ -803,7 +983,13 @@
     "AvgMF": 0.0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 36,
+    "ageBasis": "legacy"
   },
   {
     "id": "6403",
@@ -829,7 +1015,13 @@
     "AvgMF": 3.25,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "158",
@@ -855,7 +1047,13 @@
     "AvgMF": 0.0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 31,
+    "ageBasis": "legacy"
   },
   {
     "id": "7466",
@@ -881,7 +1079,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 22,
+    "ageBasis": "legacy"
   },
   {
     "id": "219",
@@ -907,7 +1111,13 @@
     "AvgMF": 3.25,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 29,
+    "ageBasis": "legacy"
   },
   {
     "id": "6569",
@@ -933,7 +1143,13 @@
     "AvgMF": 0.0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 25,
+    "ageBasis": "legacy"
   },
   {
     "id": "1926",
@@ -959,7 +1175,13 @@
     "AvgMF": 3.83,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 32,
+    "ageBasis": "legacy"
   },
   {
     "id": "1930",
@@ -985,7 +1207,13 @@
     "AvgMF": 2.17,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 36,
+    "ageBasis": "legacy"
   },
   {
     "id": "7337",
@@ -1011,7 +1239,13 @@
     "AvgMF": 5.17,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 21,
+    "ageBasis": "legacy"
   },
   {
     "id": "7534",
@@ -1037,7 +1271,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 20,
+    "ageBasis": "legacy"
   },
   {
     "id": "2815",
@@ -1063,7 +1303,13 @@
     "AvgMF": 5.48,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 36,
+    "ageBasis": "legacy"
   },
   {
     "id": "6813",
@@ -1089,7 +1335,13 @@
     "AvgMF": 0.0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 21,
+    "ageBasis": "legacy"
   },
   {
     "id": "7475",
@@ -1115,7 +1367,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 19,
+    "ageBasis": "legacy"
   },
   {
     "id": "2845",
@@ -1141,7 +1399,13 @@
     "AvgMF": 2.0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 30,
+    "ageBasis": "legacy"
   },
   {
     "id": "7048",
@@ -1167,7 +1431,13 @@
     "AvgMF": 0.0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 19,
+    "ageBasis": "legacy"
   },
   {
     "id": "610",
@@ -1193,7 +1463,13 @@
     "AvgMF": 2.98,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 31,
+    "ageBasis": "legacy"
   },
   {
     "id": "4518",
@@ -1219,7 +1495,13 @@
     "AvgMF": 0.0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 25,
+    "ageBasis": "legacy"
   },
   {
     "id": "4867",
@@ -1245,7 +1527,13 @@
     "AvgMF": 4.72,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 24,
+    "ageBasis": "legacy"
   },
   {
     "id": "7457",
@@ -1271,7 +1559,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 19,
+    "ageBasis": "legacy"
   },
   {
     "id": "5320",
@@ -1297,7 +1591,13 @@
     "AvgMF": 4.01,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 34,
+    "ageBasis": "legacy"
   },
   {
     "id": "7363",
@@ -1323,7 +1623,13 @@
     "AvgMF": 0.0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 19,
+    "ageBasis": "legacy"
   },
   {
     "id": "543",
@@ -1349,7 +1655,13 @@
     "AvgMF": 3.92,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 40,
+    "ageBasis": "legacy"
   },
   {
     "id": "5707",
@@ -1375,7 +1687,13 @@
     "AvgMF": 0.0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 22,
+    "ageBasis": "legacy"
   },
   {
     "id": "6671",
@@ -1401,7 +1719,13 @@
     "AvgMF": 0.0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 33,
+    "ageBasis": "legacy"
   },
   {
     "id": "7531",
@@ -1427,7 +1751,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 25,
+    "ageBasis": "legacy"
   },
   {
     "id": "2127",
@@ -1453,7 +1783,13 @@
     "AvgMF": 0.0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "7557",
@@ -1479,7 +1815,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 18,
+    "ageBasis": "legacy"
   },
   {
     "id": "7560",
@@ -1505,7 +1847,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 34,
+    "ageBasis": "legacy"
   },
   {
     "id": "3",
@@ -1531,7 +1879,13 @@
     "AvgMF": 1.33,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 30,
+    "ageBasis": "legacy"
   },
   {
     "id": "4957",
@@ -1557,7 +1911,13 @@
     "AvgMF": 4.79,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 30,
+    "ageBasis": "legacy"
   },
   {
     "id": "4468",
@@ -1583,7 +1943,13 @@
     "AvgMF": 0.0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 30,
+    "ageBasis": "legacy"
   },
   {
     "id": "7603",
@@ -1609,7 +1975,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "7611",
@@ -1635,7 +2007,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "2874",
@@ -1661,7 +2039,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "7626",
@@ -1687,7 +2071,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 20,
+    "ageBasis": "legacy"
   },
   {
     "id": "254",
@@ -1713,7 +2103,13 @@
     "AvgMF": 7.23,
     "R": 0,
     "P": 2,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 28,
+    "ageBasis": "legacy"
   },
   {
     "id": "7181",
@@ -1739,7 +2135,13 @@
     "AvgMF": 6.47,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 22,
+    "ageBasis": "legacy"
   },
   {
     "id": "4998",
@@ -1765,7 +2167,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 28,
+    "ageBasis": "legacy"
   },
   {
     "id": "2788",
@@ -1791,7 +2199,13 @@
     "AvgMF": 6.53,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 29,
+    "ageBasis": "legacy"
   },
   {
     "id": "2296",
@@ -1817,7 +2231,13 @@
     "AvgMF": 6.32,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 30,
+    "ageBasis": "legacy"
   },
   {
     "id": "4159",
@@ -1843,7 +2263,13 @@
     "AvgMF": 6.41,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 31,
+    "ageBasis": "legacy"
   },
   {
     "id": "4409",
@@ -1869,7 +2295,13 @@
     "AvgMF": 6.26,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 32,
+    "ageBasis": "legacy"
   },
   {
     "id": "2120",
@@ -1895,7 +2327,13 @@
     "AvgMF": 6.45,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "4976",
@@ -1921,7 +2359,13 @@
     "AvgMF": 6.09,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "5022",
@@ -1947,7 +2391,13 @@
     "AvgMF": 6.37,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 25,
+    "ageBasis": "legacy"
   },
   {
     "id": "5833",
@@ -1973,7 +2423,13 @@
     "AvgMF": 5.94,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "4317",
@@ -1999,7 +2455,13 @@
     "AvgMF": 6.07,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "6956",
@@ -2025,7 +2487,13 @@
     "AvgMF": 6.35,
     "R": 2,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "6217",
@@ -2051,7 +2519,13 @@
     "AvgMF": 6.66,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 25,
+    "ageBasis": "legacy"
   },
   {
     "id": "2514",
@@ -2077,7 +2551,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 32,
+    "ageBasis": "legacy"
   },
   {
     "id": "2816",
@@ -2103,7 +2583,13 @@
     "AvgMF": 6.3,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 33,
+    "ageBasis": "legacy"
   },
   {
     "id": "5750",
@@ -2129,7 +2615,13 @@
     "AvgMF": 6.26,
     "R": 2,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "4807",
@@ -2155,7 +2647,13 @@
     "AvgMF": 5.64,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 31,
+    "ageBasis": "legacy"
   },
   {
     "id": "5982",
@@ -2181,7 +2679,13 @@
     "AvgMF": 5.97,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "5526",
@@ -2207,7 +2711,13 @@
     "AvgMF": 5.96,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 22,
+    "ageBasis": "legacy"
   },
   {
     "id": "6869",
@@ -2233,7 +2743,13 @@
     "AvgMF": 6.14,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 21,
+    "ageBasis": "legacy"
   },
   {
     "id": "5641",
@@ -2259,7 +2775,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "5885",
@@ -2285,7 +2807,13 @@
     "AvgMF": 6.0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "5514",
@@ -2311,7 +2839,13 @@
     "AvgMF": 6.17,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "4994",
@@ -2337,7 +2871,13 @@
     "AvgMF": 6.08,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 31,
+    "ageBasis": "legacy"
   },
   {
     "id": "5555",
@@ -2363,7 +2903,13 @@
     "AvgMF": 6.0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 32,
+    "ageBasis": "legacy"
   },
   {
     "id": "554",
@@ -2389,7 +2935,13 @@
     "AvgMF": 6.25,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 34,
+    "ageBasis": "legacy"
   },
   {
     "id": "4734",
@@ -2415,7 +2967,13 @@
     "AvgMF": 6.13,
     "R": 0,
     "P": 3,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "4657",
@@ -2441,7 +2999,13 @@
     "AvgMF": 5.97,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 29,
+    "ageBasis": "legacy"
   },
   {
     "id": "5520",
@@ -2467,7 +3031,13 @@
     "AvgMF": 6.14,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "6320",
@@ -2493,7 +3063,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 28,
+    "ageBasis": "legacy"
   },
   {
     "id": "6989",
@@ -2519,7 +3095,13 @@
     "AvgMF": 6.13,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 21,
+    "ageBasis": "legacy"
   },
   {
     "id": "6496",
@@ -2545,7 +3127,13 @@
     "AvgMF": 5.68,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 20,
+    "ageBasis": "legacy"
   },
   {
     "id": "1852",
@@ -2571,7 +3159,13 @@
     "AvgMF": 6.36,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 33,
+    "ageBasis": "legacy"
   },
   {
     "id": "6664",
@@ -2597,7 +3191,13 @@
     "AvgMF": 6.11,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "5862",
@@ -2623,7 +3223,13 @@
     "AvgMF": 5.97,
     "R": 2,
     "P": 3,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "7529",
@@ -2649,7 +3255,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 22,
+    "ageBasis": "legacy"
   },
   {
     "id": "6495",
@@ -2675,7 +3287,13 @@
     "AvgMF": 5.81,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 21,
+    "ageBasis": "legacy"
   },
   {
     "id": "6727",
@@ -2701,7 +3319,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 24,
+    "ageBasis": "legacy"
   },
   {
     "id": "5675",
@@ -2727,7 +3351,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "4137",
@@ -2753,7 +3383,13 @@
     "AvgMF": 6.1,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 33,
+    "ageBasis": "legacy"
   },
   {
     "id": "6046",
@@ -2779,7 +3415,13 @@
     "AvgMF": 5.82,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "6042",
@@ -2805,7 +3447,13 @@
     "AvgMF": 5.89,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 28,
+    "ageBasis": "legacy"
   },
   {
     "id": "4433",
@@ -2831,7 +3479,13 @@
     "AvgMF": 6.37,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "4210",
@@ -2857,7 +3511,13 @@
     "AvgMF": 6.17,
     "R": 3,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 31,
+    "ageBasis": "legacy"
   },
   {
     "id": "5701",
@@ -2883,7 +3543,13 @@
     "AvgMF": 5.73,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 24,
+    "ageBasis": "legacy"
   },
   {
     "id": "5365",
@@ -2909,7 +3575,13 @@
     "AvgMF": 6.45,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 24,
+    "ageBasis": "legacy"
   },
   {
     "id": "6531",
@@ -2935,7 +3607,13 @@
     "AvgMF": 5.11,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 21,
+    "ageBasis": "legacy"
   },
   {
     "id": "7469",
@@ -2961,7 +3639,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 23,
+    "ageBasis": "legacy"
   },
   {
     "id": "5620",
@@ -2987,7 +3671,13 @@
     "AvgMF": 6.15,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "4401",
@@ -3013,7 +3703,13 @@
     "AvgMF": 6.1,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "7485",
@@ -3039,7 +3735,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 28,
+    "ageBasis": "legacy"
   },
   {
     "id": "6672",
@@ -3065,7 +3767,13 @@
     "AvgMF": 5.94,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "6642",
@@ -3091,7 +3799,13 @@
     "AvgMF": 5.87,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "5010",
@@ -3117,7 +3831,13 @@
     "AvgMF": 5.9,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 29,
+    "ageBasis": "legacy"
   },
   {
     "id": "4664",
@@ -3143,7 +3863,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 25,
+    "ageBasis": "legacy"
   },
   {
     "id": "7580",
@@ -3169,7 +3895,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "7220",
@@ -3195,7 +3927,13 @@
     "AvgMF": 6.21,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 24,
+    "ageBasis": "legacy"
   },
   {
     "id": "2640",
@@ -3221,7 +3959,13 @@
     "AvgMF": 6.0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 33,
+    "ageBasis": "legacy"
   },
   {
     "id": "4887",
@@ -3247,7 +3991,13 @@
     "AvgMF": 6.14,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "7219",
@@ -3273,7 +4023,13 @@
     "AvgMF": 6.16,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 22,
+    "ageBasis": "legacy"
   },
   {
     "id": "7212",
@@ -3299,7 +4055,13 @@
     "AvgMF": 5.8,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "5678",
@@ -3325,7 +4087,13 @@
     "AvgMF": 6.21,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "7414",
@@ -3351,7 +4119,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 23,
+    "ageBasis": "legacy"
   },
   {
     "id": "6867",
@@ -3377,7 +4151,13 @@
     "AvgMF": 5.98,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 22,
+    "ageBasis": "legacy"
   },
   {
     "id": "7410",
@@ -3403,7 +4183,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 21,
+    "ageBasis": "legacy"
   },
   {
     "id": "4952",
@@ -3429,7 +4215,13 @@
     "AvgMF": 6.25,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 24,
+    "ageBasis": "legacy"
   },
   {
     "id": "6238",
@@ -3455,7 +4247,13 @@
     "AvgMF": 5.75,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 25,
+    "ageBasis": "legacy"
   },
   {
     "id": "6660",
@@ -3481,7 +4279,13 @@
     "AvgMF": 5.79,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 23,
+    "ageBasis": "legacy"
   },
   {
     "id": "4177",
@@ -3507,7 +4311,13 @@
     "AvgMF": 6.25,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 30,
+    "ageBasis": "legacy"
   },
   {
     "id": "5877",
@@ -3533,7 +4343,13 @@
     "AvgMF": 6.33,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "460",
@@ -3559,7 +4375,13 @@
     "AvgMF": 5.88,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 31,
+    "ageBasis": "legacy"
   },
   {
     "id": "4817",
@@ -3585,7 +4407,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 30,
+    "ageBasis": "legacy"
   },
   {
     "id": "2188",
@@ -3611,7 +4439,13 @@
     "AvgMF": 5.95,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 33,
+    "ageBasis": "legacy"
   },
   {
     "id": "6990",
@@ -3637,7 +4471,13 @@
     "AvgMF": 5.71,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 23,
+    "ageBasis": "legacy"
   },
   {
     "id": "4502",
@@ -3663,7 +4503,13 @@
     "AvgMF": 5.88,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "4751",
@@ -3689,7 +4535,13 @@
     "AvgMF": 6.0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 28,
+    "ageBasis": "legacy"
   },
   {
     "id": "6202",
@@ -3715,7 +4567,13 @@
     "AvgMF": 6.04,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "2724",
@@ -3741,7 +4599,13 @@
     "AvgMF": 6.28,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "6485",
@@ -3767,7 +4631,13 @@
     "AvgMF": 5.86,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 24,
+    "ageBasis": "legacy"
   },
   {
     "id": "7329",
@@ -3793,7 +4663,13 @@
     "AvgMF": 6.41,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 22,
+    "ageBasis": "legacy"
   },
   {
     "id": "7069",
@@ -3819,7 +4695,13 @@
     "AvgMF": 5.96,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 20,
+    "ageBasis": "legacy"
   },
   {
     "id": "7564",
@@ -3845,7 +4727,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 23,
+    "ageBasis": "legacy"
   },
   {
     "id": "4705",
@@ -3871,7 +4759,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "4147",
@@ -3897,7 +4791,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 29,
+    "ageBasis": "legacy"
   },
   {
     "id": "7621",
@@ -3923,7 +4823,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "7532",
@@ -3949,7 +4855,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 21,
+    "ageBasis": "legacy"
   },
   {
     "id": "7274",
@@ -3975,7 +4887,13 @@
     "AvgMF": 5.68,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 29,
+    "ageBasis": "legacy"
   },
   {
     "id": "6893",
@@ -4001,7 +4919,13 @@
     "AvgMF": 6.14,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 31,
+    "ageBasis": "legacy"
   },
   {
     "id": "7294",
@@ -4027,7 +4951,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 19,
+    "ageBasis": "legacy"
   },
   {
     "id": "7467",
@@ -4053,7 +4983,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 22,
+    "ageBasis": "legacy"
   },
   {
     "id": "6766",
@@ -4079,7 +5015,13 @@
     "AvgMF": 5.85,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "6632",
@@ -4105,7 +5047,13 @@
     "AvgMF": 5.89,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 28,
+    "ageBasis": "legacy"
   },
   {
     "id": "5739",
@@ -4131,7 +5079,13 @@
     "AvgMF": 5.91,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 24,
+    "ageBasis": "legacy"
   },
   {
     "id": "5840",
@@ -4157,7 +5111,13 @@
     "AvgMF": 5.87,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 28,
+    "ageBasis": "legacy"
   },
   {
     "id": "6631",
@@ -4183,7 +5143,13 @@
     "AvgMF": 5.75,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 23,
+    "ageBasis": "legacy"
   },
   {
     "id": "5851",
@@ -4209,7 +5175,13 @@
     "AvgMF": 5.76,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 24,
+    "ageBasis": "legacy"
   },
   {
     "id": "7253",
@@ -4235,7 +5207,13 @@
     "AvgMF": 5.75,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 24,
+    "ageBasis": "legacy"
   },
   {
     "id": "4845",
@@ -4261,7 +5239,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "5695",
@@ -4287,7 +5271,13 @@
     "AvgMF": 5.99,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 33,
+    "ageBasis": "legacy"
   },
   {
     "id": "5751",
@@ -4313,7 +5303,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 24,
+    "ageBasis": "legacy"
   },
   {
     "id": "5578",
@@ -4339,7 +5335,13 @@
     "AvgMF": 6.0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 25,
+    "ageBasis": "legacy"
   },
   {
     "id": "7068",
@@ -4365,7 +5367,13 @@
     "AvgMF": 5.86,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 23,
+    "ageBasis": "legacy"
   },
   {
     "id": "7268",
@@ -4391,7 +5399,13 @@
     "AvgMF": 5.72,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 21,
+    "ageBasis": "legacy"
   },
   {
     "id": "7014",
@@ -4417,7 +5431,13 @@
     "AvgMF": 5.79,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "5603",
@@ -4443,7 +5463,13 @@
     "AvgMF": 5.71,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 28,
+    "ageBasis": "legacy"
   },
   {
     "id": "5449",
@@ -4469,7 +5495,13 @@
     "AvgMF": 5.95,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 25,
+    "ageBasis": "legacy"
   },
   {
     "id": "5757",
@@ -4495,7 +5527,13 @@
     "AvgMF": 5.83,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 24,
+    "ageBasis": "legacy"
   },
   {
     "id": "7537",
@@ -4521,7 +5559,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 23,
+    "ageBasis": "legacy"
   },
   {
     "id": "5831",
@@ -4547,7 +5591,13 @@
     "AvgMF": 6.18,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 28,
+    "ageBasis": "legacy"
   },
   {
     "id": "7012",
@@ -4573,7 +5623,13 @@
     "AvgMF": 6.17,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 23,
+    "ageBasis": "legacy"
   },
   {
     "id": "7131",
@@ -4599,7 +5655,13 @@
     "AvgMF": 5.72,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 23,
+    "ageBasis": "legacy"
   },
   {
     "id": "7240",
@@ -4625,7 +5687,13 @@
     "AvgMF": 5.76,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 24,
+    "ageBasis": "legacy"
   },
   {
     "id": "5838",
@@ -4651,7 +5719,13 @@
     "AvgMF": 6.12,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "5307",
@@ -4677,7 +5751,13 @@
     "AvgMF": 5.84,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "6986",
@@ -4703,7 +5783,13 @@
     "AvgMF": 6.35,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 23,
+    "ageBasis": "legacy"
   },
   {
     "id": "4374",
@@ -4729,7 +5815,13 @@
     "AvgMF": 5.68,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "7526",
@@ -4755,7 +5847,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 28,
+    "ageBasis": "legacy"
   },
   {
     "id": "4263",
@@ -4781,7 +5879,13 @@
     "AvgMF": 6.07,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 35,
+    "ageBasis": "legacy"
   },
   {
     "id": "5820",
@@ -4807,7 +5911,13 @@
     "AvgMF": 5.84,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 23,
+    "ageBasis": "legacy"
   },
   {
     "id": "5527",
@@ -4833,7 +5943,13 @@
     "AvgMF": 6.0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 25,
+    "ageBasis": "legacy"
   },
   {
     "id": "7312",
@@ -4859,7 +5975,13 @@
     "AvgMF": 5.8,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 20,
+    "ageBasis": "legacy"
   },
   {
     "id": "6890",
@@ -4885,7 +6007,13 @@
     "AvgMF": 5.67,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 22,
+    "ageBasis": "legacy"
   },
   {
     "id": "6821",
@@ -4911,7 +6039,13 @@
     "AvgMF": 3.04,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 24,
+    "ageBasis": "legacy"
   },
   {
     "id": "4375",
@@ -4937,7 +6071,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "7563",
@@ -4963,7 +6103,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 22,
+    "ageBasis": "legacy"
   },
   {
     "id": "256",
@@ -4989,7 +6135,13 @@
     "AvgMF": 5.7,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 35,
+    "ageBasis": "legacy"
   },
   {
     "id": "5498",
@@ -5015,7 +6167,13 @@
     "AvgMF": 5.58,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 28,
+    "ageBasis": "legacy"
   },
   {
     "id": "7326",
@@ -5041,7 +6199,13 @@
     "AvgMF": 5.33,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 21,
+    "ageBasis": "legacy"
   },
   {
     "id": "7125",
@@ -5067,7 +6231,13 @@
     "AvgMF": 6.09,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 21,
+    "ageBasis": "legacy"
   },
   {
     "id": "4378",
@@ -5093,7 +6263,13 @@
     "AvgMF": 5.88,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "7175",
@@ -5119,7 +6295,13 @@
     "AvgMF": 6.0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "7540",
@@ -5145,7 +6327,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 31,
+    "ageBasis": "legacy"
   },
   {
     "id": "5273",
@@ -5171,7 +6359,13 @@
     "AvgMF": 5.71,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 28,
+    "ageBasis": "legacy"
   },
   {
     "id": "6659",
@@ -5197,7 +6391,13 @@
     "AvgMF": 0.0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 23,
+    "ageBasis": "legacy"
   },
   {
     "id": "7238",
@@ -5223,7 +6423,13 @@
     "AvgMF": 6.0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 20,
+    "ageBasis": "legacy"
   },
   {
     "id": "4925",
@@ -5249,7 +6455,13 @@
     "AvgMF": 5.81,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 25,
+    "ageBasis": "legacy"
   },
   {
     "id": "7235",
@@ -5275,7 +6487,13 @@
     "AvgMF": 5.71,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 23,
+    "ageBasis": "legacy"
   },
   {
     "id": "7255",
@@ -5301,7 +6519,13 @@
     "AvgMF": 5.7,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 20,
+    "ageBasis": "legacy"
   },
   {
     "id": "6985",
@@ -5327,7 +6551,13 @@
     "AvgMF": 5.69,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 28,
+    "ageBasis": "legacy"
   },
   {
     "id": "6925",
@@ -5353,7 +6583,13 @@
     "AvgMF": 5.5,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 18,
+    "ageBasis": "legacy"
   },
   {
     "id": "5994",
@@ -5379,7 +6615,13 @@
     "AvgMF": 3.66,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "7538",
@@ -5405,7 +6647,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 23,
+    "ageBasis": "legacy"
   },
   {
     "id": "6892",
@@ -5431,7 +6679,13 @@
     "AvgMF": 5.63,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 24,
+    "ageBasis": "legacy"
   },
   {
     "id": "6673",
@@ -5457,7 +6711,13 @@
     "AvgMF": 5.86,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 28,
+    "ageBasis": "legacy"
   },
   {
     "id": "7478",
@@ -5483,7 +6743,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "7154",
@@ -5509,7 +6775,13 @@
     "AvgMF": 0.0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 25,
+    "ageBasis": "legacy"
   },
   {
     "id": "7605",
@@ -5535,7 +6807,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 23,
+    "ageBasis": "legacy"
   },
   {
     "id": "6601",
@@ -5561,7 +6839,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 22,
+    "ageBasis": "legacy"
   },
   {
     "id": "5742",
@@ -5587,7 +6871,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 24,
+    "ageBasis": "legacy"
   },
   {
     "id": "7483",
@@ -5613,7 +6903,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 24,
+    "ageBasis": "legacy"
   },
   {
     "id": "6896",
@@ -5639,7 +6935,13 @@
     "AvgMF": 5.94,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 24,
+    "ageBasis": "legacy"
   },
   {
     "id": "6977",
@@ -5665,7 +6967,13 @@
     "AvgMF": 5.01,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 22,
+    "ageBasis": "legacy"
   },
   {
     "id": "7413",
@@ -5691,7 +6999,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 21,
+    "ageBasis": "legacy"
   },
   {
     "id": "791",
@@ -5717,7 +7031,13 @@
     "AvgMF": 5.81,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 33,
+    "ageBasis": "legacy"
   },
   {
     "id": "2263",
@@ -5743,7 +7063,13 @@
     "AvgMF": 5.83,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 32,
+    "ageBasis": "legacy"
   },
   {
     "id": "2728",
@@ -5769,7 +7095,13 @@
     "AvgMF": 5.89,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "6883",
@@ -5795,7 +7127,13 @@
     "AvgMF": 5.72,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "7182",
@@ -5821,7 +7159,13 @@
     "AvgMF": 5.5,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "7525",
@@ -5847,7 +7191,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 20,
+    "ageBasis": "legacy"
   },
   {
     "id": "7476",
@@ -5873,7 +7223,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 20,
+    "ageBasis": "legacy"
   },
   {
     "id": "6638",
@@ -5899,7 +7255,13 @@
     "AvgMF": 5.83,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 24,
+    "ageBasis": "legacy"
   },
   {
     "id": "7202",
@@ -5925,7 +7287,13 @@
     "AvgMF": 5.36,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 24,
+    "ageBasis": "legacy"
   },
   {
     "id": "252",
@@ -5951,7 +7319,13 @@
     "AvgMF": 5.85,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 34,
+    "ageBasis": "legacy"
   },
   {
     "id": "6021",
@@ -5977,7 +7351,13 @@
     "AvgMF": 3.0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 22,
+    "ageBasis": "legacy"
   },
   {
     "id": "6681",
@@ -6003,7 +7383,13 @@
     "AvgMF": 5.33,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 22,
+    "ageBasis": "legacy"
   },
   {
     "id": "7548",
@@ -6029,7 +7415,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "6537",
@@ -6055,7 +7447,13 @@
     "AvgMF": 3.76,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 22,
+    "ageBasis": "legacy"
   },
   {
     "id": "7573",
@@ -6081,7 +7479,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 22,
+    "ageBasis": "legacy"
   },
   {
     "id": "5812",
@@ -6107,7 +7511,13 @@
     "AvgMF": 5.76,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 23,
+    "ageBasis": "legacy"
   },
   {
     "id": "7599",
@@ -6133,7 +7543,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 19,
+    "ageBasis": "legacy"
   },
   {
     "id": "7615",
@@ -6159,7 +7575,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 19,
+    "ageBasis": "legacy"
   },
   {
     "id": "487",
@@ -6185,7 +7607,13 @@
     "AvgMF": 6.23,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 38,
+    "ageBasis": "legacy"
   },
   {
     "id": "418",
@@ -6211,7 +7639,13 @@
     "AvgMF": 3.76,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 32,
+    "ageBasis": "legacy"
   },
   {
     "id": "5424",
@@ -6237,7 +7671,13 @@
     "AvgMF": 0.0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 21,
+    "ageBasis": "legacy"
   },
   {
     "id": "294",
@@ -6263,7 +7703,13 @@
     "AvgMF": 4.01,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 32,
+    "ageBasis": "legacy"
   },
   {
     "id": "6039",
@@ -6289,7 +7735,13 @@
     "AvgMF": 6.16,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 25,
+    "ageBasis": "legacy"
   },
   {
     "id": "327",
@@ -6315,7 +7767,13 @@
     "AvgMF": 5.97,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 33,
+    "ageBasis": "legacy"
   },
   {
     "id": "5399",
@@ -6341,7 +7799,13 @@
     "AvgMF": 0.0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 25,
+    "ageBasis": "legacy"
   },
   {
     "id": "6809",
@@ -6367,7 +7831,13 @@
     "AvgMF": 5.73,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 22,
+    "ageBasis": "legacy"
   },
   {
     "id": "5481",
@@ -6393,7 +7863,13 @@
     "AvgMF": 5.74,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 31,
+    "ageBasis": "legacy"
   },
   {
     "id": "6149",
@@ -6419,7 +7895,13 @@
     "AvgMF": 3.9,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 23,
+    "ageBasis": "legacy"
   },
   {
     "id": "7260",
@@ -6445,7 +7927,13 @@
     "AvgMF": 5.78,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 21,
+    "ageBasis": "legacy"
   },
   {
     "id": "7156",
@@ -6471,7 +7959,13 @@
     "AvgMF": 0.0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 23,
+    "ageBasis": "legacy"
   },
   {
     "id": "7454",
@@ -6497,7 +7991,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 18,
+    "ageBasis": "legacy"
   },
   {
     "id": "7553",
@@ -6523,7 +8023,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 23,
+    "ageBasis": "legacy"
   },
   {
     "id": "7604",
@@ -6549,7 +8055,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 20,
+    "ageBasis": "legacy"
   },
   {
     "id": "6826",
@@ -6575,7 +8087,13 @@
     "AvgMF": 5.45,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 22,
+    "ageBasis": "legacy"
   },
   {
     "id": "6875",
@@ -6601,7 +8119,13 @@
     "AvgMF": 7.12,
     "R": 0,
     "P": 1,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 21,
+    "ageBasis": "legacy"
   },
   {
     "id": "2194",
@@ -6627,7 +8151,13 @@
     "AvgMF": 7.41,
     "R": 1,
     "P": 1,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 32,
+    "ageBasis": "legacy"
   },
   {
     "id": "4777",
@@ -6653,7 +8183,13 @@
     "AvgMF": 7.46,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 29,
+    "ageBasis": "legacy"
   },
   {
     "id": "2167",
@@ -6679,7 +8215,13 @@
     "AvgMF": 7.34,
     "R": 1,
     "P": 1,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 29,
+    "ageBasis": "legacy"
   },
   {
     "id": "2423",
@@ -6705,7 +8247,13 @@
     "AvgMF": 7.35,
     "R": 2,
     "P": 2,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "2379",
@@ -6731,7 +8279,13 @@
     "AvgMF": 6.74,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 31,
+    "ageBasis": "legacy"
   },
   {
     "id": "7126",
@@ -6757,7 +8311,13 @@
     "AvgMF": 7.14,
     "R": 0,
     "P": 2,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 23,
+    "ageBasis": "legacy"
   },
   {
     "id": "7556",
@@ -6783,7 +8343,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 19,
+    "ageBasis": "legacy"
   },
   {
     "id": "5559",
@@ -6809,7 +8375,13 @@
     "AvgMF": 6.63,
     "R": 1,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 25,
+    "ageBasis": "legacy"
   },
   {
     "id": "1870",
@@ -6835,7 +8407,13 @@
     "AvgMF": 6.63,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 29,
+    "ageBasis": "legacy"
   },
   {
     "id": "2766",
@@ -6861,7 +8439,13 @@
     "AvgMF": 6.49,
     "R": 3,
     "P": 1,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "4973",
@@ -6887,7 +8471,13 @@
     "AvgMF": 6.39,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 28,
+    "ageBasis": "legacy"
   },
   {
     "id": "2517",
@@ -6913,7 +8503,13 @@
     "AvgMF": 7.24,
     "R": 1,
     "P": 1,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 35,
+    "ageBasis": "legacy"
   },
   {
     "id": "632",
@@ -6939,7 +8535,13 @@
     "AvgMF": 6.58,
     "R": 1,
     "P": 2,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 31,
+    "ageBasis": "legacy"
   },
   {
     "id": "6908",
@@ -6965,7 +8567,13 @@
     "AvgMF": 6.38,
     "R": 0,
     "P": 2,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 23,
+    "ageBasis": "legacy"
   },
   {
     "id": "5119",
@@ -6991,7 +8599,13 @@
     "AvgMF": 6.43,
     "R": 3,
     "P": 2,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 24,
+    "ageBasis": "legacy"
   },
   {
     "id": "6884",
@@ -7017,7 +8631,13 @@
     "AvgMF": 6.6,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 23,
+    "ageBasis": "legacy"
   },
   {
     "id": "7314",
@@ -7043,7 +8663,13 @@
     "AvgMF": 6.56,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 24,
+    "ageBasis": "legacy"
   },
   {
     "id": "5687",
@@ -7069,7 +8695,13 @@
     "AvgMF": 6.54,
     "R": 1,
     "P": 1,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 28,
+    "ageBasis": "legacy"
   },
   {
     "id": "5792",
@@ -7095,7 +8727,13 @@
     "AvgMF": 6.49,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "5800",
@@ -7121,7 +8759,13 @@
     "AvgMF": 6.99,
     "R": 3,
     "P": 3,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 29,
+    "ageBasis": "legacy"
   },
   {
     "id": "152",
@@ -7147,7 +8791,13 @@
     "AvgMF": 6.48,
     "R": 2,
     "P": 3,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 32,
+    "ageBasis": "legacy"
   },
   {
     "id": "2606",
@@ -7173,7 +8823,13 @@
     "AvgMF": 6.67,
     "R": 3,
     "P": 1,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 40,
+    "ageBasis": "legacy"
   },
   {
     "id": "6684",
@@ -7199,7 +8855,13 @@
     "AvgMF": 6.44,
     "R": 0,
     "P": 2,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "5172",
@@ -7225,7 +8887,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 25,
+    "ageBasis": "legacy"
   },
   {
     "id": "4179",
@@ -7251,7 +8919,13 @@
     "AvgMF": 4.59,
     "R": 3,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 28,
+    "ageBasis": "legacy"
   },
   {
     "id": "1850",
@@ -7277,7 +8951,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 29,
+    "ageBasis": "legacy"
   },
   {
     "id": "7625",
@@ -7303,7 +8983,13 @@
     "AvgMF": 0,
     "R": 3,
     "P": 3,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 28,
+    "ageBasis": "legacy"
   },
   {
     "id": "7129",
@@ -7329,7 +9015,13 @@
     "AvgMF": 6.66,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 20,
+    "ageBasis": "legacy"
   },
   {
     "id": "5823",
@@ -7355,7 +9047,13 @@
     "AvgMF": 6.26,
     "R": 0,
     "P": 1,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 23,
+    "ageBasis": "legacy"
   },
   {
     "id": "7436",
@@ -7381,7 +9079,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 18,
+    "ageBasis": "legacy"
   },
   {
     "id": "4892",
@@ -7407,7 +9111,13 @@
     "AvgMF": 6.75,
     "R": 0,
     "P": 3,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "7078",
@@ -7433,7 +9143,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 1,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 19,
+    "ageBasis": "legacy"
   },
   {
     "id": "6372",
@@ -7459,7 +9175,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 22,
+    "ageBasis": "legacy"
   },
   {
     "id": "184",
@@ -7485,7 +9207,13 @@
     "AvgMF": 6.56,
     "R": 2,
     "P": 2,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 32,
+    "ageBasis": "legacy"
   },
   {
     "id": "6844",
@@ -7511,7 +9239,13 @@
     "AvgMF": 6.59,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 23,
+    "ageBasis": "legacy"
   },
   {
     "id": "6151",
@@ -7537,7 +9271,13 @@
     "AvgMF": 6.21,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 23,
+    "ageBasis": "legacy"
   },
   {
     "id": "2848",
@@ -7563,7 +9303,13 @@
     "AvgMF": 6.54,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "4220",
@@ -7589,7 +9335,13 @@
     "AvgMF": 6.56,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 30,
+    "ageBasis": "legacy"
   },
   {
     "id": "7223",
@@ -7615,7 +9367,13 @@
     "AvgMF": 6.5,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 23,
+    "ageBasis": "legacy"
   },
   {
     "id": "5589",
@@ -7641,7 +9399,13 @@
     "AvgMF": 6.46,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 25,
+    "ageBasis": "legacy"
   },
   {
     "id": "5844",
@@ -7667,7 +9431,13 @@
     "AvgMF": 6.44,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "6274",
@@ -7693,7 +9463,13 @@
     "AvgMF": 6.45,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 23,
+    "ageBasis": "legacy"
   },
   {
     "id": "7070",
@@ -7719,7 +9495,13 @@
     "AvgMF": 6.27,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 22,
+    "ageBasis": "legacy"
   },
   {
     "id": "827",
@@ -7745,7 +9527,13 @@
     "AvgMF": 6.13,
     "R": 0,
     "P": 2,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 28,
+    "ageBasis": "legacy"
   },
   {
     "id": "5562",
@@ -7771,7 +9559,13 @@
     "AvgMF": 6.57,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 25,
+    "ageBasis": "legacy"
   },
   {
     "id": "5500",
@@ -7797,7 +9591,13 @@
     "AvgMF": 6.21,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 24,
+    "ageBasis": "legacy"
   },
   {
     "id": "6398",
@@ -7823,7 +9623,13 @@
     "AvgMF": 6.48,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 25,
+    "ageBasis": "legacy"
   },
   {
     "id": "5878",
@@ -7849,7 +9655,13 @@
     "AvgMF": 6.48,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "536",
@@ -7875,7 +9687,13 @@
     "AvgMF": 6.56,
     "R": 3,
     "P": 2,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 33,
+    "ageBasis": "legacy"
   },
   {
     "id": "779",
@@ -7901,7 +9719,13 @@
     "AvgMF": 6.39,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 31,
+    "ageBasis": "legacy"
   },
   {
     "id": "5735",
@@ -7927,7 +9751,13 @@
     "AvgMF": 6.26,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 22,
+    "ageBasis": "legacy"
   },
   {
     "id": "5888",
@@ -7953,7 +9783,13 @@
     "AvgMF": 6.36,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 23,
+    "ageBasis": "legacy"
   },
   {
     "id": "530",
@@ -7979,7 +9815,13 @@
     "AvgMF": 6.47,
     "R": 0,
     "P": 3,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 30,
+    "ageBasis": "legacy"
   },
   {
     "id": "2077",
@@ -8005,7 +9847,13 @@
     "AvgMF": 6.43,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 31,
+    "ageBasis": "legacy"
   },
   {
     "id": "2765",
@@ -8031,7 +9879,13 @@
     "AvgMF": 6.82,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "4436",
@@ -8057,7 +9911,13 @@
     "AvgMF": 6.37,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 25,
+    "ageBasis": "legacy"
   },
   {
     "id": "1933",
@@ -8083,7 +9943,13 @@
     "AvgMF": 6.52,
     "R": 3,
     "P": 2,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 29,
+    "ageBasis": "legacy"
   },
   {
     "id": "7472",
@@ -8109,7 +9975,13 @@
     "AvgMF": 0,
     "R": 1,
     "P": 1,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 29,
+    "ageBasis": "legacy"
   },
   {
     "id": "4856",
@@ -8135,7 +10007,13 @@
     "AvgMF": 6.18,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "4287",
@@ -8161,7 +10039,13 @@
     "AvgMF": 6.01,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 31,
+    "ageBasis": "legacy"
   },
   {
     "id": "6717",
@@ -8187,7 +10071,13 @@
     "AvgMF": 6.63,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 24,
+    "ageBasis": "legacy"
   },
   {
     "id": "7551",
@@ -8213,7 +10103,13 @@
     "AvgMF": 0,
     "R": 2,
     "P": 2,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "7618",
@@ -8239,7 +10135,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 22,
+    "ageBasis": "legacy"
   },
   {
     "id": "6833",
@@ -8265,7 +10167,13 @@
     "AvgMF": 7.13,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 22,
+    "ageBasis": "legacy"
   },
   {
     "id": "4364",
@@ -8291,7 +10199,13 @@
     "AvgMF": 6.53,
     "R": 0,
     "P": 3,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "5422",
@@ -8317,7 +10231,13 @@
     "AvgMF": 6.13,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 24,
+    "ageBasis": "legacy"
   },
   {
     "id": "5858",
@@ -8343,7 +10263,13 @@
     "AvgMF": 6.37,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "4870",
@@ -8369,7 +10295,13 @@
     "AvgMF": 5.93,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "7311",
@@ -8395,7 +10327,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 3,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 20,
+    "ageBasis": "legacy"
   },
   {
     "id": "4465",
@@ -8421,7 +10359,13 @@
     "AvgMF": 6.17,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 25,
+    "ageBasis": "legacy"
   },
   {
     "id": "6294",
@@ -8447,7 +10391,13 @@
     "AvgMF": 5.86,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 22,
+    "ageBasis": "legacy"
   },
   {
     "id": "5791",
@@ -8473,7 +10423,13 @@
     "AvgMF": 6.14,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 25,
+    "ageBasis": "legacy"
   },
   {
     "id": "5685",
@@ -8499,7 +10455,13 @@
     "AvgMF": 6.49,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 28,
+    "ageBasis": "legacy"
   },
   {
     "id": "4459",
@@ -8525,7 +10487,13 @@
     "AvgMF": 5.9,
     "R": 0,
     "P": 1,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 24,
+    "ageBasis": "legacy"
   },
   {
     "id": "5504",
@@ -8551,7 +10519,13 @@
     "AvgMF": 5.98,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 30,
+    "ageBasis": "legacy"
   },
   {
     "id": "6593",
@@ -8577,7 +10551,13 @@
     "AvgMF": 5.8,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 21,
+    "ageBasis": "legacy"
   },
   {
     "id": "6666",
@@ -8603,7 +10583,13 @@
     "AvgMF": 6.47,
     "R": 3,
     "P": 1,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 25,
+    "ageBasis": "legacy"
   },
   {
     "id": "6190",
@@ -8629,7 +10615,13 @@
     "AvgMF": 4.2,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 21,
+    "ageBasis": "legacy"
   },
   {
     "id": "6680",
@@ -8655,7 +10647,13 @@
     "AvgMF": 5.87,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 31,
+    "ageBasis": "legacy"
   },
   {
     "id": "6783",
@@ -8681,7 +10679,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 3,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 23,
+    "ageBasis": "legacy"
   },
   {
     "id": "5946",
@@ -8707,7 +10711,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 29,
+    "ageBasis": "legacy"
   },
   {
     "id": "4479",
@@ -8733,7 +10743,13 @@
     "AvgMF": 6.52,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "7619",
@@ -8759,7 +10775,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "5680",
@@ -8785,7 +10807,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 23,
+    "ageBasis": "legacy"
   },
   {
     "id": "5298",
@@ -8811,7 +10839,13 @@
     "AvgMF": 6.12,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "4260",
@@ -8837,7 +10871,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 30,
+    "ageBasis": "legacy"
   },
   {
     "id": "6010",
@@ -8863,7 +10903,13 @@
     "AvgMF": 6.26,
     "R": 0,
     "P": 1,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 23,
+    "ageBasis": "legacy"
   },
   {
     "id": "7412",
@@ -8889,7 +10935,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 3,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 31,
+    "ageBasis": "legacy"
   },
   {
     "id": "5036",
@@ -8915,7 +10967,13 @@
     "AvgMF": 6.6,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "6678",
@@ -8941,7 +10999,13 @@
     "AvgMF": 3.0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 19,
+    "ageBasis": "legacy"
   },
   {
     "id": "7464",
@@ -8967,7 +11031,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 20,
+    "ageBasis": "legacy"
   },
   {
     "id": "5998",
@@ -8993,7 +11063,13 @@
     "AvgMF": 5.89,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "6020",
@@ -9019,7 +11095,13 @@
     "AvgMF": 6.06,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 24,
+    "ageBasis": "legacy"
   },
   {
     "id": "5761",
@@ -9045,7 +11127,13 @@
     "AvgMF": 5.96,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "6549",
@@ -9071,7 +11159,13 @@
     "AvgMF": 6.05,
     "R": 0,
     "P": 1,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 25,
+    "ageBasis": "legacy"
   },
   {
     "id": "2741",
@@ -9097,7 +11191,13 @@
     "AvgMF": 6.23,
     "R": 0,
     "P": 3,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 29,
+    "ageBasis": "legacy"
   },
   {
     "id": "4349",
@@ -9123,7 +11223,13 @@
     "AvgMF": 6.18,
     "R": 0,
     "P": 2,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "2528",
@@ -9149,7 +11255,13 @@
     "AvgMF": 2.98,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 38,
+    "ageBasis": "legacy"
   },
   {
     "id": "6677",
@@ -9175,7 +11287,13 @@
     "AvgMF": 6.44,
     "R": 0,
     "P": 3,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 20,
+    "ageBasis": "legacy"
   },
   {
     "id": "7036",
@@ -9201,7 +11319,13 @@
     "AvgMF": 6.17,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 18,
+    "ageBasis": "legacy"
   },
   {
     "id": "7060",
@@ -9227,7 +11351,13 @@
     "AvgMF": 6.0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 19,
+    "ageBasis": "legacy"
   },
   {
     "id": "6218",
@@ -9253,7 +11383,13 @@
     "AvgMF": 6.21,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 23,
+    "ageBasis": "legacy"
   },
   {
     "id": "7198",
@@ -9279,7 +11415,13 @@
     "AvgMF": 5.95,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 28,
+    "ageBasis": "legacy"
   },
   {
     "id": "5674",
@@ -9305,7 +11447,13 @@
     "AvgMF": 3.93,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 29,
+    "ageBasis": "legacy"
   },
   {
     "id": "7146",
@@ -9331,7 +11479,13 @@
     "AvgMF": 5.82,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 28,
+    "ageBasis": "legacy"
   },
   {
     "id": "7624",
@@ -9357,7 +11511,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "7528",
@@ -9383,7 +11543,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 21,
+    "ageBasis": "legacy"
   },
   {
     "id": "6640",
@@ -9409,7 +11575,13 @@
     "AvgMF": 6.26,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 25,
+    "ageBasis": "legacy"
   },
   {
     "id": "7409",
@@ -9435,7 +11607,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 21,
+    "ageBasis": "legacy"
   },
   {
     "id": "5301",
@@ -9461,7 +11639,13 @@
     "AvgMF": 6.06,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 24,
+    "ageBasis": "legacy"
   },
   {
     "id": "6629",
@@ -9487,7 +11671,13 @@
     "AvgMF": 6.24,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 25,
+    "ageBasis": "legacy"
   },
   {
     "id": "7203",
@@ -9513,7 +11703,13 @@
     "AvgMF": 5.79,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 24,
+    "ageBasis": "legacy"
   },
   {
     "id": "6898",
@@ -9539,7 +11735,13 @@
     "AvgMF": 5.86,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 24,
+    "ageBasis": "legacy"
   },
   {
     "id": "7535",
@@ -9565,7 +11767,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 23,
+    "ageBasis": "legacy"
   },
   {
     "id": "6170",
@@ -9591,7 +11799,13 @@
     "AvgMF": 5.99,
     "R": 0,
     "P": 3,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 22,
+    "ageBasis": "legacy"
   },
   {
     "id": "5507",
@@ -9617,7 +11831,13 @@
     "AvgMF": 6.03,
     "R": 1,
     "P": 1,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 24,
+    "ageBasis": "legacy"
   },
   {
     "id": "5319",
@@ -9643,7 +11863,13 @@
     "AvgMF": 5.94,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 25,
+    "ageBasis": "legacy"
   },
   {
     "id": "6994",
@@ -9669,7 +11895,13 @@
     "AvgMF": 6.16,
     "R": 0,
     "P": 3,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 29,
+    "ageBasis": "legacy"
   },
   {
     "id": "6618",
@@ -9695,7 +11927,13 @@
     "AvgMF": 0.0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 19,
+    "ageBasis": "legacy"
   },
   {
     "id": "22",
@@ -9721,7 +11959,13 @@
     "AvgMF": 6.17,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 35,
+    "ageBasis": "legacy"
   },
   {
     "id": "6054",
@@ -9747,7 +11991,13 @@
     "AvgMF": 6.12,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 28,
+    "ageBasis": "legacy"
   },
   {
     "id": "6895",
@@ -9773,7 +12023,13 @@
     "AvgMF": 6.43,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 22,
+    "ageBasis": "legacy"
   },
   {
     "id": "7127",
@@ -9799,7 +12055,13 @@
     "AvgMF": 6.54,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 21,
+    "ageBasis": "legacy"
   },
   {
     "id": "6206",
@@ -9825,7 +12087,13 @@
     "AvgMF": 6.46,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 23,
+    "ageBasis": "legacy"
   },
   {
     "id": "7473",
@@ -9851,7 +12119,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 20,
+    "ageBasis": "legacy"
   },
   {
     "id": "7474",
@@ -9877,7 +12151,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 25,
+    "ageBasis": "legacy"
   },
   {
     "id": "6506",
@@ -9903,7 +12183,13 @@
     "AvgMF": 5.5,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 20,
+    "ageBasis": "legacy"
   },
   {
     "id": "7341",
@@ -9929,7 +12215,13 @@
     "AvgMF": 5.67,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 21,
+    "ageBasis": "legacy"
   },
   {
     "id": "4970",
@@ -9955,7 +12247,13 @@
     "AvgMF": 6.35,
     "R": 0,
     "P": 3,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 35,
+    "ageBasis": "legacy"
   },
   {
     "id": "2857",
@@ -9981,7 +12279,13 @@
     "AvgMF": 5.75,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "2529",
@@ -10007,7 +12311,13 @@
     "AvgMF": 6.51,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 37,
+    "ageBasis": "legacy"
   },
   {
     "id": "4911",
@@ -10033,7 +12343,13 @@
     "AvgMF": 2.9,
     "R": 0,
     "P": 3,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 28,
+    "ageBasis": "legacy"
   },
   {
     "id": "333",
@@ -10059,7 +12375,13 @@
     "AvgMF": 6.25,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 32,
+    "ageBasis": "legacy"
   },
   {
     "id": "7322",
@@ -10085,7 +12407,13 @@
     "AvgMF": 5.65,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 22,
+    "ageBasis": "legacy"
   },
   {
     "id": "6015",
@@ -10111,7 +12439,13 @@
     "AvgMF": 6.44,
     "R": 3,
     "P": 2,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 22,
+    "ageBasis": "legacy"
   },
   {
     "id": "7318",
@@ -10137,7 +12471,13 @@
     "AvgMF": 6.41,
     "R": 0,
     "P": 3,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "5453",
@@ -10163,7 +12503,13 @@
     "AvgMF": 6.03,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 25,
+    "ageBasis": "legacy"
   },
   {
     "id": "4199",
@@ -10189,7 +12535,13 @@
     "AvgMF": 6.33,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 30,
+    "ageBasis": "legacy"
   },
   {
     "id": "6252",
@@ -10215,7 +12567,13 @@
     "AvgMF": 6.13,
     "R": 0,
     "P": 2,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 28,
+    "ageBasis": "legacy"
   },
   {
     "id": "6207",
@@ -10241,7 +12599,13 @@
     "AvgMF": 6.01,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "6005",
@@ -10267,7 +12631,13 @@
     "AvgMF": 3.0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 22,
+    "ageBasis": "legacy"
   },
   {
     "id": "6827",
@@ -10293,7 +12663,13 @@
     "AvgMF": 6.04,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 21,
+    "ageBasis": "legacy"
   },
   {
     "id": "7208",
@@ -10319,7 +12695,13 @@
     "AvgMF": 5.95,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 20,
+    "ageBasis": "legacy"
   },
   {
     "id": "7550",
@@ -10345,7 +12727,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 31,
+    "ageBasis": "legacy"
   },
   {
     "id": "7579",
@@ -10371,7 +12759,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 23,
+    "ageBasis": "legacy"
   },
   {
     "id": "6024",
@@ -10397,7 +12791,13 @@
     "AvgMF": 6.33,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 23,
+    "ageBasis": "legacy"
   },
   {
     "id": "1871",
@@ -10423,7 +12823,13 @@
     "AvgMF": 5.89,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 31,
+    "ageBasis": "legacy"
   },
   {
     "id": "4947",
@@ -10449,7 +12855,13 @@
     "AvgMF": 6.49,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "6241",
@@ -10475,7 +12887,13 @@
     "AvgMF": 5.78,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 29,
+    "ageBasis": "legacy"
   },
   {
     "id": "6917",
@@ -10501,7 +12919,13 @@
     "AvgMF": 6.04,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 25,
+    "ageBasis": "legacy"
   },
   {
     "id": "6503",
@@ -10527,7 +12951,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 21,
+    "ageBasis": "legacy"
   },
   {
     "id": "7248",
@@ -10553,7 +12983,13 @@
     "AvgMF": 5.5,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 21,
+    "ageBasis": "legacy"
   },
   {
     "id": "5457",
@@ -10579,7 +13015,13 @@
     "AvgMF": 5.71,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 28,
+    "ageBasis": "legacy"
   },
   {
     "id": "5295",
@@ -10605,7 +13047,13 @@
     "AvgMF": 5.87,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 23,
+    "ageBasis": "legacy"
   },
   {
     "id": "7477",
@@ -10631,7 +13079,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 21,
+    "ageBasis": "legacy"
   },
   {
     "id": "5131",
@@ -10657,7 +13111,13 @@
     "AvgMF": 6.16,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 25,
+    "ageBasis": "legacy"
   },
   {
     "id": "7138",
@@ -10683,7 +13143,13 @@
     "AvgMF": 5.81,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 22,
+    "ageBasis": "legacy"
   },
   {
     "id": "7536",
@@ -10709,7 +13175,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 19,
+    "ageBasis": "legacy"
   },
   {
     "id": "7183",
@@ -10735,7 +13207,13 @@
     "AvgMF": 5.64,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "5872",
@@ -10761,7 +13239,13 @@
     "AvgMF": 3.96,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 25,
+    "ageBasis": "legacy"
   },
   {
     "id": "801",
@@ -10787,7 +13271,13 @@
     "AvgMF": 5.78,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 32,
+    "ageBasis": "legacy"
   },
   {
     "id": "7232",
@@ -10813,7 +13303,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 18,
+    "ageBasis": "legacy"
   },
   {
     "id": "6225",
@@ -10839,7 +13335,13 @@
     "AvgMF": 2.28,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 25,
+    "ageBasis": "legacy"
   },
   {
     "id": "6815",
@@ -10865,7 +13367,13 @@
     "AvgMF": 6.17,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 24,
+    "ageBasis": "legacy"
   },
   {
     "id": "6903",
@@ -10891,7 +13399,13 @@
     "AvgMF": 0.0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 22,
+    "ageBasis": "legacy"
   },
   {
     "id": "6980",
@@ -10917,7 +13431,13 @@
     "AvgMF": 7.35,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 20,
+    "ageBasis": "legacy"
   },
   {
     "id": "6191",
@@ -10943,7 +13463,13 @@
     "AvgMF": 5.92,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 22,
+    "ageBasis": "legacy"
   },
   {
     "id": "5880",
@@ -10969,7 +13495,13 @@
     "AvgMF": 5.93,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 31,
+    "ageBasis": "legacy"
   },
   {
     "id": "7276",
@@ -10995,7 +13527,13 @@
     "AvgMF": 6.0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 21,
+    "ageBasis": "legacy"
   },
   {
     "id": "6219",
@@ -11021,7 +13559,13 @@
     "AvgMF": 5.79,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "6246",
@@ -11047,7 +13591,13 @@
     "AvgMF": 5.95,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 21,
+    "ageBasis": "legacy"
   },
   {
     "id": "6212",
@@ -11073,7 +13623,13 @@
     "AvgMF": 6.19,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "7418",
@@ -11099,7 +13655,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "526",
@@ -11125,7 +13687,13 @@
     "AvgMF": 6.12,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 33,
+    "ageBasis": "legacy"
   },
   {
     "id": "6592",
@@ -11151,7 +13719,13 @@
     "AvgMF": 5.67,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 22,
+    "ageBasis": "legacy"
   },
   {
     "id": "7574",
@@ -11177,7 +13751,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 20,
+    "ageBasis": "legacy"
   },
   {
     "id": "7092",
@@ -11203,7 +13783,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 19,
+    "ageBasis": "legacy"
   },
   {
     "id": "7165",
@@ -11229,7 +13815,13 @@
     "AvgMF": 5.75,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 20,
+    "ageBasis": "legacy"
   },
   {
     "id": "7357",
@@ -11255,7 +13847,13 @@
     "AvgMF": 0.0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 18,
+    "ageBasis": "legacy"
   },
   {
     "id": "7456",
@@ -11281,7 +13879,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 25,
+    "ageBasis": "legacy"
   },
   {
     "id": "5725",
@@ -11307,7 +13911,13 @@
     "AvgMF": 6.0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "7345",
@@ -11333,7 +13943,13 @@
     "AvgMF": 0.0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 19,
+    "ageBasis": "legacy"
   },
   {
     "id": "6410",
@@ -11359,7 +13975,13 @@
     "AvgMF": 5.76,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 24,
+    "ageBasis": "legacy"
   },
   {
     "id": "7319",
@@ -11385,7 +14007,13 @@
     "AvgMF": 5.5,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 23,
+    "ageBasis": "legacy"
   },
   {
     "id": "5007",
@@ -11411,7 +14039,13 @@
     "AvgMF": 6.08,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 25,
+    "ageBasis": "legacy"
   },
   {
     "id": "6889",
@@ -11437,7 +14071,13 @@
     "AvgMF": 6.18,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 24,
+    "ageBasis": "legacy"
   },
   {
     "id": "7481",
@@ -11463,7 +14103,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 22,
+    "ageBasis": "legacy"
   },
   {
     "id": "7571",
@@ -11489,7 +14135,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 19,
+    "ageBasis": "legacy"
   },
   {
     "id": "7572",
@@ -11515,7 +14167,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 18,
+    "ageBasis": "legacy"
   },
   {
     "id": "7575",
@@ -11541,7 +14199,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 19,
+    "ageBasis": "legacy"
   },
   {
     "id": "5462",
@@ -11567,7 +14231,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 24,
+    "ageBasis": "legacy"
   },
   {
     "id": "5585",
@@ -11593,7 +14263,13 @@
     "AvgMF": 8.97,
     "R": 1,
     "P": 2,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "2764",
@@ -11619,7 +14295,13 @@
     "AvgMF": 8.14,
     "R": 3,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 29,
+    "ageBasis": "legacy"
   },
   {
     "id": "4871",
@@ -11645,7 +14327,13 @@
     "AvgMF": 7.84,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 29,
+    "ageBasis": "legacy"
   },
   {
     "id": "6052",
@@ -11671,7 +14359,13 @@
     "AvgMF": 7.44,
     "R": 2,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 23,
+    "ageBasis": "legacy"
   },
   {
     "id": "6397",
@@ -11697,7 +14391,13 @@
     "AvgMF": 0,
     "R": 1,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 25,
+    "ageBasis": "legacy"
   },
   {
     "id": "5951",
@@ -11723,7 +14423,13 @@
     "AvgMF": 7.78,
     "R": 1,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "2097",
@@ -11749,7 +14455,13 @@
     "AvgMF": 6.93,
     "R": 2,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "6752",
@@ -11775,7 +14487,13 @@
     "AvgMF": 0,
     "R": 2,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 24,
+    "ageBasis": "legacy"
   },
   {
     "id": "7017",
@@ -11801,7 +14519,13 @@
     "AvgMF": 7.06,
     "R": 3,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "6434",
@@ -11827,7 +14551,13 @@
     "AvgMF": 6.87,
     "R": 0,
     "P": 1,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 21,
+    "ageBasis": "legacy"
   },
   {
     "id": "2137",
@@ -11853,7 +14583,13 @@
     "AvgMF": 5.15,
     "R": 1,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "531",
@@ -11879,7 +14615,13 @@
     "AvgMF": 7.62,
     "R": 1,
     "P": 1,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 32,
+    "ageBasis": "legacy"
   },
   {
     "id": "5637",
@@ -11905,7 +14647,13 @@
     "AvgMF": 6.78,
     "R": 1,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 28,
+    "ageBasis": "legacy"
   },
   {
     "id": "6435",
@@ -11931,7 +14679,13 @@
     "AvgMF": 6.8,
     "R": 2,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "5995",
@@ -11957,7 +14711,13 @@
     "AvgMF": 6.98,
     "R": 0,
     "P": 1,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 25,
+    "ageBasis": "legacy"
   },
   {
     "id": "7071",
@@ -11983,7 +14743,13 @@
     "AvgMF": 7.02,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 21,
+    "ageBasis": "legacy"
   },
   {
     "id": "309",
@@ -12009,7 +14775,13 @@
     "AvgMF": 7.47,
     "R": 2,
     "P": 1,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 32,
+    "ageBasis": "legacy"
   },
   {
     "id": "6675",
@@ -12035,7 +14807,13 @@
     "AvgMF": 6.98,
     "R": 3,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 29,
+    "ageBasis": "legacy"
   },
   {
     "id": "6060",
@@ -12061,7 +14839,13 @@
     "AvgMF": 6.72,
     "R": 3,
     "P": 2,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "4371",
@@ -12087,7 +14871,13 @@
     "AvgMF": 6.85,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "7351",
@@ -12113,7 +14903,13 @@
     "AvgMF": 7.23,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 23,
+    "ageBasis": "legacy"
   },
   {
     "id": "7023",
@@ -12139,7 +14935,13 @@
     "AvgMF": 6.76,
     "R": 2,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 25,
+    "ageBasis": "legacy"
   },
   {
     "id": "6572",
@@ -12165,7 +14967,13 @@
     "AvgMF": 6.59,
     "R": 3,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 21,
+    "ageBasis": "legacy"
   },
   {
     "id": "2061",
@@ -12191,7 +14999,13 @@
     "AvgMF": 6.34,
     "R": 2,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 31,
+    "ageBasis": "legacy"
   },
   {
     "id": "5694",
@@ -12217,7 +15031,13 @@
     "AvgMF": 5.5,
     "R": 1,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 28,
+    "ageBasis": "legacy"
   },
   {
     "id": "5734",
@@ -12243,7 +15063,13 @@
     "AvgMF": 6.98,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 23,
+    "ageBasis": "legacy"
   },
   {
     "id": "4463",
@@ -12269,7 +15095,13 @@
     "AvgMF": 4.56,
     "R": 2,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 24,
+    "ageBasis": "legacy"
   },
   {
     "id": "6967",
@@ -12295,7 +15127,13 @@
     "AvgMF": 7.15,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 20,
+    "ageBasis": "legacy"
   },
   {
     "id": "2038",
@@ -12321,7 +15159,13 @@
     "AvgMF": 6.67,
     "R": 2,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "7547",
@@ -12347,7 +15191,13 @@
     "AvgMF": 0,
     "R": 2,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 25,
+    "ageBasis": "legacy"
   },
   {
     "id": "4923",
@@ -12373,7 +15223,13 @@
     "AvgMF": 6.4,
     "R": 1,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 24,
+    "ageBasis": "legacy"
   },
   {
     "id": "7484",
@@ -12399,7 +15255,13 @@
     "AvgMF": 0,
     "R": 2,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "6646",
@@ -12425,7 +15287,13 @@
     "AvgMF": 6.7,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 30,
+    "ageBasis": "legacy"
   },
   {
     "id": "6229",
@@ -12451,7 +15319,13 @@
     "AvgMF": 2.19,
     "R": 1,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 24,
+    "ageBasis": "legacy"
   },
   {
     "id": "7554",
@@ -12477,7 +15351,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 23,
+    "ageBasis": "legacy"
   },
   {
     "id": "5436",
@@ -12503,7 +15383,13 @@
     "AvgMF": 3.0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 22,
+    "ageBasis": "legacy"
   },
   {
     "id": "2155",
@@ -12529,7 +15415,13 @@
     "AvgMF": 6.3,
     "R": 1,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 28,
+    "ageBasis": "legacy"
   },
   {
     "id": "7347",
@@ -12555,7 +15447,13 @@
     "AvgMF": 6.79,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 23,
+    "ageBasis": "legacy"
   },
   {
     "id": "6904",
@@ -12581,7 +15479,13 @@
     "AvgMF": 5.98,
     "R": 0,
     "P": 2,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "7612",
@@ -12607,7 +15511,13 @@
     "AvgMF": 0,
     "R": 3,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 24,
+    "ageBasis": "legacy"
   },
   {
     "id": "4359",
@@ -12633,7 +15543,13 @@
     "AvgMF": 6.47,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 25,
+    "ageBasis": "legacy"
   },
   {
     "id": "6530",
@@ -12659,7 +15575,13 @@
     "AvgMF": 6.1,
     "R": 0,
     "P": 3,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 23,
+    "ageBasis": "legacy"
   },
   {
     "id": "6164",
@@ -12685,7 +15607,13 @@
     "AvgMF": 6.66,
     "R": 3,
     "P": 2,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "5029",
@@ -12711,7 +15639,13 @@
     "AvgMF": 0,
     "R": 1,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 25,
+    "ageBasis": "legacy"
   },
   {
     "id": "7600",
@@ -12737,7 +15671,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "6669",
@@ -12763,7 +15703,13 @@
     "AvgMF": 6.67,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 22,
+    "ageBasis": "legacy"
   },
   {
     "id": "2832",
@@ -12789,7 +15735,13 @@
     "AvgMF": 7.15,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 29,
+    "ageBasis": "legacy"
   },
   {
     "id": "7523",
@@ -12815,7 +15767,13 @@
     "AvgMF": 0,
     "R": 2,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 21,
+    "ageBasis": "legacy"
   },
   {
     "id": "7449",
@@ -12841,7 +15799,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 25,
+    "ageBasis": "legacy"
   },
   {
     "id": "7623",
@@ -12867,7 +15831,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 22,
+    "ageBasis": "legacy"
   },
   {
     "id": "5918",
@@ -12893,7 +15863,13 @@
     "AvgMF": 6.24,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 24,
+    "ageBasis": "legacy"
   },
   {
     "id": "6204",
@@ -12919,7 +15895,13 @@
     "AvgMF": 5.75,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 23,
+    "ageBasis": "legacy"
   },
   {
     "id": "6556",
@@ -12945,7 +15927,13 @@
     "AvgMF": 6.76,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "7252",
@@ -12971,7 +15959,13 @@
     "AvgMF": 6.12,
     "R": 2,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 24,
+    "ageBasis": "legacy"
   },
   {
     "id": "6831",
@@ -12997,7 +15991,13 @@
     "AvgMF": 6.78,
     "R": 0,
     "P": 3,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 29,
+    "ageBasis": "legacy"
   },
   {
     "id": "608",
@@ -13023,7 +16023,13 @@
     "AvgMF": 7.09,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 35,
+    "ageBasis": "legacy"
   },
   {
     "id": "7620",
@@ -13049,7 +16055,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 24,
+    "ageBasis": "legacy"
   },
   {
     "id": "4896",
@@ -13075,7 +16087,13 @@
     "AvgMF": 6.62,
     "R": 0,
     "P": 2,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 24,
+    "ageBasis": "legacy"
   },
   {
     "id": "7610",
@@ -13101,7 +16119,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "6145",
@@ -13127,7 +16151,13 @@
     "AvgMF": 6.18,
     "R": 3,
     "P": 1,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "6243",
@@ -13153,7 +16183,13 @@
     "AvgMF": 6.23,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "7374",
@@ -13179,7 +16215,13 @@
     "AvgMF": 6.62,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 19,
+    "ageBasis": "legacy"
   },
   {
     "id": "7453",
@@ -13205,7 +16247,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 23,
+    "ageBasis": "legacy"
   },
   {
     "id": "7001",
@@ -13231,7 +16279,13 @@
     "AvgMF": 5.97,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 25,
+    "ageBasis": "legacy"
   },
   {
     "id": "6519",
@@ -13257,7 +16311,13 @@
     "AvgMF": 3.85,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 18,
+    "ageBasis": "legacy"
   },
   {
     "id": "5882",
@@ -13283,7 +16343,13 @@
     "AvgMF": 6.36,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 28,
+    "ageBasis": "legacy"
   },
   {
     "id": "7162",
@@ -13309,7 +16375,13 @@
     "AvgMF": 6.45,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 22,
+    "ageBasis": "legacy"
   },
   {
     "id": "7120",
@@ -13335,7 +16407,13 @@
     "AvgMF": 6.32,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 27,
+    "ageBasis": "legacy"
   },
   {
     "id": "6215",
@@ -13361,7 +16439,13 @@
     "AvgMF": 6.6,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 25,
+    "ageBasis": "legacy"
   },
   {
     "id": "7213",
@@ -13387,7 +16471,13 @@
     "AvgMF": 0.0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 23,
+    "ageBasis": "legacy"
   },
   {
     "id": "7349",
@@ -13413,7 +16503,13 @@
     "AvgMF": 5.79,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "7272",
@@ -13439,7 +16535,13 @@
     "AvgMF": 5.92,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 19,
+    "ageBasis": "legacy"
   },
   {
     "id": "4387",
@@ -13465,7 +16567,13 @@
     "AvgMF": 0,
     "R": 3,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 26,
+    "ageBasis": "legacy"
   },
   {
     "id": "7546",
@@ -13491,7 +16599,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 19,
+    "ageBasis": "legacy"
   },
   {
     "id": "2012",
@@ -13517,7 +16631,13 @@
     "AvgMF": 4.15,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 32,
+    "ageBasis": "legacy"
   },
   {
     "id": "7602",
@@ -13543,7 +16663,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 22,
+    "ageBasis": "legacy"
   },
   {
     "id": "5336",
@@ -13569,7 +16695,13 @@
     "AvgMF": 4.12,
     "R": 1,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 30,
+    "ageBasis": "legacy"
   },
   {
     "id": "6822",
@@ -13595,7 +16727,13 @@
     "AvgMF": 6.19,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 19,
+    "ageBasis": "legacy"
   },
   {
     "id": "7342",
@@ -13621,7 +16759,13 @@
     "AvgMF": 6.88,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 25,
+    "ageBasis": "legacy"
   },
   {
     "id": "7561",
@@ -13647,7 +16791,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 18,
+    "ageBasis": "legacy"
   },
   {
     "id": "7317",
@@ -13673,7 +16823,13 @@
     "AvgMF": 5.67,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 20,
+    "ageBasis": "legacy"
   },
   {
     "id": "7161",
@@ -13699,7 +16855,13 @@
     "AvgMF": 5.83,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 29,
+    "ageBasis": "legacy"
   },
   {
     "id": "7408",
@@ -13725,7 +16887,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 20,
+    "ageBasis": "legacy"
   },
   {
     "id": "7482",
@@ -13751,7 +16919,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 28,
+    "ageBasis": "legacy"
   },
   {
     "id": "7568",
@@ -13777,7 +16951,13 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 18,
+    "ageBasis": "legacy"
   },
   {
     "id": "7622",
@@ -13803,6 +16983,12 @@
     "AvgMF": 0,
     "R": 0,
     "P": 0,
-    "ageSource": "Statistiche_Giocatori.xlsx"
+    "ageSource": "Statistiche_Giocatori.xlsx",
+    "dateOfBirth": null,
+    "dobSource": null,
+    "dobVerifiedAt": null,
+    "dobMatchedBy": "id",
+    "legacyAge": 18,
+    "ageBasis": "legacy"
   }
 ]
