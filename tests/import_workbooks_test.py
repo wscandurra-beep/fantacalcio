@@ -1,6 +1,7 @@
 import importlib.util
 import tempfile
 import unittest
+from datetime import date
 from pathlib import Path
 
 SPEC = importlib.util.spec_from_file_location("import_workbooks", Path(__file__).parents[1] / "scripts/import_workbooks.py")
@@ -93,6 +94,38 @@ class PlayerAgeRecordsTests(unittest.TestCase):
     def test_rejects_unexpected_columns(self):
         with self.assertRaises(ValueError):
             IMPORTER.player_age_records(self.write_csv("Squadra,Nome,Età,Altro\nRoma,Dybala,32,x\n"))
+
+
+class BirthDateRegistryTests(unittest.TestCase):
+    def test_age_before_and_after_birthday_and_leap_day(self):
+        self.assertEqual(IMPORTER.age_on("2000-09-06", date(2026, 9, 5)), 25)
+        self.assertEqual(IMPORTER.age_on("2000-09-06", date(2026, 9, 6)), 26)
+        self.assertEqual(IMPORTER.age_on("2000-02-29", date(2025, 2, 28)), 24)
+        self.assertEqual(IMPORTER.age_on("2000-02-29", date(2025, 3, 1)), 25)
+
+    def test_stable_id_survives_transfer_and_inactive_rows_are_retained(self):
+        registry = [
+            {"id": "7", "name": "Mario Rossi", "team": "Roma", "dateOfBirth": "2000-01-02",
+             "source": "transfermarkt", "verifiedAt": "2026-09-01", "matchingStatus": "matched"},
+            {"id": "old", "name": "Ex Player", "team": "Genoa", "dateOfBirth": "1990-01-01"},
+        ]
+        players = [{"id": "7", "name": "Mario Rossi", "team": "Milan", "age": 30}]
+        IMPORTER.apply_player_registry(players, registry)
+        self.assertEqual(players[0]["dateOfBirth"], "2000-01-02")
+        self.assertEqual(players[0]["dobMatchedBy"], "id")
+        self.assertEqual(registry[0]["team"], "Milan")
+        self.assertEqual(registry[1]["id"], "old")
+
+    def test_homonyms_are_ambiguous_without_an_id_and_dob_stays_missing(self):
+        registry = [
+            {"id": "1", "name": "Alex Rossi", "team": "Roma", "dateOfBirth": "2000-01-01"},
+            {"id": "2", "name": "Alex Rossi", "team": "Roma", "dateOfBirth": "2001-01-01"},
+        ]
+        players = [{"id": "3", "name": "Alex Rossi", "team": "Roma", "age": 24}]
+        report = IMPORTER.apply_player_registry(players, registry)
+        self.assertIsNone(players[0]["dateOfBirth"])
+        self.assertEqual(players[0]["ageBasis"], "legacy")
+        self.assertEqual(len(report["ambiguous"]), 1)
 
 
 class StatisticsEnrichmentTests(unittest.TestCase):

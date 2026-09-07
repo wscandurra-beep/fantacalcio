@@ -63,11 +63,22 @@ scritture e conserva l'ultimo snapshot valido.
 
 1. Add the new quotation and statistics `.xlsx` files without deleting historical sources.
 2. Update the filenames/current season in `scripts/import_workbooks.py` (the only source manifest boundary in this MVP).
-3. Refresh the seasonal `Coppe`, injury, FBref-age and `Pro_Contro` inputs. Keep Fantacalcio `Id` as the primary key; add explicit mappings for exceptions.
+3. Refresh the seasonal `Coppe`, injury, persistent DOB registry and `Pro_Contro` inputs. Keep Fantacalcio `Id` as the primary key; add explicit mappings for exceptions.
 4. Run `npm run import:data`; review the reported unresolved categories and the Data Quality view.
 5. Run `npm test` before committing the generated `data/players.json`.
 
 The importer uses only Python's standard library, reads the OOXML sources directly, and never modifies them. Raw statistics remain in their workbooks; only required selection metrics are emitted. Missing/ambiguous enrichment is left empty rather than guessed.
+
+### Player birth dates and age
+
+`data/player-birthdates.json` is the persistent anagraphic registry and is not a
+season snapshot. It keeps inactive players, matches a stable Fantacalcio ID
+before normalized name + team, and stores the DOB source and verification date.
+The legacy `data/player-ages.csv` remains an explicit fallback during migration;
+no DOB is inferred from an age. Run `python3 scripts/scrape_missing_ages.py` (or
+the manual workflow) to update the committed registry from Transfermarkt. The
+browser calculates age centrally from DOB at display time and marks legacy ages
+as fallback, so opening the application never triggers source scraping.
 
 ## Business rules
 

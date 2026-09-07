@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Recover only missing player ages, using FBref first and Transfermarkt as fallback.
+"""Persist missing player dates of birth from Transfermarkt.
 
 The scraper is intentionally conservative: exact/abbreviated normalized name + team
 matching only, no fuzzy auto-acceptance, bounded retries and cached resolved rows.
@@ -21,7 +21,7 @@ from import_workbooks import abbreviated_name_matches, normalize_player_name
 
 ROOT = Path(__file__).resolve().parents[1]
 PLAYERS_PATH = ROOT / "data/players.json"
-OUTPUT_PATH = ROOT / "data/player_ages.json"
+OUTPUT_PATH = ROOT / "data/player-birthdates.json"
 FBREF_SERIE_A = "https://fbref.com/en/comps/11/Serie-A-Stats"
 TRANSFERMARKT_SEARCH = "https://www.transfermarkt.it/schnellsuche/ergebnis/schnellsuche?query={}"
 USER_AGENT = (
@@ -233,7 +233,7 @@ def load_cache(path: Path = OUTPUT_PATH) -> dict[str, dict]:
     except (OSError, json.JSONDecodeError):
         return {}
     rows = payload.get("players", payload) if isinstance(payload, dict) else payload
-    return {str(row.get("id")): row for row in rows if isinstance(row, dict) and row.get("id") and valid_age(row.get("age"))}
+    return {str(row.get("id")): row for row in rows if isinstance(row, dict) and row.get("id")}
 
 
 def record(player: dict, age: int, source: str, source_url: str, matched_by: str, dob: str | None = None) -> dict:
@@ -241,63 +241,29 @@ def record(player: dict, age: int, source: str, source_url: str, matched_by: str
         "id": player.get("id"),
         "name": player.get("name"),
         "team": player.get("team"),
-        "age": int(age),
+        "legacyAge": player.get("legacyAge", player.get("age")),
         "dateOfBirth": dob,
         "source": source,
         "sourceUrl": source_url,
         "matchedBy": matched_by,
-        "fetchedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-        "status": "ok",
+        "verifiedAt": datetime.now(timezone.utc).date().isoformat(),
+        "matchingStatus": "matched",
     }
 
 
 def run(limit: int | None = None, sleep_seconds: float = 1.0, spike: bool = False) -> dict:
     players = json.loads(PLAYERS_PATH.read_text(encoding="utf-8"))
-    missing = [p for p in players if p.get("age") is None]
+    missing = [p for p in players if not p.get("dateOfBirth")]
     if limit:
         missing = missing[:limit]
     cache = load_cache()
-    unresolved = [p for p in missing if str(p.get("id")) not in cache]
+    unresolved = [p for p in missing if not iso_dob(cache.get(str(p.get("id")), {}).get("dateOfBirth"))]
     diagnostics = {"unmatched": [], "ambiguous": [], "errors": []}
     requests = {"fbref": 0, "transfermarkt": 0}
 
-    team_urls = {}
-    try:
-        league_html = fetch(FBREF_SERIE_A)
-        requests["fbref"] += 1
-        team_urls = discover_fbref_team_urls(league_html)
-    except Exception as exc:
-        diagnostics["errors"].append({"source": "fbref", "scope": "league", "error": str(exc)})
-
-    by_team = {}
+    # An age-only source cannot establish a DOB. Transfermarkt is queried only by
+    # this explicit batch job; the application never performs live scraping.
     for player in unresolved:
-        by_team.setdefault(normalize_team(player.get("team")), []).append(player)
-
-    still_missing = []
-    for team, team_players in by_team.items():
-        url = team_urls.get(team)
-        if not url:
-            still_missing.extend(team_players)
-            continue
-        try:
-            squad_html = fetch(url)
-            requests["fbref"] += 1
-            candidates = parse_fbref_squad(squad_html)
-            for player in team_players:
-                candidate, matched_by = match_candidate(player, candidates, implicit_team=True)
-                if candidate and valid_age(candidate.get("age")):
-                    cache[str(player["id"])] = record(player, candidate["age"], "fbref", url, matched_by)
-                else:
-                    still_missing.append(player)
-                    if matched_by == "ambiguous":
-                        diagnostics["ambiguous"].append({"name": player["name"], "team": player["team"], "source": "fbref"})
-        except Exception as exc:
-            diagnostics["errors"].append({"source": "fbref", "scope": team, "error": str(exc)})
-            still_missing.extend(team_players)
-        time.sleep(max(0.0, sleep_seconds))
-
-    # Transfermarkt is intentionally per-player and only runs for unresolved FBref rows.
-    for player in still_missing:
         search_url = TRANSFERMARKT_SEARCH.format(quote_plus(player.get("name") or ""))
         try:
             search_html = fetch(search_url)
@@ -311,7 +277,7 @@ def run(limit: int | None = None, sleep_seconds: float = 1.0, spike: bool = Fals
             profile_html = fetch(candidate["profileUrl"])
             requests["transfermarkt"] += 1
             age, dob = parse_transfermarkt_profile(profile_html)
-            if not valid_age(age):
+            if not valid_age(age) or not dob:
                 diagnostics["unmatched"].append({"name": player["name"], "team": player["team"], "source": "transfermarkt", "reason": "invalid age"})
                 continue
             cache[str(player["id"])] = record(player, age, "transfermarkt", candidate["profileUrl"], matched_by, dob)
@@ -319,15 +285,15 @@ def run(limit: int | None = None, sleep_seconds: float = 1.0, spike: bool = Fals
             diagnostics["errors"].append({"source": "transfermarkt", "scope": player.get("name"), "error": str(exc)})
         time.sleep(max(0.0, sleep_seconds))
 
-    rows = sorted(cache.values(), key=lambda r: (normalize_team(r.get("team")), normalize_player_name(r.get("name"))))
+    rows = sorted(cache.values(), key=lambda r: (normalize_player_name(r.get("name")), str(r.get("id") or "")))
     counts = {
         "fbref": sum(r.get("source") == "fbref" for r in rows),
         "transfermarkt": sum(r.get("source") == "transfermarkt" for r in rows),
     }
     payload = {
         "generatedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-        "primarySource": "fbref",
-        "fallbackSource": "transfermarkt",
+        "schemaVersion": 1,
+        "primarySource": "transfermarkt",
         "requests": requests,
         "counts": counts,
         "diagnostics": diagnostics,
@@ -336,7 +302,7 @@ def run(limit: int | None = None, sleep_seconds: float = 1.0, spike: bool = Fals
     OUTPUT_PATH.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     print(json.dumps({"missingInput": len(missing), "resolvedCachedTotal": len(rows), "counts": counts, "requests": requests, "diagnostics": {k: len(v) for k, v in diagnostics.items()}}, ensure_ascii=False))
     if spike:
-        print("Spike decision: FBref primary because one team request yields the whole squad; Transfermarkt remains per-player fallback.")
+        print("Spike decision: Transfermarkt is required because age-only sources cannot establish a canonical DOB.")
     return payload
 
 
